@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="154mm" xmlns="http://www.w3.org/2000/svg" height="150mm" version="1.1" viewBox="0 0 584 568" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <a target="_parent" xlink:href="SCME18.htm#884">
+      <rect x="15" y="97" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#b2d6fc"/>
+         </linearGradient>
+      </defs>
+      <rect x="15" y="97" fill="url(#Gradient1)" width="146" height="456" stroke="#0080c0" stroke-width="1"/>
+      <text x="88" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="middle">工单主档</text>
+      <line x1="15" x2="161" y1="117" y2="117" stroke="#0080c0" stroke-width="1"/>
+      <text x="20" y="127" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工单主档PK</text>
+      <text x="20" y="143" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工单号码</text>
+      <text x="20" y="159" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">订单编号</text>
+      <text x="20" y="175" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">客户代码</text>
+      <text x="20" y="191" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">成品料号</text>
+      <text x="20" y="207" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">物料规格</text>
+      <text x="20" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">设计卡号</text>
+      <text x="20" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">订购数量</text>
+      <text x="20" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">单长</text>
+      <text x="20" y="271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">订购单位</text>
+      <text x="20" y="287" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">交期</text>
+      <text x="20" y="303" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">业务员</text>
+      <text x="20" y="319" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">预计开工日期</text>
+      <text x="20" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">预计完工日期</text>
+      <text x="20" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">结案否</text>
+      <text x="20" y="367" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">订单单长</text>
+      <text x="20" y="383" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">PO完成日期</text>
+      <text x="20" y="399" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">单位重量</text>
+      <text x="20" y="415" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">重量单位</text>
+      <text x="20" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">入库累积量</text>
+      <text x="20" y="447" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工厂</text>
+      <text x="20" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">预计生产天数</text>
+      <text x="20" y="479" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">生产单位</text>
+      <text x="20" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">生管线种名称</text>
+      <text x="20" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">芯线颜色</text>
+      <text x="20" y="527" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">最后制程编码</text>
+      <text x="20" y="543" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">承诺量</text>
+      <text x="88" y="127" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="88" y="143" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="159" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="175" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="191" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="207" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="287" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="303" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="319" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="367" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="383" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="399" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="415" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="447" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="479" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="527" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="88" y="543" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="SCME17.htm#709">
+      <rect x="162" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient2" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#b2d6fc"/>
+         </linearGradient>
+      </defs>
+      <rect x="162" y="16" fill="url(#Gradient2)" width="255" height="440" stroke="#0080c0" stroke-width="1"/>
+      <text x="289" y="29" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="middle">制程工单</text>
+      <line x1="162" x2="417" y1="36" y2="36" stroke="#0080c0" stroke-width="1"/>
+      <text x="166" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (制程工单PK)</text>
+      <text x="166" y="62" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">製程工單號碼</text>
+      <text x="166" y="78" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">成品料號</text>
+      <text x="166" y="94" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">導體尺寸</text>
+      <text x="166" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">SAP工单PK</text>
+      <text x="166" y="126" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">下制程代码</text>
+      <text x="166" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">下製程名稱</text>
+      <text x="166" y="158" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制序</text>
+      <text x="166" y="174" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制程代码</text>
+      <text x="166" y="190" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">製程名稱</text>
+      <text x="166" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">成品品名規格</text>
+      <text x="166" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">半成品品名規格</text>
+      <text x="166" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">半成品料号</text>
+      <text x="166" y="254" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">預設機台代碼</text>
+      <text x="166" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制程数量</text>
+      <text x="166" y="286" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制程单位</text>
+      <text x="166" y="302" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制程排程数量</text>
+      <text x="166" y="318" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">排程导体重量</text>
+      <text x="166" y="334" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">排程半成品重量</text>
+      <text x="166" y="350" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">已生产数量</text>
+      <text x="166" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工單數量</text>
+      <text x="166" y="382" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">單長</text>
+      <text x="166" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">芯線顏色</text>
+      <text x="166" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">外径</text>
+      <text x="166" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">製令PK</text>
+      <text x="166" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">状态</text>
+      <text x="244" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="244" y="62" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="78" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="94" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="244" y="126" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="244" y="158" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="244" y="174" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="190" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="244" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="244" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="244" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="254" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="244" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="244" y="286" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="244" y="302" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="244" y="318" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="244" y="334" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="244" y="350" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="244" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="244" y="382" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="244" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="244" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="244" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="244" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="381" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="381" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk1&gt;</text>
+      <text x="381" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk2&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="SCME19.htm#1054">
+      <rect x="423" y="118" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient3" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#b2d6fc"/>
+         </linearGradient>
+      </defs>
+      <rect x="423" y="118" fill="url(#Gradient3)" width="146" height="88" stroke="#0080c0" stroke-width="1"/>
+      <text x="496" y="131" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="middle">工单群组</text>
+      <line x1="423" x2="569" y1="138" y2="138" stroke="#0080c0" stroke-width="1"/>
+      <text x="427" y="148" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工单群组PK</text>
+      <text x="427" y="164" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工单群组编码</text>
+      <text x="427" y="180" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">SAP工单号码</text>
+      <text x="427" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">状态</text>
+      <text x="495" y="148" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="495" y="164" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="495" y="180" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="495" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="SCME14.htm#455">
+      <rect x="358" y="237" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient4" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#b2d6fc"/>
+         </linearGradient>
+      </defs>
+      <rect x="358" y="237" fill="url(#Gradient4)" width="190" height="72" stroke="#0080c0" stroke-width="1"/>
+      <text x="453" y="250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="middle">不展开制令的制程工单</text>
+      <line x1="358" x2="548" y1="257" y2="257" stroke="#0080c0" stroke-width="1"/>
+      <text x="363" y="267" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">不展开制令制程工单PK</text>
+      <text x="363" y="283" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工单群组号码</text>
+      <text x="363" y="299" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">制程代码</text>
+      <text x="473" y="267" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="473" y="283" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="473" y="299" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+   </a>
+</svg>
