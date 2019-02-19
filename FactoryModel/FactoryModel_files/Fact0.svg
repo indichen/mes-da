@@ -1,82 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="220mm" xmlns="http://www.w3.org/2000/svg" height="88mm" version="1.1" viewBox="0 0 833 333" xmlns:xlink="http://www.w3.org/1999/xlink">
-   <polyline fill="none" points="373,84 234,84" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="234,84 247,81 247,87" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="552,93 636,93" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="636,93 623,96 623,90" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="462,178 462,122" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="462,122 465,136 459,136" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <a target="_parent" xlink:href="Fact11.htm#152">
-      <rect x="15" y="15" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="15" y="15" fill="#b0ffff" width="219" height="138" stroke="#00aaaa" stroke-width="1"/>
-      <text x="124" y="29" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM4_班次</text>
-      <line x1="15" x2="234" y1="36" y2="36" stroke="#00aaaa" stroke-width="1"/>
-      <text x="20" y="46" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (班次PK)</text>
-      <text x="20" y="60" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">轮班制度id</text>
-      <text x="20" y="74" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">班次代碼</text>
-      <text x="20" y="88" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">開始日期時間</text>
-      <text x="20" y="102" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">結束日期時間</text>
-      <text x="20" y="116" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">上班时长</text>
-      <text x="82" y="46" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="82" y="60" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="82" y="74" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="82" y="88" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">datetime</text>
-      <text x="82" y="102" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">datetime</text>
-      <text x="82" y="116" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="146" y="46" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+<svg width="113mm" xmlns="http://www.w3.org/2000/svg" height="77mm" version="1.1" viewBox="0 0 430 294" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <a target="_parent" xlink:href="Fact61.htm#129">
+      <polyline fill="none" points="200,77 276,77" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="276,77 262,80 262,74" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="237" y="74" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_FM1_PARA_REFERENCE_CUST_BIZ</text>
    </a>
-   <a target="_parent" xlink:href="Fact13.htm#248">
-      <rect x="373" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="373" y="16" fill="#b0ffff" width="179" height="106" stroke="#00aaaa" stroke-width="1"/>
-      <text x="462" y="30" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM4_班组轮班明细</text>
-      <line x1="373" x2="552" y1="37" y2="37" stroke="#00aaaa" stroke-width="1"/>
-      <text x="377" y="47" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (班組輪班明細PK)</text>
-      <text x="377" y="61" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">日期</text>
-      <text x="377" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">班次PK</text>
-      <text x="377" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">班组PK</text>
-      <text x="468" y="47" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="468" y="61" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(10)</text>
-      <text x="468" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
-      <text x="468" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
-      <text x="514" y="47" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
-      <text x="514" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
-      <text x="514" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+   <a target="_parent" xlink:href="Fact62.htm#135">
+      <polyline fill="none" points="108,169 108,125" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="108,125 111,138 105,138" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="107" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_FM1_PARA_REFERENCE_FM1_PARA</text>
    </a>
-   <a target="_parent" xlink:href="Fact12.htm#206">
-      <rect x="372" y="178" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="372" y="178" fill="#b0ffff" width="187" height="140" stroke="#00aaaa" stroke-width="1"/>
-      <text x="465" y="192" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM4_班组轮班-人员明细</text>
-      <line x1="372" x2="559" y1="199" y2="199" stroke="#00aaaa" stroke-width="1"/>
-      <text x="377" y="209" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (班組輪班-人員明細)</text>
-      <text x="377" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">班组轮班明细id</text>
-      <text x="377" y="236" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">人员id</text>
-      <text x="377" y="250" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">调班标记</text>
-      <text x="478" y="209" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="478" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
-      <text x="478" y="236" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="478" y="250" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">bit</text>
-      <text x="534" y="209" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
-      <text x="534" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   <a target="_parent" xlink:href="Fact21.htm#358">
+      <rect x="16" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="16" y="16" fill="#60afff" width="184" height="109" stroke="#00aaaa" stroke-width="1"/>
+      <text x="108" y="32" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM1_参数模板</text>
+      <line x1="16" x2="200" y1="39" y2="39" stroke="#00aaaa" stroke-width="1"/>
+      <text x="20" y="49" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id</text>
+      <text x="20" y="65" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数编码</text>
+      <text x="20" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数名称</text>
+      <text x="20" y="97" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数说明</text>
+      <text x="20" y="113" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数值类型</text>
+      <text x="20" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">默认值</text>
+      <text x="78" y="49" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="78" y="65" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="78" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="78" y="97" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(</text>
+      <text x="78" y="113" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
+      <text x="78" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(50)</text>
    </a>
-   <a target="_parent" xlink:href="Fact10.htm#98">
-      <rect x="636" y="18" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="636" y="18" fill="#b0ffff" width="181" height="150" stroke="#00aaaa" stroke-width="1"/>
-      <text x="726" y="35" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM3_生产班组--</text>
-      <text x="726" y="47" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">参照组织树倒数第一级</text>
-      <line x1="636" x2="817" y1="56" y2="56" stroke="#00aaaa" stroke-width="1"/>
-      <text x="641" y="66" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (班组PK)</text>
-      <text x="641" y="80" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">班组cd</text>
-      <text x="641" y="94" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">班组名称</text>
-      <text x="641" y="108" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">班长</text>
-      <text x="641" y="122" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">班组类型</text>
-      <text x="641" y="136" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">启用状态</text>
-      <text x="696" y="66" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="696" y="80" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="696" y="94" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="696" y="108" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="696" y="122" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
-      <text x="696" y="136" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">bit</text>
-      <text x="812" y="66" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <a target="_parent" xlink:href="Fact20.htm#316">
+      <rect x="15" y="169" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="15" y="169" fill="#60afff" width="185" height="110" stroke="#00aaaa" stroke-width="1"/>
+      <text x="107" y="185" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM1_参数</text>
+      <line x1="15" x2="200" y1="192" y2="192" stroke="#00aaaa" stroke-width="1"/>
+      <text x="20" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工厂</text>
+      <text x="20" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id</text>
+      <text x="20" y="234" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数模板id</text>
+      <text x="20" y="250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">取值</text>
+      <text x="77" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="77" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="77" y="234" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="77" y="250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(50)</text>
+   </a>
+   <a target="_parent" xlink:href="Fact13.htm#14">
+      <rect x="276" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="276" y="51" fill="#ffff80" width="138" height="53" stroke="#00aaaa" stroke-width="1"/>
+      <text x="278" y="67" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="start">CUST_业态/产业</text>
+      <line x1="276" x2="414" y1="74" y2="74" stroke="#00aaaa" stroke-width="1"/>
+      <text x="280" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id</text>
+      <text x="280" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">code</text>
+      <text x="311" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="311" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="373" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
 </svg>
