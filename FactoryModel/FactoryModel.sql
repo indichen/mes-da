@@ -1,8 +1,24 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/19 上午 08:25:14                        */
+/* Created on:     2019/2/20 下午 04:00:37                        */
 /*==============================================================*/
 
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('FM8_qc_items')
+            and   name  = 'RELATIONSHIP_145_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index FM8_qc_items.RELATIONSHIP_145_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('FM8_qc_items')
+            and   type = 'U')
+   drop table FM8_qc_items
+go
 
 if exists (select 1
             from  sysobjects
@@ -34,6 +50,13 @@ go
 
 if exists (select 1
             from  sysobjects
+           where  id = object_id('cust_equiment_base_type2')
+            and   type = 'U')
+   drop table cust_equiment_base_type2
+go
+
+if exists (select 1
+            from  sysobjects
            where  id = object_id('cust_equiment_status')
             and   type = 'U')
    drop table cust_equiment_status
@@ -51,6 +74,36 @@ if exists (select 1
            where  id = object_id('cust_op_point_type')
             and   type = 'U')
    drop table cust_op_point_type
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_qc_items_type')
+            and   type = 'U')
+   drop table cust_qc_items_type
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_qc_plan_type')
+            and   type = 'U')
+   drop table cust_qc_plan_type
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('cust_qc_spec')
+            and   name  = 'RELATIONSHIP_146_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index cust_qc_spec.RELATIONSHIP_146_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_qc_spec')
+            and   type = 'U')
+   drop table cust_qc_spec
 go
 
 if exists (select 1
@@ -213,6 +266,70 @@ if exists (select 1
            where  id = object_id('fm7_material_unit')
             and   type = 'U')
    drop table fm7_material_unit
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('fm8_qc_enum')
+            and   name  = 'RELATIONSHIP_148_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index fm8_qc_enum.RELATIONSHIP_148_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_qc_enum')
+            and   type = 'U')
+   drop table fm8_qc_enum
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('fm8_qc_items_formula')
+            and   name  = 'RELATIONSHIP_152_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index fm8_qc_items_formula.RELATIONSHIP_152_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_qc_items_formula')
+            and   type = 'U')
+   drop table fm8_qc_items_formula
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('fm8_qc_plan')
+            and   name  = 'RELATIONSHIP_161_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index fm8_qc_plan.RELATIONSHIP_161_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_qc_plan')
+            and   type = 'U')
+   drop table fm8_qc_plan
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('fm8_qc_plan_detail')
+            and   name  = 'RELATIONSHIP_149_FK'
+            and   indid > 0
+            and   indid < 255)
+   drop index fm8_qc_plan_detail.RELATIONSHIP_149_FK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_qc_plan_detail')
+            and   type = 'U')
+   drop table fm8_qc_plan_detail
 go
 
 if exists (select 1
@@ -450,6 +567,41 @@ create type type_weight
 go
 
 /*==============================================================*/
+/* Table: FM8_qc_items                                          */
+/*==============================================================*/
+create table FM8_qc_items (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   type_id              type_pk              not null,
+   cd                   type_id              null,
+   name                 type_name            null,
+   unit_pk              type_pk              null,
+   display_sn           type_number          null,
+   is_formula           type_boolean         null,
+   value_type           type_enum_val        null,
+   decimals             type_number          null,
+   group_name           type_name            null,
+   constraint PK_FM8_QC_ITEMS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_145_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_145_FK on FM8_qc_items
+go
+
+/*==============================================================*/
 /* Table: cust_biz_type                                         */
 /*==============================================================*/
 create table cust_biz_type (
@@ -529,6 +681,25 @@ create table cust_equiment_base_type (
 go
 
 /*==============================================================*/
+/* Table: cust_equiment_base_type2                              */
+/*==============================================================*/
+create table cust_equiment_base_type2 (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_id              null,
+   name                 type_name            null,
+   note                 type_memo            null,
+   constraint PK_CUST_EQUIMENT_BASE_TYPE2 primary key (id)
+)
+go
+
+/*==============================================================*/
 /* Table: cust_equiment_status                                  */
 /*==============================================================*/
 create table cust_equiment_status (
@@ -582,6 +753,76 @@ create table cust_op_point_type (
    name                 type_name            null,
    is_enabled           type_boolean         null
 )
+go
+
+/*==============================================================*/
+/* Table: cust_qc_items_type                                    */
+/*==============================================================*/
+create table cust_qc_items_type (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   name                 type_name            null,
+   remarks              type_memo            null,
+   is_enabled           type_boolean         null,
+   constraint PK_CUST_QC_ITEMS_TYPE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: cust_qc_plan_type                                     */
+/*==============================================================*/
+create table cust_qc_plan_type (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   name                 type_name            null,
+   description          type_memo            null,
+   is_enabled           type_boolean         null,
+   constraint PK_CUST_QC_PLAN_TYPE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: cust_qc_spec                                          */
+/*==============================================================*/
+create table cust_qc_spec (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   規範名稱                 type_name            null,
+   name_abbr            type_name            null,
+   name_en              type_name            null,
+   is_enabled           type_boolean         null,
+   constraint PK_CUST_QC_SPEC primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_146_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_146_FK on cust_qc_spec
 go
 
 /*==============================================================*/
@@ -846,11 +1087,12 @@ create table fm6_equipment (
    is_batch_equiment    type_boolean         null,
    base_type_id         type_pk              null,
    level_id             type_pk              null,
+   checkin_out_type_id  type_pk              null,
    factory_id           type_pk              null,
    dep_id               type_pk              null,
    parent_id            type_pk              null,
-   longitude            type_length          null,
-   latitude             type_length          null,
+   longitude            type_lng_lat         null,
+   latitude             type_lng_lat         null,
    note                 type_name            null,
    constraint PK_FM6_EQUIPMENT primary key (id)
 )
@@ -1046,6 +1288,152 @@ go
 
 
 create nonclustered index R20_FK on fm7_material_unit (unit_pk ASC)
+go
+
+/*==============================================================*/
+/* Table: fm8_qc_enum                                           */
+/*==============================================================*/
+create table fm8_qc_enum (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   item_pk              type_pk              not null,
+   sn                   type_sn              not null,
+   description          type_name            not null,
+   is_enabled           type_boolean         not null,
+   constraint PK_FM8_QC_ENUM primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_148_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_148_FK on fm8_qc_enum
+go
+
+/*==============================================================*/
+/* Table: fm8_qc_items_formula                                  */
+/*==============================================================*/
+create table fm8_qc_items_formula (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   item_pk              type_pk              null,
+   formula              type_memo            null,
+   formula_description  type_memo            null,
+   version              type_decimal         null,
+   is_current           type_boolean         null,
+   constraint PK_FM8_QC_ITEMS_FORMULA primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_152_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_152_FK on fm8_qc_items_formula
+go
+
+/*==============================================================*/
+/* Table: fm8_qc_plan                                           */
+/*==============================================================*/
+create table fm8_qc_plan (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   varchar(40)          not null,
+   name                 varchar(40)          not null,
+   plan_type_pk         char(36)             not null,
+   spec_pk              varchar(40)          not null,
+   物料id                 char(36)             null,
+   "钢种-冶金行业用"           char(36)             null,
+   "工序-制程"              char(36)             null,
+   取样点                  char(36)             null,
+   is_cycle             type_boolean         null,
+   cycle_time           char(36)             null,
+   version              type_decimal         not null,
+   is_current_ver       type_boolean         not null,
+   report_template      char(36)             null,
+   constraint PK_FM8_QC_PLAN primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_161_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_161_FK on fm8_qc_plan
+go
+
+/*==============================================================*/
+/* Table: fm8_qc_plan_detail                                    */
+/*==============================================================*/
+create table fm8_qc_plan_detail (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   plan_pk              type_pk              null,
+   item_pk              type_pk              null,
+   std                  type_short_text      null,
+   upper_bound          type_short_text      null,
+   is_upper_bound_closed type_boolean         null,
+   lower_bound          type_short_text      null,
+   is_lower_bound_closed type_boolean         null,
+   value_type           type_enum_val        null,
+   decimals             type_number          null,
+   digits               type_number          null,
+   data_source          type_enum_val        null,
+   formula              type_memo            null,
+   def_lab_pk           type_pk              null,
+   def_qc_site_pk       type_pk              null,
+   method_pk            type_pk              null,
+   condition_1          type_memo            null,
+   condition_2          type_memo            null,
+   condition_3          type_memo            null,
+   condition_4          type_memo            null,
+   condition_5          type_memo            null,
+   constraint PK_FM8_QC_PLAN_DETAIL primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Index: RELATIONSHIP_149_FK                                   */
+/*==============================================================*/
+
+
+
+
+create nonclustered index RELATIONSHIP_149_FK on fm8_qc_plan_detail
 go
 
 /*==============================================================*/

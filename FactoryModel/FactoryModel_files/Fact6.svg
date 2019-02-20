@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="398mm" xmlns="http://www.w3.org/2000/svg" height="217mm" version="1.1" viewBox="0 0 1504 821" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <polyline fill="none" points="986,541 544,541 544,420" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="544,420 547,434 541,434" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <a target="_parent" xlink:href="Fact55.htm#38">
+      <defs>
+         <linearGradient id="Gradient1" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#fdf9ea"/>
+            <stop offset="95%" stop-color="#f5e6ad"/>
+         </linearGradient>
+      </defs>
+      <rect x="15" y="218" fill="url(#Gradient1)" width="731" height="469" stroke="#796206" stroke-width="1"/>
+      <image x="19" y="222" width="16" height="16" xlink:href="Fact6_svg_Files/svg_bitmap1.png"/>
+      <text x="390" y="228" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">质检项目</text>
+   </a>
+   <polyline fill="none" points="528,544 528,420" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="528,420 531,434 525,434" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="316,554 316,345 413,345" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="413,345 400,348 400,342" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="413,329 308,329" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="308,329 321,326 321,332" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="986,541 544,541 544,420" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="544,420 547,434 541,434" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <rect x="52" y="289" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="52" y="289" fill="#ffff80" width="256" height="97" stroke="#00aaaa" stroke-width="1"/>
+   <text x="180" y="303" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_质检项目类型</text>
+   <line x1="52" x2="308" y1="310" y2="310" stroke="#00aaaa" stroke-width="1"/>
+   <text x="56" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目类型pk)</text>
+   <text x="56" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">cd</text>
+   <text x="56" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">名稱</text>
+   <text x="56" y="358" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">备注</text>
+   <text x="56" y="371" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+   <text x="152" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="152" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="152" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="152" y="358" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="152" y="371" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="285" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <rect x="413" y="269" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="413" y="269" fill="#60afff" width="262" height="151" stroke="#00aaaa" stroke-width="1"/>
+   <text x="544" y="279" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目</text>
+   <line x1="413" x2="675" y1="284" y2="284" stroke="#00aaaa" stroke-width="1"/>
+   <text x="418" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目PK)</text>
+   <text x="418" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目类型PK</text>
+   <text x="418" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目cd</text>
+   <text x="418" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目名稱</text>
+   <text x="418" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">计量单位</text>
+   <text x="418" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">显示顺序</text>
+   <text x="418" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否公式</text>
+   <text x="418" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">值类型</text>
+   <text x="418" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">小数点位数</text>
+   <text x="418" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">组名称</text>
+   <text x="500" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="500" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="500" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="500" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="500" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="500" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="500" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="500" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="500" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="500" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="625" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <text x="625" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   <rect x="68" y="554" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="68" y="554" fill="#60afff" width="280" height="84" stroke="#00aaaa" stroke-width="1"/>
+   <text x="208" y="564" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目枚举值明细</text>
+   <line x1="68" x2="348" y1="569" y2="569" stroke="#00aaaa" stroke-width="1"/>
+   <text x="73" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (質檢項目枚舉明細PK)</text>
+   <text x="73" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目pk</text>
+   <text x="73" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">枚举序号</text>
+   <text x="73" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">枚举说明</text>
+   <text x="73" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+   <text x="193" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="193" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="193" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="193" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="193" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="318" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <text x="318" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   <rect x="410" y="544" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="410" y="544" fill="#60afff" width="268" height="97" stroke="#00aaaa" stroke-width="1"/>
+   <text x="544" y="554" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目公式</text>
+   <line x1="410" x2="678" y1="559" y2="559" stroke="#00aaaa" stroke-width="1"/>
+   <text x="415" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目公式PK)</text>
+   <text x="415" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目PK</text>
+   <text x="415" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式内容</text>
+   <text x="415" y="608" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式说明</text>
+   <text x="415" y="621" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式版本</text>
+   <text x="415" y="634" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否现行版</text>
+   <text x="515" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="515" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="515" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="515" y="608" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="515" y="621" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">decimal(10,3)</text>
+   <text x="515" y="634" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="648" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <text x="648" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   <a target="_parent" xlink:href="Fact22.htm#364">
+      <rect x="52" y="289" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="52" y="289" fill="#ffff80" width="256" height="97" stroke="#00aaaa" stroke-width="1"/>
+      <text x="180" y="303" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_质检项目类型</text>
+      <line x1="52" x2="308" y1="310" y2="310" stroke="#00aaaa" stroke-width="1"/>
+      <text x="56" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目类型pk)</text>
+      <text x="56" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">cd</text>
+      <text x="56" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">名稱</text>
+      <text x="56" y="358" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">备注</text>
+      <text x="56" y="371" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+      <text x="152" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="152" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="152" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="152" y="358" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="152" y="371" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="285" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact45.htm#2107">
+      <rect x="413" y="269" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="413" y="269" fill="#60afff" width="262" height="151" stroke="#00aaaa" stroke-width="1"/>
+      <text x="544" y="279" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目</text>
+      <line x1="413" x2="675" y1="284" y2="284" stroke="#00aaaa" stroke-width="1"/>
+      <text x="418" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目PK)</text>
+      <text x="418" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目类型PK</text>
+      <text x="418" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目cd</text>
+      <text x="418" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目名稱</text>
+      <text x="418" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">计量单位</text>
+      <text x="418" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">显示顺序</text>
+      <text x="418" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否公式</text>
+      <text x="418" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">值类型</text>
+      <text x="418" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">小数点位数</text>
+      <text x="418" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">组名称</text>
+      <text x="500" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="500" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="500" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="500" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="500" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="500" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="500" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="500" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="500" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="500" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="625" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="625" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact47.htm#2253">
+      <rect x="68" y="554" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="68" y="554" fill="#60afff" width="280" height="84" stroke="#00aaaa" stroke-width="1"/>
+      <text x="208" y="564" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目枚举值明细</text>
+      <line x1="68" x2="348" y1="569" y2="569" stroke="#00aaaa" stroke-width="1"/>
+      <text x="73" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (質檢項目枚舉明細PK)</text>
+      <text x="73" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目pk</text>
+      <text x="73" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">枚举序号</text>
+      <text x="73" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">枚举说明</text>
+      <text x="73" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+      <text x="193" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="193" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="193" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="193" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="193" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="318" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="318" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact46.htm#2194">
+      <rect x="410" y="544" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="410" y="544" fill="#60afff" width="268" height="97" stroke="#00aaaa" stroke-width="1"/>
+      <text x="544" y="554" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检项目公式</text>
+      <line x1="410" x2="678" y1="559" y2="559" stroke="#00aaaa" stroke-width="1"/>
+      <text x="415" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检项目公式PK)</text>
+      <text x="415" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">質檢項目PK</text>
+      <text x="415" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式内容</text>
+      <text x="415" y="608" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式说明</text>
+      <text x="415" y="621" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">公式版本</text>
+      <text x="415" y="634" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否现行版</text>
+      <text x="515" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="515" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="515" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="515" y="608" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="515" y="621" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">decimal(10,3)</text>
+      <text x="515" y="634" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="648" y="569" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="648" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact57.htm#51">
+      <defs>
+         <linearGradient id="Gradient2" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#fdf9ea"/>
+            <stop offset="95%" stop-color="#f5e6ad"/>
+         </linearGradient>
+      </defs>
+      <rect x="819" y="16" fill="url(#Gradient2)" width="670" height="790" stroke="#796206" stroke-width="1"/>
+      <image x="823" y="20" width="16" height="16" xlink:href="Fact6_svg_Files/svg_bitmap1.png"/>
+      <text x="1164" y="26" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">质检方案</text>
+   </a>
+   <polyline fill="none" points="1114,499 1114,438" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1114,438 1117,451 1111,451" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1155,237 1155,174" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1155,174 1158,188 1152,188" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1082,237 1082,177" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1082,177 1085,190 1079,190" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="986,541 544,541 544,420" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="544,420 547,434 541,434" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <rect x="1149" y="80" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1149" y="80" fill="#ffff80" width="272" height="94" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1285" y="94" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_质检方案类型</text>
+   <line x1="1149" x2="1421" y1="101" y2="101" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1154" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案类型PK)</text>
+   <text x="1154" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型名稱</text>
+   <text x="1154" y="137" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型说明</text>
+   <text x="1154" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+   <text x="1254" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="1254" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="1254" y="137" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1254" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1387" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <rect x="1004" y="237" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1004" y="237" fill="#60afff" width="220" height="201" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1114" y="247" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检方案主档</text>
+   <line x1="1004" x2="1224" y1="252" y2="252" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1008" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案PK)</text>
+   <text x="1008" y="275" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案编号</text>
+   <text x="1008" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案名称</text>
+   <text x="1008" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型pk</text>
+   <text x="1008" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检规范PK</text>
+   <text x="1008" y="327" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">物料id</text>
+   <text x="1008" y="340" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">钢种-冶金行业用</text>
+   <text x="1008" y="353" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">工序-制程</text>
+   <text x="1008" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">取样点</text>
+   <text x="1008" y="379" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否周期检</text>
+   <text x="1008" y="392" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">检验周期</text>
+   <text x="1008" y="405" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">版本号</text>
+   <text x="1008" y="418" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否现行版本</text>
+   <text x="1008" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">分析报告打印模板-预留</text>
+   <text x="1119" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="1119" y="275" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="1119" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="1119" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="1119" y="327" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="340" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="353" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="379" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1119" y="392" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1119" y="405" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">decimal(10,3)</text>
+   <text x="1119" y="418" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1119" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1192" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <text x="1192" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+   <text x="1192" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
+   <rect x="827" y="78" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="827" y="78" fill="#ffff80" width="261" height="99" stroke="#00aaaa" stroke-width="1"/>
+   <text x="957" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">CUST_质检规范码</text>
+   <line x1="827" x2="1088" y1="93" y2="93" stroke="#00aaaa" stroke-width="1"/>
+   <text x="831" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (规范代码PK)</text>
+   <text x="831" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检规范代码</text>
+   <text x="831" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">規範名稱</text>
+   <text x="831" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">规范简称</text>
+   <text x="831" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">英文名称</text>
+   <text x="831" y="168" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+   <text x="911" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="911" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+   <text x="911" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="911" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="911" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+   <text x="911" y="168" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1036" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <rect x="986" y="499" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="986" y="499" fill="#60afff" width="272" height="292" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1122" y="509" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检方案明细</text>
+   <line x1="986" x2="1258" y1="514" y2="514" stroke="#00aaaa" stroke-width="1"/>
+   <text x="991" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案明细PK)</text>
+   <text x="991" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案主档PK</text>
+   <text x="991" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目PK</text>
+   <text x="991" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">标准值</text>
+   <text x="991" y="576" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">上限</text>
+   <text x="991" y="589" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否包括上限</text>
+   <text x="991" y="602" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">下限</text>
+   <text x="991" y="615" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否包括下限</text>
+   <text x="991" y="628" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">值类型</text>
+   <text x="991" y="641" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">小数点位数</text>
+   <text x="991" y="654" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">报表显示位数</text>
+   <text x="991" y="667" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">数据来源</text>
+   <text x="991" y="680" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">计算公式</text>
+   <text x="991" y="693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">默认化验室pk</text>
+   <text x="991" y="706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">默认质检台pk</text>
+   <text x="991" y="719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试方法pk</text>
+   <text x="991" y="732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件1</text>
+   <text x="991" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件2</text>
+   <text x="991" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件3</text>
+   <text x="991" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件4</text>
+   <text x="991" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件5</text>
+   <text x="1091" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+   <text x="1091" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1091" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1091" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+   <text x="1091" y="576" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+   <text x="1091" y="589" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1091" y="602" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+   <text x="1091" y="615" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+   <text x="1091" y="628" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="1091" y="641" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="1091" y="654" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="1091" y="667" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+   <text x="1091" y="680" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1091" y="693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1091" y="706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1091" y="719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+   <text x="1091" y="732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1091" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1091" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1091" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1091" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+   <text x="1224" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   <text x="1224" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+   <text x="1224" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
+   <a target="_parent" xlink:href="Fact20.htm#256">
+      <rect x="1149" y="80" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1149" y="80" fill="#ffff80" width="272" height="94" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1285" y="94" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_质检方案类型</text>
+      <line x1="1149" x2="1421" y1="101" y2="101" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1154" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案类型PK)</text>
+      <text x="1154" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型名稱</text>
+      <text x="1154" y="137" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型说明</text>
+      <text x="1154" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+      <text x="1254" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="1254" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="1254" y="137" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1254" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1387" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact43.htm#1832">
+      <rect x="1004" y="237" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1004" y="237" fill="#60afff" width="220" height="201" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1114" y="247" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检方案主档</text>
+      <line x1="1004" x2="1224" y1="252" y2="252" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1008" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案PK)</text>
+      <text x="1008" y="275" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案编号</text>
+      <text x="1008" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案名称</text>
+      <text x="1008" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案类型pk</text>
+      <text x="1008" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检规范PK</text>
+      <text x="1008" y="327" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">物料id</text>
+      <text x="1008" y="340" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">钢种-冶金行业用</text>
+      <text x="1008" y="353" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">工序-制程</text>
+      <text x="1008" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">取样点</text>
+      <text x="1008" y="379" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否周期检</text>
+      <text x="1008" y="392" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">检验周期</text>
+      <text x="1008" y="405" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">版本号</text>
+      <text x="1008" y="418" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否现行版本</text>
+      <text x="1008" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">分析报告打印模板-预留</text>
+      <text x="1119" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="1119" y="275" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="1119" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="1119" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="1119" y="327" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="340" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="353" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="366" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="379" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1119" y="392" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1119" y="405" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">decimal(10,3)</text>
+      <text x="1119" y="418" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1119" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1192" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="1192" y="301" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="1192" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact21.htm#305">
+      <rect x="827" y="78" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="827" y="78" fill="#ffff80" width="261" height="99" stroke="#00aaaa" stroke-width="1"/>
+      <text x="957" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">CUST_质检规范码</text>
+      <line x1="827" x2="1088" y1="93" y2="93" stroke="#00aaaa" stroke-width="1"/>
+      <text x="831" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (规范代码PK)</text>
+      <text x="831" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检规范代码</text>
+      <text x="831" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">規範名稱</text>
+      <text x="831" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">规范简称</text>
+      <text x="831" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">英文名称</text>
+      <text x="831" y="168" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">启用状态</text>
+      <text x="911" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="911" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(40)</text>
+      <text x="911" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="911" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="911" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="911" y="168" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1036" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact44.htm#1948">
+      <rect x="986" y="499" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="986" y="499" fill="#60afff" width="272" height="292" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1122" y="509" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FM8_质检方案明细</text>
+      <line x1="986" x2="1258" y1="514" y2="514" stroke="#00aaaa" stroke-width="1"/>
+      <text x="991" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (质检方案明细PK)</text>
+      <text x="991" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检方案主档PK</text>
+      <text x="991" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">质检项目PK</text>
+      <text x="991" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">标准值</text>
+      <text x="991" y="576" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">上限</text>
+      <text x="991" y="589" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否包括上限</text>
+      <text x="991" y="602" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">下限</text>
+      <text x="991" y="615" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否包括下限</text>
+      <text x="991" y="628" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">值类型</text>
+      <text x="991" y="641" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">小数点位数</text>
+      <text x="991" y="654" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">报表显示位数</text>
+      <text x="991" y="667" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">数据来源</text>
+      <text x="991" y="680" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">计算公式</text>
+      <text x="991" y="693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">默认化验室pk</text>
+      <text x="991" y="706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">默认质检台pk</text>
+      <text x="991" y="719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试方法pk</text>
+      <text x="991" y="732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件1</text>
+      <text x="991" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件2</text>
+      <text x="991" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件3</text>
+      <text x="991" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件4</text>
+      <text x="991" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">测试条件5</text>
+      <text x="1091" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="1091" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1091" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1091" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+      <text x="1091" y="576" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+      <text x="1091" y="589" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1091" y="602" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(50)</text>
+      <text x="1091" y="615" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
+      <text x="1091" y="628" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="1091" y="641" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="1091" y="654" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="1091" y="667" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="1091" y="680" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1091" y="693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1091" y="706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1091" y="719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="1091" y="732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1091" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1091" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1091" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1091" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1224" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="1224" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="1224" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
+   </a>
+</svg>
