@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/22 上午 07:52:53                        */
+/* Created on:     2019/2/22 上午 08:20:03                        */
 /*==============================================================*/
 
 
@@ -68,10 +68,44 @@ if exists (select 1
 go
 
 if exists (select 1
+            from  sysindexes
+           where  id    = object_id('cust_qc_items_type')
+            and   name  = 'FM1_20_INSPECTION_ITEMS_TYPE________PK'
+            and   indid > 0
+            and   indid < 255)
+   drop index cust_qc_items_type.FM1_20_INSPECTION_ITEMS_TYPE________PK
+go
+
+if exists (select 1
             from  sysobjects
            where  id = object_id('cust_qc_items_type')
             and   type = 'U')
    drop table cust_qc_items_type
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('cust_qc_plan_cycle_unit')
+            and   name  = 'FM1_20________PK'
+            and   indid > 0
+            and   indid < 255)
+   drop index cust_qc_plan_cycle_unit.FM1_20________PK
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_qc_plan_cycle_unit')
+            and   type = 'U')
+   drop table cust_qc_plan_cycle_unit
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('cust_qc_plan_type')
+            and   name  = 'FM1_20________PK'
+            and   indid > 0
+            and   indid < 255)
+   drop index cust_qc_plan_type.FM1_20________PK
 go
 
 if exists (select 1
@@ -95,6 +129,15 @@ if exists (select 1
            where  id = object_id('cust_qc_spec')
             and   type = 'U')
    drop table cust_qc_spec
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('cust_qc_value_type')
+            and   name  = 'FM1_20_INSPECTION_ITEMS_TYPE________PK'
+            and   indid > 0
+            and   indid < 255)
+   drop index cust_qc_value_type.FM1_20_INSPECTION_ITEMS_TYPE________PK
 go
 
 if exists (select 1
@@ -610,8 +653,7 @@ create table cust_biz_type (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_BIZ_TYPE primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -628,8 +670,7 @@ create table cust_carrier_cat (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_CARRIER_CAT primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -646,8 +687,7 @@ create table cust_carrier_status (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_CARRIER_STATUS primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -664,8 +704,7 @@ create table cust_equiment_base_type (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_EQUIMENT_BASE_TYPE primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -682,8 +721,7 @@ create table cust_equiment_status (
 
    code                 type_id              null,
    name                 type_name            null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_EQUIMENT_STATUS primary key ()
+   is_enabled           type_boolean         null
 )
 go
 
@@ -700,8 +738,7 @@ create table cust_equipment_base_type (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_EQUIPMENT_BASE_TYPE primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -718,8 +755,7 @@ create table cust_equipment_level (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_EQUIPMENT_LEVEL primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -753,9 +789,45 @@ create table cust_qc_items_type (
 
    cd                   type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_QC_ITEMS_TYPE primary key ()
+   note                 type_memo            null
 )
+go
+
+/*==============================================================*/
+/* Index: FM1_20_INSPECTION_ITEMS_TYPE________PK                */
+/*==============================================================*/
+
+
+
+
+create unique clustered index FM1_20_INSPECTION_ITEMS_TYPE________PK on cust_qc_items_type
+go
+
+/*==============================================================*/
+/* Table: cust_qc_plan_cycle_unit                               */
+/*==============================================================*/
+create table cust_qc_plan_cycle_unit (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_pk              not null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Index: FM1_20________PK                                      */
+/*==============================================================*/
+
+
+
+
+create unique clustered index FM1_20________PK on cust_qc_plan_cycle_unit
 go
 
 /*==============================================================*/
@@ -771,9 +843,18 @@ create table cust_qc_plan_type (
 
    code                 type_pk              not null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_QC_PLAN_TYPE primary key ()
+   note                 type_memo            null
 )
+go
+
+/*==============================================================*/
+/* Index: FM1_20________PK                                      */
+/*==============================================================*/
+
+
+
+
+create unique clustered index FM1_20________PK on cust_qc_plan_type
 go
 
 /*==============================================================*/
@@ -790,8 +871,7 @@ create table cust_qc_spec (
    code                 type_enum_val        null,
    name                 type_name            null,
    name_abbr            type_name            null,
-   name_en              type_name            null,
-   constraint PK_CUST_QC_SPEC primary key ()
+   name_en              type_name            null
 )
 go
 
@@ -818,9 +898,18 @@ create table cust_qc_value_type (
 
    cd                   type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_QC_VALUE_TYPE primary key ()
+   note                 type_memo            null
 )
+go
+
+/*==============================================================*/
+/* Index: FM1_20_INSPECTION_ITEMS_TYPE________PK                */
+/*==============================================================*/
+
+
+
+
+create unique clustered index FM1_20_INSPECTION_ITEMS_TYPE________PK on cust_qc_value_type
 go
 
 /*==============================================================*/
@@ -836,8 +925,7 @@ create table cust_team_type (
 
    code                 type_enum_val        null,
    name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_TEAM_TYPE primary key ()
+   note                 type_memo            null
 )
 go
 
@@ -1389,10 +1477,10 @@ create table fm8_qc_plan (
    sample_point_pk      type_pk              null,
    is_cycle             type_boolean         not null,
    cycle_time           type_decimal         null,
+   cycle_unit           type_enum_val        null,
    version              type_decimal         not null,
    is_current_ver       type_boolean         not null,
    report_template      type_memo            null,
-   檢驗周期單位               char(10)             null,
    constraint PK_FM8_QC_PLAN primary key (id)
 )
 go
