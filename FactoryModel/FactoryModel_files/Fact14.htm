@@ -89,11 +89,10 @@ create table cust_biz_type (<br />
    ts datetime null,<br />
    dr bit null,<br />
 <br />
-   id                   type_pk              not null,<br />
-   code                 type_id              null,<br />
+   code                 type_enum_val        null,<br />
    name                 type_name            null,<br />
    note                 type_memo            null,<br />
-   constraint PK_CUST_BIZ_TYPE primary key (id)<br />
+   constraint PK_CUST_BIZ_TYPE primary key ()<br />
 )<br />
 go<br />
 
@@ -141,11 +140,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact73.htm#143">Reference_41</a>
+<p align="left"><a href="Fact76.htm#148">Reference_45</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact73.htm#143">Reference_45</a>
+<p align="left"><a href="Fact76.htm#148">Reference_45</a>
 </p>
 </td>
 </tr>
@@ -170,11 +169,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact73.htm#143">Reference_41</a>
+<p align="left"><a href="Fact76.htm#148">Reference_45</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact73.htm#143">Reference_45</a>
+<p align="left"><a href="Fact76.htm#148">Reference_45</a>
 </p>
 </td>
 <td>
@@ -366,50 +365,40 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact14.htm#24">id</a>
+<p align="left"><a href="Fact14.htm#24">code</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact14.htm#24">id</a>
+<p align="left"><a href="Fact14.htm#24">code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact14.htm#31">code</a>
+<p align="left"><a href="Fact14.htm#31">name</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact14.htm#31">code</a>
+<p align="left"><a href="Fact14.htm#31">name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact14.htm#37">name</a>
+<p align="left"><a href="Fact14.htm#37">备注</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact14.htm#37">name</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left"><a href="Fact14.htm#43">备注</a>
-</p>
-</td>
-<td class="TD2">
-<p align="left"><a href="Fact14.htm#43">note</a>
+<p align="left"><a href="Fact14.htm#37">note</a>
 </p>
 </td>
 </tr>
 </table><br />
 <h2>
-<a name="24">Column id of the table CUST_业态/产业（自定义档案）</a> 
+<a name="24">Column code of the table CUST_业态/产业（自定义档案）</a> 
 </h2>
 <h3>
-<a name="25">Card of the column id of the table CUST_业态/产业（自定义档案）</a> 
+<a name="25">Card of the column code of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -418,7 +407,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#24">id</a>
+<p align="left"><a href="Fact14.htm#24">code</a>
 </p>
 </td>
 </tr>
@@ -428,7 +417,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#24">id</a>
+<p align="left"><a href="Fact14.htm#24">code</a>
 </p>
 </td>
 </tr>
@@ -438,7 +427,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char(36)
+<p align="left">int
 </p>
 </td>
 </tr>
@@ -448,21 +437,21 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">Yes
+<p align="left">No
 </p>
 </td>
 </tr>
 </table><br />
 <h3>
-<a name="26">Check constraint name of the column id of the table CUST_业态/产业（自定义档案）</a> 
+<a name="26">Check constraint name of the column code of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_CUST_BIZ
+<p align="left">CKC_CODE_CUST_BIZ
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="27">Check of the column id of the table CUST_业态/产业（自定义档案）</a> 
+<a name="27">Check of the column code of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -537,7 +526,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="28">Server validation rule of the column id of the table CUST_业态/产业（自定义档案）</a> 
+<a name="28">Server validation rule of the column code of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -545,7 +534,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="29">List of all dependencies of the table column id</a> 
+<a name="29">List of all dependencies of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -576,383 +565,9 @@ go<br />
 </p>
 </td>
 </tr>
-<tr>
-<td class="TD2">
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
-</p>
-</td>
-<td class="TD2">
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
-</p>
-</td>
-<td class="TD2">
-<p align="left">Key
-</p>
-</td>
-</tr>
 </table><br />
 <h3>
-<a name="30">List of extended attributes of the table column id</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Temporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="31">Column code of the table CUST_业态/产业（自定义档案）</a> 
-</h2>
-<h3>
-<a name="32">Card of the column code of the table CUST_业态/产业（自定义档案）</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="Fact14.htm#31">code</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="Fact14.htm#31">code</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">varchar(40)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="33">Check constraint name of the column code of the table CUST_业态/产业（自定义档案）</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CODE_CUST_BIZ
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="34">Check of the column code of the table CUST_业态/产业（自定义档案）</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="35">Server validation rule of the column code of the table CUST_业态/产业（自定义档案）</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="36">List of extended attributes of the table column code</a> 
+<a name="30">List of extended attributes of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1191,10 +806,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="37">Column name of the table CUST_业态/产业（自定义档案）</a> 
+<a name="31">Column name of the table CUST_业态/产业（自定义档案）</a> 
 </h2>
 <h3>
-<a name="38">Card of the column name of the table CUST_业态/产业（自定义档案）</a> 
+<a name="32">Card of the column name of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1203,7 +818,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#37">name</a>
+<p align="left"><a href="Fact14.htm#31">name</a>
 </p>
 </td>
 </tr>
@@ -1213,7 +828,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#37">name</a>
+<p align="left"><a href="Fact14.htm#31">name</a>
 </p>
 </td>
 </tr>
@@ -1239,7 +854,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="39">Check constraint name of the column name of the table CUST_业态/产业（自定义档案）</a> 
+<a name="33">Check constraint name of the column name of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NAME_CUST_BIZ
@@ -1247,7 +862,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="40">Check of the column name of the table CUST_业态/产业（自定义档案）</a> 
+<a name="34">Check of the column name of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1322,7 +937,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="41">Server validation rule of the column name of the table CUST_业态/产业（自定义档案）</a> 
+<a name="35">Server validation rule of the column name of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1330,7 +945,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="42">List of extended attributes of the table column name</a> 
+<a name="36">List of extended attributes of the table column name</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1569,10 +1184,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="43">Column 备注 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="37">Column 备注 of the table CUST_业态/产业（自定义档案）</a> 
 </h2>
 <h3>
-<a name="44">Card of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="38">Card of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1581,7 +1196,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#43">备注</a>
+<p align="left"><a href="Fact14.htm#37">备注</a>
 </p>
 </td>
 </tr>
@@ -1591,7 +1206,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#43">note</a>
+<p align="left"><a href="Fact14.htm#37">note</a>
 </p>
 </td>
 </tr>
@@ -1617,7 +1232,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="45">Check constraint name of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="39">Check constraint name of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NOTE_CUST_BIZ
@@ -1625,7 +1240,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="46">Check of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="40">Check of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1700,7 +1315,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="47">Server validation rule of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="41">Server validation rule of the column 备注 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1708,7 +1323,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="48">List of extended attributes of the table column 备注</a> 
+<a name="42">List of extended attributes of the table column 备注</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1947,7 +1562,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="49">List of keys of the table CUST_业态/产业（自定义档案）</a> 
+<a name="43">List of keys of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1966,11 +1581,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
+<p align="left"><a href="Fact14.htm#44">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
+<p align="left"><a href="Fact14.htm#44">Key_1</a>
 </p>
 </td>
 <td>
@@ -1980,10 +1595,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="50">Key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="44">Key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
 </h2>
 <h3>
-<a name="51">Card of the key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="45">Card of the key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1992,7 +1607,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
+<p align="left"><a href="Fact14.htm#44">Key_1</a>
 </p>
 </td>
 </tr>
@@ -2002,7 +1617,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact14.htm#50">Key_1</a>
+<p align="left"><a href="Fact14.htm#44">Key_1</a>
 </p>
 </td>
 </tr>
@@ -2018,7 +1633,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="52">Code preview of the key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
+<a name="46">Code preview of the key Key_1 of the table CUST_业态/产业（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table cust_biz_type<br />
@@ -2029,65 +1644,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="53">List of columns of the table key Key_1</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Code
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="Fact14.htm#24">id</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="Fact14.htm#24">id</a>
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="54">List of all dependencies of the table key Key_1</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Code
-</p>
-</td>
-<td class="Header">
-<p align="center">Class Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="Fact73.htm#143">Reference_41</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="Fact73.htm#143">Reference_45</a>
-</p>
-</td>
-<td>
-<p align="left">Reference
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="55">List of extended attributes of the table key Key_1</a> 
+<a name="47">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

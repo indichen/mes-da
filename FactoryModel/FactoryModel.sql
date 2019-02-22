@@ -1,17 +1,8 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/20 下午 04:00:37                        */
+/* Created on:     2019/2/22 上午 07:52:53                        */
 /*==============================================================*/
 
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('FM8_qc_items')
-            and   name  = 'RELATIONSHIP_145_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index FM8_qc_items.RELATIONSHIP_145_FK
-go
 
 if exists (select 1
             from  sysobjects
@@ -50,16 +41,16 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('cust_equiment_base_type2')
+           where  id = object_id('cust_equiment_status')
             and   type = 'U')
-   drop table cust_equiment_base_type2
+   drop table cust_equiment_status
 go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('cust_equiment_status')
+           where  id = object_id('cust_equipment_base_type')
             and   type = 'U')
-   drop table cust_equiment_status
+   drop table cust_equipment_base_type
 go
 
 if exists (select 1
@@ -104,6 +95,20 @@ if exists (select 1
            where  id = object_id('cust_qc_spec')
             and   type = 'U')
    drop table cust_qc_spec
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_qc_value_type')
+            and   type = 'U')
+   drop table cust_qc_value_type
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_team_type')
+            and   type = 'U')
+   drop table cust_team_type
 go
 
 if exists (select 1
@@ -171,20 +176,6 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('fm6_equiement_status')
-            and   type = 'U')
-   drop table fm6_equiement_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('fm6_equiment_op_point')
-            and   type = 'U')
-   drop table fm6_equiment_op_point
-go
-
-if exists (select 1
-            from  sysobjects
            where  id = object_id('fm6_equipment')
             and   type = 'U')
    drop table fm6_equipment
@@ -195,6 +186,20 @@ if exists (select 1
            where  id = object_id('fm6_equipment_carrier')
             and   type = 'U')
    drop table fm6_equipment_carrier
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm6_equipment_op_point')
+            and   type = 'U')
+   drop table fm6_equipment_op_point
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm6_equipment_status')
+            and   type = 'U')
+   drop table fm6_equipment_status
 go
 
 if exists (select 1
@@ -528,7 +533,7 @@ go
 /* Domain: type_pk                                              */
 /*==============================================================*/
 create type type_pk
-   from char(36)
+   from char(32)
 go
 
 /*==============================================================*/
@@ -578,27 +583,18 @@ create table FM8_qc_items (
    dr bit null,
 
    id                   type_pk              not null,
-   type_id              type_pk              not null,
-   cd                   type_id              null,
-   name                 type_name            null,
-   unit_pk              type_pk              null,
+   type_cd              type_enum_val        not null,
+   cd                   type_id              not null,
+   name                 type_name            not null,
+   unit_pk              type_pk              not null,
    display_sn           type_number          null,
-   is_formula           type_boolean         null,
+   is_formula           type_boolean         not null,
    value_type           type_enum_val        null,
+   digits               type_number          null,
    decimals             type_number          null,
    group_name           type_name            null,
    constraint PK_FM8_QC_ITEMS primary key (id)
 )
-go
-
-/*==============================================================*/
-/* Index: RELATIONSHIP_145_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_145_FK on FM8_qc_items
 go
 
 /*==============================================================*/
@@ -612,11 +608,10 @@ create table cust_biz_type (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null,
-   constraint PK_CUST_BIZ_TYPE primary key (id)
+   constraint PK_CUST_BIZ_TYPE primary key ()
 )
 go
 
@@ -631,12 +626,10 @@ create table cust_carrier_cat (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null,
-   parent_id            type_pk              null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_CARRIER_CAT primary key (id)
+   constraint PK_CUST_CARRIER_CAT primary key ()
 )
 go
 
@@ -651,13 +644,10 @@ create table cust_carrier_status (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null,
-   parent_id            type_pk              null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_CARRIER_STATUS primary key (id)
+   constraint PK_CUST_CARRIER_STATUS primary key ()
 )
 go
 
@@ -672,30 +662,10 @@ create table cust_equiment_base_type (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null,
-   constraint PK_CUST_EQUIMENT_BASE_TYPE primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: cust_equiment_base_type2                              */
-/*==============================================================*/
-create table cust_equiment_base_type2 (
-   create_time char(19) null,
-   create_user char(36) null,
-   last_modified char(19) null,
-   last_modify_user char(36) null,
-   ts datetime null,
-   dr bit null,
-
-   id                   type_pk              not null,
-   code                 type_id              null,
-   name                 type_name            null,
-   note                 type_memo            null,
-   constraint PK_CUST_EQUIMENT_BASE_TYPE2 primary key (id)
+   constraint PK_CUST_EQUIMENT_BASE_TYPE primary key ()
 )
 go
 
@@ -710,11 +680,28 @@ create table cust_equiment_status (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
    code                 type_id              null,
    name                 type_name            null,
    is_enabled           type_boolean         null,
-   constraint PK_CUST_EQUIMENT_STATUS primary key (id)
+   constraint PK_CUST_EQUIMENT_STATUS primary key ()
+)
+go
+
+/*==============================================================*/
+/* Table: cust_equipment_base_type                              */
+/*==============================================================*/
+create table cust_equipment_base_type (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null,
+   constraint PK_CUST_EQUIPMENT_BASE_TYPE primary key ()
 )
 go
 
@@ -729,11 +716,10 @@ create table cust_equipment_level (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null,
-   constraint PK_CUST_EQUIPMENT_LEVEL primary key (id)
+   constraint PK_CUST_EQUIPMENT_LEVEL primary key ()
 )
 go
 
@@ -748,7 +734,6 @@ create table cust_op_point_type (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              null,
    code                 type_id              null,
    name                 type_name            null,
    is_enabled           type_boolean         null
@@ -766,12 +751,10 @@ create table cust_qc_items_type (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   cd                   type_id              null,
+   cd                   type_enum_val        null,
    name                 type_name            null,
-   remarks              type_memo            null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_QC_ITEMS_TYPE primary key (id)
+   note                 type_memo            null,
+   constraint PK_CUST_QC_ITEMS_TYPE primary key ()
 )
 go
 
@@ -786,11 +769,10 @@ create table cust_qc_plan_type (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
+   code                 type_pk              not null,
    name                 type_name            null,
-   description          type_memo            null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_QC_PLAN_TYPE primary key (id)
+   note                 type_memo            null,
+   constraint PK_CUST_QC_PLAN_TYPE primary key ()
 )
 go
 
@@ -805,13 +787,11 @@ create table cust_qc_spec (
    ts datetime null,
    dr bit null,
 
-   id                   type_pk              not null,
-   cd                   type_id              null,
-   規範名稱                 type_name            null,
+   code                 type_enum_val        null,
+   name                 type_name            null,
    name_abbr            type_name            null,
    name_en              type_name            null,
-   is_enabled           type_boolean         null,
-   constraint PK_CUST_QC_SPEC primary key (id)
+   constraint PK_CUST_QC_SPEC primary key ()
 )
 go
 
@@ -823,6 +803,42 @@ go
 
 
 create nonclustered index RELATIONSHIP_146_FK on cust_qc_spec
+go
+
+/*==============================================================*/
+/* Table: cust_qc_value_type                                    */
+/*==============================================================*/
+create table cust_qc_value_type (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   cd                   type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null,
+   constraint PK_CUST_QC_VALUE_TYPE primary key ()
+)
+go
+
+/*==============================================================*/
+/* Table: cust_team_type                                        */
+/*==============================================================*/
+create table cust_team_type (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null,
+   constraint PK_CUST_TEAM_TYPE primary key ()
+)
 go
 
 /*==============================================================*/
@@ -850,7 +866,7 @@ create table fm1_param_template (
    module_id            type_pk              null,
    level                type_enum_val        null,
    is_enabled           type_boolean         null,
-   biz_type_id          type_pk              null,
+   biz_type_id          type_enum_val        null,
    constraint PK_FM1_PARAM_TEMPLATE primary key (id)
 )
 go
@@ -886,14 +902,14 @@ create table fm1_unit (
    dr bit null,
 
    id                   type_pk              not null,
-   unit_id              type_id              null,
-   unit_name            type_name            null,
+   cd                   type_id              null,
+   name                 type_name            null,
    is_fundamental_unit  type_boolean         null,
    fundamental_unit_pk  type_pk              null,
    exchange_rate        type_decimal         null,
    decimal              type_number          null,
-   unit_name_en         type_name            null,
-   unit_name_en_plural  type_name            null,
+   name_en              type_name            null,
+   name_en_plural       type_name            null,
    is_enabled           type_boolean         null,
    constraint PK_FM1_UNIT primary key (id)
 )
@@ -911,10 +927,10 @@ create table fm3_team (
    dr bit null,
 
    id                   type_pk              not null,
-   team_id              type_id              null,
-   team_name            type_name            null,
-   team_leader_id       type_id              null,
-   team_type            type_enum_val        null,
+   cd                   type_id              null,
+   name                 type_name            null,
+   leader_cd            type_id              null,
+   type                 type_enum_val        null,
    is_enabled           type_boolean         null,
    constraint PK_FM3_TEAM primary key (id)
 )
@@ -932,8 +948,8 @@ create table fm4_shift (
    dr bit null,
 
    id                   type_pk              not null,
+   cd                   type_id              null,
    shift_system_id      type_id              null,
-   shift_id             type_id              null,
    datetime_start       type_datetime        null,
    datetime_end         type_datetime        null,
    working_hours        type_hours           null,
@@ -973,7 +989,7 @@ create table fm4_teamcalendar_person (
 
    id                   type_pk              not null,
    team_calendar_pk     type_pk              null,
-   operator_id          type_id              null,
+   operator_cd          type_id              null,
    is_transferred       type_boolean         null,
    constraint PK_FM4_TEAMCALENDAR_PERSON primary key (id)
 )
@@ -991,7 +1007,7 @@ create table fm6_carrier_model (
    dr bit null,
 
    id                   type_pk              not null,
-   carrier_cat_id       type_pk              null,
+   carrier_cat_cd       type_enum_val        null,
    code                 type_id              null,
    spec                 type_memo            null,
    carcass_diameter     type_number          null,
@@ -1029,46 +1045,6 @@ create table fm6_carrierbaseinfo (
 go
 
 /*==============================================================*/
-/* Table: fm6_equiement_status                                  */
-/*==============================================================*/
-create table fm6_equiement_status (
-   create_time char(19) null,
-   create_user char(36) null,
-   last_modified char(19) null,
-   last_modify_user char(36) null,
-   ts datetime null,
-   dr bit null,
-
-   factory_id           type_pk              null,
-   id                   type_pk              not null,
-   status               type_pk              null,
-   constraint PK_FM6_EQUIEMENT_STATUS primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: fm6_equiment_op_point                                 */
-/*==============================================================*/
-create table fm6_equiment_op_point (
-   create_time char(19) null,
-   create_user char(36) null,
-   last_modified char(19) null,
-   last_modify_user char(36) null,
-   ts datetime null,
-   dr bit null,
-
-   factory_id           type_pk              null,
-   id                   type_pk              not null,
-   equiment_id          type_pk              null,
-   op_point_type_id     type_pk              null,
-   name                 type_memo            null,
-   checkin_type         type_enum_val        null,
-   note                 type_memo            null,
-   constraint PK_FM6_EQUIMENT_OP_POINT primary key (id)
-)
-go
-
-/*==============================================================*/
 /* Table: fm6_equipment                                         */
 /*==============================================================*/
 create table fm6_equipment (
@@ -1084,16 +1060,16 @@ create table fm6_equipment (
    name                 type_memo            null,
    spec                 type_name            null,
    process_id           type_pk              null,
-   is_batch_equiment    type_boolean         null,
-   base_type_id         type_pk              null,
-   level_id             type_pk              null,
-   checkin_out_type_id  type_pk              null,
+   is_batch_equipment   type_boolean         null,
+   base_type_cd         type_enum_val        null,
+   level_cd             type_enum_val        null,
+   checkin_out_type_cd  type_enum_val        null,
    factory_id           type_pk              null,
    dep_id               type_pk              null,
    parent_id            type_pk              null,
    longitude            type_lng_lat         null,
    latitude             type_lng_lat         null,
-   note                 type_name            null,
+   note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT primary key (id)
 )
 go
@@ -1116,6 +1092,46 @@ create table fm6_equipment_carrier (
    check_type           type_enum_val        null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT_CARRIER primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: fm6_equipment_op_point                                */
+/*==============================================================*/
+create table fm6_equipment_op_point (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   factory_id           type_pk              null,
+   id                   type_pk              not null,
+   equiment_id          type_pk              null,
+   op_point_type_cd     type_enum_val        null,
+   name                 type_memo            null,
+   checkin_type         type_enum_val        null,
+   note                 type_memo            null,
+   constraint PK_FM6_EQUIPMENT_OP_POINT primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: fm6_equipment_status                                  */
+/*==============================================================*/
+create table fm6_equipment_status (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   factory_id           type_pk              null,
+   id                   type_pk              not null,
+   status               type_pk              null,
+   constraint PK_FM6_EQUIPMENT_STATUS primary key (id)
 )
 go
 
@@ -1187,7 +1203,7 @@ create table fm7_material (
 
    id                   type_pk              not null,
    cat_pk               type_pk              null,
-   material_id          type_id              null,
+   cd                   type_id              null,
    material_name        type_name            null,
    material_name_en     type_name            null,
    material_name_abbr   type_id              null,
@@ -1240,7 +1256,7 @@ create table fm7_material_cat (
    dr bit null,
 
    id                   type_pk              not null,
-   cat_id               type_id              not null,
+   cd                   type_id              not null,
    cat_name             type_name            not null,
    parent_cat_pk        type_pk              null,
    is_enabled           type_boolean         not null,
@@ -1332,11 +1348,11 @@ create table fm8_qc_items_formula (
    dr bit null,
 
    id                   type_pk              not null,
-   item_pk              type_pk              null,
-   formula              type_memo            null,
+   item_pk              type_pk              not null,
+   formula              type_memo            not null,
    formula_description  type_memo            null,
-   version              type_decimal         null,
-   is_current           type_boolean         null,
+   version              type_decimal         not null,
+   is_current           type_boolean         not null,
    constraint PK_FM8_QC_ITEMS_FORMULA primary key (id)
 )
 go
@@ -1363,19 +1379,20 @@ create table fm8_qc_plan (
    dr bit null,
 
    id                   type_pk              not null,
-   cd                   varchar(40)          not null,
-   name                 varchar(40)          not null,
-   plan_type_pk         char(36)             not null,
-   spec_pk              varchar(40)          not null,
-   物料id                 char(36)             null,
-   "钢种-冶金行业用"           char(36)             null,
-   "工序-制程"              char(36)             null,
-   取样点                  char(36)             null,
-   is_cycle             type_boolean         null,
-   cycle_time           char(36)             null,
+   cd                   type_id              not null,
+   name                 type_name            not null,
+   plan_type_cd         type_enum_val        not null,
+   spec_cd              type_enum_val        not null,
+   material_pk          type_pk              null,
+   grade_cd             type_id              null,
+   process_pk           type_pk              null,
+   sample_point_pk      type_pk              null,
+   is_cycle             type_boolean         not null,
+   cycle_time           type_decimal         null,
    version              type_decimal         not null,
    is_current_ver       type_boolean         not null,
-   report_template      char(36)             null,
+   report_template      type_memo            null,
+   檢驗周期單位               char(10)             null,
    constraint PK_FM8_QC_PLAN primary key (id)
 )
 go
@@ -1450,7 +1467,7 @@ create table mwc_carrier_common (
    id                   type_pk              not null,
    factory_id           type_pk              null,
    carrier_id           type_pk              not null,
-   status               type_pk              null,
+   status               type_enum_val        null,
    lot_pk               type_pk              null,
    equipment_id         type_pk              null,
    warehouse_id         type_pk              null,
@@ -1474,7 +1491,7 @@ create table mwc_carrierlog (
    id                   type_pk              not null,
    factory_id           type_pk              null,
    carrier_id           type_pk              not null,
-   status               type_pk              null,
+   status               type_enum_val        null,
    lot_pk               type_pk              null,
    equipment_id         type_pk              null,
    warehouse_id         type_pk              null,

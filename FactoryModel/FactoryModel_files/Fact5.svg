@@ -11,15 +11,9 @@
    <polygon fill="#0080c0" points="604,244 607,257 601,257" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="195,77 195,21 380,21 380,160 257,160" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="257,160 271,157 271,163" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <a target="_parent" xlink:href="Fact40.htm#1553">
+   <a target="_parent" xlink:href="Fact42.htm#1515">
       <rect x="18" y="283" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <defs>
-         <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
-            <stop offset="5%" stop-color="#ffffff"/>
-            <stop offset="95%" stop-color="#b0ffff"/>
-         </linearGradient>
-      </defs>
-      <rect x="18" y="283" fill="url(#Gradient1)" width="239" height="320" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="18" y="283" fill="#60afff" width="239" height="320" stroke="#00aaaa" stroke-width="1"/>
       <text x="137" y="299" fill="#ff0000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM7_物料基本信息</text>
       <line x1="18" x2="257" y1="306" y2="306" stroke="#00aaaa" stroke-width="1"/>
       <text x="23" y="316" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (物料基本信息主键)</text>
@@ -41,13 +35,13 @@
       <text x="23" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">助记码</text>
       <text x="23" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">版本号</text>
       <text x="23" y="598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">物料申请单</text>
-      <text x="129" y="316" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="129" y="332" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="129" y="316" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
+      <text x="129" y="332" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="129" y="345" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
       <text x="129" y="361" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="129" y="377" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="129" y="393" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="129" y="409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="129" y="409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="129" y="422" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Ma</text>
       <text x="129" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Ma</text>
       <text x="129" y="454" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
@@ -61,15 +55,9 @@
       <text x="129" y="582" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
       <text x="129" y="598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
    </a>
-   <a target="_parent" xlink:href="Fact42.htm#1760">
+   <a target="_parent" xlink:href="Fact44.htm#1722">
       <rect x="495" y="387" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <defs>
-         <linearGradient id="Gradient2" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
-            <stop offset="5%" stop-color="#ffffff"/>
-            <stop offset="95%" stop-color="#b0ffff"/>
-         </linearGradient>
-      </defs>
-      <rect x="495" y="387" fill="url(#Gradient2)" width="193" height="112" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="495" y="387" fill="#60afff" width="193" height="112" stroke="#00aaaa" stroke-width="1"/>
       <text x="591" y="403" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM7_物料计量信息</text>
       <line x1="495" x2="688" y1="410" y2="410" stroke="#00aaaa" stroke-width="1"/>
       <text x="500" y="420" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (物料计量信息主键)</text>
@@ -78,22 +66,16 @@
       <text x="500" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">计量单位</text>
       <text x="500" y="478" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">换算率</text>
       <text x="500" y="494" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">是否固定换算率</text>
-      <text x="606" y="420" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
-      <text x="606" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
-      <text x="606" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="606" y="420" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
+      <text x="606" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
+      <text x="606" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="606" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char v</text>
       <text x="606" y="478" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="606" y="494" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">bit</text>
    </a>
-   <a target="_parent" xlink:href="Fact41.htm#1704">
+   <a target="_parent" xlink:href="Fact43.htm#1666">
       <rect x="15" y="77" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <defs>
-         <linearGradient id="Gradient3" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
-            <stop offset="5%" stop-color="#ffffff"/>
-            <stop offset="95%" stop-color="#b0ffff"/>
-         </linearGradient>
-      </defs>
-      <rect x="15" y="77" fill="url(#Gradient3)" width="242" height="122" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="15" y="77" fill="#60afff" width="242" height="122" stroke="#00aaaa" stroke-width="1"/>
       <text x="136" y="93" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM7_物料基本分类</text>
       <line x1="15" x2="257" y1="100" y2="100" stroke="#00aaaa" stroke-width="1"/>
       <text x="20" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (物料基本分类主键)</text>
@@ -102,22 +84,16 @@
       <text x="20" y="158" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">物料分类上级</text>
       <text x="20" y="171" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">是否启用</text>
       <text x="20" y="187" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">辅助属性结构</text>
-      <text x="126" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="126" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
       <text x="126" y="126" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
       <text x="126" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="126" y="158" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(36)</text>
+      <text x="126" y="158" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="126" y="171" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">bit</text>
       <text x="126" y="187" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact27.htm#671">
+   <a target="_parent" xlink:href="Fact29.htm#631">
       <rect x="491" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <defs>
-         <linearGradient id="Gradient4" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
-            <stop offset="5%" stop-color="#ffffff"/>
-            <stop offset="95%" stop-color="#b0ffff"/>
-         </linearGradient>
-      </defs>
-      <rect x="491" y="51" fill="url(#Gradient4)" width="209" height="193" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="491" y="51" fill="#60afff" width="209" height="193" stroke="#00aaaa" stroke-width="1"/>
       <text x="595" y="67" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM1_计量单位-集团级</text>
       <line x1="491" x2="700" y1="74" y2="74" stroke="#00aaaa" stroke-width="1"/>
       <text x="496" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">id (计量单位主键)</text>
@@ -130,11 +106,11 @@
       <text x="496" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">英文名称</text>
       <text x="496" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">英文名称复数</text>
       <text x="496" y="228" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">启用状态</text>
-      <text x="582" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(36)</text>
+      <text x="582" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
       <text x="582" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
       <text x="582" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(2</text>
       <text x="582" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">bit</text>
-      <text x="582" y="148" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(36)</text>
+      <text x="582" y="148" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
       <text x="582" y="164" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="582" y="180" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
       <text x="582" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(2</text>
