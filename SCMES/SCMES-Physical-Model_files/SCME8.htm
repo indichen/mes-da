@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>新庄投入产出
+<title>SCMES
 </title>
 <link href="LightBlue_Theme.css" type="text/css" rel="stylesheet">
 </head>
@@ -14,10 +14,10 @@
 <a name="13">Model level tables</a> 
 </h1>
 <h2>
-<a name="14">Table Lot ID - 生產訂單 Map</a> 
+<a name="14">Table CUST_LOT狀態（自定义档案）</a> 
 </h2>
 <h3>
-<a name="15">Card of table Lot ID - 生產訂單 Map</a> 
+<a name="15">Card of table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -26,7 +26,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#14">Lot ID - 生產訂單 Map</a>
+<p align="left"><a href="SCME8.htm#14">CUST_LOT狀態（自定义档案）</a>
 </p>
 </td>
 </tr>
@@ -36,7 +36,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#14">mwc_lot_po_map</a>
+<p align="left"><a href="SCME8.htm#14">cust_lot_status</a>
 </p>
 </td>
 </tr>
@@ -52,15 +52,15 @@
 </tr>
 </table><br />
 <h3>
-<a name="16">Check constraint name of the table Lot ID - 生產訂單 Map</a> 
+<a name="16">Check constraint name of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_MWC_LOT_PO_MAP
+<p align="left">CKT_CUST_LOT_STATUS
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="17">Server validation rule of the table Lot ID - 生產訂單 Map</a> 
+<a name="17">Server validation rule of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%RULES%
@@ -68,7 +68,7 @@
 </td></tr>
 </table><br />
 <h3>
-<a name="18">Code preview of the table Lot ID - 生產訂單 Map</a> 
+<a name="18">Code preview of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -76,18 +76,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('mwc_lot_po_map')<br />
+           where  id = object_id('cust_lot_status')<br />
             and   type = 'U')<br />
-   drop table mwc_lot_po_map<br />
+   drop table cust_lot_status<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: mwc_lot_po_map                                        */<br />
+/* Table: cust_lot_status                                       */<br />
 /*==============================================================*/<br />
-create table mwc_lot_po_map (<br />
+create table cust_lot_status (<br />
    create_time char(19) null,<br />
    create_user char(36) null,<br />
    last_modified char(19) null,<br />
@@ -95,11 +95,9 @@ create table mwc_lot_po_map (<br />
    ts datetime null,<br />
    dr bit null,<br />
 <br />
-   id                   type_pk              not null,<br />
-   lot_pk               type_pk              null,<br />
-   lot_id               type_id              null,<br />
-   po_id                type_id              null,<br />
-   constraint PK_MWC_LOT_PO_MAP primary key (id)<br />
+   code                 type_enum_val        null,<br />
+   name                 type_name            null,<br />
+   note                 type_memo            null<br />
 )<br />
 go<br />
 
@@ -107,7 +105,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="19">List of diagrams containing the table Lot ID - 生產訂單 Map</a> 
+<a name="19">List of diagrams containing the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -132,7 +130,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="20">List of outgoing references of the table Lot ID - 生產訂單 Map</a> 
+<a name="20">List of incoming references of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -144,28 +142,20 @@ go<br />
 <p align="center">Code
 </p>
 </td>
-<td class="Header">
-<p align="center">Foreign Key Columns
-</p>
-</td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME54.htm#89">Reference_25</a>
+<p align="left"><a href="SCME71.htm#145">Reference_34</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME54.htm#89">Reference_25</a>
-</p>
-</td>
-<td>
-<p align="left">lotPK
+<p align="left"><a href="SCME71.htm#145">Reference_34</a>
 </p>
 </td>
 </tr>
 </table><br />
 <h3>
-<a name="21">List of all dependencies of the table Lot ID - 生產訂單 Map</a> 
+<a name="21">List of all dependencies of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -198,11 +188,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME54.htm#89">Reference_25</a>
+<p align="left"><a href="SCME71.htm#145">Reference_34</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME54.htm#89">Reference_25</a>
+<p align="left"><a href="SCME71.htm#145">Reference_34</a>
 </p>
 </td>
 <td class="TD2">
@@ -212,7 +202,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="22">List of extended attributes of the table Lot ID - 生產訂單 Map</a> 
+<a name="22">List of extended attributes of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -379,7 +369,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="23">List of columns of the table Lot ID - 生產訂單 Map</a> 
+<a name="23">List of columns of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -394,50 +384,40 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME8.htm#24">id (mapPK)</a>
+<p align="left"><a href="SCME8.htm#24">code</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME8.htm#24">id</a>
+<p align="left"><a href="SCME8.htm#24">code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME8.htm#31">lotPK</a>
+<p align="left"><a href="SCME8.htm#31">name</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME8.htm#31">lot_pk</a>
+<p align="left"><a href="SCME8.htm#31">name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME8.htm#38">lotID</a>
+<p align="left"><a href="SCME8.htm#37">备注</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME8.htm#38">lot_id</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left"><a href="SCME8.htm#44">orderID</a>
-</p>
-</td>
-<td class="TD2">
-<p align="left"><a href="SCME8.htm#44">po_id</a>
+<p align="left"><a href="SCME8.htm#37">note</a>
 </p>
 </td>
 </tr>
 </table><br />
 <h2>
-<a name="24">Column id (mapPK) of the table Lot ID - 生產訂單 Map</a> 
+<a name="24">Column code of the table CUST_LOT狀態（自定义档案）</a> 
 </h2>
 <h3>
-<a name="25">Card of the column id (mapPK) of the table Lot ID - 生產訂單 Map</a> 
+<a name="25">Card of the column code of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -446,7 +426,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#24">id (mapPK)</a>
+<p align="left"><a href="SCME8.htm#24">code</a>
 </p>
 </td>
 </tr>
@@ -456,7 +436,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#24">id</a>
+<p align="left"><a href="SCME8.htm#24">code</a>
 </p>
 </td>
 </tr>
@@ -466,7 +446,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char(36)
+<p align="left">int
 </p>
 </td>
 </tr>
@@ -476,21 +456,21 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">Yes
+<p align="left">No
 </p>
 </td>
 </tr>
 </table><br />
 <h3>
-<a name="26">Check constraint name of the column id (mapPK) of the table Lot ID - 生產訂單 Map</a> 
+<a name="26">Check constraint name of the column code of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_MWC_LOT_
+<p align="left">CKC_CODE_CUST_LOT
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="27">Check of the column id (mapPK) of the table Lot ID - 生產訂單 Map</a> 
+<a name="27">Check of the column code of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -565,7 +545,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="28">Server validation rule of the column id (mapPK) of the table Lot ID - 生產訂單 Map</a> 
+<a name="28">Server validation rule of the column code of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -573,400 +553,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="29">List of all dependencies of the table column id (mapPK)</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Code
-</p>
-</td>
-<td class="Header">
-<p align="center">Class Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-<td>
-<p align="left">Key
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="30">List of extended attributes of the table column id (mapPK)</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Temporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="31">Column lotPK of the table Lot ID - 生產訂單 Map</a> 
-</h2>
-<h3>
-<a name="32">Card of the column lotPK of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME8.htm#31">lotPK</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME8.htm#31">lot_pk</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">char(36)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="33">Check constraint name of the column lotPK of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_PK_MWC_LOT_
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="34">Check of the column lotPK of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="35">Server validation rule of the column lotPK of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="36">List of all dependencies of the table column lotPK</a> 
+<a name="29">List of all dependencies of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -999,7 +586,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="37">List of extended attributes of the table column lotPK</a> 
+<a name="30">List of extended attributes of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1238,10 +825,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="38">Column lotID of the table Lot ID - 生產訂單 Map</a> 
+<a name="31">Column name of the table CUST_LOT狀態（自定义档案）</a> 
 </h2>
 <h3>
-<a name="39">Card of the column lotID of the table Lot ID - 生產訂單 Map</a> 
+<a name="32">Card of the column name of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1250,7 +837,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#38">lotID</a>
+<p align="left"><a href="SCME8.htm#31">name</a>
 </p>
 </td>
 </tr>
@@ -1260,7 +847,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#38">lot_id</a>
+<p align="left"><a href="SCME8.htm#31">name</a>
 </p>
 </td>
 </tr>
@@ -1270,7 +857,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">varchar(40)
+<p align="left">national char varying(20)
 </p>
 </td>
 </tr>
@@ -1286,15 +873,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="40">Check constraint name of the column lotID of the table Lot ID - 生產訂單 Map</a> 
+<a name="33">Check constraint name of the column name of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_ID_MWC_LOT_
+<p align="left">CKC_NAME_CUST_LOT
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="41">Check of the column lotID of the table Lot ID - 生產訂單 Map</a> 
+<a name="34">Check of the column name of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1369,7 +956,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="42">Server validation rule of the column lotID of the table Lot ID - 生產訂單 Map</a> 
+<a name="35">Server validation rule of the column name of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1377,7 +964,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="43">List of extended attributes of the table column lotID</a> 
+<a name="36">List of extended attributes of the table column name</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1616,10 +1203,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="44">Column orderID of the table Lot ID - 生產訂單 Map</a> 
+<a name="37">Column 备注 of the table CUST_LOT狀態（自定义档案）</a> 
 </h2>
 <h3>
-<a name="45">Card of the column orderID of the table Lot ID - 生產訂單 Map</a> 
+<a name="38">Card of the column 备注 of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1628,7 +1215,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#44">orderID</a>
+<p align="left"><a href="SCME8.htm#37">备注</a>
 </p>
 </td>
 </tr>
@@ -1638,7 +1225,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME8.htm#44">po_id</a>
+<p align="left"><a href="SCME8.htm#37">note</a>
 </p>
 </td>
 </tr>
@@ -1648,7 +1235,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">varchar(40)
+<p align="left">national char varying(Max)
 </p>
 </td>
 </tr>
@@ -1664,15 +1251,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="46">Check constraint name of the column orderID of the table Lot ID - 生產訂單 Map</a> 
+<a name="39">Check constraint name of the column 备注 of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PO_ID_MWC_LOT_
+<p align="left">CKC_NOTE_CUST_LOT
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="47">Check of the column orderID of the table Lot ID - 生產訂單 Map</a> 
+<a name="40">Check of the column 备注 of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1747,7 +1334,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="48">Server validation rule of the column orderID of the table Lot ID - 生產訂單 Map</a> 
+<a name="41">Server validation rule of the column 备注 of the table CUST_LOT狀態（自定义档案）</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1755,7 +1342,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="49">List of extended attributes of the table column orderID</a> 
+<a name="42">List of extended attributes of the table column 备注</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1988,376 +1575,6 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="50">List of keys of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Code
-</p>
-</td>
-<td class="Header">
-<p align="center">Primary
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-<td>
-<p align="left">X
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="51">Key id of the table Lot ID - 生產訂單 Map</a> 
-</h2>
-<h3>
-<a name="52">Card of the key id of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME8.htm#51">id</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Table
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME8.htm#14">Lot ID - 生產訂單 Map</a>
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="53">Code preview of the key id of the table Lot ID - 生產訂單 Map</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">use SCMES<br />
-go<br />
-<br />
-alter table mwc_lot_po_map<br />
-   drop constraint PK_MWC_LOT_PO_MAP<br />
-go<br />
-<br />
-use SCMES<br />
-go<br />
-
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="54">List of columns of the table key id</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Code
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="SCME8.htm#24">id (mapPK)</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="SCME8.htm#24">id</a>
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="55">List of extended attributes of the table key id</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">AllowPageLocks
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">true
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">AllowRowLocks
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">true
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">FileGroup
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">FillFactor
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">IgnoreDupKey
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">MaxDOP
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Online
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">PadIndex
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">PartitionScheme
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">PartitionSchemeColumn
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">SortInTempDB
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">StatisticsNorecompute
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">WithCompression
-</p>
-</td>
-<td>
-<p align="left">(Text)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
 <p align="left">Microsoft SQL Server 2017 (iuap)
 </p>
 </td>

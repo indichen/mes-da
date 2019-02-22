@@ -1,11 +1,53 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/20 下午 04:26:45                        */
+/* Created on:     2019/2/22 上午 07:42:06                        */
 /*==============================================================*/
 
 
 use SCMES
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_lot_status')
+            and   type = 'U')
+   drop table cust_lot_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_mo_status')
+            and   type = 'U')
+   drop table cust_mo_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_po_group_status')
+            and   type = 'U')
+   drop table cust_po_group_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_process_po_status')
+            and   type = 'U')
+   drop table cust_process_po_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_sap_po_factory')
+            and   type = 'U')
+   drop table cust_sap_po_factory
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ')
+            and   type = 'U')
+   drop table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ
 go
 
 if exists (select 1
@@ -34,6 +76,20 @@ if exists (select 1
            where  id = object_id('mlo_sap_po')
             and   type = 'U')
    drop table mlo_sap_po
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mlo_sap_po_process')
+            and   type = 'U')
+   drop table mlo_sap_po_process
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mlo_sap_po_process_batch')
+            and   type = 'U')
+   drop table mlo_sap_po_process_batch
 go
 
 if exists (select 1
@@ -303,7 +359,7 @@ go
 /* Domain: type_pk                                              */
 /*==============================================================*/
 create type type_pk
-   from char(36)
+   from char(32)
 go
 
 /*==============================================================*/
@@ -318,6 +374,108 @@ go
 /*==============================================================*/
 create type type_weight
    from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Table: cust_lot_status                                       */
+/*==============================================================*/
+create table cust_lot_status (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_mo_status                                        */
+/*==============================================================*/
+create table cust_mo_status (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_po_group_status                                  */
+/*==============================================================*/
+create table cust_po_group_status (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_process_po_status                                */
+/*==============================================================*/
+create table cust_process_po_status (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_sap_po_factory                                   */
+/*==============================================================*/
+create table cust_sap_po_factory (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ                            */
+/*==============================================================*/
+create table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
 go
 
 /*==============================================================*/
@@ -339,9 +497,9 @@ create table mlo_mo (
    workshop             type_id              null,
    equipment            type_id              null,
    recipe_pk            type_pk              null,
-   process_code2        type_id              null,
+   process_code         type_id              null,
    process_name         type_name            null,
-   next_process2        type_id              null,
+   next_process         type_id              null,
    next_process_name    type_name            null,
    copper_size          type_id              null,
    total_qty            type_decimal         null,
@@ -380,6 +538,8 @@ create table mlo_po_group (
 
    po_group             type_id              not null,
    po_pk                type_pk              not null,
+   status               type_enum_val        null,
+   note                 type_memo            null,
    constraint PK_MLO_PO_GROUP primary key (po_group, po_pk)
 )
 go
@@ -398,14 +558,12 @@ create table mlo_process_po (
    id                   type_pk              not null,
    process_po           type_id              null,
    part_no              type_id              null,
-   copper_size          type_id              null,
    sap_po_pk            type_pk              not null,
    next_process         type_id              null,
    next_process_name    type_name            null,
    seq_route            type_sn              null,
    process_code         type_id              null,
    process_name         type_name            null,
-   product_spec         type_memo            null,
    semi_product_spec    type_memo            null,
    semi_product_part_no type_id              null,
    def_equipment        type_id              null,
@@ -416,8 +574,6 @@ create table mlo_process_po (
    semi_product_weight  type_weight          null,
    production_qty       type_decimal         null,
    po_qty               type_number          null,
-   unit_length          type_length          null,
-   core_wire_color      type_memo            null,
    outer_diameter       type_diameter        null,
    mo_pk                type_pk              null,
    status               type_enum_val        null,
@@ -441,6 +597,7 @@ create table mlo_sap_po (
    so_id                type_id              not null,
    customer_id          type_id              null,
    product_partno       type_id              null,
+   product_spec         type_memo            null,
    route_id             type_id              null,
    so_qty               type_decimal         null,
    unit_length          type_length          null,
@@ -470,6 +627,61 @@ create table mlo_sap_po (
    carrier_type         type_id              null,
    commit_qty           type_decimal         null,
    constraint PK_MLO_SAP_PO primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mlo_sap_po_process                                    */
+/*==============================================================*/
+create table mlo_sap_po_process (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_pk              null,
+   po_id                type_id              not null,
+   so_id                type_id              not null,
+   customer_id          type_id              null,
+   product_partno       type_id              null,
+   so_qty               type_decimal         null,
+   shipment_date        type_date            null,
+   sales_name           type_name            null,
+   start_date_est       type_date            null,
+   end_date_est         type_date            null,
+   is_closed            type_boolean         null,
+   batch_no             type_id              null,
+   conti_symbol         type_name            null,
+   production_date      type_date            null,
+   storage_qty          type_decimal         null,
+   not_storage_qty      type_decimal         null,
+   factory              type_name            null,
+   po_create_date       type_date            null,
+   po_update_date       type_date            null,
+   commit_qty           type_decimal         null,
+   status               type_enum_val        null,
+   note                 type_memo            null,
+   constraint PK_MLO_SAP_PO_PROCESS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mlo_sap_po_process_batch                              */
+/*==============================================================*/
+create table mlo_sap_po_process_batch (
+   create_time char(19) null,
+   create_user char(36) null,
+   last_modified char(19) null,
+   last_modify_user char(36) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   constraint PK_MLO_SAP_PO_PROCESS_BATCH primary key (id)
 )
 go
 
