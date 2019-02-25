@@ -1,0 +1,510 @@
+/*==============================================================*/
+/* Database name:  YTMES                                        */
+/* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
+/* Created on:     2019/2/25 下午 04:39:49                        */
+/*==============================================================*/
+
+
+use YTMES
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_material_mechanical')
+            and   type = 'U')
+   drop table mtaa_material_mechanical
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_material_status')
+            and   type = 'U')
+   drop table mtaa_material_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_material_status_product_type')
+            and   type = 'U')
+   drop table mtaa_material_status_product_type
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_grade_no')
+            and   type = 'U')
+   drop table mtad_grade_no
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_grade_qc_plan')
+            and   type = 'U')
+   drop table mtad_grade_qc_plan
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_grade_tag')
+            and   type = 'U')
+   drop table mtad_grade_tag
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_material_mechnical_spec')
+            and   type = 'U')
+   drop table mtad_material_mechnical_spec
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_scrap_type')
+            and   type = 'U')
+   drop table mtad_scrap_type
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_scrap_type_color')
+            and   type = 'U')
+   drop table mtad_scrap_type_color
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_steel_color')
+            and   type = 'U')
+   drop table mtad_steel_color
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_steel_grade')
+            and   type = 'U')
+   drop table mtad_steel_grade
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtad_steel_series')
+            and   type = 'U')
+   drop table mtad_steel_series
+go
+
+if exists(select 1 from systypes where name='type_boolean')
+   drop type type_boolean
+go
+
+if exists(select 1 from systypes where name='type_date')
+   drop type type_date
+go
+
+if exists(select 1 from systypes where name='type_datetime')
+   drop type type_datetime
+go
+
+if exists(select 1 from systypes where name='type_decimal')
+   drop type type_decimal
+go
+
+if exists(select 1 from systypes where name='type_diameter')
+   drop type type_diameter
+go
+
+if exists(select 1 from systypes where name='type_enum_val')
+   drop type type_enum_val
+go
+
+if exists(select 1 from systypes where name='type_hours')
+   drop type type_hours
+go
+
+if exists(select 1 from systypes where name='type_id')
+   drop type type_id
+go
+
+if exists(select 1 from systypes where name='type_length')
+   drop type type_length
+go
+
+if exists(select 1 from systypes where name='type_memo')
+   drop type type_memo
+go
+
+if exists(select 1 from systypes where name='type_name')
+   drop type type_name
+go
+
+if exists(select 1 from systypes where name='type_number')
+   drop type type_number
+go
+
+if exists(select 1 from systypes where name='type_pk')
+   drop type type_pk
+go
+
+if exists(select 1 from systypes where name='type_short_text')
+   drop type type_short_text
+go
+
+if exists(select 1 from systypes where name='type_sn')
+   drop type type_sn
+go
+
+if exists(select 1 from systypes where name='type_weight')
+   drop type type_weight
+go
+
+/*==============================================================*/
+/* Domain: type_boolean                                         */
+/*==============================================================*/
+create type type_boolean
+   from bit
+go
+
+/*==============================================================*/
+/* Domain: type_date                                            */
+/*==============================================================*/
+create type type_date
+   from char(10)
+go
+
+/*==============================================================*/
+/* Domain: type_datetime                                        */
+/*==============================================================*/
+create type type_datetime
+   from datetime
+go
+
+/*==============================================================*/
+/* Domain: type_decimal                                         */
+/*==============================================================*/
+create type type_decimal
+   from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_diameter                                        */
+/*==============================================================*/
+create type type_diameter
+   from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_enum_val                                        */
+/*==============================================================*/
+create type type_enum_val
+   from int
+go
+
+/*==============================================================*/
+/* Domain: type_hours                                           */
+/*==============================================================*/
+create type type_hours
+   from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_id                                              */
+/*==============================================================*/
+create type type_id
+   from varchar(40)
+go
+
+/*==============================================================*/
+/* Domain: type_length                                          */
+/*==============================================================*/
+create type type_length
+   from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_memo                                            */
+/*==============================================================*/
+create type type_memo
+   from national char varying(Max)
+go
+
+/*==============================================================*/
+/* Domain: type_name                                            */
+/*==============================================================*/
+create type type_name
+   from national char varying(20)
+go
+
+/*==============================================================*/
+/* Domain: type_number                                          */
+/*==============================================================*/
+create type type_number
+   from int
+go
+
+/*==============================================================*/
+/* Domain: type_pk                                              */
+/*==============================================================*/
+create type type_pk
+   from char(32)
+go
+
+/*==============================================================*/
+/* Domain: type_short_text                                      */
+/*==============================================================*/
+create type type_short_text
+   from national char varying(50)
+go
+
+/*==============================================================*/
+/* Domain: type_sn                                              */
+/*==============================================================*/
+create type type_sn
+   from int
+go
+
+/*==============================================================*/
+/* Domain: type_weight                                          */
+/*==============================================================*/
+create type type_weight
+   from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Table: mtaa_material_mechanical                              */
+/*==============================================================*/
+create table mtaa_material_mechanical (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   grade_pk             type_pk              null,
+   status_pk            type_pk              null,
+   type                 type_short_text      null,
+   cust_abbr            type_short_text      null,
+   constraint PK_MTAA_MATERIAL_MECHANICAL primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_material_status                                  */
+/*==============================================================*/
+create table mtaa_material_status (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   name                 type_name            null,
+   abbr                 char(10)             null,
+   status_cat_cd        type_id              null,
+   process_cd           type_id              null,
+   constraint PK_MTAA_MATERIAL_STATUS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_material_status_product_type                     */
+/*==============================================================*/
+create table mtaa_material_status_product_type (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   status_pk            type_pk              null,
+   product_type_cd      type_id              null,
+   constraint PK_MTAA_MATERIAL_STATUS_PRODUC primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_grade_no                                         */
+/*==============================================================*/
+create table mtad_grade_no (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   steel_grade_pk       type_pk              null,
+   code                 type_id              null,
+   scrap_type_pk        type_pk              null,
+   constraint PK_MTAD_GRADE_NO primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_grade_qc_plan                                    */
+/*==============================================================*/
+create table mtad_grade_qc_plan (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   qc_plan_main         type_pk              not null,
+   grade_pk             type_pk              null,
+   grade_cd             type_id              null,
+   ver                  type_decimal         not null,
+   is_current_ver       type_boolean         not null,
+   qc_plan1             type_pk              null,
+   qc_plan2             type_pk              null,
+   qc_plan3             type_pk              null,
+   constraint PK_MTAD_GRADE_QC_PLAN primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_grade_tag                                        */
+/*==============================================================*/
+create table mtad_grade_tag (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_id              null,
+   grade_pk             type_pk              null,
+   spec_pk              type_pk              null,
+   spec_description     type_memo            null,
+   tag_description      type_memo            null,
+   constraint PK_MTAD_GRADE_TAG primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_material_mechnical_spec                          */
+/*==============================================================*/
+create table mtad_material_mechnical_spec (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_pk              null,
+   min                  type_decimal         null,
+   max                  type_decimal         null,
+   constraint PK_MTAD_MATERIAL_MECHNICAL_SPE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_scrap_type                                       */
+/*==============================================================*/
+create table mtad_scrap_type (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_id              null,
+   description          type_memo            null,
+   bucket_no            type_number          null,
+   constraint PK_MTAD_SCRAP_TYPE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_scrap_type_color                                 */
+/*==============================================================*/
+create table mtad_scrap_type_color (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_pk              null,
+   type                 type_enum_val        null,
+   color_pk             type_pk              null,
+   constraint PK_MTAD_SCRAP_TYPE_COLOR primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_steel_color                                      */
+/*==============================================================*/
+create table mtad_steel_color (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   顏色碼PK                type_pk              not null,
+   顏色類別cd               type_id              null,
+   顏色碼cd                type_id              null,
+   顏色說明                 type_memo            null,
+   constraint PK_MTAD_STEEL_COLOR primary key (顏色碼PK)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_steel_grade                                      */
+/*==============================================================*/
+create table mtad_steel_grade (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   steel_series_pk      type_pk              null,
+   code                 type_id              null,
+   name                 type_name            null,
+   color_pk             type_pk              null,
+   color_type_cd        type_id              null,
+   by_product           type_short_text      null,
+   constraint PK_MTAD_STEEL_GRADE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtad_steel_series                                     */
+/*==============================================================*/
+create table mtad_steel_series (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   code                 type_id              null,
+   name                 type_name            null,
+   constraint PK_MTAD_STEEL_SERIES primary key (id)
+)
+go
+
