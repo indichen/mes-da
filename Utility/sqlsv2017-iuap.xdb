@@ -2394,9 +2394,9 @@ Table
 <a:Name>Create</a:Name>
 <a:TextTargetItem.Value>create table [%QUALIFIER%]%TABLE% (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
