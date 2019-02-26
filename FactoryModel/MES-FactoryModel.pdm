@@ -4232,8 +4232,8 @@ Option Explicit &#39; This is to ensure all used variables are defined
 <c:PhysicalDiagrams>
 <o:PhysicalDiagram Id="o15">
 <a:ObjectID>99A0BF72-D6C1-4751-A347-BE55AFBA1CF3</a:ObjectID>
-<a:Name>FM402-时间模型_班次级轮班</a:Name>
-<a:Code>FM402-时间模型_班次级轮班</a:Code>
+<a:Name>FM402-時間模型_班次級輪班</a:Name>
+<a:Code>FM402-時間模型_班次級輪班</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550739308</a:ModificationDate>
@@ -4402,11 +4402,11 @@ Inheritance_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Ste
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4428,11 +4428,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMEOBJ]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4454,7 +4454,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMELNK]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -4478,7 +4478,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=1
 Source Arrow=24
@@ -4500,15 +4500,15 @@ Custom text mode=0
 Pen=2 0 128 128 255
 Shadow color=192 192 192
 Shadow=0
-OBJXSTRFont=新宋体,8,N
+OBJXSTRFont=新宋體,8,N
 OBJXSTRFont color=0, 0, 0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4718,7 +4718,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\Free Symbol]
-Free TextFont=新宋体,8,N
+Free TextFont=新宋體,8,N
 Free TextFont color=0, 0, 0
 Line style=0
 Source Arrow=24
@@ -4742,11 +4742,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMPCKG]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4768,17 +4768,17 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ENTT]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
-IdentifiersFont=新宋体,8,N
+IdentifiersFont=新宋體,8,N
 IdentifiersFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4800,11 +4800,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\RLSH]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -4828,15 +4828,15 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ASSC]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4858,9 +4858,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINK]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -4884,9 +4884,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMINHR]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -4908,7 +4908,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINH]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -5033,13 +5033,13 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
-OWNRDISPNAME 0 微软雅黑,9,B
-Columns 0 微软雅黑,7,N
-TablePkColumns 0 微软雅黑,7,U
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
+OWNRDISPNAME 0 微軟雅黑,9,B
+Columns 0 微軟雅黑,7,N
+TablePkColumns 0 微軟雅黑,7,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -5059,13 +5059,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
-OWNRDISPNAME 0 微软雅黑,9,B
-Columns 0 微软雅黑,7,N
-TablePkColumns 0 微软雅黑,7,U
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
+OWNRDISPNAME 0 微軟雅黑,9,B
+Columns 0 微軟雅黑,7,N
+TablePkColumns 0 微軟雅黑,7,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -5085,13 +5085,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
-OWNRDISPNAME 0 微软雅黑,9,B
-Columns 0 微软雅黑,7,N
-TablePkColumns 0 微软雅黑,7,U
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
+OWNRDISPNAME 0 微軟雅黑,9,B
+Columns 0 微軟雅黑,7,N
+TablePkColumns 0 微軟雅黑,7,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -5112,11 +5112,11 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
-OWNRDISPNAME 0 微软雅黑,9,B
-Columns 0 微软雅黑,7,N
-TablePkColumns 0 微软雅黑,7,U
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
+OWNRDISPNAME 0 微軟雅黑,9,B
+Columns 0 微軟雅黑,7,N
+TablePkColumns 0 微軟雅黑,7,U
 TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
@@ -5139,16 +5139,16 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o33"/>
@@ -5333,11 +5333,11 @@ Inheritance_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Ste
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5359,11 +5359,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMEOBJ]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5385,7 +5385,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMELNK]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -5409,7 +5409,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=1
 Source Arrow=24
@@ -5431,15 +5431,15 @@ Custom text mode=0
 Pen=2 0 128 128 255
 Shadow color=192 192 192
 Shadow=0
-OBJXSTRFont=新宋体,8,N
+OBJXSTRFont=新宋體,8,N
 OBJXSTRFont color=0, 0, 0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5649,7 +5649,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\Free Symbol]
-Free TextFont=新宋体,8,N
+Free TextFont=新宋體,8,N
 Free TextFont color=0, 0, 0
 Line style=0
 Source Arrow=24
@@ -5673,11 +5673,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMPCKG]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5699,17 +5699,17 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ENTT]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
-IdentifiersFont=新宋体,8,N
+IdentifiersFont=新宋體,8,N
 IdentifiersFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5731,11 +5731,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\RLSH]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -5759,15 +5759,15 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ASSC]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5789,9 +5789,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINK]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -5815,9 +5815,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMINHR]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -5839,7 +5839,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINH]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -5876,9 +5876,9 @@ Shadow=0
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o36"/>
 </c:SourceSymbol>
@@ -5897,9 +5897,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o37"/>
 </c:SourceSymbol>
@@ -5918,9 +5918,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <a:AutomaticRoutingState>4</a:AutomaticRoutingState>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o37"/>
@@ -5940,9 +5940,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <a:AutomaticRoutingState>4</a:AutomaticRoutingState>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o36"/>
@@ -5985,13 +5985,13 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 微软雅黑,10,B
-DISPNAME 255 微软雅黑,10,B
-OWNRDISPNAME 255 微软雅黑,10,B
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,U
+<a:FontList>STRN 0 微軟雅黑,10,B
+DISPNAME 255 微軟雅黑,10,B
+OWNRDISPNAME 255 微軟雅黑,10,B
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -6008,13 +6008,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 微软雅黑,10,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,10,B
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,U
+<a:FontList>STRN 0 微軟雅黑,10,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,10,B
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -6030,13 +6030,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 微软雅黑,10,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,10,B
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,U
+<a:FontList>STRN 0 微軟雅黑,10,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,10,B
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -6053,13 +6053,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 微软雅黑,10,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,10,B
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,U
+<a:FontList>STRN 0 微軟雅黑,10,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,10,B
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -6072,8 +6072,8 @@ LABL 0 Arial,8,N</a:FontList>
 </o:PhysicalDiagram>
 <o:PhysicalDiagram Id="o53">
 <a:ObjectID>4B164A72-C0B9-4401-A470-775EBCD24AED</a:ObjectID>
-<a:Name>FM603-储区</a:Name>
-<a:Code>FM603-储区</a:Code>
+<a:Name>FM603-儲區</a:Name>
+<a:Code>FM603-儲區</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550479146</a:ModificationDate>
@@ -6205,11 +6205,11 @@ ViewReference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -6281,7 +6281,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=0
 Source Arrow=24
@@ -6305,11 +6305,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=Yes
@@ -6361,7 +6361,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
@@ -6401,13 +6401,13 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
-TablePkColumnsFont=新宋体,8,U
+TablePkColumnsFont=新宋體,8,U
 TablePkColumnsFont color=0 0 0
-TableFkColumnsFont=新宋体,8,N
+TableFkColumnsFont=新宋體,8,N
 TableFkColumnsFont color=0 0 0
 TemporaryVTablesFont=Arial,8,N
 TemporaryVTablesFont color=0 0 0
@@ -6439,7 +6439,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 LABLFont=Arial,8,N
 LABLFont color=0 0 0
@@ -6463,11 +6463,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\REFR]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -6491,11 +6491,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\VREF]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -6556,9 +6556,9 @@ Shadow=0</a:DisplayPreferences>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o55"/>
 </c:SourceSymbol>
@@ -6578,16 +6578,16 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o58"/>
 </c:Object>
@@ -6601,16 +6601,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o59"/>
 </c:Object>
@@ -6619,8 +6619,8 @@ LABL 0 微软雅黑,8,N</a:FontList>
 </o:PhysicalDiagram>
 <o:PhysicalDiagram Id="o60">
 <a:ObjectID>A17A7860-2240-41DA-A3DC-B3ED84FF7001</a:ObjectID>
-<a:Name>FM602-生产装备</a:Name>
-<a:Code>FM602-生产装备</a:Code>
+<a:Name>FM602-生產裝備</a:Name>
+<a:Code>FM602-生產裝備</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550568312</a:ModificationDate>
@@ -6752,11 +6752,11 @@ ViewReference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -6828,7 +6828,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=0
 Source Arrow=24
@@ -6852,11 +6852,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=Yes
@@ -6908,7 +6908,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
@@ -6948,13 +6948,13 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
-TablePkColumnsFont=新宋体,8,U
+TablePkColumnsFont=新宋體,8,U
 TablePkColumnsFont color=0 0 0
-TableFkColumnsFont=新宋体,8,N
+TableFkColumnsFont=新宋體,8,N
 TableFkColumnsFont color=0 0 0
 TemporaryVTablesFont=Arial,8,N
 TemporaryVTablesFont color=0 0 0
@@ -6986,7 +6986,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 LABLFont=Arial,8,N
 LABLFont color=0 0 0
@@ -7010,11 +7010,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\REFR]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -7038,11 +7038,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\VREF]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -7103,9 +7103,9 @@ Shadow=0</a:DisplayPreferences>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o62"/>
 </c:SourceSymbol>
@@ -7126,9 +7126,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o62"/>
 </c:SourceSymbol>
@@ -7148,9 +7148,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o69"/>
 </c:SourceSymbol>
@@ -7170,9 +7170,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o69"/>
 </c:SourceSymbol>
@@ -7192,9 +7192,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o75"/>
 </c:SourceSymbol>
@@ -7214,9 +7214,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o75"/>
 </c:SourceSymbol>
@@ -7236,9 +7236,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o62"/>
 </c:SourceSymbol>
@@ -7258,16 +7258,16 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o83"/>
@@ -7282,16 +7282,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o84"/>
@@ -7306,16 +7306,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o85"/>
 </c:Object>
@@ -7329,16 +7329,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o86"/>
@@ -7353,16 +7353,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o87"/>
@@ -7377,16 +7377,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o88"/>
@@ -7401,16 +7401,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o89"/>
@@ -7425,16 +7425,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o90"/>
@@ -7444,8 +7444,8 @@ LABL 0 微软雅黑,8,N</a:FontList>
 </o:PhysicalDiagram>
 <o:PhysicalDiagram Id="o91">
 <a:ObjectID>095107FC-2A18-4E40-962A-45233E200B26</a:ObjectID>
-<a:Name>FM604-物流设备</a:Name>
-<a:Code>FM604-物流设备</a:Code>
+<a:Name>FM604-物流設備</a:Name>
+<a:Code>FM604-物流設備</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550479226</a:ModificationDate>
@@ -7577,11 +7577,11 @@ ViewReference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -7653,7 +7653,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=0
 Source Arrow=24
@@ -7677,11 +7677,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=Yes
@@ -7733,7 +7733,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
@@ -7773,13 +7773,13 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
-TablePkColumnsFont=新宋体,8,U
+TablePkColumnsFont=新宋體,8,U
 TablePkColumnsFont color=0 0 0
-TableFkColumnsFont=新宋体,8,N
+TableFkColumnsFont=新宋體,8,N
 TableFkColumnsFont color=0 0 0
 TemporaryVTablesFont=Arial,8,N
 TemporaryVTablesFont color=0 0 0
@@ -7811,7 +7811,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 LABLFont=Arial,8,N
 LABLFont color=0 0 0
@@ -7835,11 +7835,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\REFR]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -7863,11 +7863,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\VREF]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -7927,9 +7927,9 @@ Shadow=0</a:DisplayPreferences>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o93"/>
 </c:SourceSymbol>
@@ -7949,9 +7949,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o97"/>
 </c:SourceSymbol>
@@ -7971,9 +7971,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o97"/>
 </c:SourceSymbol>
@@ -7993,9 +7993,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o104"/>
 </c:SourceSymbol>
@@ -8015,9 +8015,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o104"/>
 </c:SourceSymbol>
@@ -8037,9 +8037,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o98"/>
 </c:SourceSymbol>
@@ -8059,16 +8059,16 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o111"/>
@@ -8083,16 +8083,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o112"/>
@@ -8107,16 +8107,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o113"/>
@@ -8131,16 +8131,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o114"/>
@@ -8155,16 +8155,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16744703</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o115"/>
@@ -8179,16 +8179,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16744703</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o117"/>
@@ -8203,16 +8203,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o85"/>
@@ -8227,16 +8227,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o118"/>
@@ -8379,11 +8379,11 @@ ViewReference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -8455,7 +8455,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=0
 Source Arrow=24
@@ -8479,11 +8479,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=Yes
@@ -8535,7 +8535,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
@@ -8575,13 +8575,13 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 ColumnsFont=Arial,8,N
 ColumnsFont color=0 0 0
-TablePkColumnsFont=新宋体,8,U
+TablePkColumnsFont=新宋體,8,U
 TablePkColumnsFont color=0 0 0
-TableFkColumnsFont=新宋体,8,N
+TableFkColumnsFont=新宋體,8,N
 TableFkColumnsFont color=0 0 0
 TemporaryVTablesFont=Arial,8,N
 TemporaryVTablesFont color=0 0 0
@@ -8613,7 +8613,7 @@ STRNFont=Arial,8,N
 STRNFont color=0 0 0
 DISPNAMEFont=Arial,8,N
 DISPNAMEFont color=0 0 0
-OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont=新宋體,8,N
 OWNRDISPNAMEFont color=0 0 0
 LABLFont=Arial,8,N
 LABLFont color=0 0 0
@@ -8637,11 +8637,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\REFR]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -8665,11 +8665,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\VREF]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0 0 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0 0 0
 Line style=2
 Source Arrow=24
@@ -8729,9 +8729,9 @@ Shadow=0</a:DisplayPreferences>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o121"/>
 </c:SourceSymbol>
@@ -8751,9 +8751,9 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 新宋体,8,N
-SOURCE 0 新宋体,8,N
-DESTINATION 0 新宋体,8,N</a:FontList>
+<a:FontList>CENTER 0 新宋體,8,N
+SOURCE 0 新宋體,8,N
+DESTINATION 0 新宋體,8,N</a:FontList>
 <c:SourceSymbol>
 <o:TableSymbol Ref="o125"/>
 </c:SourceSymbol>
@@ -8773,16 +8773,16 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o127"/>
@@ -8797,16 +8797,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o128"/>
@@ -8821,16 +8821,16 @@ LABL 0 微软雅黑,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 4194432 微软雅黑,8,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,8,N
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,N
-TableFkColumns 0 微软雅黑,8,N
-Keys 0 新宋体,8,N
-Indexes 0 微软雅黑,8,N
-Triggers 0 新宋体,8,N
-LABL 0 微软雅黑,8,N</a:FontList>
+<a:FontList>STRN 4194432 微軟雅黑,8,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,8,N
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,N
+TableFkColumns 0 微軟雅黑,8,N
+Keys 0 新宋體,8,N
+Indexes 0 微軟雅黑,8,N
+Triggers 0 新宋體,8,N
+LABL 0 微軟雅黑,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o129"/>
@@ -8840,8 +8840,8 @@ LABL 0 微软雅黑,8,N</a:FontList>
 </o:PhysicalDiagram>
 <o:PhysicalDiagram Id="o130">
 <a:ObjectID>9EB5E13A-8B88-46F6-B261-C510D4AEC190</a:ObjectID>
-<a:Name>FM803-工艺模型-品质</a:Name>
-<a:Code>FM803-工艺模型-品质</a:Code>
+<a:Name>FM803-工藝模型-品質</a:Name>
+<a:Code>FM803-工藝模型-品質</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823027</a:ModificationDate>
@@ -9010,11 +9010,11 @@ Inheritance_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Ste
 [DisplayPreferences\Symbol]
 
 [DisplayPreferences\Symbol\AREA]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0 0 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0 0 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0 0 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9036,11 +9036,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMEOBJ]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9062,7 +9062,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\FRMELNK]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -9086,7 +9086,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\USRDEPD]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0 0 0
 Line style=1
 Source Arrow=24
@@ -9108,15 +9108,15 @@ Custom text mode=0
 Pen=2 0 128 128 255
 Shadow color=192 192 192
 Shadow=0
-OBJXSTRFont=新宋体,8,N
+OBJXSTRFont=新宋體,8,N
 OBJXSTRFont color=0, 0, 0
 
 [DisplayPreferences\Symbol\FILO]
-OBJSTRNFont=新宋体,8,N
+OBJSTRNFont=新宋體,8,N
 OBJSTRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LCNMFont=新宋体,8,N
+LCNMFont=新宋體,8,N
 LCNMFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9326,7 +9326,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\Free Symbol]
-Free TextFont=新宋体,8,N
+Free TextFont=新宋體,8,N
 Free TextFont color=0, 0, 0
 Line style=0
 Source Arrow=24
@@ -9350,11 +9350,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMPCKG]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9376,17 +9376,17 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ENTT]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
-IdentifiersFont=新宋体,8,N
+IdentifiersFont=新宋體,8,N
 IdentifiersFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9408,11 +9408,11 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\RLSH]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
-DESTINATIONFont=新宋体,8,N
+DESTINATIONFont=新宋體,8,N
 DESTINATIONFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -9436,15 +9436,15 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\ASSC]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
-LABLFont=新宋体,8,N
+LABLFont=新宋體,8,N
 LABLFont color=0, 0, 0
-AttributesFont=新宋体,8,N
+AttributesFont=新宋體,8,N
 AttributesFont color=0, 0, 0
-EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont=新宋體,8,U
 EntityPrimaryAttributeFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9466,9 +9466,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINK]
-SOURCEFont=新宋体,8,N
+SOURCEFont=新宋體,8,N
 SOURCEFont color=0, 0, 0
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -9492,9 +9492,9 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\CDMINHR]
-STRNFont=新宋体,8,N
+STRNFont=新宋體,8,N
 STRNFont color=0, 0, 0
-DISPNAMEFont=新宋体,8,N
+DISPNAMEFont=新宋體,8,N
 DISPNAMEFont color=0, 0, 0
 AutoAdjustToText=Yes
 Keep aspect=No
@@ -9516,7 +9516,7 @@ Shadow color=192 192 192
 Shadow=0
 
 [DisplayPreferences\Symbol\LINH]
-CENTERFont=新宋体,8,N
+CENTERFont=新宋體,8,N
 CENTERFont color=0, 0, 0
 Line style=1
 Source Arrow=24
@@ -9576,9 +9576,9 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
-LABL 0 新宋体,8,N</a:FontList>
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
+LABL 0 新宋體,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>16</a:GradientFillMode>
 <a:GradientEndColor>11396853</a:GradientEndColor>
@@ -9681,8 +9681,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9690,10 +9690,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 微软雅黑,7,N
-EntityPrimaryAttribute 0 微软雅黑,7,N
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 微軟雅黑,7,N
+EntityPrimaryAttribute 0 微軟雅黑,7,N
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o148"/>
@@ -9708,8 +9708,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9717,10 +9717,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o149"/>
@@ -9734,8 +9734,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9743,10 +9743,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o150"/>
 </c:Object>
@@ -9759,8 +9759,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9768,10 +9768,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o151"/>
 </c:Object>
@@ -9785,8 +9785,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9794,10 +9794,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 微软雅黑,7,N
-EntityPrimaryAttribute 0 微软雅黑,7,N
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 微軟雅黑,7,N
+EntityPrimaryAttribute 0 微軟雅黑,7,N
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o152"/>
@@ -9817,9 +9817,9 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
-LABL 0 新宋体,8,N</a:FontList>
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
+LABL 0 新宋體,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>16</a:GradientFillMode>
 <a:GradientEndColor>11396853</a:GradientEndColor>
@@ -9922,8 +9922,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9931,10 +9931,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 微软雅黑,7,N
-EntityPrimaryAttribute 0 微软雅黑,7,N
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 微軟雅黑,7,N
+EntityPrimaryAttribute 0 微軟雅黑,7,N
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o167"/>
@@ -9948,8 +9948,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9957,10 +9957,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o168"/>
 </c:Object>
@@ -9974,8 +9974,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -9983,10 +9983,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o169"/>
@@ -10000,8 +10000,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 新宋体,8,N
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 新宋體,8,N
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -10009,10 +10009,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 新宋体,8,N
-EntityPrimaryAttribute 0 新宋体,8,U
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 新宋體,8,N
+EntityPrimaryAttribute 0 新宋體,8,U
+Identifiers 0 新宋體,8,N</a:FontList>
 <c:Object>
 <o:Table Ref="o170"/>
 </c:Object>
@@ -10026,8 +10026,8 @@ Identifiers 0 新宋体,8,N</a:FontList>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>8454143</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 新宋体,8,N
-DISPNAME 0 微软雅黑,9,B
+<a:FontList>STRN 0 新宋體,8,N
+DISPNAME 0 微軟雅黑,9,B
 OWNRDISPNAME 0 Arial,8,N
 Columns 0 Arial,8,N
 TablePkColumns 0 Arial,8,U
@@ -10035,10 +10035,10 @@ TableFkColumns 0 Arial,8,N
 Keys 0 Arial,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
-LABL 0 新宋体,8,N
-Attributes 0 微软雅黑,7,N
-EntityPrimaryAttribute 0 微软雅黑,7,N
-Identifiers 0 新宋体,8,N</a:FontList>
+LABL 0 新宋體,8,N
+Attributes 0 微軟雅黑,7,N
+EntityPrimaryAttribute 0 微軟雅黑,7,N
+Identifiers 0 新宋體,8,N</a:FontList>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Table Ref="o171"/>
@@ -10536,13 +10536,13 @@ Shadow=0</a:DisplayPreferences>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16756576</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 微软雅黑,10,B
-DISPNAME 0 微软雅黑,10,B
-OWNRDISPNAME 0 微软雅黑,10,B
-Columns 0 微软雅黑,8,N
-TablePkColumns 0 微软雅黑,8,U
+<a:FontList>STRN 0 微軟雅黑,10,B
+DISPNAME 0 微軟雅黑,10,B
+OWNRDISPNAME 0 微軟雅黑,10,B
+Columns 0 微軟雅黑,8,N
+TablePkColumns 0 微軟雅黑,8,U
 TableFkColumns 0 Arial,8,N
-Keys 0 新宋体,8,N
+Keys 0 新宋體,8,N
 Indexes 0 Arial,8,N
 Triggers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
@@ -10786,7 +10786,7 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Tables>
 <o:Table Id="o52">
 <a:ObjectID>72697C1A-BDDE-4220-BD06-D61248276A73</a:ObjectID>
-<a:Name>FM1_计量单位-集团级</a:Name>
+<a:Name>FM1_計量單位-集團級</a:Name>
 <a:Code>fm1_unit</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10800,7 +10800,7 @@ ATT NAME</a:History>
 <c:Columns>
 <o:Column Id="o196">
 <a:ObjectID>34B61200-1A20-4311-9DB6-802E119A96E8</a:ObjectID>
-<a:Name>id (计量单位主键)</a:Name>
+<a:Name>id (計量單位主鍵)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10822,7 +10822,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o197">
 <a:ObjectID>558D63E8-169E-4D94-B228-18EFED9BE1A8</a:ObjectID>
-<a:Name>计量单位编码</a:Name>
+<a:Name>計量單位編碼</a:Name>
 <a:Code>cd</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10841,7 +10841,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o198">
 <a:ObjectID>237C8926-4793-46EF-ABC1-DD2DCD69E932</a:ObjectID>
-<a:Name>计量单位名称</a:Name>
+<a:Name>計量單位名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10860,7 +10860,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o199">
 <a:ObjectID>BEADF309-D670-4A31-87CE-08E915F12413</a:ObjectID>
-<a:Name>是否基本量纲</a:Name>
+<a:Name>是否基本量綱</a:Name>
 <a:Code>is_fundamental_unit</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10878,13 +10878,13 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o200">
 <a:ObjectID>ED452144-3E54-41CB-B38E-41D83F1EB1B2</a:ObjectID>
-<a:Name>所属量纲</a:Name>
+<a:Name>所屬量綱</a:Name>
 <a:Code>fundamental_unit_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550732993</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>W=重量，L=长度，A=面积，V=体积，P=件数，T=时间，E=其他</a:Comment>
+<a:Comment>W=重量，L=長度，A=面積，V=體積，P=件數，T=時間，E=其他</a:Comment>
 <a:History>ORG {65D6B3EE-6F00-4110-90C6-C512250FDF72}
 DAT 1550457980
 ATT CODE
@@ -10899,7 +10899,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o201">
 <a:ObjectID>75AF44F2-7FB3-47AC-9E0D-9EB7773CA889</a:ObjectID>
-<a:Name>换算系数</a:Name>
+<a:Name>換算係數</a:Name>
 <a:Code>exchange_rate</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10919,7 +10919,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o202">
 <a:ObjectID>D017FB80-22A7-4E81-9C37-AD6B2216DA4A</a:ObjectID>
-<a:Name>小数位数</a:Name>
+<a:Name>小數位數</a:Name>
 <a:Code>decimal</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10938,7 +10938,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o203">
 <a:ObjectID>18AFE370-1373-468E-B031-CF1608639018</a:ObjectID>
-<a:Name>英文名称</a:Name>
+<a:Name>英文名稱</a:Name>
 <a:Code>name_en</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10957,7 +10957,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o204">
 <a:ObjectID>4C220E53-4AD0-43DB-B810-BB7B47F68D12</a:ObjectID>
-<a:Name>英文名称复数</a:Name>
+<a:Name>英文名稱複數</a:Name>
 <a:Code>name_en_plural</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -10976,13 +10976,13 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o205">
 <a:ObjectID>639AFABF-C055-4C48-A977-ACBE854B8A99</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550466665</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1=未启用、2=启用、3=停用</a:Comment>
+<a:Comment>1=未啓用、2=啓用、3=停用</a:Comment>
 <a:History>ORG {83C48225-755C-4181-82C0-1D7BDE900774}
 DAT 1550457980
 ATT CODE
@@ -11015,8 +11015,8 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 <c:Indexes>
 <o:Index Id="o207">
 <a:ObjectID>82D4A0FD-BAC9-4285-A0AF-57F6E31BD239</a:ObjectID>
-<a:Name>FM1_50-计量单位-集团级_PK</a:Name>
-<a:Code>FM1_50-计量单位-集团级_PK</a:Code>
+<a:Name>FM1_50-計量單位-集團級_PK</a:Name>
+<a:Code>FM1_50-計量單位-集團級_PK</a:Code>
 <a:CreationDate>1550457980</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550458033</a:ModificationDate>
@@ -11090,7 +11090,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o211">
 <a:ObjectID>A1FFF58B-E600-4DE4-98F2-B0B660435D57</a:ObjectID>
-<a:Name>轮班制度id</a:Name>
+<a:Name>輪班制度id</a:Name>
 <a:Code>shift_system_id</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11110,7 +11110,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550470464</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>&#39;-1=前一日，0=当日，1=后一日</a:Comment>
+<a:Comment>&#39;-1=前一日，0=當日，1=後一日</a:Comment>
 <a:DataType>datetime</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o187"/>
@@ -11124,7 +11124,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550470464</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>&#39;-1=前一日，0=当日，1=后一日</a:Comment>
+<a:Comment>&#39;-1=前一日，0=當日，1=後一日</a:Comment>
 <a:DataType>datetime</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o187"/>
@@ -11132,7 +11132,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o214">
 <a:ObjectID>47522CF2-3335-4185-8A4A-F35EA44A9412</a:ObjectID>
-<a:Name>上班时长</a:Name>
+<a:Name>上班時長</a:Name>
 <a:Code>working_hours</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11169,13 +11169,13 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Table>
 <o:Table Id="o31">
 <a:ObjectID>BAA877D3-444B-4041-B591-9B28575ED52E</a:ObjectID>
-<a:Name>FM4_班组轮班-人员明细</a:Name>
+<a:Name>FM4_班組輪班-人員明細</a:Name>
 <a:Code>fm4_teamcalendar_person</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550738990</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>根据班组人员结合班组实际轮班，自动生成此表，可以做人员调班</a:Comment>
+<a:Comment>根據班組人員結合班組實際輪班，自動生成此表，可以做人員調班</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o216">
@@ -11195,7 +11195,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o217">
 <a:ObjectID>5F86CE6B-6DD5-4245-94E6-7FDB2247B8A8</a:ObjectID>
-<a:Name>班组轮班明细pk</a:Name>
+<a:Name>班組輪班明細pk</a:Name>
 <a:Code>team_calendar_pk</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11209,7 +11209,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o218">
 <a:ObjectID>96BE33E2-EBD9-4B33-9E63-6C5C68B2E411</a:ObjectID>
-<a:Name>人员cd</a:Name>
+<a:Name>人員cd</a:Name>
 <a:Code>operator_cd</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11223,13 +11223,13 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o219">
 <a:ObjectID>9157A722-FD2A-42A6-99FC-34352C54955B</a:ObjectID>
-<a:Name>调班标记</a:Name>
+<a:Name>調班標記</a:Name>
 <a:Code>is_transferred</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550471964</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0：未调班（默认）、-1：调出，1：调入</a:Comment>
+<a:Comment>0：未調班（默認）、-1：調出，1：調入</a:Comment>
 <a:DataType>bit</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o186"/>
@@ -11259,24 +11259,24 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Table>
 <o:Table Id="o30">
 <a:ObjectID>FEE4B9F6-C786-40CB-AB75-434701E7119D</a:ObjectID>
-<a:Name>FM4_班组轮班明细</a:Name>
+<a:Name>FM4_班組輪班明細</a:Name>
 <a:Code>fm4_teamcalendar</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550473194</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>后台服务自动生成此表数据
+<a:Comment>後臺服務自動生成此表數據
 
-生产组别别：生产线1组
-班组：1组甲班、1组乙班、1组丙班
+生產組別別：生產線1組
+班組：1組甲班、1組乙班、1組丙班
 
-采用三班两倒2天轮班的轮班明细
+採用三班兩倒2天輪班的輪班明細
         2019.1.1    2019.1.2    2019.1.3   2019.1.4      2019.1.5    2019.1.6
-白班  1组甲班    1组甲班      1组丙班    1组丙班       1组乙班      1组乙班       
-夜班  1组乙班    1组乙班      1组甲班    1组甲班       1组丙班      1组丙班       
+白班  1組甲班    1組甲班      1組丙班    1組丙班       1組乙班      1組乙班       
+夜班  1組乙班    1組乙班      1組甲班    1組甲班       1組丙班      1組丙班       
 
 
-根据轮班制度的班次类型带出表体的班次（白班、夜班），和周期，默认生成正交二维表，各表格内容参照轮班制度班组类型（甲乙丙）填写</a:Comment>
+根據輪班制度的班次類型帶出表體的班次（白班、夜班），和週期，默認生成正交二維表，各表格內容參照輪班制度班組類型（甲乙丙）填寫</a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="o221">
@@ -11335,7 +11335,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Column>
 <o:Column Id="o225">
 <a:ObjectID>6DC73266-25DD-4DE4-93E8-682845DA78B0</a:ObjectID>
-<a:Name>班组PK</a:Name>
+<a:Name>班組PK</a:Name>
 <a:Code>team_pk</a:Code>
 <a:CreationDate>1550458344</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11371,7 +11371,7 @@ INS COLNCOL {C78EAF6F-0E4F-4366-B118-9B41ECA9A00E}</a:History>
 </o:Table>
 <o:Table Id="o50">
 <a:ObjectID>B749528F-56BC-4FA1-8843-7B853E36B2E3</a:ObjectID>
-<a:Name>FM7_物料计量信息</a:Name>
+<a:Name>FM7_物料計量信息</a:Name>
 <a:Code>fm7_material_unit</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11396,7 +11396,7 @@ ATT CODE</a:History>
 <c:Columns>
 <o:Column Id="o228">
 <a:ObjectID>9F8BF4AC-01F9-495F-91E4-E354A982A26E</a:ObjectID>
-<a:Name>id (物料计量信息主键)</a:Name>
+<a:Name>id (物料計量信息主鍵)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11418,7 +11418,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o229">
 <a:ObjectID>32041340-E04C-417B-910E-9F8A46ABF69D</a:ObjectID>
-<a:Name>物料基本信息主键</a:Name>
+<a:Name>物料基本信息主鍵</a:Name>
 <a:Code>material_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11439,7 +11439,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o230">
 <a:ObjectID>C03207A6-8FF8-4D6D-9C56-B3E079EB23B4</a:ObjectID>
-<a:Name>计量单位主键</a:Name>
+<a:Name>計量單位主鍵</a:Name>
 <a:Code>unit_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11460,7 +11460,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o231">
 <a:ObjectID>2C05B848-8E78-485F-9E4B-4D4DA59FAF1F</a:ObjectID>
-<a:Name>计量单位</a:Name>
+<a:Name>計量單位</a:Name>
 <a:Code>unit_name</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11479,7 +11479,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o232">
 <a:ObjectID>708DCB38-0A1D-463B-A21F-B567FDC40EA3</a:ObjectID>
-<a:Name>换算率</a:Name>
+<a:Name>換算率</a:Name>
 <a:Code>exchange_rate</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11499,7 +11499,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o233">
 <a:ObjectID>95F3A983-5481-479F-90C8-CB195F0020A0</a:ObjectID>
-<a:Name>是否固定换算率</a:Name>
+<a:Name>是否固定換算率</a:Name>
 <a:Code>is_fixed_exchange</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11536,8 +11536,8 @@ INS COLNCOL {A882D117-C19C-4D03-9BB8-D3D18CD6551B}</a:History>
 <c:Indexes>
 <o:Index Id="o235">
 <a:ObjectID>E813E93C-33D7-4C32-B1C4-69AC1B2C7B77</a:ObjectID>
-<a:Name>FM7_物料计量信息_PK</a:Name>
-<a:Code>FM7_物料计量信息_PK</a:Code>
+<a:Name>FM7_物料計量信息_PK</a:Name>
+<a:Code>FM7_物料計量信息_PK</a:Code>
 <a:CreationDate>1550457980</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550458033</a:ModificationDate>
@@ -11626,7 +11626,7 @@ INS COLNCOL {A882D117-C19C-4D03-9BB8-D3D18CD6551B}</a:History>
 </o:Table>
 <o:Table Id="o51">
 <a:ObjectID>4DD796A1-87A9-435A-84E8-5614FAE43B3C</a:ObjectID>
-<a:Name>FM7_物料基本分类</a:Name>
+<a:Name>FM7_物料基本分類</a:Name>
 <a:Code>fm7_material_cat</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11641,7 +11641,7 @@ ATT PRIK</a:History>
 <c:Columns>
 <o:Column Id="o241">
 <a:ObjectID>E3254426-2D6E-4F86-B6F5-E86ACF377639</a:ObjectID>
-<a:Name>id (物料基本分类主键)</a:Name>
+<a:Name>id (物料基本分類主鍵)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11665,7 +11665,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o242">
 <a:ObjectID>70682B46-546B-4066-BAA9-A3908CA34D20</a:ObjectID>
-<a:Name>物料基本分类编码</a:Name>
+<a:Name>物料基本分類編碼</a:Name>
 <a:Code>cd</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11686,7 +11686,7 @@ ATT MAND</a:History>
 </o:Column>
 <o:Column Id="o243">
 <a:ObjectID>01A76223-9D94-4120-A151-5A175F1D68B7</a:ObjectID>
-<a:Name>物料基本分类名称</a:Name>
+<a:Name>物料基本分類名稱</a:Name>
 <a:Code>cat_name</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11707,7 +11707,7 @@ ATT MAND</a:History>
 </o:Column>
 <o:Column Id="o244">
 <a:ObjectID>6648DE6F-4062-4169-9BA9-C122E284A617</a:ObjectID>
-<a:Name>物料分类上级</a:Name>
+<a:Name>物料分類上級</a:Name>
 <a:Code>parent_cat_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11727,7 +11727,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o245">
 <a:ObjectID>E23C6A6D-04DA-436D-B579-0D76294BB027</a:ObjectID>
-<a:Name>是否启用</a:Name>
+<a:Name>是否啓用</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11747,7 +11747,7 @@ ATT MAND</a:History>
 </o:Column>
 <o:Column Id="o246">
 <a:ObjectID>519B882D-E3A1-49E8-83DF-F9ED28316E1D</a:ObjectID>
-<a:Name>辅助属性结构</a:Name>
+<a:Name>輔助屬性結構</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11801,7 +11801,7 @@ MOV COLNCOL</a:History>
 <c:Columns>
 <o:Column Id="o248">
 <a:ObjectID>A15C052E-AEB7-4092-808A-C060A587F6B7</a:ObjectID>
-<a:Name>id (物料基本信息主键)</a:Name>
+<a:Name>id (物料基本信息主鍵)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11823,7 +11823,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o249">
 <a:ObjectID>50F39735-571F-4748-9BE8-F624C3F85144</a:ObjectID>
-<a:Name>物料分类</a:Name>
+<a:Name>物料分類</a:Name>
 <a:Code>cat_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11843,7 +11843,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o250">
 <a:ObjectID>9E1DE845-F164-4D7A-BBC3-34187BD46DD7</a:ObjectID>
-<a:Name>物料编码</a:Name>
+<a:Name>物料編碼</a:Name>
 <a:Code>cd</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11862,7 +11862,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o251">
 <a:ObjectID>243F88CC-6F83-486A-BD15-34FED9C4B123</a:ObjectID>
-<a:Name>物料名称</a:Name>
+<a:Name>物料名稱</a:Name>
 <a:Code>material_name</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11881,7 +11881,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o252">
 <a:ObjectID>BEF4E969-30B9-434A-B309-44C6A5E8CB3B</a:ObjectID>
-<a:Name>英文名称</a:Name>
+<a:Name>英文名稱</a:Name>
 <a:Code>material_name_en</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11900,7 +11900,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o253">
 <a:ObjectID>E19A79FF-8871-4726-B8BE-0596BDF1EA6C</a:ObjectID>
-<a:Name>物料简称</a:Name>
+<a:Name>物料簡稱</a:Name>
 <a:Code>material_name_abbr</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11919,7 +11919,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o254">
 <a:ObjectID>4CC10CA7-5926-431F-8318-55DED79D3D51</a:ObjectID>
-<a:Name>主计量单位</a:Name>
+<a:Name>主計量單位</a:Name>
 <a:Code>unit_pk</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11939,7 +11939,7 @@ ATT MLEN</a:History>
 </o:Column>
 <o:Column Id="o255">
 <a:ObjectID>09435446-270A-4F7A-8410-BC25EAB36B00</a:ObjectID>
-<a:Name>规格</a:Name>
+<a:Name>規格</a:Name>
 <a:Code>spec</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11957,7 +11957,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o256">
 <a:ObjectID>10E3C326-1394-42B9-8167-93BE2C73466F</a:ObjectID>
-<a:Name>英文规格</a:Name>
+<a:Name>英文規格</a:Name>
 <a:Code>spec_en</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11975,7 +11975,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o257">
 <a:ObjectID>3B54AF9C-7125-476D-9B98-AF59ED3C212F</a:ObjectID>
-<a:Name>型号</a:Name>
+<a:Name>型號</a:Name>
 <a:Code>model</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -11994,7 +11994,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o258">
 <a:ObjectID>6DF1D574-B59D-48EC-B0D1-5C81879FAD38</a:ObjectID>
-<a:Name>图片</a:Name>
+<a:Name>圖片</a:Name>
 <a:Code>image_path</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12032,13 +12032,13 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o260">
 <a:ObjectID>9903C6D5-0956-442D-ADB4-66322B93B030</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550461056</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1=未启用、2=启用、3=停用</a:Comment>
+<a:Comment>1=未啓用、2=啓用、3=停用</a:Comment>
 <a:History>ORG {BDA13B2F-6BD6-42E5-90B9-9E81399975F4}
 DAT 1550457980
 ATT CODE
@@ -12052,7 +12052,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o261">
 <a:ObjectID>4640290C-AE8E-43B1-B889-297010A79DAE</a:ObjectID>
-<a:Name>海关商品代码</a:Name>
+<a:Name>海關商品代碼</a:Name>
 <a:Code>custom_product_id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12071,7 +12071,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o262">
 <a:ObjectID>27E44426-6DBB-4AA6-856B-0203A3817D9C</a:ObjectID>
-<a:Name>海关商品打印名称</a:Name>
+<a:Name>海關商品打印名稱</a:Name>
 <a:Code>custom_product_name</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12090,7 +12090,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o263">
 <a:ObjectID>C79109E3-3311-4E3F-94C4-42CCC4529F60</a:ObjectID>
-<a:Name>条形码</a:Name>
+<a:Name>條形碼</a:Name>
 <a:Code>barcode</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12108,7 +12108,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o264">
 <a:ObjectID>4FE397B6-05D5-46F5-BBDE-E3726FEAE869</a:ObjectID>
-<a:Name>助记码</a:Name>
+<a:Name>助記碼</a:Name>
 <a:Code>mnemonic_code</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12126,7 +12126,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o265">
 <a:ObjectID>879C678B-54DC-4985-B6DB-DFD7B1D3251B</a:ObjectID>
-<a:Name>版本号</a:Name>
+<a:Name>版本號</a:Name>
 <a:Code>version</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12144,7 +12144,7 @@ ATT DOMN</a:History>
 </o:Column>
 <o:Column Id="o266">
 <a:ObjectID>A795E492-69AC-41E8-B4FB-1DEB7761430D</a:ObjectID>
-<a:Name>物料申请单</a:Name>
+<a:Name>物料申請單</a:Name>
 <a:Code>application_form_id</a:Code>
 <a:CreationDate>1550457978</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12272,13 +12272,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o32">
 <a:ObjectID>99C04A68-7F49-4B1E-B2E6-0E8A3FDA58CE</a:ObjectID>
-<a:Name>FM3_生产班组--参照组织树倒数第一级</a:Name>
+<a:Name>FM3_生產班組--參照組織樹倒數第一級</a:Name>
 <a:Code>fm3_team</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550796348</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>参照班别的轮班制度，自动生成生成组别的表体（班别）
+<a:Comment>參照班別的輪班制度，自動生成生成組別的表體（班別）
 </a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
@@ -12295,7 +12295,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o275">
 <a:ObjectID>42DD2C4C-3964-4D30-BCBF-BC884DBE5890</a:ObjectID>
-<a:Name>id (班组PK)</a:Name>
+<a:Name>id (班組PK)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12310,7 +12310,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o276">
 <a:ObjectID>EFD40BE3-D9DC-4E9D-8834-05A4FEF3BC8D</a:ObjectID>
-<a:Name>班组cd</a:Name>
+<a:Name>班組cd</a:Name>
 <a:Code>cd</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12324,7 +12324,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o277">
 <a:ObjectID>E7D436A7-1A67-4277-ADC8-3AB51579DA89</a:ObjectID>
-<a:Name>班组名称</a:Name>
+<a:Name>班組名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12338,7 +12338,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o278">
 <a:ObjectID>25267075-698E-4C64-A804-7E826CBEC11A</a:ObjectID>
-<a:Name>班长</a:Name>
+<a:Name>班長</a:Name>
 <a:Code>leader_cd</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12352,13 +12352,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o279">
 <a:ObjectID>F56278B9-EECB-47E8-9924-4193A5FBCE81</a:ObjectID>
-<a:Name>班组类型</a:Name>
+<a:Name>班組類型</a:Name>
 <a:Code>type</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550739337</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>例如四班三倒2天换班：的班组类型：甲乙丙丁</a:Comment>
+<a:Comment>例如四班三倒2天換班：的班組類型：甲乙丙丁</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -12366,13 +12366,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o280">
 <a:ObjectID>643FDC1E-CBBF-4FB9-8C52-89297BA8E524</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550467813</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550471261</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1=未启用、2=启用、3=停用</a:Comment>
+<a:Comment>1=未啓用、2=啓用、3=停用</a:Comment>
 <a:DataType>bit</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o186"/>
@@ -12402,7 +12402,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o59">
 <a:ObjectID>2AD51DD8-14F5-4BF3-B05C-54F1ABF5F61C</a:ObjectID>
-<a:Name>FM6_储位</a:Name>
+<a:Name>FM6_儲位</a:Name>
 <a:Code>fm6_store</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12412,7 +12412,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o282">
 <a:ObjectID>E39F115F-68CB-4EE4-AAEE-5153623C1704</a:ObjectID>
-<a:Name>储位主键</a:Name>
+<a:Name>儲位主鍵</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12427,7 +12427,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o283">
 <a:ObjectID>7D092D25-8750-4984-A447-84C03DDFCA23</a:ObjectID>
-<a:Name>储位编码</a:Name>
+<a:Name>儲位編碼</a:Name>
 <a:Code>code</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12441,7 +12441,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o284">
 <a:ObjectID>0B81F2B5-D114-4C72-9912-4F0639DAF45E</a:ObjectID>
-<a:Name>储位名称</a:Name>
+<a:Name>儲位名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12455,7 +12455,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o285">
 <a:ObjectID>37C952B9-646F-494E-91EF-93F50543D8F9</a:ObjectID>
-<a:Name>所属储区</a:Name>
+<a:Name>所屬儲區</a:Name>
 <a:Code>warehouse_id</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12469,7 +12469,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o286">
 <a:ObjectID>501284B0-2EAA-42E6-A8E0-712B9FFFB6D2</a:ObjectID>
-<a:Name>入库优先级</a:Name>
+<a:Name>入庫優先級</a:Name>
 <a:Code>in_priority</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12482,7 +12482,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o287">
 <a:ObjectID>42863D3A-3979-4B5A-B5D5-7E415F8D1172</a:ObjectID>
-<a:Name>出库优先级</a:Name>
+<a:Name>出庫優先級</a:Name>
 <a:Code>out_priority</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12495,7 +12495,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o288">
 <a:ObjectID>ACDD8424-D316-4C70-B11B-A1837A2730AD</a:ObjectID>
-<a:Name>负责人</a:Name>
+<a:Name>負責人</a:Name>
 <a:Code>ppl_in_charge</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12509,7 +12509,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o289">
 <a:ObjectID>AACDF9DB-46A5-43FC-9BCE-CC9FCBCEB490</a:ObjectID>
-<a:Name>储位容积</a:Name>
+<a:Name>儲位容積</a:Name>
 <a:Code>volume</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12524,7 +12524,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o290">
 <a:ObjectID>0071CAAA-AD22-453F-839D-9C9B3B70F610</a:ObjectID>
-<a:Name>是否检验储位</a:Name>
+<a:Name>是否檢驗儲位</a:Name>
 <a:Code>is_inspection_store</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12537,7 +12537,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o291">
 <a:ObjectID>7B93754F-F9AD-48C5-A52C-3E0FF8557F41</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12572,7 +12572,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o58">
 <a:ObjectID>AD8E6601-4011-4934-8F28-2BA92A037312</a:ObjectID>
-<a:Name>FM6_储区</a:Name>
+<a:Name>FM6_儲區</a:Name>
 <a:Code>fm6_warehouse</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12593,7 +12593,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o294">
 <a:ObjectID>20446663-E48D-454C-87F5-ABB2B0F16C1D</a:ObjectID>
-<a:Name>储区主键</a:Name>
+<a:Name>儲區主鍵</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12608,7 +12608,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o295">
 <a:ObjectID>76336B35-63C4-404E-B93D-A1FD2292E996</a:ObjectID>
-<a:Name>储区编码</a:Name>
+<a:Name>儲區編碼</a:Name>
 <a:Code>code</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12622,7 +12622,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o296">
 <a:ObjectID>A66CFD8E-96FE-4C98-B603-E67388779A41</a:ObjectID>
-<a:Name>储区名称</a:Name>
+<a:Name>儲區名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12636,7 +12636,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o297">
 <a:ObjectID>723B7495-0257-4CFF-8AF3-1069AD5E54E3</a:ObjectID>
-<a:Name>是否储位管理</a:Name>
+<a:Name>是否儲位管理</a:Name>
 <a:Code>is_store_mgt</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12649,7 +12649,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o298">
 <a:ObjectID>8371CA90-EFD9-4E93-9977-88EF149D9382</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12662,7 +12662,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o299">
 <a:ObjectID>66A91A5F-9ED1-48D2-9B9C-A41E5CDA5286</a:ObjectID>
-<a:Name>是否废品库</a:Name>
+<a:Name>是否廢品庫</a:Name>
 <a:Code>is_scrap_wh</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12675,7 +12675,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o300">
 <a:ObjectID>B027A1BB-6C0D-4443-82BB-EA063030A657</a:ObjectID>
-<a:Name>是否外协仓</a:Name>
+<a:Name>是否外協倉</a:Name>
 <a:Code>is_outsource_wh</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12688,7 +12688,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o301">
 <a:ObjectID>FAB6EA6F-BAC4-4577-A08E-8EC5E637D238</a:ObjectID>
-<a:Name>是否保税仓</a:Name>
+<a:Name>是否保稅倉</a:Name>
 <a:Code>is_bonded_wh</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12701,7 +12701,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o302">
 <a:ObjectID>377A2820-D8CB-446B-B8AD-C5EBB419D9D1</a:ObjectID>
-<a:Name>是否生产仓</a:Name>
+<a:Name>是否生產倉</a:Name>
 <a:Code>is_production_wh</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12728,7 +12728,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o304">
 <a:ObjectID>51A4A442-7450-421E-A678-0318E4F74E79</a:ObjectID>
-<a:Name>电话号码</a:Name>
+<a:Name>電話號碼</a:Name>
 <a:Code>phone_no</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12742,7 +12742,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o305">
 <a:ObjectID>EA3BA550-8039-47B5-B54E-818020D204D7</a:ObjectID>
-<a:Name>负责人</a:Name>
+<a:Name>負責人</a:Name>
 <a:Code>ppl_in_charge</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12756,7 +12756,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o306">
 <a:ObjectID>0BC44684-BE16-4322-84F8-5F2EF4F690DF</a:ObjectID>
-<a:Name>仓库地址</a:Name>
+<a:Name>倉庫地址</a:Name>
 <a:Code>addr</a:Code>
 <a:CreationDate>1550476708</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12821,7 +12821,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o85">
 <a:ObjectID>0508C299-B939-4E44-8EC6-77B4B3EAF53E</a:ObjectID>
-<a:Name>FM6_生产机台</a:Name>
+<a:Name>FM6_生產機臺</a:Name>
 <a:Code>fm6_equipment</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12831,7 +12831,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o310">
 <a:ObjectID>F706151E-5F0F-4F03-A800-270A89B2F279</a:ObjectID>
-<a:Name>生产机台ID</a:Name>
+<a:Name>生產機臺ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12846,7 +12846,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o311">
 <a:ObjectID>2F19EC72-8E3D-4E65-BA66-77D16D673415</a:ObjectID>
-<a:Name>编码</a:Name>
+<a:Name>編碼</a:Name>
 <a:Code>code</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12860,7 +12860,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o312">
 <a:ObjectID>772DC4F4-8856-4110-A03D-6E4C152745EA</a:ObjectID>
-<a:Name>名称</a:Name>
+<a:Name>名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12873,7 +12873,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o313">
 <a:ObjectID>CDE12D81-8575-4A71-9099-0320B2CD7326</a:ObjectID>
-<a:Name>说明</a:Name>
+<a:Name>說明</a:Name>
 <a:Code>spec</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12887,7 +12887,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o314">
 <a:ObjectID>D2C9D2FD-590F-4FBC-991C-F9C2320B722C</a:ObjectID>
-<a:Name>制程码</a:Name>
+<a:Name>製程碼</a:Name>
 <a:Code>process_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12901,7 +12901,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o315">
 <a:ObjectID>F5238576-D744-45B8-8021-5368CCA675D8</a:ObjectID>
-<a:Name>是否批次生产装备</a:Name>
+<a:Name>是否批次生產裝備</a:Name>
 <a:Code>is_batch_equipment</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12914,7 +12914,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o316">
 <a:ObjectID>6E0D4E24-83BF-4066-85DE-2819AA9E8079</a:ObjectID>
-<a:Name>生产装备基本类型cd</a:Name>
+<a:Name>生產裝備基本類型cd</a:Name>
 <a:Code>base_type_cd</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12927,7 +12927,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o317">
 <a:ObjectID>5CFD9C0E-6924-4EAF-AC1E-853758AC9AB8</a:ObjectID>
-<a:Name>生产装备层级cd</a:Name>
+<a:Name>生產裝備層級cd</a:Name>
 <a:Code>level_cd</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12953,7 +12953,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o319">
 <a:ObjectID>AF2F9BF8-CF3E-4BFE-9FA7-08467FFEF5B3</a:ObjectID>
-<a:Name>所在工厂</a:Name>
+<a:Name>所在工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12967,7 +12967,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o320">
 <a:ObjectID>D0157FF4-31F2-4EE1-83A5-1D07921B223E</a:ObjectID>
-<a:Name>所在部门</a:Name>
+<a:Name>所在部門</a:Name>
 <a:Code>dep_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12981,7 +12981,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o321">
 <a:ObjectID>A6E0C491-CF16-4FFF-BD42-27167629D91C</a:ObjectID>
-<a:Name>父节点</a:Name>
+<a:Name>父節點</a:Name>
 <a:Code>parent_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -12995,7 +12995,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o322">
 <a:ObjectID>61DFE179-1690-4AA8-8BAD-B0CD1D03B77D</a:ObjectID>
-<a:Name>经度</a:Name>
+<a:Name>經度</a:Name>
 <a:Code>longitude</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13010,7 +13010,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o323">
 <a:ObjectID>2B40C5FE-1BC0-466B-852C-05FA5F14014C</a:ObjectID>
-<a:Name>维度</a:Name>
+<a:Name>維度</a:Name>
 <a:Code>latitude</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13025,7 +13025,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o324">
 <a:ObjectID>57AFF942-0ABC-4E54-A6D0-773304694B0A</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13060,7 +13060,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o89">
 <a:ObjectID>72160261-B1E0-454A-A656-0BCC609AA00E</a:ObjectID>
-<a:Name>FM6_生产装备作业点</a:Name>
+<a:Name>FM6_生產裝備作業點</a:Name>
 <a:Code>fm6_equipment_op_point</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13070,7 +13070,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o326">
 <a:ObjectID>E6634AE3-927B-45D3-BD31-890FB55AA2FB</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13099,7 +13099,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o328">
 <a:ObjectID>351DF722-131B-47B3-8BA6-63B22490CF26</a:ObjectID>
-<a:Name>生产机台id</a:Name>
+<a:Name>生產機臺id</a:Name>
 <a:Code>equiment_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13113,7 +13113,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o329">
 <a:ObjectID>9F2991A0-E1D1-4CC9-B6B9-133B6696011E</a:ObjectID>
-<a:Name>作业点类型cd</a:Name>
+<a:Name>作業點類型cd</a:Name>
 <a:Code>op_point_type_cd</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13126,7 +13126,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o330">
 <a:ObjectID>959AA1B0-6C95-43DF-A050-8367364247E6</a:ObjectID>
-<a:Name>名称</a:Name>
+<a:Name>名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13139,13 +13139,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o331">
 <a:ObjectID>FD91BD11-757B-410C-BC44-C7067F330531</a:ObjectID>
-<a:Name>投入类型</a:Name>
+<a:Name>投入類型</a:Name>
 <a:Code>checkin_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550477919</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0-lot,1-铜线，2-原料</a:Comment>
+<a:Comment>0-lot,1-銅線，2-原料</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -13153,7 +13153,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o332">
 <a:ObjectID>525772EB-AB83-49C5-9D72-0A2275D375E0</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13188,13 +13188,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o88">
 <a:ObjectID>D579F41C-A6D4-4811-BA25-6D979049831D</a:ObjectID>
-<a:Name>CUST_作业点类型（自定义档案）</a:Name>
+<a:Name>CUST_作業點類型（自定義檔案）</a:Name>
 <a:Code>cust_op_point_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550740687</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>由项目自定义，预置：例如上料点、产出点、取样点、巡检点、称重点</a:Comment>
+<a:Comment>由項目自定義，預置：例如上料點、產出點、取樣點、巡檢點、稱重點</a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="o334">
@@ -13238,7 +13238,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o337">
 <a:ObjectID>2A0F5166-C520-4DFD-8CB3-55B83D752BD5</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13253,7 +13253,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o87">
 <a:ObjectID>77A0BDC8-4E31-4EDD-A1AE-3431C75FA645</a:ObjectID>
-<a:Name>FM6_生产机台状态</a:Name>
+<a:Name>FM6_生產機臺狀態</a:Name>
 <a:Code>fm6_equipment_status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13263,7 +13263,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o338">
 <a:ObjectID>45CB71E5-D358-443F-8C0B-2F4B0C11751C</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13277,7 +13277,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o339">
 <a:ObjectID>C84A8885-97CC-4F54-9FA7-4B1D652C5A09</a:ObjectID>
-<a:Name>生产装备ID</a:Name>
+<a:Name>生產裝備ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13292,7 +13292,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o340">
 <a:ObjectID>4F36FF9E-5903-4B57-BE25-9022CD5303B6</a:ObjectID>
-<a:Name>状态</a:Name>
+<a:Name>狀態</a:Name>
 <a:Code>status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13328,13 +13328,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o86">
 <a:ObjectID>16F43FA9-AE16-458D-B0E2-309ECDDD794A</a:ObjectID>
-<a:Name>CUST_生产装备状态（自定义档案）</a:Name>
+<a:Name>CUST_生產裝備狀態（自定義檔案）</a:Name>
 <a:Code>cust_equiment_status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823259</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>待机、生产、保养、停机、测试、关机……</a:Comment>
+<a:Comment>待機、生產、保養、停機、測試、關機……</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o342">
@@ -13367,7 +13367,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o344">
 <a:ObjectID>7DC98CD9-00F1-48FA-9186-E7EE87192AEA</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13382,14 +13382,14 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o84">
 <a:ObjectID>E453126C-DBCE-4C94-92A2-71FBFD0E5CA7</a:ObjectID>
-<a:Name>CUST_生产装备层级（自定义档案）</a:Name>
+<a:Name>CUST_生產裝備層級（自定義檔案）</a:Name>
 <a:Code>cust_equipment_level</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823246</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1-装置生产线站点级
-2-机台单元级</a:Comment>
+<a:Comment>1-裝置生產線站點級
+2-機臺單元級</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o345">
@@ -13421,7 +13421,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o347">
 <a:ObjectID>D1177A92-2AE4-4606-83EB-FD37B9703141</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13436,16 +13436,16 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o83">
 <a:ObjectID>D89CB82B-83D2-4B32-8B16-E64C4F6A1DC1</a:ObjectID>
-<a:Name>CUST_生产装备基本类型（自定义档案）</a:Name>
+<a:Name>CUST_生產裝備基本類型（自定義檔案）</a:Name>
 <a:Code>cust_equiment_base_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823239</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1-连续
-2-离散
+<a:Comment>1-連續
+2-離散
 3-批次
-4-储运</a:Comment>
+4-儲運</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o348">
@@ -13477,7 +13477,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o350">
 <a:ObjectID>A588B8E1-6E79-4FC6-B755-1E9A1D093F30</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13492,7 +13492,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o118">
 <a:ObjectID>3AA929FF-47A7-4D2B-AD24-A0F06349D77F</a:ObjectID>
-<a:Name>FM6_机台载具</a:Name>
+<a:Name>FM6_機臺載具</a:Name>
 <a:Code>fm6_equipment_carrier</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13502,7 +13502,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o351">
 <a:ObjectID>A25979FF-AEE7-482E-81CC-864F18115645</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13531,7 +13531,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o353">
 <a:ObjectID>4A70C19E-665E-4967-AF9D-3A08013C46C8</a:ObjectID>
-<a:Name>生产装备ID</a:Name>
+<a:Name>生產裝備ID</a:Name>
 <a:Code>equipment_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13545,7 +13545,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o354">
 <a:ObjectID>754B7B0E-9B7B-42A0-A1F3-47EF867812E2</a:ObjectID>
-<a:Name>载具型号ID</a:Name>
+<a:Name>載具型號ID</a:Name>
 <a:Code>carrier_model_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13559,13 +13559,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o355">
 <a:ObjectID>FE1CD732-CC13-4150-A4D1-2BC0FB0BFF87</a:ObjectID>
-<a:Name>投入/产出</a:Name>
+<a:Name>投入/產出</a:Name>
 <a:Code>check_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550477923</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0-投入1-产出</a:Comment>
+<a:Comment>0-投入1-產出</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -13573,7 +13573,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o356">
 <a:ObjectID>21947CA4-6A7D-4005-8137-7655AE31B8F4</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13608,7 +13608,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o117">
 <a:ObjectID>3D209B7A-2F01-4A6B-BB9C-C503D2768F4A</a:ObjectID>
-<a:Name>MWC_载具历史信息</a:Name>
+<a:Name>MWC_載具歷史信息</a:Name>
 <a:Code>mwc_carrierlog</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13618,7 +13618,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o358">
 <a:ObjectID>0EA1A086-06D4-49ED-9A95-080E06D46C25</a:ObjectID>
-<a:Name>载具状态记录ID</a:Name>
+<a:Name>載具狀態記錄ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13633,7 +13633,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o359">
 <a:ObjectID>417F0679-AF5F-42D4-8C23-14CF10232578</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13647,7 +13647,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o360">
 <a:ObjectID>B61A4E11-157D-4230-916A-C289B7EDD526</a:ObjectID>
-<a:Name>载具ID</a:Name>
+<a:Name>載具ID</a:Name>
 <a:Code>carrier_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13662,7 +13662,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o361">
 <a:ObjectID>1C3E4ABF-959B-42CC-83BA-85C8F432C29E</a:ObjectID>
-<a:Name>状态</a:Name>
+<a:Name>狀態</a:Name>
 <a:Code>status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13689,7 +13689,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o363">
 <a:ObjectID>5EE2E097-E376-4DD5-A7EE-72B2CBB5FB47</a:ObjectID>
-<a:Name>当前位置-机台</a:Name>
+<a:Name>當前位置-機臺</a:Name>
 <a:Code>equipment_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13703,7 +13703,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o364">
 <a:ObjectID>27F31F07-E5C1-4F5E-9A5F-5E6BC576B56F</a:ObjectID>
-<a:Name>当前位置-仓库</a:Name>
+<a:Name>當前位置-倉庫</a:Name>
 <a:Code>warehouse_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13717,7 +13717,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o365">
 <a:ObjectID>68EF56C6-DDD3-4E8B-A8BA-10688BFB089D</a:ObjectID>
-<a:Name>当前位置-储位</a:Name>
+<a:Name>當前位置-儲位</a:Name>
 <a:Code>store_place_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13731,7 +13731,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o366">
 <a:ObjectID>4108330D-2821-436B-903A-23BFC8E2763E</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13766,13 +13766,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o115">
 <a:ObjectID>0D293609-CE2E-47DF-8906-F611B76DF9E1</a:ObjectID>
-<a:Name>MWC_载具现况档</a:Name>
+<a:Name>MWC_載具現況檔</a:Name>
 <a:Code>mwc_carrier_common</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550743371</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>投入产出、物流移动，均可能影响此表数据。载具管理需要提供对外公共服务，记录载具现况。</a:Comment>
+<a:Comment>投入產出、物流移動，均可能影響此表數據。載具管理需要提供對外公共服務，記錄載具現況。</a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="o368">
@@ -13788,7 +13788,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o369">
 <a:ObjectID>6B3FADC1-B116-4D42-BA27-A197C62D3468</a:ObjectID>
-<a:Name>载具现况档ID</a:Name>
+<a:Name>載具現況檔ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13803,7 +13803,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o370">
 <a:ObjectID>D2B4131E-977C-4E35-8939-7CA5E4B2DD09</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13817,7 +13817,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o371">
 <a:ObjectID>2B4651CB-FCFA-481E-A0BC-671A76D93891</a:ObjectID>
-<a:Name>载具ID</a:Name>
+<a:Name>載具ID</a:Name>
 <a:Code>carrier_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13832,13 +13832,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o372">
 <a:ObjectID>364B5AE9-C14D-480C-88AC-740F68415419</a:ObjectID>
-<a:Name>状态</a:Name>
+<a:Name>狀態</a:Name>
 <a:Code>status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550743371</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>参照自定义档案：设备状态</a:Comment>
+<a:Comment>參照自定義檔案：設備狀態</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -13860,7 +13860,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o374">
 <a:ObjectID>0439BDB5-FECC-4646-9641-5FBD03548BD1</a:ObjectID>
-<a:Name>当前位置-机台</a:Name>
+<a:Name>當前位置-機臺</a:Name>
 <a:Code>equipment_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13874,7 +13874,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o375">
 <a:ObjectID>F1D2AE16-AD41-4D43-A8A9-A094EDD5D812</a:ObjectID>
-<a:Name>当前位置-仓库</a:Name>
+<a:Name>當前位置-倉庫</a:Name>
 <a:Code>warehouse_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13888,7 +13888,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o376">
 <a:ObjectID>C4770063-7D64-4825-A680-ABE0CA0D1004</a:ObjectID>
-<a:Name>当前位置-储位</a:Name>
+<a:Name>當前位置-儲位</a:Name>
 <a:Code>store_place_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13902,7 +13902,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o377">
 <a:ObjectID>6C7FD9C9-C1C1-473F-89CB-58F5A3867C5C</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13937,7 +13937,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o114">
 <a:ObjectID>53F69FC7-8874-4072-85A3-A6473159F9E7</a:ObjectID>
-<a:Name>FM6_载具基本信息</a:Name>
+<a:Name>FM6_載具基本信息</a:Name>
 <a:Code>fm6_carrierbaseinfo</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13947,7 +13947,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o379">
 <a:ObjectID>054D6153-8084-4EBB-B5B9-AE229483FA81</a:ObjectID>
-<a:Name>载具ID</a:Name>
+<a:Name>載具ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13962,7 +13962,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o380">
 <a:ObjectID>3EEE5A55-8015-45E8-9C47-FB5BA874C5AB</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13976,7 +13976,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o381">
 <a:ObjectID>185E2A6F-DADE-4515-8838-4CC556360DF8</a:ObjectID>
-<a:Name>载具型号ID</a:Name>
+<a:Name>載具型號ID</a:Name>
 <a:Code>carrier_model_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -13990,7 +13990,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o382">
 <a:ObjectID>ADF18830-8AB7-42CB-9484-0E8206142588</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14003,7 +14003,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o383">
 <a:ObjectID>D09D3C56-E233-4085-8223-C6D7CEECF762</a:ObjectID>
-<a:Name>数字标签1</a:Name>
+<a:Name>數字標籤1</a:Name>
 <a:Code>tag1</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14017,7 +14017,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o384">
 <a:ObjectID>7172BFB6-F1DB-4651-92E8-4BA7F8D7EC7A</a:ObjectID>
-<a:Name>数字标签2</a:Name>
+<a:Name>數字標籤2</a:Name>
 <a:Code>tag2</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14031,7 +14031,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o385">
 <a:ObjectID>125073C4-5823-4DBF-8E3D-BA4113AE1C22</a:ObjectID>
-<a:Name>数字标签3</a:Name>
+<a:Name>數字標籤3</a:Name>
 <a:Code>tag3</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14045,7 +14045,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o386">
 <a:ObjectID>D36DB6CA-E554-498F-B96F-A85161C02626</a:ObjectID>
-<a:Name>数字标签4</a:Name>
+<a:Name>數字標籤4</a:Name>
 <a:Code>tag4</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14081,7 +14081,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o113">
 <a:ObjectID>ABF8FD59-BBC5-4269-BE47-93F368110156</a:ObjectID>
-<a:Name>CUST_载具状态(自定义档案)</a:Name>
+<a:Name>CUST_載具狀態(自定義檔案)</a:Name>
 <a:Code>cust_carrier_status</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14118,7 +14118,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o390">
 <a:ObjectID>E15116A0-9496-43D1-B340-96F5A1FEA432</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14133,7 +14133,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o112">
 <a:ObjectID>DD113294-8AC6-4559-8BD9-4F6A67217AA0</a:ObjectID>
-<a:Name>FM6_载具型号</a:Name>
+<a:Name>FM6_載具型號</a:Name>
 <a:Code>fm6_carrier_model</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14143,7 +14143,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o391">
 <a:ObjectID>A52C1E23-EA74-4A40-8D75-8664111521B2</a:ObjectID>
-<a:Name>载具型号ID</a:Name>
+<a:Name>載具型號ID</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14158,7 +14158,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o392">
 <a:ObjectID>DB3A588F-16E7-40E4-962F-A0FB296672B0</a:ObjectID>
-<a:Name>载具类型cd</a:Name>
+<a:Name>載具類型cd</a:Name>
 <a:Code>carrier_cat_cd</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14171,7 +14171,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o393">
 <a:ObjectID>5AC0652E-03FE-4DE9-8260-975396BE6096</a:ObjectID>
-<a:Name>编码</a:Name>
+<a:Name>編碼</a:Name>
 <a:Code>code</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14185,7 +14185,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o394">
 <a:ObjectID>8C6E4AD7-B16E-418D-8702-19D4260E0AE5</a:ObjectID>
-<a:Name>规格说明</a:Name>
+<a:Name>規格說明</a:Name>
 <a:Code>spec</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14198,7 +14198,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o395">
 <a:ObjectID>005B5E5A-1EFF-45F6-A7B5-6E94013155BD</a:ObjectID>
-<a:Name>胴径(mm)</a:Name>
+<a:Name>胴徑(mm)</a:Name>
 <a:Code>carcass_diameter</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14211,7 +14211,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o396">
 <a:ObjectID>5C5C1615-DDCE-43F5-8F85-C882CBDB0FD4</a:ObjectID>
-<a:Name>盘径(mm)</a:Name>
+<a:Name>盤徑(mm)</a:Name>
 <a:Code>disc_diameter</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14224,7 +14224,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o397">
 <a:ObjectID>DF37309D-844F-4953-B111-53495666A3F1</a:ObjectID>
-<a:Name>间隙(mm)</a:Name>
+<a:Name>間隙(mm)</a:Name>
 <a:Code>gap_length</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14237,7 +14237,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o398">
 <a:ObjectID>D91F85AA-464D-4992-B80C-B4219ADD5370</a:ObjectID>
-<a:Name>内宽(mm)</a:Name>
+<a:Name>內寬(mm)</a:Name>
 <a:Code>inside_width</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14250,7 +14250,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o399">
 <a:ObjectID>C4DD3624-12F8-48C0-9D13-F53E83BC96D9</a:ObjectID>
-<a:Name>载具料号</a:Name>
+<a:Name>載具料號</a:Name>
 <a:Code>material_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14264,7 +14264,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o400">
 <a:ObjectID>97A547FC-36F9-498C-880C-670F8D8FBB0D</a:ObjectID>
-<a:Name>承载量</a:Name>
+<a:Name>承載量</a:Name>
 <a:Code>capacity</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14279,7 +14279,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o401">
 <a:ObjectID>F9749368-0030-4F1F-A05A-9524F941275F</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14314,7 +14314,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o111">
 <a:ObjectID>FF1C8A08-8086-475A-9D45-DCA6C48143AB</a:ObjectID>
-<a:Name>CUST_载具类型(自定义档案)</a:Name>
+<a:Name>CUST_載具類型(自定義檔案)</a:Name>
 <a:Code>cust_carrier_cat</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14351,7 +14351,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o405">
 <a:ObjectID>DF7403DA-78CF-4AE6-B83D-B2DE51F9706E</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14366,14 +14366,14 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o129">
 <a:ObjectID>5D33113F-862D-4C7A-8299-959EC18B2502</a:ObjectID>
-<a:Name>CUST_业态/产业（自定义档案）</a:Name>
+<a:Name>CUST_業態/產業（自定義檔案）</a:Name>
 <a:Code>cust_biz_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823211</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1-线缆
-2-钢
+<a:Comment>1-線纜
+2-鋼
 </a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -14406,7 +14406,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o408">
 <a:ObjectID>444B1A21-51DB-4A36-A038-9CB629FB364E</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14421,13 +14421,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o128">
 <a:ObjectID>95730CD3-AFDE-4393-A316-9FB687ADF642</a:ObjectID>
-<a:Name>FM1_参数</a:Name>
+<a:Name>FM1_參數</a:Name>
 <a:Code>fm1_params</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550796825</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>需要提供对外公共服务：按照工厂、参数编码提供参数值；</a:Comment>
+<a:Comment>需要提供對外公共服務：按照工廠、參數編碼提供參數值；</a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="o409">
@@ -14443,7 +14443,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o410">
 <a:ObjectID>A291E723-AA09-4222-BA34-39AA818EB4E0</a:ObjectID>
-<a:Name>工厂</a:Name>
+<a:Name>工廠</a:Name>
 <a:Code>factory_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14472,7 +14472,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o412">
 <a:ObjectID>FE120A29-68F8-4C5E-AE23-6E43CEEBABC5</a:ObjectID>
-<a:Name>参数模板id</a:Name>
+<a:Name>參數模板id</a:Name>
 <a:Code>param_template_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14522,7 +14522,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o127">
 <a:ObjectID>481CD311-ECAF-4EB4-88C5-3635E224B6E6</a:ObjectID>
-<a:Name>FM1_参数模板</a:Name>
+<a:Name>FM1_參數模板</a:Name>
 <a:Code>fm1_param_template</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14547,7 +14547,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o416">
 <a:ObjectID>0827C95C-DDDE-4246-8394-E02B5BDE5564</a:ObjectID>
-<a:Name>参数编码</a:Name>
+<a:Name>參數編碼</a:Name>
 <a:Code>code</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14561,7 +14561,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o417">
 <a:ObjectID>2E1FE289-1E63-48A8-AE82-A6FDDB3241CB</a:ObjectID>
-<a:Name>参数名称</a:Name>
+<a:Name>參數名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14575,7 +14575,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o418">
 <a:ObjectID>92C6CAAB-6F77-4315-91C1-4894C7E58A85</a:ObjectID>
-<a:Name>参数说明</a:Name>
+<a:Name>參數說明</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14588,13 +14588,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o419">
 <a:ObjectID>CD03CBB4-0CD3-4210-AC09-D7EF5DC1FFE6</a:ObjectID>
-<a:Name>参数值类型</a:Name>
+<a:Name>參數值類型</a:Name>
 <a:Code>data_type</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550477927</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0日期1逻辑2字符3整形4double</a:Comment>
+<a:Comment>0日期1邏輯2字符3整形4double</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -14602,7 +14602,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o420">
 <a:ObjectID>D32711CE-ADC5-42A4-A928-6E8B2096A70F</a:ObjectID>
-<a:Name>默认值</a:Name>
+<a:Name>默認值</a:Name>
 <a:Code>def_value</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14617,13 +14617,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o421">
 <a:ObjectID>B1934C46-8ADD-4857-A3C4-C2F0D7FC11B1</a:ObjectID>
-<a:Name>取值范围</a:Name>
+<a:Name>取值範圍</a:Name>
 <a:Code>range</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550478010</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>枚举值：逗号分隔；数量型：X-XX；布尔：是/否</a:Comment>
+<a:Comment>枚舉值：逗號分隔；數量型：X-XX；布爾：是/否</a:Comment>
 <a:DataType>national char varying(Max)</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o189"/>
@@ -14631,13 +14631,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o422">
 <a:ObjectID>FAC041EE-40F4-4E3C-B527-220FE9239D54</a:ObjectID>
-<a:Name>编辑样式</a:Name>
+<a:Name>編輯樣式</a:Name>
 <a:Code>edit_style</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550477930</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0文本框1选择框2布尔框3Checkbox4自定义5参照</a:Comment>
+<a:Comment>0文本框1選擇框2布爾框3Checkbox4自定義5參照</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -14645,7 +14645,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o423">
 <a:ObjectID>AF12D483-870F-4875-B258-2106E016CB86</a:ObjectID>
-<a:Name>参照控件</a:Name>
+<a:Name>參照控件</a:Name>
 <a:Code>reference_class</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14659,7 +14659,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o424">
 <a:ObjectID>E077C0A0-5753-4D56-AFB8-2DD665D17E04</a:ObjectID>
-<a:Name>组编码</a:Name>
+<a:Name>組編碼</a:Name>
 <a:Code>group_code</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14673,7 +14673,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o425">
 <a:ObjectID>D0BAE255-63E6-4FD0-93B4-DA780210CEC1</a:ObjectID>
-<a:Name>组名称</a:Name>
+<a:Name>組名稱</a:Name>
 <a:Code>group_name</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14687,13 +14687,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o426">
 <a:ObjectID>334DCB37-0B16-437D-8BDB-DCA6BD61D150</a:ObjectID>
-<a:Name>所属模块</a:Name>
+<a:Name>所屬模塊</a:Name>
 <a:Code>module_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550732993</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>iuap平台的注册二级节点</a:Comment>
+<a:Comment>iuap平臺的註冊二級節點</a:Comment>
 <a:DataType>char(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
@@ -14702,13 +14702,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o427">
 <a:ObjectID>5F07D069-751F-4FCC-B95B-94CDC9100894</a:ObjectID>
-<a:Name>层级</a:Name>
+<a:Name>層級</a:Name>
 <a:Code>level</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550477935</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>0-集团1-工厂</a:Comment>
+<a:Comment>0-集團1-工廠</a:Comment>
 <a:DataType>int</a:DataType>
 <c:Domain>
 <o:PhysicalDomain Ref="o188"/>
@@ -14716,7 +14716,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o428">
 <a:ObjectID>D036187B-773E-4204-A685-204B93C29921</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14729,7 +14729,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o429">
 <a:ObjectID>C5A51C8D-8FE2-4388-915A-1E946F725ACE</a:ObjectID>
-<a:Name>适用业态</a:Name>
+<a:Name>適用業態</a:Name>
 <a:Code>biz_type_id</a:Code>
 <a:CreationDate>1550476778</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14764,16 +14764,16 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o149">
 <a:ObjectID>F5B639AB-5289-41B7-893E-5D9F4B3B9588</a:ObjectID>
-<a:Name>FM8_质检项目</a:Name>
+<a:Name>FM8_質檢項目</a:Name>
 <a:Code>FM8_qc_items</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550797523</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>质检项目包括
-化学成分：C含量、Fe含量
-物理性能：拉伸强度、屈服强度等
-外观性能：光洁度，色泽
+<a:Comment>質檢項目包括
+化學成分：C含量、Fe含量
+物理性能：拉伸強度、屈服強度等
+外觀性能：光潔度，色澤
 尺寸公差
 
 </a:Comment>
@@ -14792,7 +14792,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o432">
 <a:ObjectID>9D584CC8-75E9-4BFA-A58A-F82D72A4BB88</a:ObjectID>
-<a:Name>id (质检项目PK)</a:Name>
+<a:Name>id (質檢項目PK)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14807,7 +14807,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o433">
 <a:ObjectID>6FA20401-1639-41D8-9287-437CE2371802</a:ObjectID>
-<a:Name>质检项目类型cd</a:Name>
+<a:Name>質檢項目類型cd</a:Name>
 <a:Code>type_cd</a:Code>
 <a:CreationDate>1550563266</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14852,7 +14852,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o436">
 <a:ObjectID>BBC9956D-C27E-4CF9-A5B9-D7E9BAA68B89</a:ObjectID>
-<a:Name>计量单位</a:Name>
+<a:Name>計量單位</a:Name>
 <a:Code>unit_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14867,7 +14867,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o437">
 <a:ObjectID>877BA1E5-A57D-4BBC-8C42-D136C7C85E0B</a:ObjectID>
-<a:Name>显示顺序</a:Name>
+<a:Name>顯示順序</a:Name>
 <a:Code>display_sn</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14894,7 +14894,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o439">
 <a:ObjectID>9C7CEE62-ED15-472F-844D-D634D114011D</a:ObjectID>
-<a:Name>值类型cd</a:Name>
+<a:Name>值類型cd</a:Name>
 <a:Code>value_type</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14926,7 +14926,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o441">
 <a:ObjectID>176572F8-DB40-49B0-929A-F85D52E72F94</a:ObjectID>
-<a:Name>值小数点位数</a:Name>
+<a:Name>值小數點位數</a:Name>
 <a:Code>decimals</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14946,7 +14946,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o442">
 <a:ObjectID>0C79ADF9-5BAA-424A-88A4-CC7C2179463B</a:ObjectID>
-<a:Name>组名称</a:Name>
+<a:Name>組名稱</a:Name>
 <a:Code>group_name</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -14982,7 +14982,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o151">
 <a:ObjectID>7383181C-3BF5-45B2-BE33-691FE7D22DE0</a:ObjectID>
-<a:Name>FM8_质检项目公式</a:Name>
+<a:Name>FM8_質檢項目公式</a:Name>
 <a:Code>fm8_qc_items_formula</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15003,7 +15003,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 <c:Columns>
 <o:Column Id="o445">
 <a:ObjectID>2D3466D8-9E58-4CAA-860C-5B664FC00F40</a:ObjectID>
-<a:Name>id (质检项目公式PK)</a:Name>
+<a:Name>id (質檢項目公式PK)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15033,7 +15033,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o447">
 <a:ObjectID>57A9AF05-A11C-4536-9CED-69B702973253</a:ObjectID>
-<a:Name>公式内容</a:Name>
+<a:Name>公式內容</a:Name>
 <a:Code>formula</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15047,7 +15047,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o448">
 <a:ObjectID>199608E7-D02E-4178-86F0-9761276D62DF</a:ObjectID>
-<a:Name>公式说明</a:Name>
+<a:Name>公式說明</a:Name>
 <a:Code>formula_description</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15076,7 +15076,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o450">
 <a:ObjectID>22F2D92F-2424-4F45-9B0E-D9143426E359</a:ObjectID>
-<a:Name>是否现行版</a:Name>
+<a:Name>是否現行版</a:Name>
 <a:Code>is_current</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15123,13 +15123,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o150">
 <a:ObjectID>B0F9E765-AE3C-4497-B7CA-FE9358431E24</a:ObjectID>
-<a:Name>FM8_质检项目枚举值明细</a:Name>
+<a:Name>FM8_質檢項目枚舉值明細</a:Name>
 <a:Code>fm8_qc_enum</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550796314</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>例如：等级：1等、2等、3等；</a:Comment>
+<a:Comment>例如：等級：1等、2等、3等；</a:Comment>
 <a:TotalSavingCurrency/>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="o453">
@@ -15160,7 +15160,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o455">
 <a:ObjectID>FCFB2BB6-5EC7-45F5-9599-90E8E72BF22F</a:ObjectID>
-<a:Name>质检项目pk</a:Name>
+<a:Name>質檢項目pk</a:Name>
 <a:Code>item_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15175,7 +15175,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o456">
 <a:ObjectID>0471A61F-B0CE-437E-8894-AE9BC4D7ECE9</a:ObjectID>
-<a:Name>枚举序号</a:Name>
+<a:Name>枚舉序號</a:Name>
 <a:Code>sn</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15189,7 +15189,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o457">
 <a:ObjectID>65FF6C4A-BE63-4620-94C5-014FE146D20A</a:ObjectID>
-<a:Name>枚举说明</a:Name>
+<a:Name>枚舉說明</a:Name>
 <a:Code>description</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15204,13 +15204,13 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o458">
 <a:ObjectID>95DA3344-35FC-41ED-B368-08551D3B8744</a:ObjectID>
-<a:Name>启用状态</a:Name>
+<a:Name>啓用狀態</a:Name>
 <a:Code>is_enabled</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550563290</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>1=未启用、2=启用、3=停用</a:Comment>
+<a:Comment>1=未啓用、2=啓用、3=停用</a:Comment>
 <a:DataType>bit</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 <c:Domain>
@@ -15252,18 +15252,18 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o148">
 <a:ObjectID>93A91EAF-A9DE-457A-9F49-70280DE5AA5C</a:ObjectID>
-<a:Name>CUST_质检项目类型</a:Name>
+<a:Name>CUST_質檢項目類型</a:Name>
 <a:Code>cust_qc_items_type</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823284</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>化学成分
+<a:Comment>化學成分
 物理性能
-耐热
-外观性能
+耐熱
+外觀性能
 尺寸公差？？
-安环质检项目
+安環質檢項目
 其他</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -15296,7 +15296,7 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Column>
 <o:Column Id="o463">
 <a:ObjectID>9B019D58-42AC-4874-896D-3CBA5CDEF8DB</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15326,15 +15326,15 @@ INS COLNCOL {553844AC-A3C5-4E55-ADB5-E6CABD4E534E}</a:History>
 </o:Table>
 <o:Table Id="o169">
 <a:ObjectID>EEA806B3-8431-4F34-B792-2702A77FB679</a:ObjectID>
-<a:Name>CUST_质检规范码</a:Name>
+<a:Name>CUST_質檢規範碼</a:Name>
 <a:Code>cust_qc_spec</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823277</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
 <a:Comment>例如
-ISO：国际标准组织
-JIS：日本工业标准
+ISO：國際標準組織
+JIS：日本工業標準
 ASTM</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -15367,7 +15367,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o467">
 <a:ObjectID>BF208874-C5CB-4602-9F76-7CD1927D24DC</a:ObjectID>
-<a:Name>规范简称</a:Name>
+<a:Name>規範簡稱</a:Name>
 <a:Code>name_abbr</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15381,7 +15381,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o468">
 <a:ObjectID>8B48DB3E-28F0-480D-85DE-AD2A95BC0183</a:ObjectID>
-<a:Name>英文名称</a:Name>
+<a:Name>英文名稱</a:Name>
 <a:Code>name_en</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15408,7 +15408,7 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o168">
 <a:ObjectID>7BDDDCC8-2D39-4C8C-97A5-043E90A683C9</a:ObjectID>
-<a:Name>FM8_质检方案主档</a:Name>
+<a:Name>FM8_質檢方案主檔</a:Name>
 <a:Code>fm8_qc_plan</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15418,7 +15418,7 @@ ASTM</a:Comment>
 <c:Columns>
 <o:Column Id="o470">
 <a:ObjectID>F104DC45-F39A-478E-A770-C0BCE5A0A4DA</a:ObjectID>
-<a:Name>id (质检方案PK)</a:Name>
+<a:Name>id (質檢方案PK)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15433,7 +15433,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o471">
 <a:ObjectID>894A8D4B-4957-4F7F-819C-ECD509D76405</a:ObjectID>
-<a:Name>质检方案编号</a:Name>
+<a:Name>質檢方案編號</a:Name>
 <a:Code>cd</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15448,7 +15448,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o472">
 <a:ObjectID>504203AE-EE9D-41A0-A5B8-914267F6C8F0</a:ObjectID>
-<a:Name>质检方案名称</a:Name>
+<a:Name>質檢方案名稱</a:Name>
 <a:Code>name</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15463,7 +15463,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o473">
 <a:ObjectID>B931B6BB-2627-44BC-9D9F-D16BE092D3E0</a:ObjectID>
-<a:Name>质检方案类型cd</a:Name>
+<a:Name>質檢方案類型cd</a:Name>
 <a:Code>plan_type_cd</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15483,7 +15483,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o474">
 <a:ObjectID>ECAE5B27-BB4D-4791-B85B-2BD8A1E31D2B</a:ObjectID>
-<a:Name>质检规范cd</a:Name>
+<a:Name>質檢規範cd</a:Name>
 <a:Code>spec_cd</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15511,7 +15511,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o476">
 <a:ObjectID>038E0309-58AA-4D05-9700-791EE39B42DE</a:ObjectID>
-<a:Name>钢种-冶金行业用</a:Name>
+<a:Name>鋼種-冶金行業用</a:Name>
 <a:Code>grade_cd</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15531,7 +15531,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o477">
 <a:ObjectID>C3E39139-22E1-43D7-9D1F-3AEC9AB6D961</a:ObjectID>
-<a:Name>工序-制程</a:Name>
+<a:Name>工序-製程</a:Name>
 <a:Code>process_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15551,7 +15551,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o478">
 <a:ObjectID>F1E838DC-FECC-43A6-8AFA-1E5522904BFA</a:ObjectID>
-<a:Name>取样点</a:Name>
+<a:Name>取樣點</a:Name>
 <a:Code>sample_point_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15571,7 +15571,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o479">
 <a:ObjectID>14C58DE0-95B4-42EF-8CCE-1DBC93A0C802</a:ObjectID>
-<a:Name>是否周期检</a:Name>
+<a:Name>是否週期檢</a:Name>
 <a:Code>is_cycle</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15591,13 +15591,13 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o480">
 <a:ObjectID>8BE049F9-DE98-43C9-8F50-37B238824789</a:ObjectID>
-<a:Name>检验周期</a:Name>
+<a:Name>檢驗週期</a:Name>
 <a:Code>cycle_time</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550744519</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>关联平台任务-待定</a:Comment>
+<a:Comment>關聯平臺任務-待定</a:Comment>
 <a:DataType>decimal(10,3)</a:DataType>
 <a:Length>10</a:Length>
 <a:Precision>3</a:Precision>
@@ -15613,7 +15613,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o481">
 <a:ObjectID>6D7E2F89-7858-4434-812A-39ECBFB6273D</a:ObjectID>
-<a:Name>檢驗周期單位</a:Name>
+<a:Name>檢驗週期單位</a:Name>
 <a:Code>cycle_unit</a:Code>
 <a:CreationDate>1550797884</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15626,7 +15626,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o482">
 <a:ObjectID>189B8FD4-CDB8-41CA-A75D-7748A798BE0C</a:ObjectID>
-<a:Name>版本号</a:Name>
+<a:Name>版本號</a:Name>
 <a:Code>version</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15642,7 +15642,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o483">
 <a:ObjectID>61B42A8A-BF06-4CE7-B262-C246B98C9F48</a:ObjectID>
-<a:Name>是否现行版本</a:Name>
+<a:Name>是否現行版本</a:Name>
 <a:Code>is_current_ver</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15656,7 +15656,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o484">
 <a:ObjectID>1C42E0C8-A8F1-4A47-BF59-147E4DC7B143</a:ObjectID>
-<a:Name>分析报告打印模板-预留</a:Name>
+<a:Name>分析報告打印模板-預留</a:Name>
 <a:Code>report_template</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15702,18 +15702,18 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o167">
 <a:ObjectID>A4DFDB33-0045-4EE2-A355-17F46B59DB99</a:ObjectID>
-<a:Name>CUST_质检方案类型</a:Name>
+<a:Name>CUST_質檢方案類型</a:Name>
 <a:Code>cust_qc_plan_type</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550823272</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
 <a:Comment>原料
-制程
+製程
 成品
-库存
-安环
-设备润滑油
+庫存
+安環
+設備潤滑油
 其他</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -15784,7 +15784,7 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o170">
 <a:ObjectID>BB134383-5108-48A1-8EB0-D5CB921D637E</a:ObjectID>
-<a:Name>FM8_质检方案明细</a:Name>
+<a:Name>FM8_質檢方案明細</a:Name>
 <a:Code>fm8_qc_plan_detail</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15805,7 +15805,7 @@ ASTM</a:Comment>
 <c:Columns>
 <o:Column Id="o492">
 <a:ObjectID>2939EA9A-6B32-440E-BF9D-DC13E398CE22</a:ObjectID>
-<a:Name>id (质检方案明细PK)</a:Name>
+<a:Name>id (質檢方案明細PK)</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15820,7 +15820,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o493">
 <a:ObjectID>86F1087D-5091-4327-8FB4-CCD5D87EB8CA</a:ObjectID>
-<a:Name>质检方案主档PK</a:Name>
+<a:Name>質檢方案主檔PK</a:Name>
 <a:Code>plan_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15834,7 +15834,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o494">
 <a:ObjectID>1F8B6D44-4A59-4D76-809D-5CDECE45136C</a:ObjectID>
-<a:Name>质检项目PK</a:Name>
+<a:Name>質檢項目PK</a:Name>
 <a:Code>item_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15848,7 +15848,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o495">
 <a:ObjectID>08BEF4A8-EAD1-458E-9CBC-F8B88A708E57</a:ObjectID>
-<a:Name>标准值</a:Name>
+<a:Name>標準值</a:Name>
 <a:Code>std</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15928,7 +15928,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o500">
 <a:ObjectID>822CC654-162B-48F8-81D7-D8D3EE73A601</a:ObjectID>
-<a:Name>值类型</a:Name>
+<a:Name>值類型</a:Name>
 <a:Code>value_type</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15947,7 +15947,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o501">
 <a:ObjectID>CB1743E3-1F18-4EF9-A277-CD842C725E0F</a:ObjectID>
-<a:Name>小数点位数</a:Name>
+<a:Name>小數點位數</a:Name>
 <a:Code>decimals</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15967,7 +15967,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o502">
 <a:ObjectID>2E5E6947-4936-4612-92F6-4630E3A0EDE5</a:ObjectID>
-<a:Name>报表显示位数</a:Name>
+<a:Name>報表顯示位數</a:Name>
 <a:Code>digits</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15980,7 +15980,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o503">
 <a:ObjectID>35040490-3BC9-4C1C-8199-4E6DCCC1608D</a:ObjectID>
-<a:Name>数据来源</a:Name>
+<a:Name>數據來源</a:Name>
 <a:Code>data_source</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -15999,7 +15999,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o504">
 <a:ObjectID>7AC19F6E-52DA-4367-983B-8E5EE7D56D6A</a:ObjectID>
-<a:Name>计算公式</a:Name>
+<a:Name>計算公式</a:Name>
 <a:Code>formula</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16018,7 +16018,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o505">
 <a:ObjectID>557AC0D9-B579-425D-98D7-362E794DE047</a:ObjectID>
-<a:Name>默认化验室pk</a:Name>
+<a:Name>默認化驗室pk</a:Name>
 <a:Code>def_lab_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16038,13 +16038,13 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o506">
 <a:ObjectID>0419F178-D2C8-4FC1-8615-89F7D04EE973</a:ObjectID>
-<a:Name>默认质检台pk</a:Name>
+<a:Name>默認質檢臺pk</a:Name>
 <a:Code>def_qc_site_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
 <a:ModificationDate>1550732993</a:ModificationDate>
 <a:Modifier>PhotonUser</a:Modifier>
-<a:Comment>质检机台</a:Comment>
+<a:Comment>質檢機臺</a:Comment>
 <a:DataType>char(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Description>{\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\froman\fcharset134 \&#39;ce\&#39;a2\&#39;c8\&#39;ed\&#39;d1\&#39;c5\&#39;ba\&#39;da;}{\f1\fswiss\fprq2\fcharset0 Microsoft Sans Serif;}}
@@ -16059,7 +16059,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o507">
 <a:ObjectID>AAACD837-4D76-469F-B9D8-FC3143DF94A4</a:ObjectID>
-<a:Name>测试方法pk</a:Name>
+<a:Name>測試方法pk</a:Name>
 <a:Code>method_pk</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16073,7 +16073,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o508">
 <a:ObjectID>B86A64B6-6A85-4D93-8EC5-A53BB24D5D38</a:ObjectID>
-<a:Name>测试条件1</a:Name>
+<a:Name>測試條件1</a:Name>
 <a:Code>condition_1</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16092,7 +16092,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o509">
 <a:ObjectID>25415326-67F3-4BE3-88F7-BEBBB030770B</a:ObjectID>
-<a:Name>测试条件2</a:Name>
+<a:Name>測試條件2</a:Name>
 <a:Code>condition_2</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16105,7 +16105,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o510">
 <a:ObjectID>8F7C7B67-9C22-45BF-BD09-95EC4DC85978</a:ObjectID>
-<a:Name>测试条件3</a:Name>
+<a:Name>測試條件3</a:Name>
 <a:Code>condition_3</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16118,7 +16118,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o511">
 <a:ObjectID>BDA57FFE-8D75-4383-AFE0-7D7C1359F05A</a:ObjectID>
-<a:Name>测试条件4</a:Name>
+<a:Name>測試條件4</a:Name>
 <a:Code>condition_4</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16131,7 +16131,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o512">
 <a:ObjectID>FD64085C-8488-461A-8EEB-3A151DD13B10</a:ObjectID>
-<a:Name>测试条件5</a:Name>
+<a:Name>測試條件5</a:Name>
 <a:Code>condition_5</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16177,7 +16177,7 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o90">
 <a:ObjectID>976CC23D-F0A1-412C-9E5D-2F1D8150E197</a:ObjectID>
-<a:Name>CUST_生产装备投產類型（自定义档案）</a:Name>
+<a:Name>CUST_生產裝備投產類型（自定義檔案）</a:Name>
 <a:Code>cust_equipment_base_type</a:Code>
 <a:CreationDate>1550568168</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16215,7 +16215,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o517">
 <a:ObjectID>41D70FE7-E19D-402A-A9A3-D73644DA3C9F</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550568168</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16230,7 +16230,7 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o33">
 <a:ObjectID>F23B3FCA-F83D-4069-BEC4-0D826B4DCD7B</a:ObjectID>
-<a:Name>CUST_班組類型（自定义档案）</a:Name>
+<a:Name>CUST_班組類型（自定義檔案）</a:Name>
 <a:Code>cust_team_type</a:Code>
 <a:CreationDate>1550739057</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16267,7 +16267,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o520">
 <a:ObjectID>13B0B4D4-758B-4E66-9861-F85069CEAA20</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550739057</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16322,7 +16322,7 @@ ASTM</a:Comment>
 </o:Column>
 <o:Column Id="o523">
 <a:ObjectID>3494F03A-C9E8-4B6C-AF6E-974666419010</a:ObjectID>
-<a:Name>备注</a:Name>
+<a:Name>備註</a:Name>
 <a:Code>note</a:Code>
 <a:CreationDate>1550797117</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -16352,7 +16352,7 @@ ASTM</a:Comment>
 </o:Table>
 <o:Table Id="o171">
 <a:ObjectID>D4362C34-F470-465A-93C2-9EB51CC62DB2</a:ObjectID>
-<a:Name>CUST_檢驗周期單位</a:Name>
+<a:Name>CUST_檢驗週期單位</a:Name>
 <a:Code>cust_qc_plan_cycle_unit</a:Code>
 <a:CreationDate>1550822964</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -17685,7 +17685,7 @@ DAT 1550457978</a:History>
 <c:ArchitectureAreas>
 <o:Area Id="o172">
 <a:ObjectID>FE158773-E490-4147-87A5-DDE9BDC4A055</a:ObjectID>
-<a:Name>质检方案</a:Name>
+<a:Name>質檢方案</a:Name>
 <a:Code>____</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
@@ -17705,7 +17705,7 @@ DAT 1550457978</a:History>
 </o:Area>
 <o:Area Id="o153">
 <a:ObjectID>85319643-0768-4189-AD3E-C6E9B43F45AA</a:ObjectID>
-<a:Name>质检项目</a:Name>
+<a:Name>質檢項目</a:Name>
 <a:Code>____</a:Code>
 <a:CreationDate>1550561568</a:CreationDate>
 <a:Creator>PhotonUser</a:Creator>
