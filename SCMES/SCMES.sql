@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/22 上午 07:42:06                        */
+/* Created on:     2019/2/26 下午 03:29:30                        */
 /*==============================================================*/
 
 
@@ -13,6 +13,13 @@ if exists (select 1
            where  id = object_id('cust_lot_status')
             and   type = 'U')
    drop table cust_lot_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('cust_mo_priority')
+            and   type = 'U')
+   drop table cust_mo_priority
 go
 
 if exists (select 1
@@ -62,6 +69,13 @@ if exists (select 1
            where  id = object_id('mlo_po_group')
             and   type = 'U')
    drop table mlo_po_group
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mlo_po_group_map')
+            and   type = 'U')
+   drop table mlo_po_group_map
 go
 
 if exists (select 1
@@ -381,9 +395,26 @@ go
 /*==============================================================*/
 create table cust_lot_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   code                 type_enum_val        null,
+   name                 type_name            null,
+   note                 type_memo            null
+)
+go
+
+/*==============================================================*/
+/* Table: cust_mo_priority                                      */
+/*==============================================================*/
+create table cust_mo_priority (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -398,9 +429,9 @@ go
 /*==============================================================*/
 create table cust_mo_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -415,9 +446,9 @@ go
 /*==============================================================*/
 create table cust_po_group_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -432,9 +463,9 @@ go
 /*==============================================================*/
 create table cust_process_po_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -449,9 +480,9 @@ go
 /*==============================================================*/
 create table cust_sap_po_factory (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -466,9 +497,9 @@ go
 /*==============================================================*/
 create table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -483,9 +514,9 @@ go
 /*==============================================================*/
 create table mlo_mo (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -530,17 +561,35 @@ go
 /*==============================================================*/
 create table mlo_po_group (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
-   po_group             type_id              not null,
-   po_pk                type_pk              not null,
+   "id (工單群組PK)"        type_pk              not null,
+   po_group_cd          type_id              not null,
    status               type_enum_val        null,
    note                 type_memo            null,
-   constraint PK_MLO_PO_GROUP primary key (po_group, po_pk)
+   constraint PK_MLO_PO_GROUP primary key ("id (工單群組PK)")
+)
+go
+
+/*==============================================================*/
+/* Table: mlo_po_group_map                                      */
+/*==============================================================*/
+create table mlo_po_group_map (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_id              not null,
+   po_group_pk          type_pk              not null,
+   po_pk                type_pk              not null,
+   constraint PK_MLO_PO_GROUP_MAP primary key (id)
 )
 go
 
@@ -549,9 +598,9 @@ go
 /*==============================================================*/
 create table mlo_process_po (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -586,9 +635,9 @@ go
 /*==============================================================*/
 create table mlo_sap_po (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -635,9 +684,9 @@ go
 /*==============================================================*/
 create table mlo_sap_po_process (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -673,9 +722,9 @@ go
 /*==============================================================*/
 create table mlo_sap_po_process_batch (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -690,9 +739,9 @@ go
 /*==============================================================*/
 create table mw_common_checkin (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -711,9 +760,9 @@ go
 /*==============================================================*/
 create table mw_common_checkout (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -741,9 +790,9 @@ go
 /*==============================================================*/
 create table mw_common_history (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -765,9 +814,9 @@ go
 /*==============================================================*/
 create table mw_common_lot (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -788,9 +837,9 @@ go
 /*==============================================================*/
 create table mw_common_lot_piece (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -808,9 +857,9 @@ go
 /*==============================================================*/
 create table mwc_checkin_copper (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -828,9 +877,9 @@ go
 /*==============================================================*/
 create table mwc_checkin_lot (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -848,9 +897,9 @@ go
 /*==============================================================*/
 create table mwc_checkin_queue (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -870,9 +919,9 @@ go
 /*==============================================================*/
 create table mwc_checkout (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -895,9 +944,9 @@ go
 /*==============================================================*/
 create table mwc_checkout_operator (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -916,9 +965,9 @@ go
 /*==============================================================*/
 create table mwc_copper (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -940,9 +989,9 @@ go
 /*==============================================================*/
 create table mwc_lot_po_map (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -959,9 +1008,9 @@ go
 /*==============================================================*/
 create table wm_common_source_lot (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -977,9 +1026,9 @@ go
 /*==============================================================*/
 create table wmc_checkout_queue (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -996,9 +1045,9 @@ go
 /*==============================================================*/
 create table wmc_copper_history (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1021,9 +1070,9 @@ go
 /*==============================================================*/
 create table wmc_lot_detail (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1049,9 +1098,9 @@ go
 /*==============================================================*/
 create table wmc_lot_history (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
