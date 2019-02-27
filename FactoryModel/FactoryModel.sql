@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/22 上午 08:20:03                        */
+/* Created on:     2019/2/27 下午 05:06:41                        */
 /*==============================================================*/
 
 
@@ -317,6 +317,13 @@ if exists (select 1
 go
 
 if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_basic_process')
+            and   type = 'U')
+   drop table fm8_basic_process
+go
+
+if exists (select 1
             from  sysindexes
            where  id    = object_id('fm8_qc_enum')
             and   name  = 'RELATIONSHIP_148_FK'
@@ -527,7 +534,7 @@ go
 /* Domain: type_id                                              */
 /*==============================================================*/
 create type type_id
-   from varchar(40)
+   from char(40)
 go
 
 /*==============================================================*/
@@ -619,9 +626,9 @@ go
 /*==============================================================*/
 create table FM8_qc_items (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -636,6 +643,7 @@ create table FM8_qc_items (
    digits               type_number          null,
    decimals             type_number          null,
    group_name           type_name            null,
+   note                 type_memo            null,
    constraint PK_FM8_QC_ITEMS primary key (id)
 )
 go
@@ -645,9 +653,9 @@ go
 /*==============================================================*/
 create table cust_biz_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -662,9 +670,9 @@ go
 /*==============================================================*/
 create table cust_carrier_cat (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -679,9 +687,9 @@ go
 /*==============================================================*/
 create table cust_carrier_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -696,9 +704,9 @@ go
 /*==============================================================*/
 create table cust_equiment_base_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -713,9 +721,9 @@ go
 /*==============================================================*/
 create table cust_equiment_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -730,9 +738,9 @@ go
 /*==============================================================*/
 create table cust_equipment_base_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -747,9 +755,9 @@ go
 /*==============================================================*/
 create table cust_equipment_level (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -764,9 +772,9 @@ go
 /*==============================================================*/
 create table cust_op_point_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -781,9 +789,9 @@ go
 /*==============================================================*/
 create table cust_qc_items_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -808,9 +816,9 @@ go
 /*==============================================================*/
 create table cust_qc_plan_cycle_unit (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -835,9 +843,9 @@ go
 /*==============================================================*/
 create table cust_qc_plan_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -862,13 +870,13 @@ go
 /*==============================================================*/
 create table cust_qc_spec (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    name                 type_name            null,
    name_abbr            type_name            null,
    name_en              type_name            null
@@ -890,9 +898,9 @@ go
 /*==============================================================*/
 create table cust_qc_value_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -917,9 +925,9 @@ go
 /*==============================================================*/
 create table cust_team_type (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -934,9 +942,9 @@ go
 /*==============================================================*/
 create table fm1_param_template (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -964,9 +972,9 @@ go
 /*==============================================================*/
 create table fm1_params (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -983,9 +991,9 @@ go
 /*==============================================================*/
 create table fm1_unit (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1008,9 +1016,9 @@ go
 /*==============================================================*/
 create table fm3_team (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1029,9 +1037,9 @@ go
 /*==============================================================*/
 create table fm4_shift (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1050,9 +1058,9 @@ go
 /*==============================================================*/
 create table fm4_teamcalendar (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1069,9 +1077,9 @@ go
 /*==============================================================*/
 create table fm4_teamcalendar_person (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1088,9 +1096,9 @@ go
 /*==============================================================*/
 create table fm6_carrier_model (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1114,9 +1122,9 @@ go
 /*==============================================================*/
 create table fm6_carrierbaseinfo (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1137,9 +1145,9 @@ go
 /*==============================================================*/
 create table fm6_equipment (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1167,9 +1175,9 @@ go
 /*==============================================================*/
 create table fm6_equipment_carrier (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1188,9 +1196,9 @@ go
 /*==============================================================*/
 create table fm6_equipment_op_point (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1210,9 +1218,9 @@ go
 /*==============================================================*/
 create table fm6_equipment_status (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1228,9 +1236,9 @@ go
 /*==============================================================*/
 create table fm6_store (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1253,9 +1261,9 @@ go
 /*==============================================================*/
 create table fm6_warehouse (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1283,9 +1291,9 @@ go
 /*==============================================================*/
 create table fm7_material (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1337,9 +1345,9 @@ go
 /*==============================================================*/
 create table fm7_material_cat (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1358,9 +1366,9 @@ go
 /*==============================================================*/
 create table fm7_material_unit (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1395,13 +1403,33 @@ create nonclustered index R20_FK on fm7_material_unit (unit_pk ASC)
 go
 
 /*==============================================================*/
+/* Table: fm8_basic_process                                     */
+/*==============================================================*/
+create table fm8_basic_process (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              not null,
+   name                 type_name            not null,
+   name_en              type_pk              null,
+   is_enabled           type_boolean         not null,
+   constraint PK_FM8_BASIC_PROCESS primary key (id)
+)
+go
+
+/*==============================================================*/
 /* Table: fm8_qc_enum                                           */
 /*==============================================================*/
 create table fm8_qc_enum (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1429,9 +1457,9 @@ go
 /*==============================================================*/
 create table fm8_qc_items_formula (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1460,17 +1488,17 @@ go
 /*==============================================================*/
 create table fm8_qc_plan (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
    name                 type_name            not null,
-   plan_type_cd         type_enum_val        not null,
-   spec_cd              type_enum_val        not null,
+   plan_type_cd         type_id              not null,
+   spec_cd              type_id              not null,
    material_pk          type_pk              null,
    grade_cd             type_id              null,
    process_pk           type_pk              null,
@@ -1500,9 +1528,9 @@ go
 /*==============================================================*/
 create table fm8_qc_plan_detail (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1546,9 +1574,9 @@ go
 /*==============================================================*/
 create table mwc_carrier_common (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 
@@ -1570,9 +1598,9 @@ go
 /*==============================================================*/
 create table mwc_carrierlog (
    create_time char(19) null,
-   create_user char(36) null,
+   create_user char(32) null,
    last_modified char(19) null,
-   last_modify_user char(36) null,
+   last_modify_user char(32) null,
    ts datetime null,
    dr bit null,
 

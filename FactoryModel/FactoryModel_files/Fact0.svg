@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="125mm" xmlns="http://www.w3.org/2000/svg" height="77mm" version="1.1" viewBox="0 0 475 294" xmlns:xlink="http://www.w3.org/1999/xlink">
-   <a target="_parent" xlink:href="Fact77.htm#148">
-      <polyline fill="none" points="200,103 276,103" stroke="#800040" stroke-width="1"/>
-      <polygon fill="#800040" points="276,103 262,106 262,100" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-      <text x="237" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_FM1_PARA_REFERENCE_CUST_BIZ</text>
+<svg width="129mm" xmlns="http://www.w3.org/2000/svg" height="77mm" version="1.1" viewBox="0 0 489 294" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <a target="_parent" xlink:href="Fact79.htm#148">
+      <polyline fill="none" points="214,103 289,103" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="289,103 276,106 276,100" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="251" y="99" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM1_PARA_REFERENCE_CUST_BIZ</text>
    </a>
-   <a target="_parent" xlink:href="Fact76.htm#142">
-      <polyline fill="none" points="108,169 108,125" stroke="#800040" stroke-width="1"/>
-      <polygon fill="#800040" points="108,125 111,138 105,138" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-      <text x="107" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_FM1_PARA_REFERENCE_FM1_PARA</text>
+   <a target="_parent" xlink:href="Fact78.htm#142">
+      <polyline fill="none" points="121,169 121,125" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="121,125 124,138 118,138" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="121" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM1_PARA_REFERENCE_FM1_PARA</text>
    </a>
-   <a target="_parent" xlink:href="Fact29.htm#494">
-      <rect x="16" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="16" y="16" fill="#60afff" width="184" height="109" stroke="#00aaaa" stroke-width="1"/>
-      <text x="108" y="32" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM1_参数模板</text>
-      <line x1="16" x2="200" y1="39" y2="39" stroke="#00aaaa" stroke-width="1"/>
-      <text x="20" y="49" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id</text>
-      <text x="20" y="65" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数编码</text>
-      <text x="20" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数名称</text>
-      <text x="20" y="97" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数说明</text>
-      <text x="20" y="113" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数值类型</text>
-      <text x="20" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">默认值</text>
-      <text x="78" y="49" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="78" y="65" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="78" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="78" y="97" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(</text>
-      <text x="78" y="113" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
-      <text x="78" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(50)</text>
+   <a target="_parent" xlink:href="Fact30.htm#494">
+      <rect x="29" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="29" y="16" fill="#60afff" width="185" height="109" stroke="#00aaaa" stroke-width="1"/>
+      <text x="121" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM1_參數模板</text>
+      <line x1="29" x2="214" y1="36" y2="36" stroke="#00aaaa" stroke-width="1"/>
+      <text x="34" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
+      <text x="34" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數編碼</text>
+      <text x="34" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數名稱</text>
+      <text x="34" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數說明</text>
+      <text x="34" y="98" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數值類型</text>
+      <text x="34" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">默認值</text>
+      <text x="34" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">取值範圍</text>
+      <text x="92" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="92" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="92" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="92" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Ma</text>
+      <text x="92" y="98" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="92" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(50)</text>
+      <text x="92" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact28.htm#452">
-      <rect x="15" y="169" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="15" y="169" fill="#60afff" width="185" height="110" stroke="#00aaaa" stroke-width="1"/>
-      <text x="107" y="185" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">FM1_参数</text>
-      <line x1="15" x2="200" y1="192" y2="192" stroke="#00aaaa" stroke-width="1"/>
-      <text x="20" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">工厂</text>
-      <text x="20" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id</text>
-      <text x="20" y="234" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">参数模板id</text>
-      <text x="20" y="250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">取值</text>
-      <text x="77" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="77" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="77" y="234" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="77" y="250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(50)</text>
+   <a target="_parent" xlink:href="Fact29.htm#452">
+      <rect x="29" y="169" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="29" y="169" fill="#60afff" width="184" height="110" stroke="#00aaaa" stroke-width="1"/>
+      <text x="121" y="183" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM1_參數</text>
+      <line x1="29" x2="213" y1="189" y2="189" stroke="#00aaaa" stroke-width="1"/>
+      <text x="33" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
+      <text x="33" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
+      <text x="33" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數模板id</text>
+      <text x="33" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">取值</text>
+      <text x="90" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="90" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="90" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="90" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(50)</text>
    </a>
-   <a target="_parent" xlink:href="Fact14.htm#14">
-      <rect x="276" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="276" y="51" fill="#ffff80" width="184" height="105" stroke="#00aaaa" stroke-width="1"/>
-      <text x="278" y="67" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="start">CUST_业态/产业自定义档</text>
-      <line x1="276" x2="460" y1="74" y2="74" stroke="#00aaaa" stroke-width="1"/>
-      <text x="280" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">code</text>
-      <text x="280" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">name</text>
-      <text x="280" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">备注</text>
-      <text x="315" y="84" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
-      <text x="315" y="100" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="315" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
+   <a target="_parent" xlink:href="Fact16.htm#43">
+      <rect x="289" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="289" y="51" fill="#ffff80" width="184" height="105" stroke="#00aaaa" stroke-width="1"/>
+      <text x="291" y="65" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="start">CUST_業態/產業自定</text>
+      <line x1="289" x2="473" y1="71" y2="71" stroke="#00aaaa" stroke-width="1"/>
+      <text x="294" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="294" y="94" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="294" y="107" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="329" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="329" y="94" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="329" y="107" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
 </svg>
