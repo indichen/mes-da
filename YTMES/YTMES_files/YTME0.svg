@@ -1,173 +1,519 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="181mm" xmlns="http://www.w3.org/2000/svg" height="137mm" version="1.1" viewBox="0 0 686 520" xmlns:xlink="http://www.w3.org/1999/xlink">
-   <a target="_parent" xlink:href="YTME38.htm#69">
+<svg width="496mm" xmlns="http://www.w3.org/2000/svg" height="245mm" version="1.1" viewBox="0 0 1878 927" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <polyline fill="none" points="904,562 585,562" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="585,562 598,559 598,565" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,546 597,546 597,373 314,373" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="314,373 328,370 328,376" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,517 715,517 715,184" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="715,184 718,197 712,197" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="983,462 983,443 577,443 577,156" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="577,156 580,170 574,170" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="999,462 999,427 548,427 548,125" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="548,125 551,138 545,138" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <a target="_parent" xlink:href="YTME45.htm#69">
       <defs>
          <linearGradient id="Gradient1" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
             <stop offset="95%" stop-color="#f5e6ad"/>
          </linearGradient>
       </defs>
-      <rect x="15" y="15" fill="url(#Gradient1)" width="656" height="490" stroke="#796206" stroke-width="1"/>
-      <image x="19" y="19" width="16" height="16" xlink:href="YTME0_svg_Files/svg_bitmap1.png"/>
-      <text x="353" y="25" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">料號狀態碼相關</text>
+      <rect x="15" y="292" fill="url(#Gradient1)" width="656" height="490" stroke="#796206" stroke-width="1"/>
+      <image x="19" y="296" width="16" height="16" xlink:href="YTME0_svg_Files/svg_bitmap1.png"/>
+      <text x="353" y="302" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">料號狀態碼相關</text>
    </a>
-   <polyline fill="none" points="485,364 485,306" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="485,306 488,320 482,320" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="385,257 267,257" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="267,257 280,254 280,260" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="167,381 167,323" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="167,323 170,336 164,336" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="169,192 169,140" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="169,140 172,153 166,153" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <rect x="23" y="52" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="23" y="52" fill="#ffff80" width="291" height="88" stroke="#00aaaa" stroke-width="1"/>
-   <text x="168" y="68" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_料號狀態碼分類自定义档案</text>
-   <line x1="23" x2="314" y1="75" y2="75" stroke="#00aaaa" stroke-width="1"/>
-   <text x="28" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">code</text>
-   <text x="28" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">name</text>
-   <text x="28" y="117" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">name_en</text>
-   <text x="28" y="133" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">备注</text>
-   <text x="79" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
-   <text x="79" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-   <text x="79" y="117" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-   <text x="79" y="133" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
-   <rect x="67" y="192" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="67" y="192" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
-   <text x="167" y="208" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼</text>
-   <line x1="67" x2="267" y1="214" y2="214" stroke="#00aaaa" stroke-width="1"/>
-   <text x="72" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號狀態碼PK)</text>
-   <text x="72" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼cd</text>
-   <text x="72" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">中文名稱/說明</text>
-   <text x="72" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">簡稱</text>
-   <text x="72" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">狀態碼分類cd</text>
-   <text x="72" y="304" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">製程cd</text>
-   <text x="160" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="160" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="160" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
-   <text x="160" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
-   <text x="160" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="160" y="304" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-   <rect x="76" y="381" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="76" y="381" fill="#60afff" width="200" height="89" stroke="#00aaaa" stroke-width="1"/>
-   <text x="176" y="397" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼_產品型態</text>
-   <line x1="76" x2="276" y1="404" y2="404" stroke="#00aaaa" stroke-width="1"/>
-   <text x="81" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號狀態碼產品型態PK)</text>
-   <text x="81" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼PK</text>
-   <text x="81" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">產品型態碼cd</text>
-   <text x="209" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="209" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="209" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="271" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="271" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <rect x="385" y="175" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="385" y="175" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
-   <text x="485" y="191" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號機械性質碼</text>
-   <line x1="385" x2="585" y1="198" y2="198" stroke="#00aaaa" stroke-width="1"/>
-   <text x="389" y="208" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (機械性質碼PK)</text>
-   <text x="389" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號機械性質碼cd</text>
-   <text x="389" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">鋼種代號PK</text>
-   <text x="389" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼PK</text>
-   <text x="389" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">類別</text>
-   <text x="389" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">客戶簡稱</text>
-   <text x="478" y="208" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="478" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="478" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="478" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="478" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
-   <text x="478" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
-   <rect x="377" y="364" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="377" y="364" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
-   <text x="498" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質規範</text>
-   <line x1="377" x2="620" y1="387" y2="387" stroke="#00aaaa" stroke-width="1"/>
-   <text x="382" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號機械性質規範PK)</text>
-   <text x="382" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號機械性質PK</text>
-   <text x="382" y="429" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">Min</text>
-   <text x="382" y="445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">Max</text>
-   <text x="500" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="500" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-   <text x="500" y="429" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
-   <text x="500" y="445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
-   <text x="572" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="572" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="YTME11.htm#45">
-      <rect x="23" y="52" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="23" y="52" fill="#ffff80" width="291" height="88" stroke="#00aaaa" stroke-width="1"/>
-      <text x="168" y="68" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">CUST_料號狀態碼分類自定义档案</text>
-      <line x1="23" x2="314" y1="75" y2="75" stroke="#00aaaa" stroke-width="1"/>
-      <text x="28" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">code</text>
-      <text x="28" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">name</text>
-      <text x="28" y="117" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">name_en</text>
-      <text x="28" y="133" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">备注</text>
-      <text x="79" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">int</text>
-      <text x="79" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="79" y="117" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="79" y="133" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying(Max)</text>
+   <polyline fill="none" points="377,687 338,687 338,550 385,550" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="385,550 371,553 371,547" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="385,534 267,534" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="267,534 280,531 280,537" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="167,658 167,600" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="167,600 170,613 164,613" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="153,468 153,417" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="153,417 156,430 150,430" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,546 597,546 597,373 314,373" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="314,373 328,370 328,376" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,562 585,562" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="585,562 598,559 598,565" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <rect x="23" y="329" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="23" y="329" fill="#ffff80" width="291" height="88" stroke="#00aaaa" stroke-width="1"/>
+   <text x="168" y="343" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_料號狀態碼分類自定義檔案</text>
+   <line x1="23" x2="314" y1="349" y2="349" stroke="#00aaaa" stroke-width="1"/>
+   <text x="28" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+   <text x="28" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+   <text x="28" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+   <text x="28" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+   <text x="81" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+   <text x="81" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+   <text x="81" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+   <text x="81" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   <rect x="67" y="468" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="67" y="468" fill="#60afff" width="200" height="132" stroke="#00aaaa" stroke-width="1"/>
+   <text x="167" y="482" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼</text>
+   <line x1="67" x2="267" y1="488" y2="488" stroke="#00aaaa" stroke-width="1"/>
+   <text x="72" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號狀態碼PK)</text>
+   <text x="72" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼cd</text>
+   <text x="72" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">中文名稱/說明</text>
+   <text x="72" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">簡稱</text>
+   <text x="72" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態碼分類cd</text>
+   <text x="72" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程cd</text>
+   <text x="162" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="162" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="162" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
+   <text x="162" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+   <text x="162" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="162" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <rect x="76" y="658" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="76" y="658" fill="#60afff" width="200" height="89" stroke="#00aaaa" stroke-width="1"/>
+   <text x="176" y="672" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼_產品型態</text>
+   <line x1="76" x2="276" y1="677" y2="677" stroke="#00aaaa" stroke-width="1"/>
+   <text x="81" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號狀態碼產品型態PK)</text>
+   <text x="81" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼PK</text>
+   <text x="81" y="713" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產品型態碼cd</text>
+   <text x="211" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="211" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="211" y="713" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="257" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="257" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <rect x="385" y="452" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="385" y="452" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
+   <text x="485" y="466" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號機械性質碼</text>
+   <line x1="385" x2="585" y1="472" y2="472" stroke="#00aaaa" stroke-width="1"/>
+   <text x="389" y="482" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (機械性質碼PK)</text>
+   <text x="389" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質碼cd</text>
+   <text x="389" y="508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">鋼種代號PK</text>
+   <text x="389" y="521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼PK</text>
+   <text x="389" y="533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小尺寸</text>
+   <text x="389" y="546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大尺寸</text>
+   <text x="389" y="559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">類別</text>
+   <text x="389" y="572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">客戶簡稱</text>
+   <text x="479" y="482" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="479" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="479" y="508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="479" y="521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="479" y="533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="479" y="546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="479" y="559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
+   <text x="479" y="572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
+   <rect x="377" y="641" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="377" y="641" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
+   <text x="498" y="655" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質規範</text>
+   <line x1="377" x2="620" y1="661" y2="661" stroke="#00aaaa" stroke-width="1"/>
+   <text x="382" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號機械性質規範PK)</text>
+   <text x="382" y="684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質規範cd</text>
+   <text x="382" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質PK</text>
+   <text x="382" y="710" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">Min</text>
+   <text x="382" y="723" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">Max</text>
+   <text x="502" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="502" y="684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+   <text x="502" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="502" y="710" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="502" y="723" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="575" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="575" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <a target="_parent" xlink:href="YTME11.htm#48">
+      <rect x="23" y="329" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="23" y="329" fill="#ffff80" width="291" height="88" stroke="#00aaaa" stroke-width="1"/>
+      <text x="168" y="343" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_料號狀態碼分類自定義檔案</text>
+      <line x1="23" x2="314" y1="349" y2="349" stroke="#00aaaa" stroke-width="1"/>
+      <text x="28" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="28" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="28" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+      <text x="28" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="81" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="81" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="81" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="81" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="YTME17.htm#274">
-      <rect x="67" y="192" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="67" y="192" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
-      <text x="167" y="208" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼</text>
-      <line x1="67" x2="267" y1="214" y2="214" stroke="#00aaaa" stroke-width="1"/>
-      <text x="72" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號狀態碼PK)</text>
-      <text x="72" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼cd</text>
-      <text x="72" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">中文名稱/說明</text>
-      <text x="72" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">簡稱</text>
-      <text x="72" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">狀態碼分類cd</text>
-      <text x="72" y="304" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">製程cd</text>
-      <text x="160" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="160" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="160" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
-      <text x="160" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
-      <text x="160" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="160" y="304" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
+   <a target="_parent" xlink:href="YTME24.htm#653">
+      <rect x="67" y="468" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="67" y="468" fill="#60afff" width="200" height="132" stroke="#00aaaa" stroke-width="1"/>
+      <text x="167" y="482" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼</text>
+      <line x1="67" x2="267" y1="488" y2="488" stroke="#00aaaa" stroke-width="1"/>
+      <text x="72" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號狀態碼PK)</text>
+      <text x="72" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼cd</text>
+      <text x="72" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">中文名稱/說明</text>
+      <text x="72" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">簡稱</text>
+      <text x="72" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態碼分類cd</text>
+      <text x="72" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程cd</text>
+      <text x="162" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="162" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="162" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
+      <text x="162" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="162" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="162" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    </a>
-   <a target="_parent" xlink:href="YTME18.htm#330">
-      <rect x="76" y="381" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="76" y="381" fill="#60afff" width="200" height="89" stroke="#00aaaa" stroke-width="1"/>
-      <text x="176" y="397" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼_產品型態</text>
-      <line x1="76" x2="276" y1="404" y2="404" stroke="#00aaaa" stroke-width="1"/>
-      <text x="81" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號狀態碼產品型態PK)</text>
-      <text x="81" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼PK</text>
-      <text x="81" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">產品型態碼cd</text>
-      <text x="209" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="209" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="209" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="271" y="414" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="271" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <a target="_parent" xlink:href="YTME25.htm#709">
+      <rect x="76" y="658" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="76" y="658" fill="#60afff" width="200" height="89" stroke="#00aaaa" stroke-width="1"/>
+      <text x="176" y="672" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號狀態碼_產品型態</text>
+      <line x1="76" x2="276" y1="677" y2="677" stroke="#00aaaa" stroke-width="1"/>
+      <text x="81" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號狀態碼產品型態PK)</text>
+      <text x="81" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼PK</text>
+      <text x="81" y="713" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產品型態碼cd</text>
+      <text x="211" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="211" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="211" y="713" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="257" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="257" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME16.htm#218">
-      <rect x="385" y="175" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="385" y="175" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
-      <text x="485" y="191" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號機械性質碼</text>
-      <line x1="385" x2="585" y1="198" y2="198" stroke="#00aaaa" stroke-width="1"/>
-      <text x="389" y="208" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (機械性質碼PK)</text>
-      <text x="389" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號機械性質碼cd</text>
-      <text x="389" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">鋼種代號PK</text>
-      <text x="389" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號狀態碼PK</text>
-      <text x="389" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">類別</text>
-      <text x="389" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">客戶簡稱</text>
-      <text x="478" y="208" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="478" y="224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="478" y="240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="478" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="478" y="272" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
-      <text x="478" y="288" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">national char varying</text>
+   <a target="_parent" xlink:href="YTME23.htm#585">
+      <rect x="385" y="452" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="385" y="452" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
+      <text x="485" y="466" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_料號機械性質碼</text>
+      <line x1="385" x2="585" y1="472" y2="472" stroke="#00aaaa" stroke-width="1"/>
+      <text x="389" y="482" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (機械性質碼PK)</text>
+      <text x="389" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質碼cd</text>
+      <text x="389" y="508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">鋼種代號PK</text>
+      <text x="389" y="521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼PK</text>
+      <text x="389" y="533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小尺寸</text>
+      <text x="389" y="546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大尺寸</text>
+      <text x="389" y="559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">類別</text>
+      <text x="389" y="572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">客戶簡稱</text>
+      <text x="479" y="482" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="479" y="495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="479" y="508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="479" y="521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="479" y="533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="479" y="546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="479" y="559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
+      <text x="479" y="572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
    </a>
-   <a target="_parent" xlink:href="YTME27.htm#761">
-      <rect x="377" y="364" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="377" y="364" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
-      <text x="498" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微软雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質規範</text>
-      <line x1="377" x2="620" y1="387" y2="387" stroke="#00aaaa" stroke-width="1"/>
-      <text x="382" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">id (料號機械性質規範PK)</text>
-      <text x="382" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">料號機械性質PK</text>
-      <text x="382" y="429" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">Min</text>
-      <text x="382" y="445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">Max</text>
-      <text x="500" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="500" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">char(32)</text>
-      <text x="500" y="429" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="500" y="445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="572" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="572" y="413" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微软雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <a target="_parent" xlink:href="YTME34.htm#1146">
+      <rect x="377" y="641" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="377" y="641" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
+      <text x="498" y="655" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質規範</text>
+      <line x1="377" x2="620" y1="661" y2="661" stroke="#00aaaa" stroke-width="1"/>
+      <text x="382" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (料號機械性質規範PK)</text>
+      <text x="382" y="684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質規範cd</text>
+      <text x="382" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質PK</text>
+      <text x="382" y="710" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">Min</text>
+      <text x="382" y="723" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">Max</text>
+      <text x="502" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="502" y="684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="502" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="502" y="710" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="502" y="723" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="575" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="575" y="697" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="YTME49.htm#95">
+      <defs>
+         <linearGradient id="Gradient2" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#fdf9ea"/>
+            <stop offset="95%" stop-color="#f5e6ad"/>
+         </linearGradient>
+      </defs>
+      <rect x="741" y="300" fill="url(#Gradient2)" width="444" height="338" stroke="#796206" stroke-width="1"/>
+      <image x="745" y="304" width="16" height="16" xlink:href="YTME0_svg_Files/svg_bitmap1.png"/>
+      <text x="973" y="310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">料號主檔</text>
+   </a>
+   <polyline fill="none" points="1015,462 1015,419" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1015,419 1018,432 1012,432" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,562 585,562" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="585,562 598,559 598,565" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,546 597,546 597,373 314,373" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="314,373 328,370 328,376" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="904,517 715,517 715,184" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="715,184 718,197 712,197" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="983,462 983,443 577,443 577,156" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="577,156 580,170 574,170" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="999,462 999,427 548,427 548,125" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="548,125 551,138 545,138" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <rect x="904" y="462" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="904" y="462" fill="#60afff" width="200" height="168" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1004" y="476" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號主檔</text>
+   <line x1="904" x2="1104" y1="482" y2="482" stroke="#00aaaa" stroke-width="1"/>
+   <text x="909" y="492" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號主檔PK)</text>
+   <text x="909" y="505" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號cd</text>
+   <text x="909" y="518" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號說明</text>
+   <text x="909" y="531" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產品型態cd</text>
+   <text x="909" y="544" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼cd</text>
+   <text x="909" y="557" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">鋼種代碼cd</text>
+   <text x="909" y="570" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">規範碼cd</text>
+   <text x="909" y="583" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">品質碼cd</text>
+   <text x="909" y="596" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質碼cd</text>
+   <text x="909" y="609" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產製階段cd</text>
+   <text x="1012" y="492" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1012" y="505" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="518" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char vary</text>
+   <text x="1012" y="531" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="544" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="557" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="570" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="583" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="596" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1012" y="609" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <rect x="893" y="332" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="893" y="332" fill="#ffff80" width="244" height="87" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1015" y="346" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_料號產製階段自定義檔案</text>
+   <line x1="893" x2="1137" y1="352" y2="352" stroke="#00aaaa" stroke-width="1"/>
+   <text x="898" y="362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+   <text x="898" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+   <text x="898" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+   <text x="898" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+   <text x="951" y="362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+   <text x="951" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+   <text x="951" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+   <text x="951" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   <a target="_parent" xlink:href="YTME17.htm#261">
+      <rect x="904" y="462" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="904" y="462" fill="#60afff" width="200" height="168" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1004" y="476" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號主檔</text>
+      <line x1="904" x2="1104" y1="482" y2="482" stroke="#00aaaa" stroke-width="1"/>
+      <text x="909" y="492" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號主檔PK)</text>
+      <text x="909" y="505" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號cd</text>
+      <text x="909" y="518" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號說明</text>
+      <text x="909" y="531" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產品型態cd</text>
+      <text x="909" y="544" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號狀態碼cd</text>
+      <text x="909" y="557" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">鋼種代碼cd</text>
+      <text x="909" y="570" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">規範碼cd</text>
+      <text x="909" y="583" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">品質碼cd</text>
+      <text x="909" y="596" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">料號機械性質碼cd</text>
+      <text x="909" y="609" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產製階段cd</text>
+      <text x="1012" y="492" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1012" y="505" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="518" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char vary</text>
+      <text x="1012" y="531" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="544" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="557" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="570" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="583" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="596" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1012" y="609" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME12.htm#83">
+      <rect x="893" y="332" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="893" y="332" fill="#ffff80" width="244" height="87" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1015" y="346" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_料號產製階段自定義檔案</text>
+      <line x1="893" x2="1137" y1="352" y2="352" stroke="#00aaaa" stroke-width="1"/>
+      <text x="898" y="362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="898" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="898" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+      <text x="898" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="951" y="362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="951" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="951" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="951" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME13.htm#118">
+      <rect x="526" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="526" y="16" fill="#fdf9ea" width="263" height="109" stroke="#00aaaa" stroke-width="1"/>
+      <text x="657" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_產品型態碼自定義檔案</text>
+      <line x1="526" x2="789" y1="36" y2="36" stroke="#00aaaa" stroke-width="1"/>
+      <text x="531" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="531" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="531" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+      <text x="531" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="584" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="584" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="584" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="584" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME10.htm#13">
+      <rect x="556" y="42" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="556" y="42" fill="#fdf9ea" width="254" height="114" stroke="#00aaaa" stroke-width="1"/>
+      <text x="683" y="56" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_品質碼自定義檔案</text>
+      <line x1="556" x2="810" y1="62" y2="62" stroke="#00aaaa" stroke-width="1"/>
+      <text x="561" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="561" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="561" y="98" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+      <text x="561" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="614" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="614" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="614" y="98" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="614" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME15.htm#185">
+      <rect x="589" y="69" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="589" y="69" fill="#fdf9ea" width="251" height="115" stroke="#00aaaa" stroke-width="1"/>
+      <text x="714" y="83" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_規範碼自定義檔案</text>
+      <line x1="589" x2="840" y1="89" y2="89" stroke="#00aaaa" stroke-width="1"/>
+      <text x="594" y="99" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="594" y="112" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">abbreviation</text>
+      <text x="594" y="125" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="594" y="138" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
+      <text x="594" y="151" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="661" y="99" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="661" y="112" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="661" y="125" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="661" y="138" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
+      <text x="661" y="151" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME53.htm#120">
+      <defs>
+         <linearGradient id="Gradient3" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#fdf9ea"/>
+            <stop offset="95%" stop-color="#f5e6ad"/>
+         </linearGradient>
+      </defs>
+      <rect x="1248" y="310" fill="url(#Gradient3)" width="615" height="602" stroke="#796206" stroke-width="1"/>
+      <image x="1252" y="314" width="16" height="16" xlink:href="YTME0_svg_Files/svg_bitmap1.png"/>
+      <text x="1565" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">料號申請</text>
+   </a>
+   <polyline fill="none" points="1608,827 1380,827 1380,700" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1380,700 1383,714 1377,714" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1608,692 1480,692" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1480,692 1494,689 1494,695" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1608,577 1480,577" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1480,577 1494,574 1494,580" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1608,411 1380,411 1380,569" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1380,569 1377,556 1383,556" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <rect x="1280" y="569" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1280" y="569" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1380" y="583" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請</text>
+   <line x1="1280" x2="1480" y1="589" y2="589" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1285" y="599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請PK)</text>
+   <text x="1285" y="612" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請cd</text>
+   <text x="1285" y="625" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
+   <text x="1285" y="638" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號</text>
+   <text x="1285" y="651" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">客戶鋼種</text>
+   <text x="1285" y="664" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">用途</text>
+   <text x="1285" y="677" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">尺寸</text>
+   <text x="1285" y="690" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">簽核流程cd</text>
+   <text x="1388" y="599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1388" y="612" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1388" y="625" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1388" y="638" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1388" y="651" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1388" y="664" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char vary</text>
+   <text x="1388" y="677" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varyi</text>
+   <text x="1388" y="690" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <rect x="1608" y="351" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1608" y="351" fill="#60afff" width="200" height="122" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1708" y="367" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
+   <text x="1708" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">化學成分</text>
+   <line x1="1608" x2="1808" y1="387" y2="387" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1612" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_化學成分PK)</text>
+   <text x="1612" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+   <text x="1612" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">化學元素</text>
+   <text x="1612" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+   <text x="1612" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+   <text x="1612" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目標值</text>
+   <text x="1761" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1761" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1761" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1761" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   <text x="1761" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   <text x="1761" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   <rect x="1608" y="507" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1608" y="507" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1708" y="523" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
+   <text x="1708" y="536" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">機械性質</text>
+   <line x1="1608" x2="1808" y1="543" y2="543" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1612" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_機械性質PK)</text>
+   <text x="1612" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+   <text x="1612" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+   <text x="1612" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+   <text x="1761" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1761" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1761" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   <text x="1761" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   <rect x="1608" y="642" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1608" y="642" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1708" y="656" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_外觀</text>
+   <line x1="1608" x2="1808" y1="662" y2="662" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1612" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_外觀PK)</text>
+   <text x="1612" y="685" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+   <text x="1612" y="698" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+   <text x="1612" y="711" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+   <text x="1741" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1741" y="685" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1741" y="698" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+   <text x="1741" y="711" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+   <rect x="1608" y="777" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+   <rect x="1608" y="777" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1708" y="791" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_其他</text>
+   <line x1="1608" x2="1808" y1="797" y2="797" stroke="#00aaaa" stroke-width="1"/>
+   <text x="1612" y="807" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_外觀PK)</text>
+   <text x="1612" y="820" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+   <text x="1612" y="833" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">其他項目</text>
+   <text x="1612" y="846" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">說明</text>
+   <text x="1741" y="807" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1741" y="820" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1741" y="833" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+   <text x="1741" y="846" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+   <a target="_parent" xlink:href="YTME18.htm#343">
+      <rect x="1280" y="569" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1280" y="569" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1380" y="583" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請</text>
+      <line x1="1280" x2="1480" y1="589" y2="589" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1285" y="599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請PK)</text>
+      <text x="1285" y="612" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請cd</text>
+      <text x="1285" y="625" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
+      <text x="1285" y="638" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號</text>
+      <text x="1285" y="651" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">客戶鋼種</text>
+      <text x="1285" y="664" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">用途</text>
+      <text x="1285" y="677" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">尺寸</text>
+      <text x="1285" y="690" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">簽核流程cd</text>
+      <text x="1388" y="599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1388" y="612" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1388" y="625" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1388" y="638" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1388" y="651" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1388" y="664" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char vary</text>
+      <text x="1388" y="677" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varyi</text>
+      <text x="1388" y="690" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   </a>
+   <a target="_parent" xlink:href="YTME20.htm#450">
+      <rect x="1608" y="351" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1608" y="351" fill="#60afff" width="200" height="122" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1708" y="367" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
+      <text x="1708" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">化學成分</text>
+      <line x1="1608" x2="1808" y1="387" y2="387" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1612" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_化學成分PK)</text>
+      <text x="1612" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+      <text x="1612" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">化學元素</text>
+      <text x="1612" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+      <text x="1612" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+      <text x="1612" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目標值</text>
+      <text x="1761" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1761" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1761" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1761" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+      <text x="1761" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+      <text x="1761" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   </a>
+   <a target="_parent" xlink:href="YTME22.htm#544">
+      <rect x="1608" y="507" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1608" y="507" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1708" y="523" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
+      <text x="1708" y="536" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">機械性質</text>
+      <line x1="1608" x2="1808" y1="543" y2="543" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1612" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_機械性質PK)</text>
+      <text x="1612" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+      <text x="1612" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+      <text x="1612" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+      <text x="1761" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1761" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1761" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+      <text x="1761" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
+   </a>
+   <a target="_parent" xlink:href="YTME21.htm#503">
+      <rect x="1608" y="642" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1608" y="642" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1708" y="656" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_外觀</text>
+      <line x1="1608" x2="1808" y1="662" y2="662" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1612" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_外觀PK)</text>
+      <text x="1612" y="685" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+      <text x="1612" y="698" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最小值</text>
+      <text x="1612" y="711" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">最大值</text>
+      <text x="1741" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1741" y="685" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1741" y="698" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+      <text x="1741" y="711" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+   </a>
+   <a target="_parent" xlink:href="YTME19.htm#409">
+      <rect x="1608" y="777" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1608" y="777" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1708" y="791" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_其他</text>
+      <line x1="1608" x2="1808" y1="797" y2="797" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1612" y="807" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (MES料號申請_外觀PK)</text>
+      <text x="1612" y="820" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">MES料號申請PK</text>
+      <text x="1612" y="833" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">其他項目</text>
+      <text x="1612" y="846" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">說明</text>
+      <text x="1741" y="807" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1741" y="820" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1741" y="833" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
+      <text x="1741" y="846" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
    </a>
 </svg>

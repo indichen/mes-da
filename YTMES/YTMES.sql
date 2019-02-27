@@ -1,11 +1,53 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/25 下午 04:39:49                        */
+/* Created on:     2019/2/27 下午 05:26:03                        */
 /*==============================================================*/
 
 
 use YTMES
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_application')
+            and   type = 'U')
+   drop table mtaa_application
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_application_exterior')
+            and   type = 'U')
+   drop table mtaa_application_exterior
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_application_mechanical')
+            and   type = 'U')
+   drop table mtaa_application_mechanical
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_application_others')
+            and   type = 'U')
+   drop table mtaa_application_others
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_application_recipe')
+            and   type = 'U')
+   drop table mtaa_application_recipe
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaa_material')
+            and   type = 'U')
+   drop table mtaa_material
 go
 
 if exists (select 1
@@ -209,7 +251,7 @@ go
 /* Domain: type_id                                              */
 /*==============================================================*/
 create type type_id
-   from varchar(40)
+   from char(40)
 go
 
 /*==============================================================*/
@@ -269,6 +311,132 @@ create type type_weight
 go
 
 /*==============================================================*/
+/* Table: mtaa_application                                      */
+/*==============================================================*/
+create table mtaa_application (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              not null,
+   factory_cd           type_id              null,
+   part_no              type_id              null,
+   grade_pk             type_pk              null,
+   usage                type_memo            null,
+   size_description     type_short_text      null,
+   bpm_cd               type_id              null,
+   constraint PK_MTAA_APPLICATION primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_application_exterior                             */
+/*==============================================================*/
+create table mtaa_application_exterior (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   application_pk       type_pk              not null,
+   min                  type_decimal         null,
+   max                  type_decimal         null,
+   constraint PK_MTAA_APPLICATION_EXTERIOR primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_application_mechanical                           */
+/*==============================================================*/
+create table mtaa_application_mechanical (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   application_pk       type_pk              not null,
+   min                  type_decimal         null,
+   max                  type_decimal         null,
+   constraint PK_MTAA_APPLICATION_MECHANICAL primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_application_others                               */
+/*==============================================================*/
+create table mtaa_application_others (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   application_pk       type_pk              not null,
+   others               type_decimal         null,
+   description          type_decimal         null,
+   constraint PK_MTAA_APPLICATION_OTHERS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_application_recipe                               */
+/*==============================================================*/
+create table mtaa_application_recipe (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   application_pk       type_pk              not null,
+   qc_item_pk           type_pk              null,
+   min                  type_decimal         null,
+   max                  type_decimal         null,
+   standard             type_decimal         null,
+   constraint PK_MTAA_APPLICATION_RECIPE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaa_material                                         */
+/*==============================================================*/
+create table mtaa_material (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              not null,
+   description          type_memo            null,
+   product_type_cd      type_id              null,
+   status_cd            type_id              null,
+   grade_cd             type_id              null,
+   spec_cd              type_id              null,
+   quality_code_cd      type_id              null,
+   mechanical_cd        type_id              null,
+   產製階段cd               type_id              null,
+   constraint PK_MTAA_MATERIAL primary key (id)
+)
+go
+
+/*==============================================================*/
 /* Table: mtaa_material_mechanical                              */
 /*==============================================================*/
 create table mtaa_material_mechanical (
@@ -283,6 +451,8 @@ create table mtaa_material_mechanical (
    cd                   type_id              null,
    grade_pk             type_pk              null,
    status_pk            type_pk              null,
+   size_min             type_decimal         null,
+   size_max             type_decimal         null,
    type                 type_short_text      null,
    cust_abbr            type_short_text      null,
    constraint PK_MTAA_MATERIAL_MECHANICAL primary key (id)
@@ -343,6 +513,7 @@ create table mtad_grade_no (
    steel_grade_pk       type_pk              null,
    code                 type_id              null,
    scrap_type_pk        type_pk              null,
+   analytic_process     type_short_text      null,
    constraint PK_MTAD_GRADE_NO primary key (id)
 )
 go
@@ -367,6 +538,7 @@ create table mtad_grade_qc_plan (
    qc_plan1             type_pk              null,
    qc_plan2             type_pk              null,
    qc_plan3             type_pk              null,
+   note                 type_memo            null,
    constraint PK_MTAD_GRADE_QC_PLAN primary key (id)
 )
 go
@@ -404,6 +576,7 @@ create table mtad_material_mechnical_spec (
    dr bit null,
 
    id                   type_pk              not null,
+   cd                   char(10)             null,
    code                 type_pk              null,
    min                  type_decimal         null,
    max                  type_decimal         null,
@@ -442,8 +615,8 @@ create table mtad_scrap_type_color (
    dr bit null,
 
    id                   type_pk              not null,
-   code                 type_pk              null,
-   type                 type_enum_val        null,
+   cd                   char(10)             null,
+   type_pk              type_pk              null,
    color_pk             type_pk              null,
    constraint PK_MTAD_SCRAP_TYPE_COLOR primary key (id)
 )
@@ -461,7 +634,6 @@ create table mtad_steel_color (
    dr bit null,
 
    顏色碼PK                type_pk              not null,
-   顏色類別cd               type_id              null,
    顏色碼cd                type_id              null,
    顏色說明                 type_memo            null,
    constraint PK_MTAD_STEEL_COLOR primary key (顏色碼PK)
@@ -482,7 +654,7 @@ create table mtad_steel_grade (
    id                   type_pk              not null,
    steel_series_pk      type_pk              null,
    code                 type_id              null,
-   name                 type_name            null,
+   name                 type_short_text      null,
    color_pk             type_pk              null,
    color_type_cd        type_id              null,
    by_product           type_short_text      null,
