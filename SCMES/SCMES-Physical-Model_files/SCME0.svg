@@ -94,25 +94,25 @@
       <text x="1097" y="787" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產工時</text>
       <text x="1097" y="800" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">制令狀態</text>
       <text x="1185" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1185" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="424" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1185" y="437" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="1185" y="450" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1185" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1185" y="476" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="450" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1185" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1185" y="476" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="489" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1185" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="515" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
-      <text x="1185" y="528" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="528" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="541" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
-      <text x="1185" y="554" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="554" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="567" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1185" y="580" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
       <text x="1185" y="593" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1185" y="606" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1185" y="619" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="1185" y="632" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1185" y="645" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1185" y="632" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1185" y="645" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1185" y="658" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1185" y="671" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1185" y="684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
@@ -145,12 +145,12 @@
       <text x="1632" y="295" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">連續生產批</text>
       <text x="1712" y="230" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1712" y="243" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1712" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1712" y="269" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1712" y="282" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1712" y="295" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1772" y="230" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="1772" y="243" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="1712" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1712" y="269" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1712" y="282" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1712" y="295" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1758" y="230" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="1758" y="243" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME42.htm#2300">
       <rect x="1093" y="1005" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -234,12 +234,12 @@
       <text x="541" y="826" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">成品軸型號(建議)</text>
       <text x="541" y="839" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">COMMIT_QTY</text>
       <text x="629" y="411" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="629" y="424" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="629" y="437" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="629" y="450" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="629" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="629" y="424" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="629" y="437" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="629" y="450" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="629" y="463" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="629" y="476" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="629" y="489" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="629" y="489" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="629" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="629" y="515" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="629" y="528" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -249,7 +249,7 @@
       <text x="629" y="580" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="629" y="593" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="629" y="606" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-      <text x="629" y="619" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="629" y="619" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="629" y="632" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
       <text x="629" y="645" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="629" y="658" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -264,8 +264,8 @@
       <text x="629" y="775" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="629" y="788" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="629" y="800" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="629" y="813" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="629" y="826" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="629" y="813" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="629" y="826" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="629" y="839" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    </a>
    <a target="_parent" xlink:href="SCME45.htm#2519">
@@ -296,17 +296,17 @@
       <text x="819" y="667" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
       <text x="819" y="680" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="899" y="407" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="899" y="420" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="899" y="433" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="899" y="420" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="899" y="433" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="899" y="446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="899" y="459" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="899" y="459" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="899" y="472" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(2</text>
       <text x="899" y="485" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="899" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="899" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="899" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(2</text>
       <text x="899" y="524" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="899" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="899" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="899" y="537" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="899" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="899" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="899" y="576" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(2</text>
       <text x="899" y="589" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
@@ -361,11 +361,11 @@
    <text x="2283" y="568" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
    <text x="2283" y="581" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2283" y="594" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2283" y="607" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2283" y="607" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2283" y="620" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="2283" y="633" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="2283" y="646" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-   <text x="2283" y="659" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2283" y="659" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2283" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
    <text x="2356" y="568" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="2356" y="581" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -406,8 +406,8 @@
    <text x="2186" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入長度</text>
    <text x="2278" y="312" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2278" y="325" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2278" y="338" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="2278" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2278" y="338" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="2278" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2278" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="2351" y="312" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="2351" y="325" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -429,12 +429,12 @@
    <text x="1911" y="477" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入類型</text>
    <text x="1971" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1971" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1971" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1971" y="451" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1971" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1971" y="451" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1971" y="464" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1971" y="477" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-   <text x="2031" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="2031" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <text x="2021" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="2021" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    <rect x="2183" y="166" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <defs>
       <linearGradient id="Gradient7" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -452,8 +452,8 @@
    <text x="2187" y="248" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入重量</text>
    <text x="2287" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2287" y="209" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2287" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="2287" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2287" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="2287" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2287" y="248" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="2360" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="2360" y="209" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -480,11 +480,11 @@
       <text x="2283" y="568" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
       <text x="2283" y="581" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2283" y="594" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2283" y="607" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2283" y="607" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2283" y="620" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="2283" y="633" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="2283" y="646" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="2283" y="659" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2283" y="659" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2283" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
       <text x="2356" y="568" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2356" y="581" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -529,8 +529,8 @@
       <text x="2186" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入長度</text>
       <text x="2278" y="312" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2278" y="325" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2278" y="338" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="2278" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2278" y="338" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="2278" y="351" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2278" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="2351" y="312" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2351" y="325" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -554,12 +554,12 @@
       <text x="1911" y="477" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入類型</text>
       <text x="1971" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1971" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1971" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1971" y="451" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1971" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1971" y="451" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1971" y="464" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="1971" y="477" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="2031" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="2031" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="2021" y="412" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="2021" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME38.htm#1966">
       <rect x="2183" y="166" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -579,8 +579,8 @@
       <text x="2187" y="248" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入重量</text>
       <text x="2287" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2287" y="209" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2287" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="2287" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2287" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="2287" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2287" y="248" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="2360" y="196" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2360" y="209" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
@@ -624,13 +624,13 @@
    <text x="1520" y="600" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產出判定品質</text>
    <text x="1520" y="613" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際生產日期</text>
    <text x="1588" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="483" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1588" y="496" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1588" y="509" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-   <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="535" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
    <text x="1588" y="548" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1588" y="561" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -678,9 +678,9 @@
    <text x="1730" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1730" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1730" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-   <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1790" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="1790" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1776" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="1776" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    <polyline fill="none" points="1633,715 1633,683" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1633,683 1636,696 1630,696" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1568,714 1568,683" stroke="#0080c0" stroke-width="1"/>
@@ -711,13 +711,13 @@
    <text x="1520" y="600" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產出判定品質</text>
    <text x="1520" y="613" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際生產日期</text>
    <text x="1588" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="483" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1588" y="496" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1588" y="509" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-   <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1588" y="535" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
    <text x="1588" y="548" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1588" y="561" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -765,9 +765,9 @@
    <text x="1730" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1730" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1730" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-   <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1790" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="1790" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1776" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="1776" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    <a target="_parent" xlink:href="SCME35.htm#1740">
       <rect x="1516" y="401" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1516" y="401" fill="#60afff" width="200" height="282" stroke="#00aaaa" stroke-width="1"/>
@@ -789,13 +789,13 @@
       <text x="1520" y="600" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產出判定品質</text>
       <text x="1520" y="613" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際生產日期</text>
       <text x="1588" y="431" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1588" y="444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1588" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1588" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1588" y="483" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="1588" y="496" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="1588" y="509" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-      <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1588" y="522" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1588" y="535" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
       <text x="1588" y="548" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1588" y="561" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -847,9 +847,9 @@
       <text x="1730" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1730" y="771" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1730" y="784" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-      <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1790" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="1790" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="1730" y="797" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1776" y="745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="1776" y="758" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME62.htm#81">
       <defs>
@@ -910,14 +910,14 @@
    <text x="1702" y="1741" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">來源lotPK</text>
    <text x="1702" y="1754" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">顏色</text>
    <text x="1774" y="1494" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1774" y="1507" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1774" y="1507" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1774" y="1520" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-   <text x="1774" y="1533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1774" y="1546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1774" y="1533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1774" y="1546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1774" y="1559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1774" y="1572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="1774" y="1585" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-   <text x="1774" y="1598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1774" y="1598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1774" y="1611" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1774" y="1624" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1774" y="1637" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -950,15 +950,15 @@
    <text x="1780" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
    <text x="1780" y="1097" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產日期</text>
    <text x="1832" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1832" y="1020" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1832" y="1032" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1832" y="1045" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1832" y="1058" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1832" y="1071" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1832" y="1020" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1832" y="1032" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1832" y="1045" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1832" y="1058" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1832" y="1071" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1832" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="1832" y="1097" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-   <text x="1892" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="1892" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <text x="1878" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="1878" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    <rect x="2056" y="1465" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <defs>
       <linearGradient id="Gradient17" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -980,7 +980,7 @@
    <text x="2060" y="1599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">新值</text>
    <text x="2140" y="1495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2140" y="1508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2140" y="1521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2140" y="1521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2140" y="1534" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="2140" y="1547" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2140" y="1560" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
@@ -1049,7 +1049,7 @@
    <text x="1881" y="1250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班次</text>
    <text x="1881" y="1263" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">...</text>
    <text x="1973" y="1198" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1973" y="1211" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1973" y="1211" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1973" y="1224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1973" y="1237" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1973" y="1250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
@@ -1107,10 +1107,10 @@
    <text x="2151" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">orderID</text>
    <text x="2212" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="2212" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2212" y="1028" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="2212" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="2272" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <text x="2272" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   <text x="2212" y="1028" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="2212" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="2258" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="2258" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    <rect x="2150" y="1075" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <defs>
       <linearGradient id="Gradient22" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1145,11 +1145,11 @@
    <text x="2157" y="1253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
    <text x="2157" y="1266" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產日期</text>
    <text x="2241" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="2241" y="1227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="2241" y="1240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="2241" y="1227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="2241" y="1240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="2241" y="1253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="2241" y="1266" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-   <text x="2301" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk,fk&gt;</text>
+   <text x="2287" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk,fk&gt;</text>
    <rect x="1571" y="979" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="1571" y="979" fill="#ffff80" width="172" height="120" stroke="#00aaaa" stroke-width="1"/>
    <text x="1657" y="995" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
@@ -1194,14 +1194,14 @@
       <text x="1702" y="1741" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">來源lotPK</text>
       <text x="1702" y="1754" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">顏色</text>
       <text x="1774" y="1494" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1774" y="1507" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1774" y="1507" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1774" y="1520" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-      <text x="1774" y="1533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1774" y="1546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1774" y="1533" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1774" y="1546" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1774" y="1559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1774" y="1572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1774" y="1585" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-      <text x="1774" y="1598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1774" y="1598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1774" y="1611" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1774" y="1624" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1774" y="1637" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1236,15 +1236,15 @@
       <text x="1780" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="1780" y="1097" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產日期</text>
       <text x="1832" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1832" y="1020" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1832" y="1032" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1832" y="1045" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1832" y="1058" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1832" y="1071" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1832" y="1020" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1832" y="1032" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1832" y="1045" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1832" y="1058" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1832" y="1071" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1832" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1832" y="1097" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-      <text x="1892" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="1892" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="1878" y="1007" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="1878" y="1084" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME16.htm#259">
       <rect x="2056" y="1465" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1268,7 +1268,7 @@
       <text x="2060" y="1599" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">新值</text>
       <text x="2140" y="1495" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2140" y="1508" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2140" y="1521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2140" y="1521" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2140" y="1534" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="2140" y="1547" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2140" y="1560" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
@@ -1334,7 +1334,7 @@
       <text x="1881" y="1250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班次</text>
       <text x="1881" y="1263" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">...</text>
       <text x="1973" y="1198" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1973" y="1211" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1973" y="1211" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1973" y="1224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1973" y="1237" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="1973" y="1250" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
@@ -1396,10 +1396,10 @@
       <text x="2151" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">orderID</text>
       <text x="2212" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="2212" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2212" y="1028" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="2212" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="2272" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="2272" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="2212" y="1028" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="2212" y="1041" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="2258" y="1002" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="2258" y="1015" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME23.htm#880">
       <rect x="2150" y="1075" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1438,11 +1438,11 @@
       <text x="2157" y="1253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="2157" y="1266" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產日期</text>
       <text x="2241" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="2241" y="1227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="2241" y="1240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="2241" y="1227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="2241" y="1240" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="2241" y="1253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="2241" y="1266" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
-      <text x="2301" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk,fk&gt;</text>
+      <text x="2287" y="1214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk,fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME8.htm#14">
       <rect x="1571" y="979" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1489,10 +1489,10 @@
    <text x="1319" y="1362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際重量</text>
    <text x="1319" y="1375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
    <text x="1399" y="1258" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1399" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1399" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1399" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-   <text x="1399" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1399" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1399" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1399" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1399" y="1323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1399" y="1336" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1399" y="1349" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1519,9 +1519,9 @@
    <text x="1083" y="1349" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際重量</text>
    <text x="1083" y="1362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
    <text x="1143" y="1258" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1143" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1143" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1143" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1143" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1143" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1143" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1143" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1143" y="1323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1143" y="1336" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1550,10 +1550,10 @@
       <text x="1319" y="1362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際重量</text>
       <text x="1319" y="1375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="1399" y="1258" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1399" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1399" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1399" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-      <text x="1399" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1399" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1399" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1399" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1399" y="1323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1399" y="1336" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1399" y="1349" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1582,9 +1582,9 @@
       <text x="1083" y="1349" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">實際重量</text>
       <text x="1083" y="1362" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="1143" y="1258" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1143" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1143" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1143" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1143" y="1271" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1143" y="1284" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1143" y="1297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1143" y="1310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1143" y="1323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1143" y="1336" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1621,13 +1621,13 @@
    <text x="1399" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入點</text>
    <text x="1399" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">進入投入等待區時間</text>
    <text x="1497" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1497" y="90" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1497" y="90" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1497" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1497" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1497" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1497" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1497" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1497" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+   <text x="1497" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="1497" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-   <text x="1557" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+   <text x="1547" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <a target="_parent" xlink:href="SCME32.htm#1586">
       <rect x="1395" y="47" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
@@ -1647,13 +1647,13 @@
       <text x="1399" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入點</text>
       <text x="1399" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">進入投入等待區時間</text>
       <text x="1497" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1497" y="90" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1497" y="90" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1497" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1497" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1497" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1497" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1497" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1497" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1497" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1497" y="155" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-      <text x="1557" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="1547" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME36.htm#1849">
       <rect x="1644" y="45" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1671,10 +1671,10 @@
       <text x="1649" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">載具ID</text>
       <text x="1649" y="114" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">進入產出等待區時間</text>
       <text x="1747" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1747" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1747" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1747" y="88" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="1747" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="1747" y="114" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
-      <text x="1807" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="1797" y="75" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME44.htm#2423">
       <rect x="801" y="852" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1695,7 +1695,7 @@
       <text x="806" y="1025" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">產出軸淨重(KG)</text>
       <text x="906" y="882" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="906" y="895" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="906" y="908" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="906" y="908" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="906" y="921" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="906" y="934" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="906" y="947" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
@@ -1716,7 +1716,7 @@
       <text x="287" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">處理狀態cd</text>
       <text x="287" y="278" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">處理結果說明</text>
       <text x="367" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="367" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="367" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="367" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="367" y="278" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
    </a>
@@ -1801,17 +1801,17 @@
       <text x="311" y="813" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
       <text x="452" y="527" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="452" y="540" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="452" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="452" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="452" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="452" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="452" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="452" y="566" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="452" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="452" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="452" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(1</text>
       <text x="452" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="452" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national </text>
       <text x="452" y="644" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="452" y="657" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="452" y="670" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-      <text x="452" y="683" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="452" y="683" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="452" y="696" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national </text>
       <text x="452" y="709" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="452" y="722" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(1</text>
@@ -1831,7 +1831,8 @@
       <text x="72" y="523" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (SAP工單下載處理批次PK)</text>
       <text x="72" y="536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">下載批次cd</text>
       <text x="213" y="523" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="213" y="536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="213" y="536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="259" y="523" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME9.htm#43">
       <rect x="32" y="626" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -1855,12 +1856,12 @@
       <text x="551" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (工單群組關聯PK)</text>
       <text x="551" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工單群組PK</text>
       <text x="551" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工單PK</text>
-      <text x="651" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="651" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="651" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="651" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="711" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="711" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-      <text x="711" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="697" y="239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="697" y="252" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
+      <text x="697" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME12.htm#130">
       <rect x="1073" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
