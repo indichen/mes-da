@@ -91,6 +91,7 @@ create table mtaa_application_exterior (<br />
 <br />
    id                   type_pk              not null,<br />
    application_pk       type_pk              not null,<br />
+   exterior             type_short_text      null,<br />
    min                  type_decimal         null,<br />
    max                  type_decimal         null,<br />
    constraint PK_MTAA_APPLICATION_EXTERIOR primary key (id)<br />
@@ -408,21 +409,31 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME21.htm#526">最小值</a>
+<p align="left"><a href="YTME21.htm#526">外觀</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME21.htm#526">min</a>
+<p align="left"><a href="YTME21.htm#526">exterior</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="YTME21.htm#532">最大值</a>
+<p align="left"><a href="YTME21.htm#532">最小值</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME21.htm#532">max</a>
+<p align="left"><a href="YTME21.htm#532">min</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="YTME21.htm#538">最大值</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="YTME21.htm#538">max</a>
 </p>
 </td>
 </tr>
@@ -586,11 +597,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 <td>
@@ -1195,10 +1206,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="526">Column 最小值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="526">Column 外觀 of the table MTAA_MES料號申請_外觀</a> 
 </h2>
 <h3>
-<a name="527">Card of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="527">Card of the column 外觀 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1207,7 +1218,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#526">最小值</a>
+<p align="left"><a href="YTME21.htm#526">外觀</a>
 </p>
 </td>
 </tr>
@@ -1217,7 +1228,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#526">min</a>
+<p align="left"><a href="YTME21.htm#526">exterior</a>
 </p>
 </td>
 </tr>
@@ -1227,7 +1238,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">decimal(10,3)
+<p align="left">national char varying(50)
 </p>
 </td>
 </tr>
@@ -1243,15 +1254,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="528">Check constraint name of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="528">Check constraint name of the column 外觀 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MIN_MTAA_APP
+<p align="left">CKC_EXTERIOR_MTAA_APP
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="529">Check of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="529">Check of the column 外觀 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1326,7 +1337,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="530">Server validation rule of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="530">Server validation rule of the column 外觀 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1334,7 +1345,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="531">List of extended attributes of the table column 最小值</a> 
+<a name="531">List of extended attributes of the table column 外觀</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1573,10 +1584,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="532">Column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="532">Column 最小值 of the table MTAA_MES料號申請_外觀</a> 
 </h2>
 <h3>
-<a name="533">Card of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="533">Card of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1585,7 +1596,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#532">最大值</a>
+<p align="left"><a href="YTME21.htm#532">最小值</a>
 </p>
 </td>
 </tr>
@@ -1595,7 +1606,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#532">max</a>
+<p align="left"><a href="YTME21.htm#532">min</a>
 </p>
 </td>
 </tr>
@@ -1621,15 +1632,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="534">Check constraint name of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="534">Check constraint name of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MAX_MTAA_APP
+<p align="left">CKC_MIN_MTAA_APP
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="535">Check of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="535">Check of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1704,7 +1715,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="536">Server validation rule of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+<a name="536">Server validation rule of the column 最小值 of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1712,7 +1723,385 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="537">List of extended attributes of the table column 最大值</a> 
+<a name="537">List of extended attributes of the table column 最小值</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="538">Column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+</h2>
+<h3>
+<a name="539">Card of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME21.htm#538">最大值</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME21.htm#538">max</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">decimal(10,3)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="540">Check constraint name of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_MAX_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="541">Check of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="542">Server validation rule of the column 最大值 of the table MTAA_MES料號申請_外觀</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="543">List of extended attributes of the table column 最大值</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1951,7 +2340,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="538">List of keys of the table MTAA_MES料號申請_外觀</a> 
+<a name="544">List of keys of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1970,11 +2359,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 <td>
@@ -1984,10 +2373,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="539">Key id of the table MTAA_MES料號申請_外觀</a> 
+<a name="545">Key id of the table MTAA_MES料號申請_外觀</a> 
 </h2>
 <h3>
-<a name="540">Card of the key id of the table MTAA_MES料號申請_外觀</a> 
+<a name="546">Card of the key id of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1996,7 +2385,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 </tr>
@@ -2006,7 +2395,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME21.htm#539">id</a>
+<p align="left"><a href="YTME21.htm#545">id</a>
 </p>
 </td>
 </tr>
@@ -2022,7 +2411,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="541">Code preview of the key id of the table MTAA_MES料號申請_外觀</a> 
+<a name="547">Code preview of the key id of the table MTAA_MES料號申請_外觀</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use YTMES<br />
@@ -2039,7 +2428,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="542">List of columns of the table key id</a> 
+<a name="548">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2064,7 +2453,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="543">List of extended attributes of the table key id</a> 
+<a name="549">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

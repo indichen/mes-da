@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/27 下午 05:26:03                        */
+/* Created on:     2019/3/5 下午 01:31:49                         */
 /*==============================================================*/
 
 
@@ -52,27 +52,6 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('mtaa_material_mechanical')
-            and   type = 'U')
-   drop table mtaa_material_mechanical
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('mtaa_material_status')
-            and   type = 'U')
-   drop table mtaa_material_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('mtaa_material_status_product_type')
-            and   type = 'U')
-   drop table mtaa_material_status_product_type
-go
-
-if exists (select 1
-            from  sysobjects
            where  id = object_id('mtad_grade_no')
             and   type = 'U')
    drop table mtad_grade_no
@@ -90,13 +69,6 @@ if exists (select 1
            where  id = object_id('mtad_grade_tag')
             and   type = 'U')
    drop table mtad_grade_tag
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('mtad_material_mechnical_spec')
-            and   type = 'U')
-   drop table mtad_material_mechnical_spec
 go
 
 if exists (select 1
@@ -132,6 +104,34 @@ if exists (select 1
            where  id = object_id('mtad_steel_series')
             and   type = 'U')
    drop table mtad_steel_series
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaf_material_mechanical')
+            and   type = 'U')
+   drop table mtaf_material_mechanical
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaf_material_mechanical_spec')
+            and   type = 'U')
+   drop table mtaf_material_mechanical_spec
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaf_material_status')
+            and   type = 'U')
+   drop table mtaf_material_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mtaf_material_status_product_type')
+            and   type = 'U')
+   drop table mtaf_material_status_product_type
 go
 
 if exists(select 1 from systypes where name='type_boolean')
@@ -346,6 +346,7 @@ create table mtaa_application_exterior (
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
+   exterior             type_short_text      null,
    min                  type_decimal         null,
    max                  type_decimal         null,
    constraint PK_MTAA_APPLICATION_EXTERIOR primary key (id)
@@ -365,6 +366,7 @@ create table mtaa_application_mechanical (
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
+   mechanical           type_pk              null,
    min                  type_decimal         null,
    max                  type_decimal         null,
    constraint PK_MTAA_APPLICATION_MECHANICAL primary key (id)
@@ -437,68 +439,6 @@ create table mtaa_material (
 go
 
 /*==============================================================*/
-/* Table: mtaa_material_mechanical                              */
-/*==============================================================*/
-create table mtaa_material_mechanical (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
-
-   id                   type_pk              not null,
-   cd                   type_id              null,
-   grade_pk             type_pk              null,
-   status_pk            type_pk              null,
-   size_min             type_decimal         null,
-   size_max             type_decimal         null,
-   type                 type_short_text      null,
-   cust_abbr            type_short_text      null,
-   constraint PK_MTAA_MATERIAL_MECHANICAL primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: mtaa_material_status                                  */
-/*==============================================================*/
-create table mtaa_material_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
-
-   id                   type_pk              not null,
-   cd                   type_id              null,
-   name                 type_name            null,
-   abbr                 char(10)             null,
-   status_cat_cd        type_id              null,
-   process_cd           type_id              null,
-   constraint PK_MTAA_MATERIAL_STATUS primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: mtaa_material_status_product_type                     */
-/*==============================================================*/
-create table mtaa_material_status_product_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
-
-   id                   type_pk              not null,
-   status_pk            type_pk              null,
-   product_type_cd      type_id              null,
-   constraint PK_MTAA_MATERIAL_STATUS_PRODUC primary key (id)
-)
-go
-
-/*==============================================================*/
 /* Table: mtad_grade_no                                         */
 /*==============================================================*/
 create table mtad_grade_no (
@@ -561,26 +501,6 @@ create table mtad_grade_tag (
    spec_description     type_memo            null,
    tag_description      type_memo            null,
    constraint PK_MTAD_GRADE_TAG primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: mtad_material_mechnical_spec                          */
-/*==============================================================*/
-create table mtad_material_mechnical_spec (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
-
-   id                   type_pk              not null,
-   cd                   char(10)             null,
-   code                 type_pk              null,
-   min                  type_decimal         null,
-   max                  type_decimal         null,
-   constraint PK_MTAD_MATERIAL_MECHNICAL_SPE primary key (id)
 )
 go
 
@@ -677,6 +597,88 @@ create table mtad_steel_series (
    code                 type_id              null,
    name                 type_name            null,
    constraint PK_MTAD_STEEL_SERIES primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaf_material_mechanical                              */
+/*==============================================================*/
+create table mtaf_material_mechanical (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   grade_pk             type_pk              null,
+   status_pk            type_pk              null,
+   size_min             type_decimal         null,
+   size_max             type_decimal         null,
+   type                 type_short_text      null,
+   cust_abbr            type_short_text      null,
+   constraint PK_MTAF_MATERIAL_MECHANICAL primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaf_material_mechanical_spec                         */
+/*==============================================================*/
+create table mtaf_material_mechanical_spec (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   code                 type_pk              null,
+   min                  type_decimal         null,
+   max                  type_decimal         null,
+   constraint PK_MTAF_MATERIAL_MECHANICAL_SP primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaf_material_status                                  */
+/*==============================================================*/
+create table mtaf_material_status (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   cd                   type_id              null,
+   name                 type_name            null,
+   abbr                 char(10)             null,
+   status_cat_cd        type_id              null,
+   process_cd           type_id              null,
+   constraint PK_MTAF_MATERIAL_STATUS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mtaf_material_status_product_type                     */
+/*==============================================================*/
+create table mtaf_material_status_product_type (
+   create_time char(19) null,
+   create_user char(32) null,
+   last_modified char(19) null,
+   last_modify_user char(32) null,
+   ts datetime null,
+   dr bit null,
+
+   id                   type_pk              not null,
+   status_pk            type_pk              null,
+   product_type_cd      type_id              null,
+   constraint PK_MTAF_MATERIAL_STATUS_PRODUC primary key (id)
 )
 go
 
