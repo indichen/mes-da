@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/5 下午 01:31:49                         */
+/* Created on:     2019/3/5 下午 02:14:46                         */
 /*==============================================================*/
 
 
@@ -314,12 +314,13 @@ go
 /* Table: mtaa_application                                      */
 /*==============================================================*/
 create table mtaa_application (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -337,12 +338,13 @@ go
 /* Table: mtaa_application_exterior                             */
 /*==============================================================*/
 create table mtaa_application_exterior (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -357,12 +359,13 @@ go
 /* Table: mtaa_application_mechanical                           */
 /*==============================================================*/
 create table mtaa_application_mechanical (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -377,12 +380,13 @@ go
 /* Table: mtaa_application_others                               */
 /*==============================================================*/
 create table mtaa_application_others (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -396,12 +400,13 @@ go
 /* Table: mtaa_application_recipe                               */
 /*==============================================================*/
 create table mtaa_application_recipe (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -417,12 +422,13 @@ go
 /* Table: mtaa_material                                         */
 /*==============================================================*/
 create table mtaa_material (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -442,12 +448,13 @@ go
 /* Table: mtad_grade_no                                         */
 /*==============================================================*/
 create table mtad_grade_no (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    steel_grade_pk       type_pk              null,
@@ -462,12 +469,13 @@ go
 /* Table: mtad_grade_qc_plan                                    */
 /*==============================================================*/
 create table mtad_grade_qc_plan (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    qc_plan_main         type_pk              not null,
@@ -487,12 +495,13 @@ go
 /* Table: mtad_grade_tag                                        */
 /*==============================================================*/
 create table mtad_grade_tag (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -508,12 +517,13 @@ go
 /* Table: mtad_scrap_type                                       */
 /*==============================================================*/
 create table mtad_scrap_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -527,12 +537,13 @@ go
 /* Table: mtad_scrap_type_color                                 */
 /*==============================================================*/
 create table mtad_scrap_type_color (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   char(10)             null,
@@ -546,12 +557,13 @@ go
 /* Table: mtad_steel_color                                      */
 /*==============================================================*/
 create table mtad_steel_color (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    顏色碼PK                type_pk              not null,
    顏色碼cd                type_id              null,
@@ -564,12 +576,13 @@ go
 /* Table: mtad_steel_grade                                      */
 /*==============================================================*/
 create table mtad_steel_grade (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    steel_series_pk      type_pk              null,
@@ -586,12 +599,13 @@ go
 /* Table: mtad_steel_series                                     */
 /*==============================================================*/
 create table mtad_steel_series (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -604,12 +618,13 @@ go
 /* Table: mtaf_material_mechanical                              */
 /*==============================================================*/
 create table mtaf_material_mechanical (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -627,12 +642,13 @@ go
 /* Table: mtaf_material_mechanical_spec                         */
 /*==============================================================*/
 create table mtaf_material_mechanical_spec (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -647,12 +663,13 @@ go
 /* Table: mtaf_material_status                                  */
 /*==============================================================*/
 create table mtaf_material_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -668,12 +685,13 @@ go
 /* Table: mtaf_material_status_product_type                     */
 /*==============================================================*/
 create table mtaf_material_status_product_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    status_pk            type_pk              null,

@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/27 下午 05:06:41                        */
+/* Created on:     2019/3/5 下午 02:13:01                         */
 /*==============================================================*/
 
 
@@ -625,12 +625,13 @@ go
 /* Table: FM8_qc_items                                          */
 /*==============================================================*/
 create table FM8_qc_items (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    type_cd              type_enum_val        not null,
@@ -652,12 +653,13 @@ go
 /* Table: cust_biz_type                                         */
 /*==============================================================*/
 create table cust_biz_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -669,12 +671,13 @@ go
 /* Table: cust_carrier_cat                                      */
 /*==============================================================*/
 create table cust_carrier_cat (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -686,12 +689,13 @@ go
 /* Table: cust_carrier_status                                   */
 /*==============================================================*/
 create table cust_carrier_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -703,12 +707,13 @@ go
 /* Table: cust_equiment_base_type                               */
 /*==============================================================*/
 create table cust_equiment_base_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -720,12 +725,13 @@ go
 /* Table: cust_equiment_status                                  */
 /*==============================================================*/
 create table cust_equiment_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -737,12 +743,13 @@ go
 /* Table: cust_equipment_base_type                              */
 /*==============================================================*/
 create table cust_equipment_base_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -754,12 +761,13 @@ go
 /* Table: cust_equipment_level                                  */
 /*==============================================================*/
 create table cust_equipment_level (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -771,12 +779,13 @@ go
 /* Table: cust_op_point_type                                    */
 /*==============================================================*/
 create table cust_op_point_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -788,12 +797,13 @@ go
 /* Table: cust_qc_items_type                                    */
 /*==============================================================*/
 create table cust_qc_items_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    cd                   type_enum_val        null,
    name                 type_name            null,
@@ -815,12 +825,13 @@ go
 /* Table: cust_qc_plan_cycle_unit                               */
 /*==============================================================*/
 create table cust_qc_plan_cycle_unit (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_pk              not null,
    name                 type_name            null,
@@ -842,12 +853,13 @@ go
 /* Table: cust_qc_plan_type                                     */
 /*==============================================================*/
 create table cust_qc_plan_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_pk              not null,
    name                 type_name            null,
@@ -869,12 +881,13 @@ go
 /* Table: cust_qc_spec                                          */
 /*==============================================================*/
 create table cust_qc_spec (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -897,12 +910,13 @@ go
 /* Table: cust_qc_value_type                                    */
 /*==============================================================*/
 create table cust_qc_value_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    cd                   type_enum_val        null,
    name                 type_name            null,
@@ -924,12 +938,13 @@ go
 /* Table: cust_team_type                                        */
 /*==============================================================*/
 create table cust_team_type (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -941,12 +956,13 @@ go
 /* Table: fm1_param_template                                    */
 /*==============================================================*/
 create table fm1_param_template (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -971,12 +987,13 @@ go
 /* Table: fm1_params                                            */
 /*==============================================================*/
 create table fm1_params (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    factory_id           type_pk              not null,
    id                   type_pk              null,
@@ -990,12 +1007,13 @@ go
 /* Table: fm1_unit                                              */
 /*==============================================================*/
 create table fm1_unit (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -1015,12 +1033,13 @@ go
 /* Table: fm3_team                                              */
 /*==============================================================*/
 create table fm3_team (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -1036,12 +1055,13 @@ go
 /* Table: fm4_shift                                             */
 /*==============================================================*/
 create table fm4_shift (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -1057,12 +1077,13 @@ go
 /* Table: fm4_teamcalendar                                      */
 /*==============================================================*/
 create table fm4_teamcalendar (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    date                 type_date            null,
@@ -1076,12 +1097,13 @@ go
 /* Table: fm4_teamcalendar_person                               */
 /*==============================================================*/
 create table fm4_teamcalendar_person (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    team_calendar_pk     type_pk              null,
@@ -1095,12 +1117,13 @@ go
 /* Table: fm6_carrier_model                                     */
 /*==============================================================*/
 create table fm6_carrier_model (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    carrier_cat_cd       type_enum_val        null,
@@ -1121,12 +1144,13 @@ go
 /* Table: fm6_carrierbaseinfo                                   */
 /*==============================================================*/
 create table fm6_carrierbaseinfo (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    factory_id           type_pk              null,
@@ -1144,12 +1168,13 @@ go
 /* Table: fm6_equipment                                         */
 /*==============================================================*/
 create table fm6_equipment (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -1174,12 +1199,13 @@ go
 /* Table: fm6_equipment_carrier                                 */
 /*==============================================================*/
 create table fm6_equipment_carrier (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    factory_id           type_pk              null,
    id                   type_pk              not null,
@@ -1195,12 +1221,13 @@ go
 /* Table: fm6_equipment_op_point                                */
 /*==============================================================*/
 create table fm6_equipment_op_point (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    factory_id           type_pk              null,
    id                   type_pk              not null,
@@ -1217,12 +1244,13 @@ go
 /* Table: fm6_equipment_status                                  */
 /*==============================================================*/
 create table fm6_equipment_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    factory_id           type_pk              null,
    id                   type_pk              not null,
@@ -1235,12 +1263,13 @@ go
 /* Table: fm6_store                                             */
 /*==============================================================*/
 create table fm6_store (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -1260,12 +1289,13 @@ go
 /* Table: fm6_warehouse                                         */
 /*==============================================================*/
 create table fm6_warehouse (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -1290,12 +1320,13 @@ go
 /* Table: fm7_material                                          */
 /*==============================================================*/
 create table fm7_material (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cat_pk               type_pk              null,
@@ -1344,12 +1375,13 @@ go
 /* Table: fm7_material_cat                                      */
 /*==============================================================*/
 create table fm7_material_cat (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -1365,12 +1397,13 @@ go
 /* Table: fm7_material_unit                                     */
 /*==============================================================*/
 create table fm7_material_unit (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    material_pk          type_pk              null,
@@ -1406,12 +1439,13 @@ go
 /* Table: fm8_basic_process                                     */
 /*==============================================================*/
 create table fm8_basic_process (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -1426,12 +1460,13 @@ go
 /* Table: fm8_qc_enum                                           */
 /*==============================================================*/
 create table fm8_qc_enum (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    item_pk              type_pk              not null,
@@ -1456,12 +1491,13 @@ go
 /* Table: fm8_qc_items_formula                                  */
 /*==============================================================*/
 create table fm8_qc_items_formula (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    item_pk              type_pk              not null,
@@ -1487,12 +1523,13 @@ go
 /* Table: fm8_qc_plan                                           */
 /*==============================================================*/
 create table fm8_qc_plan (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -1527,12 +1564,13 @@ go
 /* Table: fm8_qc_plan_detail                                    */
 /*==============================================================*/
 create table fm8_qc_plan_detail (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    plan_pk              type_pk              null,
@@ -1573,12 +1611,13 @@ go
 /* Table: mwc_carrier_common                                    */
 /*==============================================================*/
 create table mwc_carrier_common (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    factory_id           type_pk              null,
@@ -1597,12 +1636,13 @@ go
 /* Table: mwc_carrierlog                                        */
 /*==============================================================*/
 create table mwc_carrierlog (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    factory_id           type_pk              null,

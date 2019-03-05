@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/2/27 下午 05:30:36                        */
+/* Created on:     2019/3/5 下午 02:14:04                         */
 /*==============================================================*/
 
 
@@ -394,12 +394,13 @@ go
 /* Table: cust_lot_status                                       */
 /*==============================================================*/
 create table cust_lot_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -411,12 +412,13 @@ go
 /* Table: cust_mo_priority                                      */
 /*==============================================================*/
 create table cust_mo_priority (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -428,12 +430,13 @@ go
 /* Table: cust_mo_status                                        */
 /*==============================================================*/
 create table cust_mo_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -445,12 +448,13 @@ go
 /* Table: cust_po_group_status                                  */
 /*==============================================================*/
 create table cust_po_group_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -462,12 +466,13 @@ go
 /* Table: cust_process_po_status                                */
 /*==============================================================*/
 create table cust_process_po_status (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -479,12 +484,13 @@ go
 /* Table: cust_sap_po_factory                                   */
 /*==============================================================*/
 create table cust_sap_po_factory (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -496,12 +502,13 @@ go
 /* Table: cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ                            */
 /*==============================================================*/
 create table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -513,12 +520,13 @@ go
 /* Table: mlo_mo                                                */
 /*==============================================================*/
 create table mlo_mo (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    mo_id                type_id              null,
@@ -560,12 +568,13 @@ go
 /* Table: mlo_po_group                                          */
 /*==============================================================*/
 create table mlo_po_group (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    "id (工單群組PK)"        type_pk              not null,
    po_group_cd          type_id              not null,
@@ -579,12 +588,13 @@ go
 /* Table: mlo_po_group_map                                      */
 /*==============================================================*/
 create table mlo_po_group_map (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_id              not null,
    po_group_pk          type_pk              not null,
@@ -597,12 +607,13 @@ go
 /* Table: mlo_process_po                                        */
 /*==============================================================*/
 create table mlo_process_po (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    process_po           type_id              null,
@@ -634,12 +645,13 @@ go
 /* Table: mlo_sap_po                                            */
 /*==============================================================*/
 create table mlo_sap_po (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    po_id                type_id              not null,
@@ -683,12 +695,13 @@ go
 /* Table: mlo_sap_po_process                                    */
 /*==============================================================*/
 create table mlo_sap_po_process (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_pk              null,
@@ -721,12 +734,13 @@ go
 /* Table: mlo_sap_po_process_batch                              */
 /*==============================================================*/
 create table mlo_sap_po_process_batch (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -738,12 +752,13 @@ go
 /* Table: mw_common_checkin                                     */
 /*==============================================================*/
 create table mw_common_checkin (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
@@ -759,12 +774,13 @@ go
 /* Table: mw_common_checkout                                    */
 /*==============================================================*/
 create table mw_common_checkout (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    mo_id                type_id              null,
@@ -789,12 +805,13 @@ go
 /* Table: mw_common_history                                     */
 /*==============================================================*/
 create table mw_common_history (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
@@ -813,12 +830,13 @@ go
 /* Table: mw_common_lot                                         */
 /*==============================================================*/
 create table mw_common_lot (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_id               type_id              null,
@@ -836,12 +854,13 @@ go
 /* Table: mw_common_lot_piece                                   */
 /*==============================================================*/
 create table mw_common_lot_piece (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_id               type_id              null,
@@ -856,12 +875,13 @@ go
 /* Table: mwc_checkin_copper                                    */
 /*==============================================================*/
 create table mwc_checkin_copper (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    checkin_pk           type_pk              not null,
@@ -876,12 +896,13 @@ go
 /* Table: mwc_checkin_lot                                       */
 /*==============================================================*/
 create table mwc_checkin_lot (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    checkin_pk           type_pk              not null,
@@ -896,12 +917,13 @@ go
 /* Table: mwc_checkin_queue                                     */
 /*==============================================================*/
 create table mwc_checkin_queue (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    machine_id           type_id              null,
@@ -918,12 +940,13 @@ go
 /* Table: mwc_checkout                                          */
 /*==============================================================*/
 create table mwc_checkout (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
@@ -943,12 +966,13 @@ go
 /* Table: mwc_checkout_operator                                 */
 /*==============================================================*/
 create table mwc_checkout_operator (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
@@ -964,12 +988,13 @@ go
 /* Table: mwc_copper                                            */
 /*==============================================================*/
 create table mwc_copper (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    copper_id            type_id              null,
@@ -988,12 +1013,13 @@ go
 /* Table: mwc_lot_po_map                                        */
 /*==============================================================*/
 create table mwc_lot_po_map (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              null,
@@ -1007,12 +1033,13 @@ go
 /* Table: wm_common_source_lot                                  */
 /*==============================================================*/
 create table wm_common_source_lot (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
@@ -1025,12 +1052,13 @@ go
 /* Table: wmc_checkout_queue                                    */
 /*==============================================================*/
 create table wmc_checkout_queue (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    machine_id           type_id              null,
@@ -1044,12 +1072,13 @@ go
 /* Table: wmc_copper_history                                    */
 /*==============================================================*/
 create table wmc_copper_history (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    copper_id            type_id              null,
@@ -1069,12 +1098,13 @@ go
 /* Table: wmc_lot_detail                                        */
 /*==============================================================*/
 create table wmc_lot_detail (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
@@ -1097,12 +1127,13 @@ go
 /* Table: wmc_lot_history                                       */
 /*==============================================================*/
 create table wmc_lot_history (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    id                   type_pk              not null,
    lot_id               type_id              null,
