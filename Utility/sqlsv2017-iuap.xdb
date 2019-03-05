@@ -2393,12 +2393,13 @@ Table
 <a:ObjectID>65F5109E-AD15-4DE8-B142-CE1C501854FA</a:ObjectID>
 <a:Name>Create</a:Name>
 <a:TextTargetItem.Value>create table [%QUALIFIER%]%TABLE% (
-   create_time char(19) null,
-   create_user char(32) null,
-   last_modified char(19) null,
-   last_modify_user char(32) null,
-   ts datetime null,
-   dr bit null,
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
 
    %TABLDEFN%
 )
