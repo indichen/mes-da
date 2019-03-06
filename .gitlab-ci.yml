@@ -1,0 +1,34 @@
+image: registry.walsin.im:5000/cloud.walsin.com/python3-executor
+
+stages:
+  - deploy
+
+variables:
+  GRADLE_USER_HOME: ${CI_PROJECT_DIR}
+  DA_SERVER: "wcp-edge-ap1"
+  DA_SERVER_PATH: "/opt/da-service"
+  DA_SERVER_WEBROOT: "/opt/da-service/webroot"
+  COMMIT_ID: ${CI_COMMIT_SHORT_SHA}
+  TARBALL: ${CI_COMMIT_SHORT_SHA}.tar.gz
+
+scmes_deploy:
+  type: deploy
+  only:
+    changes:
+      - SCMES/*.html
+      - SCMES/*.sql
+  environment:
+    name: da-service-scmes
+    url: http://wcp-edge-ap1:3333/scmes/
+  script:
+    - echo "[da-service] Deploying SCMES..."
+    - tar zcf ${TARBALL} -T SCMES/deploy.txt -C SCMES/
+    - scp ${TARBALL} root@${DA_SERVER}:/tmp
+    - ssh root@${DA_SERVER} \
+        "cd /tmp && \
+         mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && \
+         tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && \
+         rm -f ${DA_SERVER_WEBROOT}/SCMES/latest && \
+         ln -s ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} ${DA_SERVER_WEBROOT}/SCMES/latest
+         " 
+    - echo "[da-service] Done"
