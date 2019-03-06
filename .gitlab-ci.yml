@@ -16,6 +16,7 @@ scmes_deploy:
   only:
     changes:
       - SCMES/*.html
+      - SCMES/*_files/*.html
       - SCMES/*.sql
   environment:
     name: da-service-scmes
