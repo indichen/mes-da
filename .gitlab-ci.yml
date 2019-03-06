@@ -5,7 +5,7 @@ stages:
 
 variables:
   GRADLE_USER_HOME: ${CI_PROJECT_DIR}
-  DA_SERVER: "wcp-edge-ap1"
+  DA_SERVER: "10.190.254.118"
   DA_SERVER_PATH: "/opt/da-service"
   DA_SERVER_WEBROOT: "/opt/da-service/webroot"
   COMMIT_ID: ${CI_COMMIT_SHORT_SHA}
