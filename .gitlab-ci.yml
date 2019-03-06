@@ -13,11 +13,11 @@ variables:
 
 scmes_deploy:
   type: deploy
-  only:
-    changes:
-      - SCMES/*.html
-      - SCMES/**/*.html
-      - SCMES/*.sql
+#  only:
+#    changes:
+#      - SCMES/*.html
+#      - SCMES/**/*.html
+#      - SCMES/*.sql
   environment:
     name: da-service-scmes
     url: http://wcp-edge-ap1:3333/scmes/
