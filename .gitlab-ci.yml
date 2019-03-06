@@ -26,12 +26,5 @@ scmes_deploy:
     - echo "CI_COMMIT_SHORT_SHA: ${CI_COMMIT_SHORT_SHA}"
     - tar zcf ${TARBALL} -T SCMES/deploy.txt -C SCMES/
     - scp ${TARBALL} root@${DA_SERVER}:/tmp
-    - ssh root@${DA_SERVER}
-        "cd /tmp &&
-         mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} &&
-         tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} &&
-         cd ${DA_SERVER_WEBROOT}/SCMES/ &&
-         rm -f latest &&
-         ln -s ${COMMIT_ID} latest
-         " 
+    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/SCMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
     - echo "[da-service] Done"
