@@ -11,7 +11,7 @@
       <polygon fill="#800040" points="121,125 124,138 118,138" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
       <text x="121" y="150" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM1_PARA_REFERENCE_FM1_PARA</text>
    </a>
-   <a target="_parent" xlink:href="Fact30.htm#494">
+   <a target="_parent" xlink:href="Fact30.htm#469">
       <rect x="29" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="29" y="16" fill="#60afff" width="185" height="109" stroke="#00aaaa" stroke-width="1"/>
       <text x="121" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM1_參數模板</text>
@@ -31,7 +31,7 @@
       <text x="92" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(50)</text>
       <text x="92" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact29.htm#452">
+   <a target="_parent" xlink:href="Fact29.htm#427">
       <rect x="29" y="169" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="29" y="169" fill="#60afff" width="184" height="110" stroke="#00aaaa" stroke-width="1"/>
       <text x="121" y="183" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM1_參數</text>

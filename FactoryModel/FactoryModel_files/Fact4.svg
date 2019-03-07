@@ -31,7 +31,7 @@
       <polygon fill="#800040" points="345,188 348,202 342,202" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
       <text x="345" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_CARR_REFERENCE_FM6_CARR</text>
    </a>
-   <a target="_parent" xlink:href="Fact28.htm#423">
+   <a target="_parent" xlink:href="Fact28.htm#398">
       <rect x="15" y="25" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="15" y="25" fill="#ffff80" width="200" height="81" stroke="#00aaaa" stroke-width="1"/>
       <text x="115" y="39" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_載具類型(自定義檔案)</text>
@@ -43,7 +43,7 @@
       <text x="55" y="68" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="55" y="81" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact42.htm#1333">
+   <a target="_parent" xlink:href="Fact42.htm#1308">
       <rect x="245" y="15" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="245" y="15" fill="#60afff" width="200" height="173" stroke="#00aaaa" stroke-width="1"/>
       <text x="345" y="29" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_載具型號</text>
@@ -73,7 +73,7 @@
       <text x="442" y="45" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="442" y="58" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact27.htm#394">
+   <a target="_parent" xlink:href="Fact27.htm#369">
       <rect x="789" y="314" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="789" y="314" fill="#ffff80" width="200" height="88" stroke="#00aaaa" stroke-width="1"/>
       <text x="889" y="328" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_載具狀態(自定義檔案)</text>
@@ -85,7 +85,7 @@
       <text x="829" y="357" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="829" y="370" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact43.htm#1419">
+   <a target="_parent" xlink:href="Fact43.htm#1394">
       <rect x="254" y="317" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="254" y="317" fill="#60afff" width="200" height="133" stroke="#00aaaa" stroke-width="1"/>
       <text x="354" y="331" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_載具基本信息</text>
@@ -109,7 +109,7 @@
       <text x="449" y="347" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="449" y="373" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact54.htm#2369">
+   <a target="_parent" xlink:href="Fact54.htm#2291">
       <rect x="494" y="319" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="494" y="319" fill="#ff80ff" width="200" height="133" stroke="#00aaaa" stroke-width="1"/>
       <text x="594" y="333" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MWC_載具現況檔</text>
@@ -133,7 +133,7 @@
       <text x="569" y="440" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="569" y="453" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact53.htm#2300">
+   <a target="_parent" xlink:href="Fact53.htm#2222">
       <rect x="496" y="510" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="496" y="510" fill="#ff80ff" width="200" height="134" stroke="#00aaaa" stroke-width="1"/>
       <text x="596" y="524" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MWC_載具歷史信息</text>
@@ -157,7 +157,7 @@
       <text x="579" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="579" y="644" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact39.htm#1125">
+   <a target="_parent" xlink:href="Fact39.htm#1100">
       <rect x="793" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="793" y="16" fill="#60afff" width="200" height="164" stroke="#00aaaa" stroke-width="1"/>
       <text x="893" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_生產機臺</text>
@@ -185,7 +185,7 @@
       <text x="897" y="163" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="897" y="176" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    </a>
-   <a target="_parent" xlink:href="Fact38.htm#1070">
+   <a target="_parent" xlink:href="Fact38.htm#1045">
       <rect x="496" y="17" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="496" y="17" fill="#60afff" width="200" height="172" stroke="#00aaaa" stroke-width="1"/>
       <text x="596" y="31" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_機臺載具</text>

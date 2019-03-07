@@ -82,12 +82,13 @@ go<br />
 /* Table: cust_op_point_type                                    */<br />
 /*==============================================================*/<br />
 create table cust_op_point_type (<br />
-   create_time char(19) null,<br />
-   create_user char(32) null,<br />
-   last_modified char(19) null,<br />
-   last_modify_user char(32) null,<br />
-   ts datetime null,<br />
-   dr bit null,<br />
+   create_time varchar(64) null,<br />
+   create_user varchar(64) null,<br />
+   last_modified varchar(64) null,<br />
+   last_modify_user varchar(64) null,<br />
+   bpm_state decimal(11) null,<br />
+   ts varchar(64) null,<br />
+   dr decimal(11) null,<br />
 <br />
    code                 type_id              null,<br />
    name                 type_name            null,<br />

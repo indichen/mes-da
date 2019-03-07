@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/5 下午 02:13:01                         */
+/* Created on:     2019/3/7 下午 04:42:07                         */
 /*==============================================================*/
 
 
@@ -68,28 +68,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('cust_qc_items_type')
-            and   name  = 'FM1_20_INSPECTION_ITEMS_TYPE________PK'
-            and   indid > 0
-            and   indid < 255)
-   drop index cust_qc_items_type.FM1_20_INSPECTION_ITEMS_TYPE________PK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('cust_qc_items_type')
             and   type = 'U')
    drop table cust_qc_items_type
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('cust_qc_plan_cycle_unit')
-            and   name  = 'FM1_20________PK'
-            and   indid > 0
-            and   indid < 255)
-   drop index cust_qc_plan_cycle_unit.FM1_20________PK
 go
 
 if exists (select 1
@@ -100,15 +82,6 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('cust_qc_plan_type')
-            and   name  = 'FM1_20________PK'
-            and   indid > 0
-            and   indid < 255)
-   drop index cust_qc_plan_type.FM1_20________PK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('cust_qc_plan_type')
             and   type = 'U')
@@ -116,28 +89,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('cust_qc_spec')
-            and   name  = 'RELATIONSHIP_146_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index cust_qc_spec.RELATIONSHIP_146_FK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('cust_qc_spec')
             and   type = 'U')
    drop table cust_qc_spec
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('cust_qc_value_type')
-            and   name  = 'FM1_20_INSPECTION_ITEMS_TYPE________PK'
-            and   indid > 0
-            and   indid < 255)
-   drop index cust_qc_value_type.FM1_20_INSPECTION_ITEMS_TYPE________PK
 go
 
 if exists (select 1
@@ -260,24 +215,6 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm7_material')
-            and   name  = 'R09_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm7_material.R09_FK
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm7_material')
-            and   name  = 'R03_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm7_material.R03_FK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('fm7_material')
             and   type = 'U')
@@ -289,24 +226,6 @@ if exists (select 1
            where  id = object_id('fm7_material_cat')
             and   type = 'U')
    drop table fm7_material_cat
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm7_material_unit')
-            and   name  = 'R20_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm7_material_unit.R20_FK
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm7_material_unit')
-            and   name  = 'R04_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm7_material_unit.R04_FK
 go
 
 if exists (select 1
@@ -324,28 +243,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm8_qc_enum')
-            and   name  = 'RELATIONSHIP_148_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm8_qc_enum.RELATIONSHIP_148_FK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('fm8_qc_enum')
             and   type = 'U')
    drop table fm8_qc_enum
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm8_qc_items_formula')
-            and   name  = 'RELATIONSHIP_152_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm8_qc_items_formula.RELATIONSHIP_152_FK
 go
 
 if exists (select 1
@@ -356,28 +257,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm8_qc_plan')
-            and   name  = 'RELATIONSHIP_161_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm8_qc_plan.RELATIONSHIP_161_FK
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('fm8_qc_plan')
             and   type = 'U')
    drop table fm8_qc_plan
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('fm8_qc_plan_detail')
-            and   name  = 'RELATIONSHIP_149_FK'
-            and   indid > 0
-            and   indid < 255)
-   drop index fm8_qc_plan_detail.RELATIONSHIP_149_FK
 go
 
 if exists (select 1
@@ -812,16 +695,6 @@ create table cust_qc_items_type (
 go
 
 /*==============================================================*/
-/* Index: FM1_20_INSPECTION_ITEMS_TYPE________PK                */
-/*==============================================================*/
-
-
-
-
-create unique clustered index FM1_20_INSPECTION_ITEMS_TYPE________PK on cust_qc_items_type
-go
-
-/*==============================================================*/
 /* Table: cust_qc_plan_cycle_unit                               */
 /*==============================================================*/
 create table cust_qc_plan_cycle_unit (
@@ -840,16 +713,6 @@ create table cust_qc_plan_cycle_unit (
 go
 
 /*==============================================================*/
-/* Index: FM1_20________PK                                      */
-/*==============================================================*/
-
-
-
-
-create unique clustered index FM1_20________PK on cust_qc_plan_cycle_unit
-go
-
-/*==============================================================*/
 /* Table: cust_qc_plan_type                                     */
 /*==============================================================*/
 create table cust_qc_plan_type (
@@ -865,16 +728,6 @@ create table cust_qc_plan_type (
    name                 type_name            null,
    note                 type_memo            null
 )
-go
-
-/*==============================================================*/
-/* Index: FM1_20________PK                                      */
-/*==============================================================*/
-
-
-
-
-create unique clustered index FM1_20________PK on cust_qc_plan_type
 go
 
 /*==============================================================*/
@@ -897,16 +750,6 @@ create table cust_qc_spec (
 go
 
 /*==============================================================*/
-/* Index: RELATIONSHIP_146_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_146_FK on cust_qc_spec
-go
-
-/*==============================================================*/
 /* Table: cust_qc_value_type                                    */
 /*==============================================================*/
 create table cust_qc_value_type (
@@ -922,16 +765,6 @@ create table cust_qc_value_type (
    name                 type_name            null,
    note                 type_memo            null
 )
-go
-
-/*==============================================================*/
-/* Index: FM1_20_INSPECTION_ITEMS_TYPE________PK                */
-/*==============================================================*/
-
-
-
-
-create unique clustered index FM1_20_INSPECTION_ITEMS_TYPE________PK on cust_qc_value_type
 go
 
 /*==============================================================*/
@@ -1347,28 +1180,8 @@ create table fm7_material (
    mnemonic_code        type_memo            null,
    version              type_version_int     null,
    application_form_id  type_id              null,
-   constraint PK_FM7_MATERIAL primary key (id)
+   constraint PK_FM7_MATERIAL primary key nonclustered (id)
 )
-go
-
-/*==============================================================*/
-/* Index: R03_FK                                                */
-/*==============================================================*/
-
-
-
-
-create nonclustered index R03_FK on fm7_material (cat_pk ASC)
-go
-
-/*==============================================================*/
-/* Index: R09_FK                                                */
-/*==============================================================*/
-
-
-
-
-create nonclustered index R09_FK on fm7_material (unit_pk ASC)
 go
 
 /*==============================================================*/
@@ -1411,28 +1224,8 @@ create table fm7_material_unit (
    unit_name            type_name            null,
    exchange_rate        type_decimal         null,
    is_fixed_exchange    type_boolean         null,
-   constraint PK_FM7_MATERIAL_UNIT primary key (id)
+   constraint PK_FM7_MATERIAL_UNIT primary key nonclustered (id)
 )
-go
-
-/*==============================================================*/
-/* Index: R04_FK                                                */
-/*==============================================================*/
-
-
-
-
-create nonclustered index R04_FK on fm7_material_unit (material_pk ASC)
-go
-
-/*==============================================================*/
-/* Index: R20_FK                                                */
-/*==============================================================*/
-
-
-
-
-create nonclustered index R20_FK on fm7_material_unit (unit_pk ASC)
 go
 
 /*==============================================================*/
@@ -1478,16 +1271,6 @@ create table fm8_qc_enum (
 go
 
 /*==============================================================*/
-/* Index: RELATIONSHIP_148_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_148_FK on fm8_qc_enum
-go
-
-/*==============================================================*/
 /* Table: fm8_qc_items_formula                                  */
 /*==============================================================*/
 create table fm8_qc_items_formula (
@@ -1507,16 +1290,6 @@ create table fm8_qc_items_formula (
    is_current           type_boolean         not null,
    constraint PK_FM8_QC_ITEMS_FORMULA primary key (id)
 )
-go
-
-/*==============================================================*/
-/* Index: RELATIONSHIP_152_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_152_FK on fm8_qc_items_formula
 go
 
 /*==============================================================*/
@@ -1548,16 +1321,6 @@ create table fm8_qc_plan (
    report_template      type_memo            null,
    constraint PK_FM8_QC_PLAN primary key (id)
 )
-go
-
-/*==============================================================*/
-/* Index: RELATIONSHIP_161_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_161_FK on fm8_qc_plan
 go
 
 /*==============================================================*/
@@ -1595,16 +1358,6 @@ create table fm8_qc_plan_detail (
    condition_5          type_memo            null,
    constraint PK_FM8_QC_PLAN_DETAIL primary key (id)
 )
-go
-
-/*==============================================================*/
-/* Index: RELATIONSHIP_149_FK                                   */
-/*==============================================================*/
-
-
-
-
-create nonclustered index RELATIONSHIP_149_FK on fm8_qc_plan_detail
 go
 
 /*==============================================================*/
