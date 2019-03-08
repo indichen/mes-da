@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/5 下午 02:14:04                         */
+/* Created on:     2019/3/8 下午 02:23:20                         */
 /*==============================================================*/
 
 
@@ -52,9 +52,9 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ')
+           where  id = object_id('cust_sap_po_process_status')
             and   type = 'U')
-   drop table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ
+   drop table cust_sap_po_process_status
 go
 
 if exists (select 1
@@ -499,9 +499,9 @@ create table cust_sap_po_factory (
 go
 
 /*==============================================================*/
-/* Table: cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ                            */
+/* Table: cust_sap_po_process_status                            */
 /*==============================================================*/
-create table cust_sap_po_ｐｒｏｃｅｓｓ_ｓｔａｔｕｓ (
+create table cust_sap_po_process_status (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
