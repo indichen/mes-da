@@ -8,23 +8,59 @@ variables:
   DA_SERVER: "10.190.254.118"
   DA_SERVER_PATH: "/opt/da-service"
   DA_SERVER_WEBROOT: "/opt/da-service/webroot"
-  COMMIT_ID: ${CI_COMMIT_SHA}
-  TARBALL: ${CI_COMMIT_SHA}.tar.gz
+  COMMIT_ID: ${CI_COMMIT_SHORT_SHA}
+  TARBALL: ${CI_COMMIT_SHORT_SHA}.tar.gz
 
 scmes_deploy:
   type: deploy
-#  only:
-#    changes:
-#      - SCMES/*.html
-#      - SCMES/**/*.html
-#      - SCMES/*.sql
+  only:
+    changes:
+      - SCMES/*.html
+      - SCMES/**/*.html
+      - SCMES/*.sql
   environment:
     name: da-service-scmes
     url: http://wcp-edge-ap1:3333/scmes/
   script:
     - echo "[da-service] Deploying SCMES..."
-    - echo "[da-service] CI_COMMIT_SHA=${CI_COMMIT_SHA}"
+    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
     - tar zcf ${TARBALL} -T SCMES/deploy.txt -C SCMES/
     - scp ${TARBALL} root@${DA_SERVER}:/tmp
     - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/SCMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
+    - echo "[da-service] Done"
+
+ytmes_deploy:
+  type: deploy
+  only:
+    changes:
+      - YTMES/*.html
+      - YTMES/**/*.html
+      - YTMES/*.sql
+  environment:
+    name: da-service-ytmes
+    url: http://wcp-edge-ap1:3333/ytmes/
+  script:
+    - echo "[da-service] Deploying YTMES..."
+    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
+    - tar zcf ${TARBALL} -T YTMES/deploy.txt -C YTMES/
+    - scp ${TARBALL} root@${DA_SERVER}:/tmp
+    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/YTMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
+    - echo "[da-service] Done"
+
+fm_deploy:
+  type: deploy
+  only:
+    changes:
+      - FactoryModel/*.html
+      - FactoryModel/**/*.html
+      - FactoryModel/*.sql
+  environment:
+    name: da-service-ytmes
+    url: http://wcp-edge-ap1:3333/ytmes/
+  script:
+    - echo "[da-service] Deploying YTMES..."
+    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
+    - tar zcf ${TARBALL} -T YTMES/deploy.txt -C YTMES/
+    - scp ${TARBALL} root@${DA_SERVER}:/tmp
+    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/YTMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
     - echo "[da-service] Done"
