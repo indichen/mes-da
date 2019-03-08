@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/8 上午 11:06:12                         */
+/* Created on:     2019/3/8 上午 11:58:36                         */
 /*==============================================================*/
 
 
@@ -27,13 +27,6 @@ if exists (select 1
            where  id = object_id('cust_spec')
             and   type = 'U')
    drop table cust_spec
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_steel_color_type')
-            and   type = 'U')
-   drop table cust_steel_color_type
 go
 
 if exists (select 1
@@ -406,27 +399,6 @@ create table cust_spec (
    note                 type_memo            null,
    id                   type_pk              not null,
    constraint PK_CUST_SPEC primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: cust_steel_color_type                                 */
-/*==============================================================*/
-create table cust_steel_color_type (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_id              null,
-   name                 type_name            null,
-   name_en              type_name            null,
-   note                 type_memo            null,
-   id                   type_pk              not null,
-   constraint PK_CUST_STEEL_COLOR_TYPE primary key (id)
 )
 go
 

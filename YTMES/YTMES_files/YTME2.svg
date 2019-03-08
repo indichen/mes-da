@@ -15,7 +15,7 @@
    <text x="25" y="354" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">  鋼液管制: MTAD-鋼種鋼液質檢方案版本 (mtad_grade_qc_plan) + FM8_質檢方案主檔 (fm8_qc_plan) + FM8_質檢方案明細 </text>
    <text x="25" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">(fm8_qc_plan_detail)</text>
    <text x="25" y="374" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">  * 鋼種本身應該有質檢方案, 去關聯不同規格的質檢方案</text>
-   <a target="_parent" xlink:href="YTME70.htm#946">
+   <a target="_parent" xlink:href="YTME70.htm#933">
       <rect x="28" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="28" y="16" fill="#60afff" width="200" height="182" stroke="#00aaaa" stroke-width="1"/>
       <text x="128" y="32" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_</text>

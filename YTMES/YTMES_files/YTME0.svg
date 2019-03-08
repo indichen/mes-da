@@ -128,7 +128,7 @@
       <text x="81" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="81" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="YTME74.htm#1173">
+   <a target="_parent" xlink:href="YTME74.htm#1160">
       <rect x="67" y="468" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="67" y="468" fill="#60afff" width="200" height="132" stroke="#00aaaa" stroke-width="1"/>
       <text x="167" y="482" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號狀態碼</text>
@@ -146,7 +146,7 @@
       <text x="162" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="162" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    </a>
-   <a target="_parent" xlink:href="YTME75.htm#1229">
+   <a target="_parent" xlink:href="YTME75.htm#1216">
       <rect x="76" y="658" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="76" y="658" fill="#60afff" width="200" height="89" stroke="#00aaaa" stroke-width="1"/>
       <text x="176" y="672" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號狀態碼_產品型態</text>
@@ -160,7 +160,7 @@
       <text x="257" y="687" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="257" y="700" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME72.htm#1057">
+   <a target="_parent" xlink:href="YTME72.htm#1044">
       <rect x="385" y="452" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="385" y="452" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
       <text x="485" y="466" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質碼</text>
@@ -182,7 +182,7 @@
       <text x="479" y="559" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
       <text x="479" y="572" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
    </a>
-   <a target="_parent" xlink:href="YTME73.htm#1125">
+   <a target="_parent" xlink:href="YTME73.htm#1112">
       <rect x="377" y="641" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="377" y="641" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="498" y="655" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAF_料號機械性質規範</text>
@@ -259,7 +259,7 @@
    <text x="951" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="951" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="951" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-   <a target="_parent" xlink:href="YTME58.htm#319">
+   <a target="_parent" xlink:href="YTME58.htm#306">
       <rect x="904" y="462" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="904" y="462" fill="#60afff" width="200" height="168" stroke="#00aaaa" stroke-width="1"/>
       <text x="1004" y="476" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號主檔</text>
@@ -451,7 +451,7 @@
    <text x="1741" y="820" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
    <text x="1741" y="833" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
    <text x="1741" y="846" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
-   <a target="_parent" xlink:href="YTME59.htm#401">
+   <a target="_parent" xlink:href="YTME59.htm#388">
       <rect x="1280" y="569" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1280" y="569" fill="#60afff" width="200" height="131" stroke="#00aaaa" stroke-width="1"/>
       <text x="1380" y="583" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請</text>
@@ -473,7 +473,7 @@
       <text x="1388" y="677" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varyi</text>
       <text x="1388" y="690" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    </a>
-   <a target="_parent" xlink:href="YTME61.htm#508">
+   <a target="_parent" xlink:href="YTME61.htm#495">
       <rect x="1608" y="351" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1608" y="351" fill="#60afff" width="200" height="122" stroke="#00aaaa" stroke-width="1"/>
       <text x="1708" y="367" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
@@ -492,7 +492,7 @@
       <text x="1761" y="449" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
       <text x="1761" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
    </a>
-   <a target="_parent" xlink:href="YTME63.htm#608">
+   <a target="_parent" xlink:href="YTME63.htm#595">
       <rect x="1608" y="507" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1608" y="507" fill="#60afff" width="200" height="107" stroke="#00aaaa" stroke-width="1"/>
       <text x="1708" y="523" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_</text>
@@ -509,7 +509,7 @@
       <text x="1761" y="592" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
       <text x="1761" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal</text>
    </a>
-   <a target="_parent" xlink:href="YTME62.htm#561">
+   <a target="_parent" xlink:href="YTME62.htm#548">
       <rect x="1608" y="642" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1608" y="642" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
       <text x="1708" y="656" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_外觀</text>
@@ -525,7 +525,7 @@
       <text x="1741" y="711" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
       <text x="1741" y="724" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,</text>
    </a>
-   <a target="_parent" xlink:href="YTME60.htm#467">
+   <a target="_parent" xlink:href="YTME60.htm#454">
       <rect x="1608" y="777" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1608" y="777" fill="#60afff" width="200" height="101" stroke="#00aaaa" stroke-width="1"/>
       <text x="1708" y="791" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAA_MES料號申請_其他</text>

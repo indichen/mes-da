@@ -99,7 +99,7 @@
    <text x="397" y="644" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    <text x="530" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="530" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="YTME66.htm#741">
+   <a target="_parent" xlink:href="YTME66.htm#728">
       <rect x="316" y="366" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="316" y="366" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="437" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種代號</text>
@@ -118,7 +118,7 @@
       <text x="526" y="409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="526" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME67.htm#792">
+   <a target="_parent" xlink:href="YTME67.htm#779">
       <rect x="53" y="366" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="53" y="366" fill="#60afff" width="243" height="146" stroke="#00aaaa" stroke-width="1"/>
       <text x="174" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種族群</text>
@@ -142,7 +142,7 @@
       <text x="262" y="448" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="262" y="461" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME69.htm#910">
+   <a target="_parent" xlink:href="YTME69.htm#897">
       <rect x="51" y="575" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="51" y="575" fill="#60afff" width="200" height="80" stroke="#00aaaa" stroke-width="1"/>
       <text x="151" y="589" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種系列</text>
@@ -154,7 +154,7 @@
       <text x="136" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="136" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(2</text>
    </a>
-   <a target="_parent" xlink:href="YTME68.htm#856">
+   <a target="_parent" xlink:href="YTME68.htm#843">
       <rect x="312" y="549" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="312" y="549" fill="#60afff" width="244" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="434" y="563" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種標籤</text>
@@ -251,7 +251,7 @@
    <text x="799" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="799" y="261" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    <text x="799" y="274" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-   <a target="_parent" xlink:href="YTME64.htm#656">
+   <a target="_parent" xlink:href="YTME64.htm#643">
       <rect x="625" y="329" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="625" y="329" fill="#60afff" width="244" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="747" y="343" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_廢鋼類別</text>
@@ -266,7 +266,7 @@
       <text x="710" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="843" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME65.htm#698">
+   <a target="_parent" xlink:href="YTME65.htm#685">
       <rect x="625" y="205" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="625" y="205" fill="#60afff" width="244" height="95" stroke="#00aaaa" stroke-width="1"/>
       <text x="747" y="219" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_廢鋼類別顏色</text>
@@ -299,7 +299,7 @@
    <polyline fill="none" points="747,205 747,98 507,98" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="507,98 520,95 520,101" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="44" y="47" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="44" y="47" fill="#f2da77" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
+   <rect x="44" y="47" fill="#ffff80" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
    <text x="149" y="63" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
    <text x="149" y="76" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">顏色類別碼自定義檔案</text>
    <line x1="44" x2="255" y1="83" y2="83" stroke="#00aaaa" stroke-width="1"/>
@@ -307,13 +307,10 @@
    <text x="48" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
    <text x="48" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
    <text x="48" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
-   <text x="48" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
    <text x="101" y="93" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="101" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="101" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="101" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-   <text x="101" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="234" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <rect x="310" y="68" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="310" y="68" fill="#60afff" width="197" height="59" stroke="#0080c0" stroke-width="1"/>
    <text x="408" y="81" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_顏色碼</text>
@@ -332,7 +329,7 @@
    <polyline fill="none" points="747,205 747,98 507,98" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="507,98 520,95 520,101" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="44" y="47" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-   <rect x="44" y="47" fill="#f2da77" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
+   <rect x="44" y="47" fill="#ffff80" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
    <text x="149" y="63" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
    <text x="149" y="76" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">顏色類別碼自定義檔案</text>
    <line x1="44" x2="255" y1="83" y2="83" stroke="#00aaaa" stroke-width="1"/>
@@ -340,13 +337,10 @@
    <text x="48" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
    <text x="48" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
    <text x="48" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
-   <text x="48" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
    <text x="101" y="93" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
    <text x="101" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="101" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
    <text x="101" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-   <text x="101" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="234" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <rect x="310" y="68" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="310" y="68" fill="#60afff" width="197" height="59" stroke="#0080c0" stroke-width="1"/>
    <text x="408" y="81" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_顏色碼</text>
@@ -360,7 +354,7 @@
    <text x="480" y="97" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <a target="_parent" xlink:href="YTME57.htm#271">
       <rect x="44" y="47" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="44" y="47" fill="#f2da77" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="44" y="47" fill="#ffff80" width="211" height="110" stroke="#00aaaa" stroke-width="1"/>
       <text x="149" y="63" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
       <text x="149" y="76" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">顏色類別碼自定義檔案</text>
       <line x1="44" x2="255" y1="83" y2="83" stroke="#00aaaa" stroke-width="1"/>
@@ -368,15 +362,12 @@
       <text x="48" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
       <text x="48" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name_en</text>
       <text x="48" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
-      <text x="48" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
       <text x="101" y="93" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
       <text x="101" y="106" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="101" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="101" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-      <text x="101" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="234" y="145" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME71.htm#1021">
+   <a target="_parent" xlink:href="YTME71.htm#1008">
       <rect x="310" y="68" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="310" y="68" fill="#60afff" width="197" height="59" stroke="#0080c0" stroke-width="1"/>
       <text x="408" y="81" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_顏色碼</text>
