@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="155mm" xmlns="http://www.w3.org/2000/svg" height="79mm" version="1.1" viewBox="0 0 587 301" xmlns:xlink="http://www.w3.org/1999/xlink">
-   <a target="_parent" xlink:href="YTME56.htm#217">
+   <a target="_parent" xlink:href="YTME15.htm#224">
       <rect x="310" y="15" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="310" y="15" fill="#f2da77" width="251" height="115" stroke="#00aaaa" stroke-width="1"/>
       <text x="435" y="29" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_規範碼自定義檔案</text>
@@ -20,7 +20,7 @@
       <text x="382" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="515" y="110" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME54.htm#124">
+   <a target="_parent" xlink:href="YTME13.htm#131">
       <rect x="15" y="18" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="15" y="18" fill="#f2da77" width="263" height="109" stroke="#00aaaa" stroke-width="1"/>
       <text x="146" y="32" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_產品型態碼自定義檔案</text>
@@ -37,7 +37,7 @@
       <text x="73" y="99" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="206" y="99" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME51.htm#6">
+   <a target="_parent" xlink:href="YTME10.htm#13">
       <rect x="20" y="171" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="20" y="171" fill="#f2da77" width="254" height="115" stroke="#00aaaa" stroke-width="1"/>
       <text x="147" y="185" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_品質碼自定義檔案</text>
@@ -54,7 +54,7 @@
       <text x="78" y="253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="211" y="253" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME55.htm#172">
+   <a target="_parent" xlink:href="YTME14.htm#179">
       <rect x="317" y="170" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="317" y="170" fill="#f2da77" width="254" height="115" stroke="#00aaaa" stroke-width="1"/>
       <text x="444" y="184" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_產品用途碼自定義檔案</text>

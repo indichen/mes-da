@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/8 上午 11:58:36                         */
+/* Created on:     2019/3/11 下午 05:24:00                        */
 /*==============================================================*/
 
 
@@ -552,7 +552,7 @@ create table mtaa_material (
    spec_cd              type_id              null,
    quality_code_cd      type_id              null,
    mechanical_cd        type_id              null,
-   產製階段cd               type_id              null,
+   produce_stage_cd     type_id              null,
    constraint PK_MTAA_MATERIAL primary key (id)
 )
 go
@@ -678,10 +678,10 @@ create table mtad_steel_color (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   顏色碼PK                type_pk              not null,
-   顏色碼cd                type_id              null,
-   顏色說明                 type_memo            null,
-   constraint PK_MTAD_STEEL_COLOR primary key (顏色碼PK)
+   id                   type_pk              not null,
+   code                 type_id              null,
+   description          type_memo            null,
+   constraint PK_MTAD_STEEL_COLOR primary key (id)
 )
 go
 
