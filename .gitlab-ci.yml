@@ -24,7 +24,8 @@ scmes_deploy:
   script:
     - echo "[da-service] Deploying SCMES..."
     - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T SCMES/deploy.txt -C SCMES/
+    - echo "{\"date\": \"$(date +%F)\", \"commit\": \"${COMMIT_ID}\"}" > SCMES/release.json
+    - tar zcf ${TARBALL} -C SCMES/ -T SCMES/deploy.txt release.json
     - scp ${TARBALL} root@${DA_SERVER}:/tmp
     - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/SCMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
     - echo "[da-service] Done"
@@ -42,7 +43,8 @@ ytmes_deploy:
   script:
     - echo "[da-service] Deploying YTMES..."
     - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T YTMES/deploy.txt -C YTMES/
+    - echo "{\"date\": \"$(date +%F)\", \"commit\": \"${COMMIT_ID}\"}" > YTMES/release.json
+    - tar zcf ${TARBALL} -C YTMES/ -T YTMES/deploy.txt release.json
     - scp ${TARBALL} root@${DA_SERVER}:/tmp
     - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/YTMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
     - echo "[da-service] Done"
@@ -60,7 +62,8 @@ fm_deploy:
   script:
     - echo "[da-service] Deploying FactoryModel..."
     - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T FactoryModel/deploy.txt -C FactoryModel/
+    - echo "{\"date\": \"$(date +%F)\", \"commit\": \"${COMMIT_ID}\"}" > FactoryModel/release.json
+    - tar zcf ${TARBALL} -C FactoryModel/ -T FactoryModel/deploy.txt release.json
     - scp ${TARBALL} root@${DA_SERVER}:/tmp
     - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/FactoryModel/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/FactoryModel/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/FactoryModel/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
     - echo "[da-service] Done"
