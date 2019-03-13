@@ -4,7 +4,6 @@ stages:
   - deploy
 
 variables:
-  GRADLE_USER_HOME: ${CI_PROJECT_DIR}
   DA_SERVER: "10.190.254.118"
   DA_SERVER_PATH: "/opt/da-service"
   DA_SERVER_WEBROOT: "/opt/da-service/webroot"
@@ -22,12 +21,7 @@ scmes_deploy:
     name: da-service-scmes
     url: http://wcp-edge-ap1:3333/SCMES/
   script:
-    - echo "[da-service] Deploying SCMES..."
-    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T SCMES/deploy.txt -C SCMES/
-    - scp ${TARBALL} root@${DA_SERVER}:/tmp
-    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/SCMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/SCMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
-    - echo "[da-service] Done"
+    - ${CI_PROJECT_DIR}/deploy.sh SCMES
 
 ytmes_deploy:
   type: deploy
@@ -40,12 +34,7 @@ ytmes_deploy:
     name: da-service-ytmes
     url: http://wcp-edge-ap1:3333/YTMES/
   script:
-    - echo "[da-service] Deploying YTMES..."
-    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T YTMES/deploy.txt -C YTMES/
-    - scp ${TARBALL} root@${DA_SERVER}:/tmp
-    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/YTMES/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/YTMES/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
-    - echo "[da-service] Done"
+    - ${CI_PROJECT_DIR}/deploy.sh YTMES
 
 fm_deploy:
   type: deploy
@@ -58,9 +47,4 @@ fm_deploy:
     name: da-service-factorymodel
     url: http://wcp-edge-ap1:3333/FactoryModel/
   script:
-    - echo "[da-service] Deploying FactoryModel..."
-    - echo "[da-service] CI_COMMIT_SHORT_SHA=${CI_COMMIT_SHORT_SHA}"
-    - tar zcf ${TARBALL} -T FactoryModel/deploy.txt -C FactoryModel/
-    - scp ${TARBALL} root@${DA_SERVER}:/tmp
-    - ssh root@${DA_SERVER} "cd /tmp && mkdir -p ${DA_SERVER_WEBROOT}/FactoryModel/${COMMIT_ID} && tar zxf ${TARBALL} -C ${DA_SERVER_WEBROOT}/FactoryModel/${COMMIT_ID} && cd ${DA_SERVER_WEBROOT}/FactoryModel/ && rm -f latest && ln -s ${COMMIT_ID} latest" 
-    - echo "[da-service] Done"
+    - ${CI_PROJECT_DIR}/deploy.sh FactoryModel
