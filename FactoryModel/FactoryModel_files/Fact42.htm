@@ -94,6 +94,7 @@ create table fm6_carrier_model (<br />
    inside_width         type_number          null,<br />
    material_id          type_pk              null,<br />
    capacity             type_weight          null,<br />
+   piece_count          type_number          null,<br />
    note                 type_memo            null,<br />
    constraint PK_FM6_CARRIER_MODEL primary key (id)<br />
 )<br />
@@ -539,11 +540,21 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact42.htm#1381">備註</a>
+<p align="left"><a href="Fact42.htm#1381">載具欄位數量</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact42.htm#1381">note</a>
+<p align="left"><a href="Fact42.htm#1381">piece_count</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact42.htm#1387">備註</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact42.htm#1387">note</a>
 </p>
 </td>
 </tr>
@@ -707,11 +718,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 <td>
@@ -4405,10 +4416,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1381">Column 備註 of the table FM6_載具型號</a> 
+<a name="1381">Column 載具欄位數量 of the table FM6_載具型號</a> 
 </h2>
 <h3>
-<a name="1382">Card of the column 備註 of the table FM6_載具型號</a> 
+<a name="1382">Card of the column 載具欄位數量 of the table FM6_載具型號</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4417,7 +4428,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact42.htm#1381">備註</a>
+<p align="left"><a href="Fact42.htm#1381">載具欄位數量</a>
 </p>
 </td>
 </tr>
@@ -4427,7 +4438,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact42.htm#1381">note</a>
+<p align="left"><a href="Fact42.htm#1381">piece_count</a>
 </p>
 </td>
 </tr>
@@ -4437,7 +4448,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(Max)
+<p align="left">int
 </p>
 </td>
 </tr>
@@ -4453,15 +4464,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1383">Check constraint name of the column 備註 of the table FM6_載具型號</a> 
+<a name="1383">Check constraint name of the column 載具欄位數量 of the table FM6_載具型號</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_NOTE_FM6_CARR
+<p align="left">CKC_PIECE_COUNT_FM6_CARR
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="1384">Check of the column 備註 of the table FM6_載具型號</a> 
+<a name="1384">Check of the column 載具欄位數量 of the table FM6_載具型號</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4536,7 +4547,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1385">Server validation rule of the column 備註 of the table FM6_載具型號</a> 
+<a name="1385">Server validation rule of the column 載具欄位數量 of the table FM6_載具型號</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4544,7 +4555,385 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1386">List of extended attributes of the table column 備註</a> 
+<a name="1386">List of extended attributes of the table column 載具欄位數量</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1387">Column 備註 of the table FM6_載具型號</a> 
+</h2>
+<h3>
+<a name="1388">Card of the column 備註 of the table FM6_載具型號</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact42.htm#1387">備註</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact42.htm#1387">note</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(Max)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1389">Check constraint name of the column 備註 of the table FM6_載具型號</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_NOTE_FM6_CARR
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1390">Check of the column 備註 of the table FM6_載具型號</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1391">Server validation rule of the column 備註 of the table FM6_載具型號</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1392">List of extended attributes of the table column 備註</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4783,7 +5172,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1387">List of keys of the table FM6_載具型號</a> 
+<a name="1393">List of keys of the table FM6_載具型號</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4802,11 +5191,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 <td>
@@ -4816,10 +5205,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1388">Key Key_1 of the table FM6_載具型號</a> 
+<a name="1394">Key Key_1 of the table FM6_載具型號</a> 
 </h2>
 <h3>
-<a name="1389">Card of the key Key_1 of the table FM6_載具型號</a> 
+<a name="1395">Card of the key Key_1 of the table FM6_載具型號</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4828,7 +5217,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 </tr>
@@ -4838,7 +5227,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact42.htm#1388">Key_1</a>
+<p align="left"><a href="Fact42.htm#1394">Key_1</a>
 </p>
 </td>
 </tr>
@@ -4854,7 +5243,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1390">Code preview of the key Key_1 of the table FM6_載具型號</a> 
+<a name="1396">Code preview of the key Key_1 of the table FM6_載具型號</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm6_carrier_model<br />
@@ -4865,7 +5254,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1391">List of columns of the table key Key_1</a> 
+<a name="1397">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4890,7 +5279,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1392">List of all dependencies of the table key Key_1</a> 
+<a name="1398">List of all dependencies of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4937,7 +5326,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1393">List of extended attributes of the table key Key_1</a> 
+<a name="1399">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

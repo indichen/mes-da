@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/7 下午 04:42:07                         */
+/* Created on:     2019/3/14 下午 03:29:07                        */
 /*==============================================================*/
 
 
@@ -968,6 +968,7 @@ create table fm6_carrier_model (
    inside_width         type_number          null,
    material_id          type_pk              null,
    capacity             type_weight          null,
+   piece_count          type_number          null,
    note                 type_memo            null,
    constraint PK_FM6_CARRIER_MODEL primary key (id)
 )
@@ -986,6 +987,7 @@ create table fm6_carrierbaseinfo (
    dr decimal(11) null,
 
    id                   type_pk              not null,
+   ｃｄ                   type_id              null,
    factory_id           type_pk              null,
    carrier_model_id     type_pk              null,
    note                 type_memo            null,
