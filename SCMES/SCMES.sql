@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/8 下午 02:23:20                         */
+/* Created on:     2019/3/14 下午 03:23:53                        */
 /*==============================================================*/
 
 
@@ -10,51 +10,9 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('cust_lot_status')
+           where  id = object_id('mlo_copper_size')
             and   type = 'U')
-   drop table cust_lot_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_mo_priority')
-            and   type = 'U')
-   drop table cust_mo_priority
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_mo_status')
-            and   type = 'U')
-   drop table cust_mo_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_po_group_status')
-            and   type = 'U')
-   drop table cust_po_group_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_process_po_status')
-            and   type = 'U')
-   drop table cust_process_po_status
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_sap_po_factory')
-            and   type = 'U')
-   drop table cust_sap_po_factory
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('cust_sap_po_process_status')
-            and   type = 'U')
-   drop table cust_sap_po_process_status
+   drop table mlo_copper_size
 go
 
 if exists (select 1
@@ -391,9 +349,9 @@ create type type_weight
 go
 
 /*==============================================================*/
-/* Table: cust_lot_status                                       */
+/* Table: mlo_copper_size                                       */
 /*==============================================================*/
-create table cust_lot_status (
+create table mlo_copper_size (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -402,117 +360,9 @@ create table cust_lot_status (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_mo_priority                                      */
-/*==============================================================*/
-create table cust_mo_priority (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_mo_status                                        */
-/*==============================================================*/
-create table cust_mo_status (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_po_group_status                                  */
-/*==============================================================*/
-create table cust_po_group_status (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_process_po_status                                */
-/*==============================================================*/
-create table cust_process_po_status (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_sap_po_factory                                   */
-/*==============================================================*/
-create table cust_sap_po_factory (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
-)
-go
-
-/*==============================================================*/
-/* Table: cust_sap_po_process_status                            */
-/*==============================================================*/
-create table cust_sap_po_process_status (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-
-   code                 type_enum_val        null,
-   name                 type_name            null,
-   note                 type_memo            null
+   "id (導體尺寸索引檔PK)"     type_pk              not null,
+   copper_size_cd       type_id              not null,
+   constraint PK_MLO_COPPER_SIZE primary key ("id (導體尺寸索引檔PK)")
 )
 go
 
@@ -617,6 +467,7 @@ create table mlo_process_po (
 
    id                   type_pk              not null,
    process_po           type_id              null,
+   process_po_type      type_enum_val        null,
    part_no              type_id              null,
    sap_po_pk            type_pk              not null,
    next_process         type_id              null,
@@ -657,6 +508,7 @@ create table mlo_sap_po (
    po_id                type_id              not null,
    so_id                type_id              not null,
    customer_id          type_id              null,
+   customer_name        type_name            null,
    product_partno       type_id              null,
    product_spec         type_memo            null,
    route_id             type_id              null,
@@ -680,6 +532,7 @@ create table mlo_sap_po (
    lead_time            type_number          null,
    factory              type_name            null,
    department           type_name            null,
+   pmc_production_code  type_id              null,
    pmc_production_name  type_name            null,
    po_create_date       type_date            null,
    po_update_date       type_date            null,
@@ -687,6 +540,7 @@ create table mlo_sap_po (
    last_process         type_id              null,
    carrier_type         type_id              null,
    commit_qty           type_decimal         null,
+   copper_size_cd       type_id              null,
    constraint PK_MLO_SAP_PO primary key (id)
 )
 go
@@ -708,6 +562,7 @@ create table mlo_sap_po_process (
    po_id                type_id              not null,
    so_id                type_id              not null,
    customer_id          type_id              null,
+   customer_name        type_name            null,
    product_partno       type_id              null,
    so_qty               type_decimal         null,
    shipment_date        type_date            null,
