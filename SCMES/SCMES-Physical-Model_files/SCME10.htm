@@ -68,32 +68,7 @@
 <p align="left">use SCMES<br />
 go<br />
 <br />
-if exists (select 1<br />
-            from  sysobjects<br />
-           where  id = object_id('cust_sap_po_factory')<br />
-            and   type = 'U')<br />
-   drop table cust_sap_po_factory<br />
-go<br />
-<br />
 use SCMES<br />
-go<br />
-<br />
-/*==============================================================*/<br />
-/* Table: cust_sap_po_factory                                   */<br />
-/*==============================================================*/<br />
-create table cust_sap_po_factory (<br />
-   create_time varchar(64) null,<br />
-   create_user varchar(64) null,<br />
-   last_modified varchar(64) null,<br />
-   last_modify_user varchar(64) null,<br />
-   bpm_state decimal(11) null,<br />
-   ts varchar(64) null,<br />
-   dr decimal(11) null,<br />
-<br />
-   code                 type_enum_val        null,<br />
-   name                 type_name            null,<br />
-   note                 type_memo            null<br />
-)<br />
 go<br />
 
 </p>
@@ -140,11 +115,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME75.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME75.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 </tr>
@@ -169,11 +144,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME75.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME75.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td>

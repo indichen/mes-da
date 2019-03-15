@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/14 下午 03:23:53                        */
+/* Created on:     2019/3/15 上午 11:22:43                        */
 /*==============================================================*/
 
 
@@ -76,6 +76,13 @@ if exists (select 1
            where  id = object_id('mw_common_checkout')
             and   type = 'U')
    drop table mw_common_checkout
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mw_common_checkout_quality')
+            and   type = 'U')
+   drop table mw_common_checkout_quality
 go
 
 if exists (select 1
@@ -649,10 +656,30 @@ create table mw_common_checkout (
    working_hour_real    type_hours           null,
    working_hour_calc    type_hours           null,
    lot_pk               type_pk              null,
+   carrier_pk           type_pk              null,
    weight               type_weight          null,
    quality              type_boolean         null,
    production_date      type_date            null,
    constraint PK_MW_COMMON_CHECKOUT primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mw_common_checkout_quality                            */
+/*==============================================================*/
+create table mw_common_checkout_quality (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+
+   id                   type_pk              not null,
+   checkout_pk          type_pk              null,
+   quality_code         type_id              null,
+   constraint PK_MW_COMMON_CHECKOUT_QUALITY primary key (id)
 )
 go
 
