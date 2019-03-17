@@ -21,12 +21,12 @@
       <text x="20" y="238" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">結束日期時間</text>
       <text x="20" y="250" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">上班時長</text>
       <text x="82" y="190" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
-      <text x="82" y="202" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
-      <text x="82" y="214" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="82" y="202" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
+      <text x="82" y="214" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="82" y="226" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="82" y="238" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="82" y="250" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="146" y="190" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="159" y="190" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact35.htm#814">
       <rect x="373" y="162" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -56,10 +56,10 @@
       <text x="377" y="390" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">調班標記</text>
       <text x="476" y="353" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
       <text x="476" y="365" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
-      <text x="476" y="378" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="476" y="378" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="476" y="390" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-      <text x="522" y="353" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
-      <text x="522" y="365" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="553" y="353" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="553" y="365" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact32.htm#662">
       <rect x="636" y="164" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -74,9 +74,9 @@
       <text x="641" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">班組類型</text>
       <text x="641" y="269" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">啓用狀態</text>
       <text x="695" y="208" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">char(32)</text>
-      <text x="695" y="220" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="695" y="220" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="695" y="232" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
-      <text x="695" y="244" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(40)</text>
+      <text x="695" y="244" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="695" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
       <text x="695" y="269" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
       <text x="807" y="208" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>

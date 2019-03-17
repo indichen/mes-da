@@ -52,7 +52,7 @@
    <text x="418" y="439" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">備註</text>
    <text x="498" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
    <text x="498" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
-   <text x="498" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+   <text x="498" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
    <text x="498" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
    <text x="498" y="348" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
    <text x="498" y="361" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
@@ -140,7 +140,7 @@
       <text x="418" y="439" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">備註</text>
       <text x="498" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
       <text x="498" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
-      <text x="498" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+      <text x="498" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
       <text x="498" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="498" y="348" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="498" y="361" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
@@ -255,12 +255,12 @@
    <text x="977" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否現行版本</text>
    <text x="977" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">分析報告打印模板-預留</text>
    <text x="1088" y="257" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
-   <text x="1088" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+   <text x="1088" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
    <text x="1088" y="283" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
-   <text x="1088" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
-   <text x="1088" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+   <text x="1088" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
+   <text x="1088" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
    <text x="1088" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
-   <text x="1088" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+   <text x="1088" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
    <text x="1088" y="348" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
    <text x="1088" y="361" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
    <text x="1088" y="374" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
@@ -281,7 +281,7 @@
    <text x="831" y="118" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">name</text>
    <text x="831" y="131" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">規範簡稱</text>
    <text x="831" y="144" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">英文名稱</text>
-   <text x="879" y="105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+   <text x="879" y="105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
    <text x="879" y="118" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
    <text x="879" y="131" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
    <text x="879" y="144" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
@@ -377,12 +377,12 @@
       <text x="977" y="425" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">是否現行版本</text>
       <text x="977" y="438" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">分析報告打印模板-預留</text>
       <text x="1088" y="257" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
-      <text x="1088" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+      <text x="1088" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
       <text x="1088" y="283" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
-      <text x="1088" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
-      <text x="1088" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+      <text x="1088" y="296" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
+      <text x="1088" y="309" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
       <text x="1088" y="322" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
-      <text x="1088" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+      <text x="1088" y="335" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
       <text x="1088" y="348" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="1088" y="361" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="1088" y="374" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
@@ -405,7 +405,7 @@
       <text x="831" y="118" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">name</text>
       <text x="831" y="131" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">規範簡稱</text>
       <text x="831" y="144" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">英文名稱</text>
-      <text x="879" y="105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(40)</text>
+      <text x="879" y="105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
       <text x="879" y="118" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="879" y="131" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="879" y="144" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
