@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/17 下午 08:33:45                        */
+/* Created on:     2019/3/17 下午 09:11:08                        */
 /*==============================================================*/
 
 
@@ -303,7 +303,7 @@ go
 /* Domain: type_id                                              */
 /*==============================================================*/
 create type type_id
-   from char varying(40)
+   from varchar(40)
 go
 
 /*==============================================================*/
@@ -386,12 +386,12 @@ create table mlo_mo (
    dr decimal(11) null,
 
    id                   type_pk              not null,
-   mo_id                type_id              null,
+   mo_id                type_id              not null,
    mo_type              type_enum_val        null,
    priority             type_enum_val        null,
-   factory              type_id              null,
-   workshop             type_id              null,
-   equipment            type_id              null,
+   factory_id           type_id              null,
+   workshop             type_name            null,
+   machine_pk           type_pk              null,
    recipe_pk            type_pk              null,
    process_code         type_id              null,
    process_name         type_name            null,
@@ -453,7 +453,7 @@ create table mlo_po_group_map (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   id                   type_id              not null,
+   id                   type_pk              not null,
    po_group_pk          type_pk              not null,
    po_pk                type_pk              not null,
    constraint PK_MLO_PO_GROUP_MAP primary key (id)
@@ -477,14 +477,14 @@ create table mlo_process_po (
    process_po_type      type_enum_val        null,
    part_no              type_id              null,
    sap_po_pk            type_pk              not null,
-   next_process         type_id              null,
+   next_process_code    type_id              null,
    next_process_name    type_name            null,
    seq_route            type_sn              null,
    process_code         type_id              null,
    process_name         type_name            null,
    semi_product_spec    type_memo            null,
    semi_product_part_no type_id              null,
-   def_equipment        type_id              null,
+   def_macheine_pk      type_pk              null,
    qty                  type_number          null,
    unit                 type_name            null,
    qty_planned          type_number          null,
@@ -521,7 +521,7 @@ create table mlo_sap_po (
    route_id             type_id              null,
    so_qty               type_decimal         null,
    unit_length          type_length          null,
-   so_unit              type_decimal         null,
+   so_unit              type_name            null,
    shipment_date        type_date            null,
    sales_name           type_name            null,
    production_date_est  type_date            null,
@@ -537,14 +537,15 @@ create table mlo_sap_po (
    not_storage_qty      type_decimal         null,
    last_storage_qty     type_decimal         null,
    lead_time            type_number          null,
-   factory              type_name            null,
+   factory_id           type_id              null,
    department           type_name            null,
    pmc_production_code  type_id              null,
    pmc_production_name  type_name            null,
    po_create_date       type_date            null,
    po_update_date       type_date            null,
    core_wire_color      type_memo            null,
-   last_process         type_id              null,
+   last_process_code    type_id              null,
+   last_process_name    type_name            null,
    carrier_type         type_id              null,
    commit_qty           type_decimal         null,
    copper_size_cd       type_id              null,
@@ -582,7 +583,7 @@ create table mlo_sap_po_process (
    production_date      type_date            null,
    storage_qty          type_decimal         null,
    not_storage_qty      type_decimal         null,
-   factory              type_name            null,
+   factory_id           type_id              null,
    po_create_date       type_date            null,
    po_update_date       type_date            null,
    commit_qty           type_decimal         null,
@@ -624,8 +625,9 @@ create table mw_common_checkin (
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
-   machine_id           type_id              null,
-   process_id           type_id              null,
+   machine_pk           type_pk              null,
+   process_code         type_id              null,
+   process_name         type_name            null,
    checkin_ts           type_datetime        null,
    checkin_type         type_enum_val        null,
    constraint PK_MW_COMMON_CHECKIN primary key (id)
@@ -647,7 +649,8 @@ create table mw_common_checkout (
    id                   type_pk              not null,
    mo_id                type_id              null,
    machine_pk           type_pk              null,
-   process_id           type_id              null,
+   process_code         type_id              null,
+   process_name         type_name            null,
    check_ts             type_datetime        null,
    production_ts        type_datetime        null,
    checkout_ts          type_datetime        null,
@@ -656,7 +659,8 @@ create table mw_common_checkout (
    working_hour_real    type_hours           null,
    working_hour_calc    type_hours           null,
    lot_pk               type_pk              null,
-   carrier_pk           type_pk              null,
+   lot_id               type_id              null,
+   carrier_id           type_id              null,
    weight               type_weight          null,
    quality              type_boolean         null,
    production_date      type_date            null,
@@ -678,6 +682,7 @@ create table mw_common_checkout_quality (
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
+   lot_id               type_id              null,
    quality_code         type_id              null,
    constraint PK_MW_COMMON_CHECKOUT_QUALITY primary key (id)
 )
@@ -724,7 +729,7 @@ create table mw_common_lot (
    lot_id               type_id              null,
    vehicle_id           type_id              not null,
    factory_id           type_id              null,
-   workshop_id          type_id              null,
+   workshop             type_name            null,
    partno               type_id              null,
    status               type_enum_val        null,
    production_date      type_date            null,
@@ -808,9 +813,10 @@ create table mwc_checkin_queue (
    dr decimal(11) null,
 
    id                   type_pk              not null,
-   machine_id           type_id              null,
+   machine_pk           type_pk              null,
    lot_pk               type_pk              null,
    lot_id               type_id              null,
+   copper_pk            type_pk              null,
    copper_id            type_id              null,
    feeding_point_id     type_id              null,
    queue_ts             type_datetime        null,
@@ -838,7 +844,7 @@ create table mwc_checkout (
    length_extra_real    type_length          null,
    weight_copper        type_weight          null,
    outer_diameter       type_length          null,
-   wire_type            type_enum_val        null,
+   wire_type            type_name            null,
    is_welded            type_boolean         null,
    constraint PK_MWC_CHECKOUT primary key (id)
 )
@@ -881,7 +887,7 @@ create table mwc_copper (
    id                   type_pk              not null,
    copper_id            type_id              null,
    factory_id           type_id              null,
-   workshop_id          type_id              null,
+   workshop             type_name            null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
    length               type_length          null,
@@ -943,7 +949,7 @@ create table wmc_checkout_queue (
    dr decimal(11) null,
 
    id                   type_pk              not null,
-   machine_id           type_id              null,
+   machine_pk           type_pk              null,
    vehicle_id           type_id              null,
    queue_ts             type_datetime        null,
    constraint PK_WMC_CHECKOUT_QUEUE primary key (id)
@@ -966,7 +972,7 @@ create table wmc_copper_history (
    copper_id            type_id              null,
    event_ts             type_datetime        null,
    factory_id           type_id              null,
-   workshop_id          type_id              null,
+   workshop             type_name            null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
    length               type_length          null,
@@ -990,6 +996,7 @@ create table wmc_lot_detail (
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
+   lot_id               type_id              null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
    weight_origin_copper type_weight          null,
@@ -998,7 +1005,6 @@ create table wmc_lot_detail (
    weight               type_weight          null,
    weight_copper        type_weight          null,
    quality              type_boolean         null,
-   quality_qc           type_boolean         null,
    is_melded            type_boolean         null,
    color                type_enum_val        null,
    constraint PK_WMC_LOT_DETAIL primary key (id)
@@ -1021,8 +1027,8 @@ create table wmc_lot_history (
    lot_id               type_id              null,
    event_ts             type_datetime        null,
    factory_id           type_id              null,
-   workshop_id          type_id              null,
-   partno               type_pk              null,
+   workshop             type_name            null,
+   partno               type_id              null,
    status               type_enum_val        null,
    production_date      type_date            null,
    vehicle_id           type_id              null,
@@ -1034,7 +1040,6 @@ create table wmc_lot_history (
    weight               type_weight          null,
    weight_copper        type_weight          null,
    quality              type_boolean         null,
-   quality_qa           type_boolean         null,
    is_melded            type_boolean         null,
    source_lot           type_pk              null,
    color                type_enum_val        null,

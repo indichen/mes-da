@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>SCMES-Physical-Model
+<title>SCMES
 </title>
 <link href="LightBlue_Theme.css" type="text/css" rel="stylesheet">
 </head>
@@ -100,7 +100,7 @@ create table mlo_sap_po (<br />
    route_id             type_id              null,<br />
    so_qty               type_decimal         null,<br />
    unit_length          type_length          null,<br />
-   so_unit              type_decimal         null,<br />
+   so_unit              type_name            null,<br />
    shipment_date        type_date            null,<br />
    sales_name           type_name            null,<br />
    production_date_est  type_date            null,<br />
@@ -116,14 +116,15 @@ create table mlo_sap_po (<br />
    not_storage_qty      type_decimal         null,<br />
    last_storage_qty     type_decimal         null,<br />
    lead_time            type_number          null,<br />
-   factory              type_name            null,<br />
+   factory_id           type_id              null,<br />
    department           type_name            null,<br />
    pmc_production_code  type_id              null,<br />
    pmc_production_name  type_name            null,<br />
    po_create_date       type_date            null,<br />
    po_update_date       type_date            null,<br />
    core_wire_color      type_memo            null,<br />
-   last_process         type_id              null,<br />
+   last_process_code    type_id              null,<br />
+   last_process_name    type_name            null,<br />
    carrier_type         type_id              null,<br />
    commit_qty           type_decimal         null,<br />
    copper_size_cd       type_id              null,<br />
@@ -179,11 +180,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME77.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME77.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td>
@@ -208,21 +209,21 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 </tr>
@@ -247,11 +248,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 <td>
@@ -261,11 +262,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME77.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME77.htm#139">Reference_33</a>
+<p align="left"><a href="SCME76.htm#139">Reference_33</a>
 </p>
 </td>
 <td class="TD2">
@@ -275,11 +276,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 <td>
@@ -735,7 +736,7 @@ go<br />
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME22.htm#708">factory</a>
+<p align="left"><a href="SCME22.htm#708">factory_id</a>
 </p>
 </td>
 </tr>
@@ -805,37 +806,47 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME22.htm#751">last_process</a>
+<p align="left"><a href="SCME22.htm#751">last_process_code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME22.htm#757">成品軸型號(建議)</a>
+<p align="left"><a href="SCME22.htm#757">最後製程名稱</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME22.htm#757">carrier_type</a>
+<p align="left"><a href="SCME22.htm#757">last_process_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME22.htm#763">COMMIT_QTY</a>
+<p align="left"><a href="SCME22.htm#763">成品軸型號(建議)</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME22.htm#763">commit_qty</a>
+<p align="left"><a href="SCME22.htm#763">carrier_type</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME22.htm#769">導體尺寸cd</a>
+<p align="left"><a href="SCME22.htm#769">COMMIT_QTY</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME22.htm#769">copper_size_cd</a>
+<p align="left"><a href="SCME22.htm#769">commit_qty</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="SCME22.htm#775">導體尺寸cd</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="SCME22.htm#775">copper_size_cd</a>
 </p>
 </td>
 </tr>
@@ -999,11 +1010,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 <td>
@@ -1294,7 +1305,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -1654,7 +1665,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -2014,7 +2025,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -2770,7 +2781,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -3526,7 +3537,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -4660,7 +4671,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">decimal(10,3)
+<p align="left">national char varying(20)
 </p>
 </td>
 </tr>
@@ -7306,7 +7317,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -10698,7 +10709,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#708">factory</a>
+<p align="left"><a href="SCME22.htm#708">factory_id</a>
 </p>
 </td>
 </tr>
@@ -10708,7 +10719,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(20)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -10727,7 +10738,7 @@ go<br />
 <a name="710">Check constraint name of the column 工廠 of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_FACTORY_MLO_SAP_
+<p align="left">CKC_FACTORY_ID_MLO_SAP_
 </p>
 </td></tr>
 </table><br />
@@ -11497,7 +11508,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -13377,7 +13388,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#751">last_process</a>
+<p align="left"><a href="SCME22.htm#751">last_process_code</a>
 </p>
 </td>
 </tr>
@@ -13387,7 +13398,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -13406,7 +13417,7 @@ go<br />
 <a name="753">Check constraint name of the column 最後製程編號 of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LAST_PROCESS_MLO_SAP_
+<p align="left">CKC_LAST_PROCESS_CODE_MLO_SAP_
 </p>
 </td></tr>
 </table><br />
@@ -13733,10 +13744,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="757">Column 成品軸型號(建議) of the table SAP工單</a> 
+<a name="757">Column 最後製程名稱 of the table SAP工單</a> 
 </h2>
 <h3>
-<a name="758">Card of the column 成品軸型號(建議) of the table SAP工單</a> 
+<a name="758">Card of the column 最後製程名稱 of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13745,7 +13756,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#757">成品軸型號(建議)</a>
+<p align="left"><a href="SCME22.htm#757">最後製程名稱</a>
 </p>
 </td>
 </tr>
@@ -13755,7 +13766,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#757">carrier_type</a>
+<p align="left"><a href="SCME22.htm#757">last_process_name</a>
 </p>
 </td>
 </tr>
@@ -13765,7 +13776,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">national char varying(20)
 </p>
 </td>
 </tr>
@@ -13781,15 +13792,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="759">Check constraint name of the column 成品軸型號(建議) of the table SAP工單</a> 
+<a name="759">Check constraint name of the column 最後製程名稱 of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CARRIER_TYPE_MLO_SAP_
+<p align="left">CKC_LAST_PROCESS_NAME_MLO_SAP_
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="760">Check of the column 成品軸型號(建議) of the table SAP工單</a> 
+<a name="760">Check of the column 最後製程名稱 of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13864,7 +13875,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="761">Server validation rule of the column 成品軸型號(建議) of the table SAP工單</a> 
+<a name="761">Server validation rule of the column 最後製程名稱 of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -13872,7 +13883,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="762">List of extended attributes of the table column 成品軸型號(建議)</a> 
+<a name="762">List of extended attributes of the table column 最後製程名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14111,10 +14122,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="763">Column COMMIT_QTY of the table SAP工單</a> 
+<a name="763">Column 成品軸型號(建議) of the table SAP工單</a> 
 </h2>
 <h3>
-<a name="764">Card of the column COMMIT_QTY of the table SAP工單</a> 
+<a name="764">Card of the column 成品軸型號(建議) of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14123,7 +14134,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#763">COMMIT_QTY</a>
+<p align="left"><a href="SCME22.htm#763">成品軸型號(建議)</a>
 </p>
 </td>
 </tr>
@@ -14133,7 +14144,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#763">commit_qty</a>
+<p align="left"><a href="SCME22.htm#763">carrier_type</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="765">Check constraint name of the column 成品軸型號(建議) of the table SAP工單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_CARRIER_TYPE_MLO_SAP_
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="766">Check of the column 成品軸型號(建議) of the table SAP工單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="767">Server validation rule of the column 成品軸型號(建議) of the table SAP工單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="768">List of extended attributes of the table column 成品軸型號(建議)</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="769">Column COMMIT_QTY of the table SAP工單</a> 
+</h2>
+<h3>
+<a name="770">Card of the column COMMIT_QTY of the table SAP工單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME22.htm#769">COMMIT_QTY</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME22.htm#769">commit_qty</a>
 </p>
 </td>
 </tr>
@@ -14159,7 +14548,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="765">Check constraint name of the column COMMIT_QTY of the table SAP工單</a> 
+<a name="771">Check constraint name of the column COMMIT_QTY of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_COMMIT_QTY_MLO_SAP_
@@ -14167,7 +14556,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="766">Check of the column COMMIT_QTY of the table SAP工單</a> 
+<a name="772">Check of the column COMMIT_QTY of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14242,7 +14631,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="767">Server validation rule of the column COMMIT_QTY of the table SAP工單</a> 
+<a name="773">Server validation rule of the column COMMIT_QTY of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -14250,7 +14639,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="768">List of extended attributes of the table column COMMIT_QTY</a> 
+<a name="774">List of extended attributes of the table column COMMIT_QTY</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14489,10 +14878,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="769">Column 導體尺寸cd of the table SAP工單</a> 
+<a name="775">Column 導體尺寸cd of the table SAP工單</a> 
 </h2>
 <h3>
-<a name="770">Card of the column 導體尺寸cd of the table SAP工單</a> 
+<a name="776">Card of the column 導體尺寸cd of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14501,7 +14890,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#769">導體尺寸cd</a>
+<p align="left"><a href="SCME22.htm#775">導體尺寸cd</a>
 </p>
 </td>
 </tr>
@@ -14511,7 +14900,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#769">copper_size_cd</a>
+<p align="left"><a href="SCME22.htm#775">copper_size_cd</a>
 </p>
 </td>
 </tr>
@@ -14521,7 +14910,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char varying(40)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
@@ -14537,7 +14926,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="771">Check constraint name of the column 導體尺寸cd of the table SAP工單</a> 
+<a name="777">Check constraint name of the column 導體尺寸cd of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_COPPER_SIZE_CD_MLO_SAP_
@@ -14545,7 +14934,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="772">Check of the column 導體尺寸cd of the table SAP工單</a> 
+<a name="778">Check of the column 導體尺寸cd of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14620,7 +15009,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="773">Server validation rule of the column 導體尺寸cd of the table SAP工單</a> 
+<a name="779">Server validation rule of the column 導體尺寸cd of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -14628,7 +15017,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="774">List of extended attributes of the table column 導體尺寸cd</a> 
+<a name="780">List of extended attributes of the table column 導體尺寸cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14867,7 +15256,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="775">List of keys of the table SAP工單</a> 
+<a name="781">List of keys of the table SAP工單</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14886,11 +15275,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 <td>
@@ -14900,10 +15289,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="776">Key id of the table SAP工單</a> 
+<a name="782">Key id of the table SAP工單</a> 
 </h2>
 <h3>
-<a name="777">Card of the key id of the table SAP工單</a> 
+<a name="783">Card of the key id of the table SAP工單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14912,7 +15301,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 </tr>
@@ -14922,7 +15311,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME22.htm#776">id</a>
+<p align="left"><a href="SCME22.htm#782">id</a>
 </p>
 </td>
 </tr>
@@ -14938,7 +15327,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="778">Code preview of the key id of the table SAP工單</a> 
+<a name="784">Code preview of the key id of the table SAP工單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -14955,7 +15344,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="779">List of columns of the table key id</a> 
+<a name="785">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14980,7 +15369,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="780">List of all dependencies of the table key id</a> 
+<a name="786">List of all dependencies of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -14999,11 +15388,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME58.htm#21">Reference_13</a>
+<p align="left"><a href="SCME57.htm#21">Reference_13</a>
 </p>
 </td>
 <td>
@@ -15013,11 +15402,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME82.htm#170">Reference_38</a>
+<p align="left"><a href="SCME81.htm#170">Reference_38</a>
 </p>
 </td>
 <td class="TD2">
@@ -15027,7 +15416,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="781">List of extended attributes of the table key id</a> 
+<a name="787">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
