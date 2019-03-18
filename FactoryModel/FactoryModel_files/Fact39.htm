@@ -92,7 +92,7 @@ create table fm6_equipment (<br />
    is_batch_equipment   type_boolean         null,<br />
    base_type_cd         type_enum_val        null,<br />
    level_cd             type_enum_val        null,<br />
-   checkin_out_type_cd  type_enum_val        null,<br />
+   checkin_out_type_cd  type_id              null,<br />
    factory_id           type_pk              null,<br />
    dep_id               type_pk              null,<br />
    parent_id            type_pk              null,<br />
@@ -3862,7 +3862,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">int
+<p align="left">char varying(40)
 </p>
 </td>
 </tr>

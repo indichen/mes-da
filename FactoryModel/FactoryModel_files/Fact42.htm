@@ -85,7 +85,7 @@ create table fm6_carrier_model (<br />
    dr decimal(11) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   carrier_cat_cd       type_enum_val        null,<br />
+   carrier_cat_cd       type_id              null,<br />
    code                 type_id              null,<br />
    spec                 type_memo            null,<br />
    carcass_diameter     type_number          null,<br />
@@ -1013,7 +1013,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">int
+<p align="left">char varying(40)
 </p>
 </td>
 </tr>

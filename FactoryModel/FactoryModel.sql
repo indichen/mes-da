@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/17 下午 08:27:55                        */
+/* Created on:     2019/3/18 上午 10:19:59                        */
 /*==============================================================*/
 
 
@@ -562,7 +562,7 @@ create table cust_carrier_cat (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -634,7 +634,7 @@ create table cust_equipment_base_type (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -959,7 +959,7 @@ create table fm6_carrier_model (
    dr decimal(11) null,
 
    id                   type_pk              not null,
-   carrier_cat_cd       type_enum_val        null,
+   carrier_cat_cd       type_id              null,
    code                 type_id              null,
    spec                 type_memo            null,
    carcass_diameter     type_number          null,
@@ -1019,7 +1019,7 @@ create table fm6_equipment (
    is_batch_equipment   type_boolean         null,
    base_type_cd         type_enum_val        null,
    level_cd             type_enum_val        null,
-   checkin_out_type_cd  type_enum_val        null,
+   checkin_out_type_cd  type_id              null,
    factory_id           type_pk              null,
    dep_id               type_pk              null,
    parent_id            type_pk              null,
