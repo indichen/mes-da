@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/17 下午 08:41:47                        */
+/* Created on:     2019/3/18 下午 12:22:56                        */
 /*==============================================================*/
 
 
@@ -279,7 +279,7 @@ go
 /* Domain: type_id                                              */
 /*==============================================================*/
 create type type_id
-   from char varying(40)
+   from varchar(40)
 go
 
 /*==============================================================*/
@@ -371,7 +371,7 @@ create table cust_quality_code (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    name                 type_name            null,
    name_en              type_name            null,
    note                 type_memo            null,
@@ -392,7 +392,7 @@ create table cust_spec (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    abbr                 type_name            null,
    name                 type_name            null,
    name_en              type_name            null,
@@ -414,7 +414,7 @@ create table cust_usage_code (
    ts varchar(64) null,
    dr decimal(11) null,
 
-   code                 type_enum_val        null,
+   code                 type_id              null,
    name                 type_name            null,
    name_en              type_name            null,
    note                 type_memo            null,

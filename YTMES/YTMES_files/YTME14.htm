@@ -90,7 +90,7 @@ create table cust_usage_code (<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
 <br />
-   code                 type_enum_val        null,<br />
+   code                 type_id              null,<br />
    name                 type_name            null,<br />
    name_en              type_name            null,<br />
    note                 type_memo            null,<br />
@@ -392,7 +392,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">int
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
