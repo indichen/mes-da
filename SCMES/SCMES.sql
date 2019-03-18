@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/17 下午 09:11:08                        */
+/* Created on:     2019/3/18 上午 09:00:47                        */
 /*==============================================================*/
 
 
@@ -392,6 +392,7 @@ create table mlo_mo (
    factory_id           type_id              null,
    workshop             type_name            null,
    machine_pk           type_pk              null,
+   machine_id           type_id              null,
    recipe_pk            type_pk              null,
    process_code         type_id              null,
    process_name         type_name            null,
@@ -626,6 +627,7 @@ create table mw_common_checkin (
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
    machine_pk           type_pk              null,
+   machine_id           type_id              null,
    process_code         type_id              null,
    process_name         type_name            null,
    checkin_ts           type_datetime        null,
@@ -649,6 +651,7 @@ create table mw_common_checkout (
    id                   type_pk              not null,
    mo_id                type_id              null,
    machine_pk           type_pk              null,
+   machine_id           type_id              null,
    process_code         type_id              null,
    process_name         type_name            null,
    check_ts             type_datetime        null,
@@ -814,6 +817,7 @@ create table mwc_checkin_queue (
 
    id                   type_pk              not null,
    machine_pk           type_pk              null,
+   machine_id           type_id              null,
    lot_pk               type_pk              null,
    lot_id               type_id              null,
    copper_pk            type_pk              null,
@@ -950,6 +954,7 @@ create table wmc_checkout_queue (
 
    id                   type_pk              not null,
    machine_pk           type_pk              null,
+   machine_id           type_id              null,
    vehicle_id           type_id              null,
    queue_ts             type_datetime        null,
    constraint PK_WMC_CHECKOUT_QUEUE primary key (id)

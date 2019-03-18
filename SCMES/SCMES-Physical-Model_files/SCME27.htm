@@ -97,6 +97,7 @@ create table mlo_mo (<br />
    factory_id           type_id              null,<br />
    workshop             type_name            null,<br />
    machine_pk           type_pk              null,<br />
+   machine_id           type_id              null,<br />
    recipe_pk            type_pk              null,<br />
    process_code         type_id              null,<br />
    process_name         type_name            null,<br />
@@ -612,251 +613,261 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1097">配方PK</a>
+<p align="left"><a href="SCME27.htm#1097">機臺ID</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1097">recipe_pk</a>
+<p align="left"><a href="SCME27.htm#1097">machine_id</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1103">製程代碼</a>
+<p align="left"><a href="SCME27.htm#1103">配方PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1103">process_code</a>
+<p align="left"><a href="SCME27.htm#1103">recipe_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1109">製程名稱</a>
+<p align="left"><a href="SCME27.htm#1109">製程代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1109">process_name</a>
+<p align="left"><a href="SCME27.htm#1109">process_code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1115">下製程代碼</a>
+<p align="left"><a href="SCME27.htm#1115">製程名稱</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1115">next_process</a>
+<p align="left"><a href="SCME27.htm#1115">process_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1121">下製程名稱</a>
+<p align="left"><a href="SCME27.htm#1121">下製程代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1121">next_process_name</a>
+<p align="left"><a href="SCME27.htm#1121">next_process</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1127">導體尺寸</a>
+<p align="left"><a href="SCME27.htm#1127">下製程名稱</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1127">copper_size</a>
+<p align="left"><a href="SCME27.htm#1127">next_process_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1133">製令總數量</a>
+<p align="left"><a href="SCME27.htm#1133">導體尺寸</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1133">total_qty</a>
+<p align="left"><a href="SCME27.htm#1133">copper_size</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1139">製令總數量單位</a>
+<p align="left"><a href="SCME27.htm#1139">製令總數量</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1139">total_qty_unit</a>
+<p align="left"><a href="SCME27.htm#1139">total_qty</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1145">製令總導體重量</a>
+<p align="left"><a href="SCME27.htm#1145">製令總數量單位</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1145">total_copper_weight</a>
+<p align="left"><a href="SCME27.htm#1145">total_qty_unit</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1151">已生產數量</a>
+<p align="left"><a href="SCME27.htm#1151">製令總導體重量</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1151">production_qty</a>
+<p align="left"><a href="SCME27.htm#1151">total_copper_weight</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1157">半成品品名規格</a>
+<p align="left"><a href="SCME27.htm#1157">已生產數量</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1157">semi_product_spec</a>
+<p align="left"><a href="SCME27.htm#1157">production_qty</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1163">半成品料號</a>
+<p align="left"><a href="SCME27.htm#1163">半成品品名規格</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1163">semi_product_part_no</a>
+<p align="left"><a href="SCME27.htm#1163">semi_product_spec</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1169">產出載具型號</a>
+<p align="left"><a href="SCME27.htm#1169">半成品料號</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1169">carrier_type</a>
+<p align="left"><a href="SCME27.htm#1169">semi_product_part_no</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1175">產出半成品外徑</a>
+<p align="left"><a href="SCME27.htm#1175">產出載具型號</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1175">outer_diameter</a>
+<p align="left"><a href="SCME27.htm#1175">carrier_type</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1181">產出載具數量</a>
+<p align="left"><a href="SCME27.htm#1181">產出半成品外徑</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1181">carrier_qty</a>
+<p align="left"><a href="SCME27.htm#1181">outer_diameter</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1187">操作人數</a>
+<p align="left"><a href="SCME27.htm#1187">產出載具數量</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1187">operator_qty</a>
+<p align="left"><a href="SCME27.htm#1187">carrier_qty</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1193">預估生產日期</a>
+<p align="left"><a href="SCME27.htm#1193">操作人數</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1193">production_date_est</a>
+<p align="left"><a href="SCME27.htm#1193">operator_qty</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1199">計劃生產耗時</a>
+<p align="left"><a href="SCME27.htm#1199">預估生產日期</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1199">working_hour_est</a>
+<p align="left"><a href="SCME27.htm#1199">production_date_est</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1205">組數</a>
+<p align="left"><a href="SCME27.htm#1205">計劃生產耗時</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1205">group_qty</a>
+<p align="left"><a href="SCME27.htm#1205">working_hour_est</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1211">倍數</a>
+<p align="left"><a href="SCME27.htm#1211">組數</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1211">group_count</a>
+<p align="left"><a href="SCME27.htm#1211">group_qty</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1217">其他生產注意條件</a>
+<p align="left"><a href="SCME27.htm#1217">倍數</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1217">note</a>
+<p align="left"><a href="SCME27.htm#1217">group_count</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1223">實際開始時間</a>
+<p align="left"><a href="SCME27.htm#1223">其他生產注意條件</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1223">start_ts</a>
+<p align="left"><a href="SCME27.htm#1223">note</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1229">實際結束時間</a>
+<p align="left"><a href="SCME27.htm#1229">實際開始時間</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1229">end_ts</a>
+<p align="left"><a href="SCME27.htm#1229">start_ts</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1235">生產工時</a>
+<p align="left"><a href="SCME27.htm#1235">實際結束時間</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1235">working_hour</a>
+<p align="left"><a href="SCME27.htm#1235">end_ts</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1241">制令狀態</a>
+<p align="left"><a href="SCME27.htm#1241">生產工時</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME27.htm#1241">status</a>
+<p align="left"><a href="SCME27.htm#1241">working_hour</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="SCME27.htm#1247">制令狀態</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME27.htm#1247">status</a>
 </p>
 </td>
 </tr>
@@ -1020,11 +1031,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 <td>
@@ -3594,10 +3605,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1097">Column 配方PK of the table 制令主檔</a> 
+<a name="1097">Column 機臺ID of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1098">Card of the column 配方PK of the table 制令主檔</a> 
+<a name="1098">Card of the column 機臺ID of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3606,7 +3617,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1097">配方PK</a>
+<p align="left"><a href="SCME27.htm#1097">機臺ID</a>
 </p>
 </td>
 </tr>
@@ -3616,7 +3627,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1097">recipe_pk</a>
+<p align="left"><a href="SCME27.htm#1097">machine_id</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1099">Check constraint name of the column 機臺ID of the table 制令主檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_MACHINE_ID_MLO_MO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1100">Check of the column 機臺ID of the table 制令主檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1101">Server validation rule of the column 機臺ID of the table 制令主檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1102">List of extended attributes of the table column 機臺ID</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1103">Column 配方PK of the table 制令主檔</a> 
+</h2>
+<h3>
+<a name="1104">Card of the column 配方PK of the table 制令主檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME27.htm#1103">配方PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME27.htm#1103">recipe_pk</a>
 </p>
 </td>
 </tr>
@@ -3642,7 +4031,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1099">Check constraint name of the column 配方PK of the table 制令主檔</a> 
+<a name="1105">Check constraint name of the column 配方PK of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_RECIPE_PK_MLO_MO
@@ -3650,7 +4039,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1100">Check of the column 配方PK of the table 制令主檔</a> 
+<a name="1106">Check of the column 配方PK of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3725,7 +4114,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1101">Server validation rule of the column 配方PK of the table 制令主檔</a> 
+<a name="1107">Server validation rule of the column 配方PK of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3733,7 +4122,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1102">List of extended attributes of the table column 配方PK</a> 
+<a name="1108">List of extended attributes of the table column 配方PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3972,10 +4361,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1103">Column 製程代碼 of the table 制令主檔</a> 
+<a name="1109">Column 製程代碼 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1104">Card of the column 製程代碼 of the table 制令主檔</a> 
+<a name="1110">Card of the column 製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3984,7 +4373,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1103">製程代碼</a>
+<p align="left"><a href="SCME27.htm#1109">製程代碼</a>
 </p>
 </td>
 </tr>
@@ -3994,7 +4383,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1103">process_code</a>
+<p align="left"><a href="SCME27.htm#1109">process_code</a>
 </p>
 </td>
 </tr>
@@ -4020,7 +4409,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1105">Check constraint name of the column 製程代碼 of the table 制令主檔</a> 
+<a name="1111">Check constraint name of the column 製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PROCESS_CODE_MLO_MO
@@ -4028,7 +4417,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1106">Check of the column 製程代碼 of the table 制令主檔</a> 
+<a name="1112">Check of the column 製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4103,7 +4492,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1107">Server validation rule of the column 製程代碼 of the table 制令主檔</a> 
+<a name="1113">Server validation rule of the column 製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4111,7 +4500,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1108">List of extended attributes of the table column 製程代碼</a> 
+<a name="1114">List of extended attributes of the table column 製程代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4350,10 +4739,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1109">Column 製程名稱 of the table 制令主檔</a> 
+<a name="1115">Column 製程名稱 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1110">Card of the column 製程名稱 of the table 制令主檔</a> 
+<a name="1116">Card of the column 製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4362,7 +4751,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1109">製程名稱</a>
+<p align="left"><a href="SCME27.htm#1115">製程名稱</a>
 </p>
 </td>
 </tr>
@@ -4372,7 +4761,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1109">process_name</a>
+<p align="left"><a href="SCME27.htm#1115">process_name</a>
 </p>
 </td>
 </tr>
@@ -4398,7 +4787,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1111">Check constraint name of the column 製程名稱 of the table 制令主檔</a> 
+<a name="1117">Check constraint name of the column 製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PROCESS_NAME_MLO_MO
@@ -4406,7 +4795,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1112">Check of the column 製程名稱 of the table 制令主檔</a> 
+<a name="1118">Check of the column 製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4481,7 +4870,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1113">Server validation rule of the column 製程名稱 of the table 制令主檔</a> 
+<a name="1119">Server validation rule of the column 製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4489,7 +4878,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1114">List of extended attributes of the table column 製程名稱</a> 
+<a name="1120">List of extended attributes of the table column 製程名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4728,10 +5117,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1115">Column 下製程代碼 of the table 制令主檔</a> 
+<a name="1121">Column 下製程代碼 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1116">Card of the column 下製程代碼 of the table 制令主檔</a> 
+<a name="1122">Card of the column 下製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4740,7 +5129,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1115">下製程代碼</a>
+<p align="left"><a href="SCME27.htm#1121">下製程代碼</a>
 </p>
 </td>
 </tr>
@@ -4750,7 +5139,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1115">next_process</a>
+<p align="left"><a href="SCME27.htm#1121">next_process</a>
 </p>
 </td>
 </tr>
@@ -4776,7 +5165,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1117">Check constraint name of the column 下製程代碼 of the table 制令主檔</a> 
+<a name="1123">Check constraint name of the column 下製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NEXT_PROCESS_MLO_MO
@@ -4784,7 +5173,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1118">Check of the column 下製程代碼 of the table 制令主檔</a> 
+<a name="1124">Check of the column 下製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4859,7 +5248,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1119">Server validation rule of the column 下製程代碼 of the table 制令主檔</a> 
+<a name="1125">Server validation rule of the column 下製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4867,7 +5256,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1120">List of extended attributes of the table column 下製程代碼</a> 
+<a name="1126">List of extended attributes of the table column 下製程代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5106,10 +5495,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1121">Column 下製程名稱 of the table 制令主檔</a> 
+<a name="1127">Column 下製程名稱 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1122">Card of the column 下製程名稱 of the table 制令主檔</a> 
+<a name="1128">Card of the column 下製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5118,7 +5507,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1121">下製程名稱</a>
+<p align="left"><a href="SCME27.htm#1127">下製程名稱</a>
 </p>
 </td>
 </tr>
@@ -5128,7 +5517,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1121">next_process_name</a>
+<p align="left"><a href="SCME27.htm#1127">next_process_name</a>
 </p>
 </td>
 </tr>
@@ -5154,7 +5543,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1123">Check constraint name of the column 下製程名稱 of the table 制令主檔</a> 
+<a name="1129">Check constraint name of the column 下製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NEXT_PROCESS_NAME_MLO_MO
@@ -5162,7 +5551,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1124">Check of the column 下製程名稱 of the table 制令主檔</a> 
+<a name="1130">Check of the column 下製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5237,7 +5626,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1125">Server validation rule of the column 下製程名稱 of the table 制令主檔</a> 
+<a name="1131">Server validation rule of the column 下製程名稱 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -5245,7 +5634,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1126">List of extended attributes of the table column 下製程名稱</a> 
+<a name="1132">List of extended attributes of the table column 下製程名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5484,10 +5873,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1127">Column 導體尺寸 of the table 制令主檔</a> 
+<a name="1133">Column 導體尺寸 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1128">Card of the column 導體尺寸 of the table 制令主檔</a> 
+<a name="1134">Card of the column 導體尺寸 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5496,7 +5885,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1127">導體尺寸</a>
+<p align="left"><a href="SCME27.htm#1133">導體尺寸</a>
 </p>
 </td>
 </tr>
@@ -5506,7 +5895,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1127">copper_size</a>
+<p align="left"><a href="SCME27.htm#1133">copper_size</a>
 </p>
 </td>
 </tr>
@@ -5532,7 +5921,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1129">Check constraint name of the column 導體尺寸 of the table 制令主檔</a> 
+<a name="1135">Check constraint name of the column 導體尺寸 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_COPPER_SIZE_MLO_MO
@@ -5540,7 +5929,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1130">Check of the column 導體尺寸 of the table 制令主檔</a> 
+<a name="1136">Check of the column 導體尺寸 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5615,7 +6004,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1131">Server validation rule of the column 導體尺寸 of the table 制令主檔</a> 
+<a name="1137">Server validation rule of the column 導體尺寸 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -5623,7 +6012,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1132">List of extended attributes of the table column 導體尺寸</a> 
+<a name="1138">List of extended attributes of the table column 導體尺寸</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5862,10 +6251,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1133">Column 製令總數量 of the table 制令主檔</a> 
+<a name="1139">Column 製令總數量 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1134">Card of the column 製令總數量 of the table 制令主檔</a> 
+<a name="1140">Card of the column 製令總數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5874,7 +6263,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1133">製令總數量</a>
+<p align="left"><a href="SCME27.htm#1139">製令總數量</a>
 </p>
 </td>
 </tr>
@@ -5884,7 +6273,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1133">total_qty</a>
+<p align="left"><a href="SCME27.htm#1139">total_qty</a>
 </p>
 </td>
 </tr>
@@ -5910,7 +6299,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1135">Check constraint name of the column 製令總數量 of the table 制令主檔</a> 
+<a name="1141">Check constraint name of the column 製令總數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TOTAL_QTY_MLO_MO
@@ -5918,7 +6307,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1136">Check of the column 製令總數量 of the table 制令主檔</a> 
+<a name="1142">Check of the column 製令總數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5993,7 +6382,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1137">Server validation rule of the column 製令總數量 of the table 制令主檔</a> 
+<a name="1143">Server validation rule of the column 製令總數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6001,7 +6390,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1138">List of extended attributes of the table column 製令總數量</a> 
+<a name="1144">List of extended attributes of the table column 製令總數量</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6240,10 +6629,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1139">Column 製令總數量單位 of the table 制令主檔</a> 
+<a name="1145">Column 製令總數量單位 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1140">Card of the column 製令總數量單位 of the table 制令主檔</a> 
+<a name="1146">Card of the column 製令總數量單位 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6252,7 +6641,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1139">製令總數量單位</a>
+<p align="left"><a href="SCME27.htm#1145">製令總數量單位</a>
 </p>
 </td>
 </tr>
@@ -6262,7 +6651,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1139">total_qty_unit</a>
+<p align="left"><a href="SCME27.htm#1145">total_qty_unit</a>
 </p>
 </td>
 </tr>
@@ -6288,7 +6677,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1141">Check constraint name of the column 製令總數量單位 of the table 制令主檔</a> 
+<a name="1147">Check constraint name of the column 製令總數量單位 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TOTAL_QTY_UNIT_MLO_MO
@@ -6296,7 +6685,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1142">Check of the column 製令總數量單位 of the table 制令主檔</a> 
+<a name="1148">Check of the column 製令總數量單位 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6371,7 +6760,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1143">Server validation rule of the column 製令總數量單位 of the table 制令主檔</a> 
+<a name="1149">Server validation rule of the column 製令總數量單位 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6379,7 +6768,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1144">List of extended attributes of the table column 製令總數量單位</a> 
+<a name="1150">List of extended attributes of the table column 製令總數量單位</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6618,10 +7007,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1145">Column 製令總導體重量 of the table 制令主檔</a> 
+<a name="1151">Column 製令總導體重量 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1146">Card of the column 製令總導體重量 of the table 制令主檔</a> 
+<a name="1152">Card of the column 製令總導體重量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6630,7 +7019,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1145">製令總導體重量</a>
+<p align="left"><a href="SCME27.htm#1151">製令總導體重量</a>
 </p>
 </td>
 </tr>
@@ -6640,7 +7029,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1145">total_copper_weight</a>
+<p align="left"><a href="SCME27.htm#1151">total_copper_weight</a>
 </p>
 </td>
 </tr>
@@ -6666,7 +7055,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1147">Check constraint name of the column 製令總導體重量 of the table 制令主檔</a> 
+<a name="1153">Check constraint name of the column 製令總導體重量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TOTAL_COPPER_WEIG_MLO_MO
@@ -6674,7 +7063,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1148">Check of the column 製令總導體重量 of the table 制令主檔</a> 
+<a name="1154">Check of the column 製令總導體重量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6749,7 +7138,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1149">Server validation rule of the column 製令總導體重量 of the table 制令主檔</a> 
+<a name="1155">Server validation rule of the column 製令總導體重量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6757,7 +7146,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1150">List of extended attributes of the table column 製令總導體重量</a> 
+<a name="1156">List of extended attributes of the table column 製令總導體重量</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6996,10 +7385,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1151">Column 已生產數量 of the table 制令主檔</a> 
+<a name="1157">Column 已生產數量 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1152">Card of the column 已生產數量 of the table 制令主檔</a> 
+<a name="1158">Card of the column 已生產數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7008,7 +7397,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1151">已生產數量</a>
+<p align="left"><a href="SCME27.htm#1157">已生產數量</a>
 </p>
 </td>
 </tr>
@@ -7018,7 +7407,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1151">production_qty</a>
+<p align="left"><a href="SCME27.htm#1157">production_qty</a>
 </p>
 </td>
 </tr>
@@ -7044,7 +7433,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1153">Check constraint name of the column 已生產數量 of the table 制令主檔</a> 
+<a name="1159">Check constraint name of the column 已生產數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PRODUCTION_QTY_MLO_MO
@@ -7052,7 +7441,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1154">Check of the column 已生產數量 of the table 制令主檔</a> 
+<a name="1160">Check of the column 已生產數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7127,7 +7516,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1155">Server validation rule of the column 已生產數量 of the table 制令主檔</a> 
+<a name="1161">Server validation rule of the column 已生產數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7135,7 +7524,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1156">List of extended attributes of the table column 已生產數量</a> 
+<a name="1162">List of extended attributes of the table column 已生產數量</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7374,10 +7763,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1157">Column 半成品品名規格 of the table 制令主檔</a> 
+<a name="1163">Column 半成品品名規格 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1158">Card of the column 半成品品名規格 of the table 制令主檔</a> 
+<a name="1164">Card of the column 半成品品名規格 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7386,7 +7775,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1157">半成品品名規格</a>
+<p align="left"><a href="SCME27.htm#1163">半成品品名規格</a>
 </p>
 </td>
 </tr>
@@ -7396,7 +7785,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1157">semi_product_spec</a>
+<p align="left"><a href="SCME27.htm#1163">semi_product_spec</a>
 </p>
 </td>
 </tr>
@@ -7422,7 +7811,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1159">Check constraint name of the column 半成品品名規格 of the table 制令主檔</a> 
+<a name="1165">Check constraint name of the column 半成品品名規格 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_SEMI_PRODUCT_SPEC_MLO_MO
@@ -7430,7 +7819,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1160">Check of the column 半成品品名規格 of the table 制令主檔</a> 
+<a name="1166">Check of the column 半成品品名規格 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7505,7 +7894,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1161">Server validation rule of the column 半成品品名規格 of the table 制令主檔</a> 
+<a name="1167">Server validation rule of the column 半成品品名規格 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7513,7 +7902,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1162">List of extended attributes of the table column 半成品品名規格</a> 
+<a name="1168">List of extended attributes of the table column 半成品品名規格</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7752,10 +8141,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1163">Column 半成品料號 of the table 制令主檔</a> 
+<a name="1169">Column 半成品料號 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1164">Card of the column 半成品料號 of the table 制令主檔</a> 
+<a name="1170">Card of the column 半成品料號 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7764,7 +8153,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1163">半成品料號</a>
+<p align="left"><a href="SCME27.htm#1169">半成品料號</a>
 </p>
 </td>
 </tr>
@@ -7774,7 +8163,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1163">semi_product_part_no</a>
+<p align="left"><a href="SCME27.htm#1169">semi_product_part_no</a>
 </p>
 </td>
 </tr>
@@ -7800,7 +8189,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1165">Check constraint name of the column 半成品料號 of the table 制令主檔</a> 
+<a name="1171">Check constraint name of the column 半成品料號 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_SEMI_PRODUCT_PART_MLO_MO
@@ -7808,7 +8197,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1166">Check of the column 半成品料號 of the table 制令主檔</a> 
+<a name="1172">Check of the column 半成品料號 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7883,7 +8272,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1167">Server validation rule of the column 半成品料號 of the table 制令主檔</a> 
+<a name="1173">Server validation rule of the column 半成品料號 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7891,7 +8280,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1168">List of extended attributes of the table column 半成品料號</a> 
+<a name="1174">List of extended attributes of the table column 半成品料號</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8130,10 +8519,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1169">Column 產出載具型號 of the table 制令主檔</a> 
+<a name="1175">Column 產出載具型號 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1170">Card of the column 產出載具型號 of the table 制令主檔</a> 
+<a name="1176">Card of the column 產出載具型號 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8142,7 +8531,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1169">產出載具型號</a>
+<p align="left"><a href="SCME27.htm#1175">產出載具型號</a>
 </p>
 </td>
 </tr>
@@ -8152,7 +8541,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1169">carrier_type</a>
+<p align="left"><a href="SCME27.htm#1175">carrier_type</a>
 </p>
 </td>
 </tr>
@@ -8178,7 +8567,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1171">Check constraint name of the column 產出載具型號 of the table 制令主檔</a> 
+<a name="1177">Check constraint name of the column 產出載具型號 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CARRIER_TYPE_MLO_MO
@@ -8186,7 +8575,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1172">Check of the column 產出載具型號 of the table 制令主檔</a> 
+<a name="1178">Check of the column 產出載具型號 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8261,7 +8650,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1173">Server validation rule of the column 產出載具型號 of the table 制令主檔</a> 
+<a name="1179">Server validation rule of the column 產出載具型號 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8269,7 +8658,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1174">List of extended attributes of the table column 產出載具型號</a> 
+<a name="1180">List of extended attributes of the table column 產出載具型號</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8508,10 +8897,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1175">Column 產出半成品外徑 of the table 制令主檔</a> 
+<a name="1181">Column 產出半成品外徑 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1176">Card of the column 產出半成品外徑 of the table 制令主檔</a> 
+<a name="1182">Card of the column 產出半成品外徑 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8520,7 +8909,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1175">產出半成品外徑</a>
+<p align="left"><a href="SCME27.htm#1181">產出半成品外徑</a>
 </p>
 </td>
 </tr>
@@ -8530,7 +8919,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1175">outer_diameter</a>
+<p align="left"><a href="SCME27.htm#1181">outer_diameter</a>
 </p>
 </td>
 </tr>
@@ -8556,7 +8945,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1177">Check constraint name of the column 產出半成品外徑 of the table 制令主檔</a> 
+<a name="1183">Check constraint name of the column 產出半成品外徑 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_OUTER_DIAMETER_MLO_MO
@@ -8564,7 +8953,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1178">Check of the column 產出半成品外徑 of the table 制令主檔</a> 
+<a name="1184">Check of the column 產出半成品外徑 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8639,7 +9028,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1179">Server validation rule of the column 產出半成品外徑 of the table 制令主檔</a> 
+<a name="1185">Server validation rule of the column 產出半成品外徑 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8647,7 +9036,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1180">List of extended attributes of the table column 產出半成品外徑</a> 
+<a name="1186">List of extended attributes of the table column 產出半成品外徑</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8886,10 +9275,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1181">Column 產出載具數量 of the table 制令主檔</a> 
+<a name="1187">Column 產出載具數量 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1182">Card of the column 產出載具數量 of the table 制令主檔</a> 
+<a name="1188">Card of the column 產出載具數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8898,7 +9287,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1181">產出載具數量</a>
+<p align="left"><a href="SCME27.htm#1187">產出載具數量</a>
 </p>
 </td>
 </tr>
@@ -8908,7 +9297,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1181">carrier_qty</a>
+<p align="left"><a href="SCME27.htm#1187">carrier_qty</a>
 </p>
 </td>
 </tr>
@@ -8934,7 +9323,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1183">Check constraint name of the column 產出載具數量 of the table 制令主檔</a> 
+<a name="1189">Check constraint name of the column 產出載具數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CARRIER_QTY_MLO_MO
@@ -8942,7 +9331,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1184">Check of the column 產出載具數量 of the table 制令主檔</a> 
+<a name="1190">Check of the column 產出載具數量 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9017,7 +9406,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1185">Server validation rule of the column 產出載具數量 of the table 制令主檔</a> 
+<a name="1191">Server validation rule of the column 產出載具數量 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9025,7 +9414,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1186">List of extended attributes of the table column 產出載具數量</a> 
+<a name="1192">List of extended attributes of the table column 產出載具數量</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9264,10 +9653,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1187">Column 操作人數 of the table 制令主檔</a> 
+<a name="1193">Column 操作人數 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1188">Card of the column 操作人數 of the table 制令主檔</a> 
+<a name="1194">Card of the column 操作人數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9276,7 +9665,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1187">操作人數</a>
+<p align="left"><a href="SCME27.htm#1193">操作人數</a>
 </p>
 </td>
 </tr>
@@ -9286,7 +9675,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1187">operator_qty</a>
+<p align="left"><a href="SCME27.htm#1193">operator_qty</a>
 </p>
 </td>
 </tr>
@@ -9312,7 +9701,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1189">Check constraint name of the column 操作人數 of the table 制令主檔</a> 
+<a name="1195">Check constraint name of the column 操作人數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_OPERATOR_QTY_MLO_MO
@@ -9320,7 +9709,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1190">Check of the column 操作人數 of the table 制令主檔</a> 
+<a name="1196">Check of the column 操作人數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9395,7 +9784,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1191">Server validation rule of the column 操作人數 of the table 制令主檔</a> 
+<a name="1197">Server validation rule of the column 操作人數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9403,7 +9792,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1192">List of extended attributes of the table column 操作人數</a> 
+<a name="1198">List of extended attributes of the table column 操作人數</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9642,10 +10031,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1193">Column 預估生產日期 of the table 制令主檔</a> 
+<a name="1199">Column 預估生產日期 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1194">Card of the column 預估生產日期 of the table 制令主檔</a> 
+<a name="1200">Card of the column 預估生產日期 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9654,7 +10043,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1193">預估生產日期</a>
+<p align="left"><a href="SCME27.htm#1199">預估生產日期</a>
 </p>
 </td>
 </tr>
@@ -9664,7 +10053,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1193">production_date_est</a>
+<p align="left"><a href="SCME27.htm#1199">production_date_est</a>
 </p>
 </td>
 </tr>
@@ -9690,7 +10079,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1195">Check constraint name of the column 預估生產日期 of the table 制令主檔</a> 
+<a name="1201">Check constraint name of the column 預估生產日期 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PRODUCTION_DATE_E_MLO_MO
@@ -9698,7 +10087,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1196">Check of the column 預估生產日期 of the table 制令主檔</a> 
+<a name="1202">Check of the column 預估生產日期 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9773,7 +10162,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1197">Server validation rule of the column 預估生產日期 of the table 制令主檔</a> 
+<a name="1203">Server validation rule of the column 預估生產日期 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9781,7 +10170,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1198">List of extended attributes of the table column 預估生產日期</a> 
+<a name="1204">List of extended attributes of the table column 預估生產日期</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10020,10 +10409,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1199">Column 計劃生產耗時 of the table 制令主檔</a> 
+<a name="1205">Column 計劃生產耗時 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1200">Card of the column 計劃生產耗時 of the table 制令主檔</a> 
+<a name="1206">Card of the column 計劃生產耗時 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10032,7 +10421,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1199">計劃生產耗時</a>
+<p align="left"><a href="SCME27.htm#1205">計劃生產耗時</a>
 </p>
 </td>
 </tr>
@@ -10042,7 +10431,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1199">working_hour_est</a>
+<p align="left"><a href="SCME27.htm#1205">working_hour_est</a>
 </p>
 </td>
 </tr>
@@ -10068,7 +10457,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1201">Check constraint name of the column 計劃生產耗時 of the table 制令主檔</a> 
+<a name="1207">Check constraint name of the column 計劃生產耗時 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WORKING_HOUR_EST_MLO_MO
@@ -10076,7 +10465,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1202">Check of the column 計劃生產耗時 of the table 制令主檔</a> 
+<a name="1208">Check of the column 計劃生產耗時 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10151,7 +10540,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1203">Server validation rule of the column 計劃生產耗時 of the table 制令主檔</a> 
+<a name="1209">Server validation rule of the column 計劃生產耗時 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10159,7 +10548,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1204">List of extended attributes of the table column 計劃生產耗時</a> 
+<a name="1210">List of extended attributes of the table column 計劃生產耗時</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10398,10 +10787,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1205">Column 組數 of the table 制令主檔</a> 
+<a name="1211">Column 組數 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1206">Card of the column 組數 of the table 制令主檔</a> 
+<a name="1212">Card of the column 組數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10410,7 +10799,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1205">組數</a>
+<p align="left"><a href="SCME27.htm#1211">組數</a>
 </p>
 </td>
 </tr>
@@ -10420,7 +10809,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1205">group_qty</a>
+<p align="left"><a href="SCME27.htm#1211">group_qty</a>
 </p>
 </td>
 </tr>
@@ -10446,7 +10835,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1207">Check constraint name of the column 組數 of the table 制令主檔</a> 
+<a name="1213">Check constraint name of the column 組數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_GROUP_QTY_MLO_MO
@@ -10454,7 +10843,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1208">Check of the column 組數 of the table 制令主檔</a> 
+<a name="1214">Check of the column 組數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10529,7 +10918,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1209">Server validation rule of the column 組數 of the table 制令主檔</a> 
+<a name="1215">Server validation rule of the column 組數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10537,7 +10926,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1210">List of extended attributes of the table column 組數</a> 
+<a name="1216">List of extended attributes of the table column 組數</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10776,10 +11165,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1211">Column 倍數 of the table 制令主檔</a> 
+<a name="1217">Column 倍數 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1212">Card of the column 倍數 of the table 制令主檔</a> 
+<a name="1218">Card of the column 倍數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10788,7 +11177,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1211">倍數</a>
+<p align="left"><a href="SCME27.htm#1217">倍數</a>
 </p>
 </td>
 </tr>
@@ -10798,7 +11187,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1211">group_count</a>
+<p align="left"><a href="SCME27.htm#1217">group_count</a>
 </p>
 </td>
 </tr>
@@ -10824,7 +11213,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1213">Check constraint name of the column 倍數 of the table 制令主檔</a> 
+<a name="1219">Check constraint name of the column 倍數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_GROUP_COUNT_MLO_MO
@@ -10832,7 +11221,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1214">Check of the column 倍數 of the table 制令主檔</a> 
+<a name="1220">Check of the column 倍數 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10907,7 +11296,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1215">Server validation rule of the column 倍數 of the table 制令主檔</a> 
+<a name="1221">Server validation rule of the column 倍數 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10915,7 +11304,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1216">List of extended attributes of the table column 倍數</a> 
+<a name="1222">List of extended attributes of the table column 倍數</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11154,10 +11543,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1217">Column 其他生產注意條件 of the table 制令主檔</a> 
+<a name="1223">Column 其他生產注意條件 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1218">Card of the column 其他生產注意條件 of the table 制令主檔</a> 
+<a name="1224">Card of the column 其他生產注意條件 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11166,7 +11555,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1217">其他生產注意條件</a>
+<p align="left"><a href="SCME27.htm#1223">其他生產注意條件</a>
 </p>
 </td>
 </tr>
@@ -11176,7 +11565,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1217">note</a>
+<p align="left"><a href="SCME27.htm#1223">note</a>
 </p>
 </td>
 </tr>
@@ -11202,7 +11591,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1219">Check constraint name of the column 其他生產注意條件 of the table 制令主檔</a> 
+<a name="1225">Check constraint name of the column 其他生產注意條件 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NOTE_MLO_MO
@@ -11210,7 +11599,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1220">Check of the column 其他生產注意條件 of the table 制令主檔</a> 
+<a name="1226">Check of the column 其他生產注意條件 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11285,7 +11674,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1221">Server validation rule of the column 其他生產注意條件 of the table 制令主檔</a> 
+<a name="1227">Server validation rule of the column 其他生產注意條件 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -11293,7 +11682,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1222">List of extended attributes of the table column 其他生產注意條件</a> 
+<a name="1228">List of extended attributes of the table column 其他生產注意條件</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11532,10 +11921,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1223">Column 實際開始時間 of the table 制令主檔</a> 
+<a name="1229">Column 實際開始時間 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1224">Card of the column 實際開始時間 of the table 制令主檔</a> 
+<a name="1230">Card of the column 實際開始時間 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11544,7 +11933,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1223">實際開始時間</a>
+<p align="left"><a href="SCME27.htm#1229">實際開始時間</a>
 </p>
 </td>
 </tr>
@@ -11554,7 +11943,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1223">start_ts</a>
+<p align="left"><a href="SCME27.htm#1229">start_ts</a>
 </p>
 </td>
 </tr>
@@ -11580,7 +11969,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1225">Check constraint name of the column 實際開始時間 of the table 制令主檔</a> 
+<a name="1231">Check constraint name of the column 實際開始時間 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_START_TS_MLO_MO
@@ -11588,7 +11977,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1226">Check of the column 實際開始時間 of the table 制令主檔</a> 
+<a name="1232">Check of the column 實際開始時間 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11663,7 +12052,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1227">Server validation rule of the column 實際開始時間 of the table 制令主檔</a> 
+<a name="1233">Server validation rule of the column 實際開始時間 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -11671,7 +12060,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1228">List of extended attributes of the table column 實際開始時間</a> 
+<a name="1234">List of extended attributes of the table column 實際開始時間</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11910,10 +12299,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1229">Column 實際結束時間 of the table 制令主檔</a> 
+<a name="1235">Column 實際結束時間 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1230">Card of the column 實際結束時間 of the table 制令主檔</a> 
+<a name="1236">Card of the column 實際結束時間 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11922,7 +12311,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1229">實際結束時間</a>
+<p align="left"><a href="SCME27.htm#1235">實際結束時間</a>
 </p>
 </td>
 </tr>
@@ -11932,7 +12321,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1229">end_ts</a>
+<p align="left"><a href="SCME27.htm#1235">end_ts</a>
 </p>
 </td>
 </tr>
@@ -11958,7 +12347,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1231">Check constraint name of the column 實際結束時間 of the table 制令主檔</a> 
+<a name="1237">Check constraint name of the column 實際結束時間 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_END_TS_MLO_MO
@@ -11966,7 +12355,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1232">Check of the column 實際結束時間 of the table 制令主檔</a> 
+<a name="1238">Check of the column 實際結束時間 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12041,7 +12430,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1233">Server validation rule of the column 實際結束時間 of the table 制令主檔</a> 
+<a name="1239">Server validation rule of the column 實際結束時間 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -12049,7 +12438,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1234">List of extended attributes of the table column 實際結束時間</a> 
+<a name="1240">List of extended attributes of the table column 實際結束時間</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12288,10 +12677,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1235">Column 生產工時 of the table 制令主檔</a> 
+<a name="1241">Column 生產工時 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1236">Card of the column 生產工時 of the table 制令主檔</a> 
+<a name="1242">Card of the column 生產工時 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12300,7 +12689,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1235">生產工時</a>
+<p align="left"><a href="SCME27.htm#1241">生產工時</a>
 </p>
 </td>
 </tr>
@@ -12310,7 +12699,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1235">working_hour</a>
+<p align="left"><a href="SCME27.htm#1241">working_hour</a>
 </p>
 </td>
 </tr>
@@ -12336,7 +12725,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1237">Check constraint name of the column 生產工時 of the table 制令主檔</a> 
+<a name="1243">Check constraint name of the column 生產工時 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WORKING_HOUR_MLO_MO
@@ -12344,7 +12733,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1238">Check of the column 生產工時 of the table 制令主檔</a> 
+<a name="1244">Check of the column 生產工時 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12419,7 +12808,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1239">Server validation rule of the column 生產工時 of the table 制令主檔</a> 
+<a name="1245">Server validation rule of the column 生產工時 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -12427,7 +12816,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1240">List of extended attributes of the table column 生產工時</a> 
+<a name="1246">List of extended attributes of the table column 生產工時</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12666,10 +13055,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1241">Column 制令狀態 of the table 制令主檔</a> 
+<a name="1247">Column 制令狀態 of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1242">Card of the column 制令狀態 of the table 制令主檔</a> 
+<a name="1248">Card of the column 制令狀態 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12678,7 +13067,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1241">制令狀態</a>
+<p align="left"><a href="SCME27.htm#1247">制令狀態</a>
 </p>
 </td>
 </tr>
@@ -12688,7 +13077,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1241">status</a>
+<p align="left"><a href="SCME27.htm#1247">status</a>
 </p>
 </td>
 </tr>
@@ -12714,7 +13103,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1243">Check constraint name of the column 制令狀態 of the table 制令主檔</a> 
+<a name="1249">Check constraint name of the column 制令狀態 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_STATUS_MLO_MO
@@ -12722,7 +13111,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1244">Check of the column 制令狀態 of the table 制令主檔</a> 
+<a name="1250">Check of the column 制令狀態 of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12797,7 +13186,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1245">Server validation rule of the column 制令狀態 of the table 制令主檔</a> 
+<a name="1251">Server validation rule of the column 制令狀態 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -12805,7 +13194,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1246">List of all dependencies of the table column 制令狀態</a> 
+<a name="1252">List of all dependencies of the table column 制令狀態</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -12838,7 +13227,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1247">List of extended attributes of the table column 制令狀態</a> 
+<a name="1253">List of extended attributes of the table column 制令狀態</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13077,7 +13466,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1248">List of keys of the table 制令主檔</a> 
+<a name="1254">List of keys of the table 制令主檔</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13096,11 +13485,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 <td>
@@ -13110,10 +13499,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1249">Key id of the table 制令主檔</a> 
+<a name="1255">Key id of the table 制令主檔</a> 
 </h2>
 <h3>
-<a name="1250">Card of the key id of the table 制令主檔</a> 
+<a name="1256">Card of the key id of the table 制令主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13122,7 +13511,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 </tr>
@@ -13132,7 +13521,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME27.htm#1249">id</a>
+<p align="left"><a href="SCME27.htm#1255">id</a>
 </p>
 </td>
 </tr>
@@ -13148,7 +13537,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1251">Code preview of the key id of the table 制令主檔</a> 
+<a name="1257">Code preview of the key id of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -13165,7 +13554,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1252">List of columns of the table key id</a> 
+<a name="1258">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13190,7 +13579,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1253">List of all dependencies of the table key id</a> 
+<a name="1259">List of all dependencies of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -13265,7 +13654,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1254">List of extended attributes of the table key id</a> 
+<a name="1260">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
