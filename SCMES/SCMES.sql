@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/18 上午 09:00:47                        */
+/* Created on:     2019/3/18 下午 12:14:52                        */
 /*==============================================================*/
 
 
@@ -685,6 +685,7 @@ create table mw_common_checkout_quality (
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
+   log_pk               type_pk              null,
    lot_id               type_id              null,
    quality_code         type_id              null,
    constraint PK_MW_COMMON_CHECKOUT_QUALITY primary key (id)
@@ -796,6 +797,7 @@ create table mwc_checkin_lot (
 
    id                   type_pk              not null,
    checkin_pk           type_pk              not null,
+   checkin_lot_pk       type_pk              null,
    checkin_lot_id       type_id              null,
    feeding_point_id     type_id              null,
    length               type_length          null,
