@@ -2400,6 +2400,7 @@ Table
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    %TABLDEFN%
 )
