@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/20 下午 04:32:57                        */
+/* Created on:     2019/3/20 下午 05:46:35                        */
 /*==============================================================*/
 
 
@@ -1014,6 +1014,7 @@ create table fm6_carrierbaseinfo (
    code                 type_cd              null,
    factory_cd           type_cd              null,
    carrier_model_pk     type_pk              null,
+   carrier_model_cd     type_cd              null,
    note                 type_memo            null,
    tag1                 type_name            null,
    tag2                 type_name            null,
