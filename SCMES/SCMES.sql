@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/20 上午 11:30:48                        */
+/* Created on:     2019/3/20 下午 03:44:08                        */
 /*==============================================================*/
 
 
@@ -441,11 +441,11 @@ create table mlo_po_group (
    dr decimal(11) null,
    tenant_id varchar(64) null,
 
-   "id (工單群組PK)"        type_pk              not null,
+   id                   type_pk              not null,
    po_group_cd          type_cd              not null,
    status               type_enum_val        null,
    note                 type_memo            null,
-   constraint PK_MLO_PO_GROUP primary key ("id (工單群組PK)")
+   constraint PK_MLO_PO_GROUP primary key (id)
 )
 go
 

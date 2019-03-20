@@ -91,11 +91,11 @@ create table mlo_po_group (<br />
    dr decimal(11) null,<br />
    tenant_id varchar(64) null,<br />
 <br />
-   &quot;id (工單群組PK)&quot;        type_pk              not null,<br />
+   id                   type_pk              not null,<br />
    po_group_cd          type_cd              not null,<br />
    status               type_enum_val        null,<br />
    note                 type_memo            null,<br />
-   constraint PK_MLO_PO_GROUP primary key (&quot;id (工單群組PK)&quot;)<br />
+   constraint PK_MLO_PO_GROUP primary key (id)<br />
 )<br />
 go<br />
 
@@ -419,7 +419,7 @@ go<br />
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME30.htm#1366">id (工單群組PK)</a>
+<p align="left"><a href="SCME30.htm#1366">id</a>
 </p>
 </td>
 </tr>
@@ -477,7 +477,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME30.htm#1366">id (工單群組PK)</a>
+<p align="left"><a href="SCME30.htm#1366">id</a>
 </p>
 </td>
 </tr>
@@ -506,7 +506,7 @@ go<br />
 <a name="1368">Check constraint name of the column id (工單群組PK) of the table 工單群組</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID (工單群組PK)_MLO_PO_G
+<p align="left">CKC_ID_MLO_PO_G
 </p>
 </td></tr>
 </table><br />
@@ -2118,7 +2118,7 @@ go<br />
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME30.htm#1366">id (工單群組PK)</a>
+<p align="left"><a href="SCME30.htm#1366">id</a>
 </p>
 </td>
 </tr>
