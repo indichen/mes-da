@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/20 下午 03:44:08                        */
+/* Created on:     2019/3/20 下午 04:40:15                        */
 /*==============================================================*/
 
 
@@ -1056,6 +1056,7 @@ create table wmc_lot_detail (
    quality              type_boolean         null,
    is_melded            type_boolean         null,
    color_cd             type_enum_val        null,
+   outer_diameter       type_length          null,
    constraint PK_WMC_LOT_DETAIL primary key (id)
 )
 go
@@ -1092,6 +1093,7 @@ create table wmc_lot_history (
    quality              type_boolean         null,
    is_melded            type_boolean         null,
    color                type_enum_val        null,
+   outer_diameter       type_length          null,
    constraint PK_WMC_LOT_HISTORY primary key (id)
 )
 go
