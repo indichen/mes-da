@@ -89,11 +89,11 @@ create table mw_common_history (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
    lot_pk               type_pk              not null,<br />
-   lot_id               type_id              not null,<br />
-   event_ts             type_datetime        null,<br />
+   lot_cd               type_cd              not null,<br />
    type                 type_pk              null,<br />
    action               type_enum_val        null,<br />
    field                type_name            null,<br />
@@ -367,71 +367,61 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME19.htm#377">lotID</a>
+<p align="left"><a href="SCME19.htm#377">lot代碼</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME19.htm#377">lot_id</a>
+<p align="left"><a href="SCME19.htm#377">lot_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#383">發生時間</a>
+<p align="left"><a href="SCME19.htm#383">業務類型</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#383">event_ts</a>
+<p align="left"><a href="SCME19.htm#383">type</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME19.htm#389">業務類型</a>
+<p align="left"><a href="SCME19.htm#389">業務動作</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME19.htm#389">type</a>
+<p align="left"><a href="SCME19.htm#389">action</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#395">業務動作</a>
+<p align="left"><a href="SCME19.htm#395">改變欄位</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#395">action</a>
+<p align="left"><a href="SCME19.htm#395">field</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME19.htm#401">改變欄位</a>
+<p align="left"><a href="SCME19.htm#401">原值</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME19.htm#401">field</a>
+<p align="left"><a href="SCME19.htm#401">value_old</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#407">原值</a>
+<p align="left"><a href="SCME19.htm#407">新值</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME19.htm#407">value_old</a>
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left"><a href="SCME19.htm#413">新值</a>
-</p>
-</td>
-<td>
-<p align="left"><a href="SCME19.htm#413">value_new</a>
+<p align="left"><a href="SCME19.htm#407">value_new</a>
 </p>
 </td>
 </tr>
@@ -595,11 +585,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 <td>
@@ -1190,10 +1180,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="377">Column lotID of the table Lot ID 差異流水</a> 
+<a name="377">Column lot代碼 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="378">Card of the column lotID of the table Lot ID 差異流水</a> 
+<a name="378">Card of the column lot代碼 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1202,7 +1192,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#377">lotID</a>
+<p align="left"><a href="SCME19.htm#377">lot代碼</a>
 </p>
 </td>
 </tr>
@@ -1212,7 +1202,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#377">lot_id</a>
+<p align="left"><a href="SCME19.htm#377">lot_cd</a>
 </p>
 </td>
 </tr>
@@ -1238,15 +1228,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="379">Check constraint name of the column lotID of the table Lot ID 差異流水</a> 
+<a name="379">Check constraint name of the column lot代碼 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_ID_MW_COMMO
+<p align="left">CKC_LOT_CD_MW_COMMO
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="380">Check of the column lotID of the table Lot ID 差異流水</a> 
+<a name="380">Check of the column lot代碼 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1321,7 +1311,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="381">Server validation rule of the column lotID of the table Lot ID 差異流水</a> 
+<a name="381">Server validation rule of the column lot代碼 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1329,7 +1319,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="382">List of extended attributes of the table column lotID</a> 
+<a name="382">List of extended attributes of the table column lot代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1550,10 +1540,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="383">Column 發生時間 of the table Lot ID 差異流水</a> 
+<a name="383">Column 業務類型 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="384">Card of the column 發生時間 of the table Lot ID 差異流水</a> 
+<a name="384">Card of the column 業務類型 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1562,7 +1552,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#383">發生時間</a>
+<p align="left"><a href="SCME19.htm#383">業務類型</a>
 </p>
 </td>
 </tr>
@@ -1572,385 +1562,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#383">event_ts</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">datetime
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="385">Check constraint name of the column 發生時間 of the table Lot ID 差異流水</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_EVENT_TS_MW_COMMO
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="386">Check of the column 發生時間 of the table Lot ID 差異流水</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="387">Server validation rule of the column 發生時間 of the table Lot ID 差異流水</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="388">List of extended attributes of the table column 發生時間</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Sparse
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Temporal
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="389">Column 業務類型 of the table Lot ID 差異流水</a> 
-</h2>
-<h3>
-<a name="390">Card of the column 業務類型 of the table Lot ID 差異流水</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME19.htm#389">業務類型</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="SCME19.htm#389">type</a>
+<p align="left"><a href="SCME19.htm#383">type</a>
 </p>
 </td>
 </tr>
@@ -1976,7 +1588,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="391">Check constraint name of the column 業務類型 of the table Lot ID 差異流水</a> 
+<a name="385">Check constraint name of the column 業務類型 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TYPE_MW_COMMO
@@ -1984,7 +1596,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="392">Check of the column 業務類型 of the table Lot ID 差異流水</a> 
+<a name="386">Check of the column 業務類型 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2059,7 +1671,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="393">Server validation rule of the column 業務類型 of the table Lot ID 差異流水</a> 
+<a name="387">Server validation rule of the column 業務類型 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2067,7 +1679,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="394">List of extended attributes of the table column 業務類型</a> 
+<a name="388">List of extended attributes of the table column 業務類型</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2306,10 +1918,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="395">Column 業務動作 of the table Lot ID 差異流水</a> 
+<a name="389">Column 業務動作 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="396">Card of the column 業務動作 of the table Lot ID 差異流水</a> 
+<a name="390">Card of the column 業務動作 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2318,7 +1930,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#395">業務動作</a>
+<p align="left"><a href="SCME19.htm#389">業務動作</a>
 </p>
 </td>
 </tr>
@@ -2328,7 +1940,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#395">action</a>
+<p align="left"><a href="SCME19.htm#389">action</a>
 </p>
 </td>
 </tr>
@@ -2354,7 +1966,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="397">Check constraint name of the column 業務動作 of the table Lot ID 差異流水</a> 
+<a name="391">Check constraint name of the column 業務動作 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_ACTION_MW_COMMO
@@ -2362,7 +1974,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="398">Check of the column 業務動作 of the table Lot ID 差異流水</a> 
+<a name="392">Check of the column 業務動作 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2437,7 +2049,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="399">Server validation rule of the column 業務動作 of the table Lot ID 差異流水</a> 
+<a name="393">Server validation rule of the column 業務動作 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2445,7 +2057,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="400">List of extended attributes of the table column 業務動作</a> 
+<a name="394">List of extended attributes of the table column 業務動作</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2684,10 +2296,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="401">Column 改變欄位 of the table Lot ID 差異流水</a> 
+<a name="395">Column 改變欄位 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="402">Card of the column 改變欄位 of the table Lot ID 差異流水</a> 
+<a name="396">Card of the column 改變欄位 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2696,7 +2308,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#401">改變欄位</a>
+<p align="left"><a href="SCME19.htm#395">改變欄位</a>
 </p>
 </td>
 </tr>
@@ -2706,7 +2318,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#401">field</a>
+<p align="left"><a href="SCME19.htm#395">field</a>
 </p>
 </td>
 </tr>
@@ -2716,7 +2328,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(20)
+<p align="left">varchar(20)
 </p>
 </td>
 </tr>
@@ -2732,7 +2344,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="403">Check constraint name of the column 改變欄位 of the table Lot ID 差異流水</a> 
+<a name="397">Check constraint name of the column 改變欄位 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_FIELD_MW_COMMO
@@ -2740,7 +2352,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="404">Check of the column 改變欄位 of the table Lot ID 差異流水</a> 
+<a name="398">Check of the column 改變欄位 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2815,7 +2427,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="405">Server validation rule of the column 改變欄位 of the table Lot ID 差異流水</a> 
+<a name="399">Server validation rule of the column 改變欄位 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2823,7 +2435,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="406">List of extended attributes of the table column 改變欄位</a> 
+<a name="400">List of extended attributes of the table column 改變欄位</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3062,10 +2674,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="407">Column 原值 of the table Lot ID 差異流水</a> 
+<a name="401">Column 原值 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="408">Card of the column 原值 of the table Lot ID 差異流水</a> 
+<a name="402">Card of the column 原值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3074,7 +2686,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#407">原值</a>
+<p align="left"><a href="SCME19.htm#401">原值</a>
 </p>
 </td>
 </tr>
@@ -3084,7 +2696,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#407">value_old</a>
+<p align="left"><a href="SCME19.htm#401">value_old</a>
 </p>
 </td>
 </tr>
@@ -3094,7 +2706,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(Max)
+<p align="left">char(1)
 </p>
 </td>
 </tr>
@@ -3110,7 +2722,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="409">Check constraint name of the column 原值 of the table Lot ID 差異流水</a> 
+<a name="403">Check constraint name of the column 原值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_VALUE_OLD_MW_COMMO
@@ -3118,7 +2730,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="410">Check of the column 原值 of the table Lot ID 差異流水</a> 
+<a name="404">Check of the column 原值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3193,7 +2805,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="411">Server validation rule of the column 原值 of the table Lot ID 差異流水</a> 
+<a name="405">Server validation rule of the column 原值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3201,7 +2813,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="412">List of extended attributes of the table column 原值</a> 
+<a name="406">List of extended attributes of the table column 原值</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3440,10 +3052,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="413">Column 新值 of the table Lot ID 差異流水</a> 
+<a name="407">Column 新值 of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="414">Card of the column 新值 of the table Lot ID 差異流水</a> 
+<a name="408">Card of the column 新值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3452,7 +3064,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#413">新值</a>
+<p align="left"><a href="SCME19.htm#407">新值</a>
 </p>
 </td>
 </tr>
@@ -3462,7 +3074,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#413">value_new</a>
+<p align="left"><a href="SCME19.htm#407">value_new</a>
 </p>
 </td>
 </tr>
@@ -3472,7 +3084,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(Max)
+<p align="left">char(1)
 </p>
 </td>
 </tr>
@@ -3488,7 +3100,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="415">Check constraint name of the column 新值 of the table Lot ID 差異流水</a> 
+<a name="409">Check constraint name of the column 新值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_VALUE_NEW_MW_COMMO
@@ -3496,7 +3108,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="416">Check of the column 新值 of the table Lot ID 差異流水</a> 
+<a name="410">Check of the column 新值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3571,7 +3183,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="417">Server validation rule of the column 新值 of the table Lot ID 差異流水</a> 
+<a name="411">Server validation rule of the column 新值 of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3579,7 +3191,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="418">List of extended attributes of the table column 新值</a> 
+<a name="412">List of extended attributes of the table column 新值</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3818,7 +3430,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="419">List of keys of the table Lot ID 差異流水</a> 
+<a name="413">List of keys of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3837,11 +3449,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 <td>
@@ -3851,10 +3463,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="420">Key id of the table Lot ID 差異流水</a> 
+<a name="414">Key id of the table Lot ID 差異流水</a> 
 </h2>
 <h3>
-<a name="421">Card of the key id of the table Lot ID 差異流水</a> 
+<a name="415">Card of the key id of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3863,7 +3475,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 </tr>
@@ -3873,7 +3485,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME19.htm#420">id</a>
+<p align="left"><a href="SCME19.htm#414">id</a>
 </p>
 </td>
 </tr>
@@ -3889,7 +3501,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="422">Code preview of the key id of the table Lot ID 差異流水</a> 
+<a name="416">Code preview of the key id of the table Lot ID 差異流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -3906,7 +3518,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="423">List of columns of the table key id</a> 
+<a name="417">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3931,7 +3543,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="424">List of extended attributes of the table key id</a> 
+<a name="418">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

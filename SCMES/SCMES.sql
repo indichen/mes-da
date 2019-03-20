@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/18 下午 12:14:52                        */
+/* Created on:     2019/3/20 上午 11:30:48                        */
 /*==============================================================*/
 
 
@@ -194,6 +194,10 @@ if exists(select 1 from systypes where name='type_boolean')
    drop type type_boolean
 go
 
+if exists(select 1 from systypes where name='type_cd')
+   drop type type_cd
+go
+
 if exists(select 1 from systypes where name='type_date')
    drop type type_date
 go
@@ -216,10 +220,6 @@ go
 
 if exists(select 1 from systypes where name='type_hours')
    drop type type_hours
-go
-
-if exists(select 1 from systypes where name='type_id')
-   drop type type_id
 go
 
 if exists(select 1 from systypes where name='type_length')
@@ -254,7 +254,14 @@ go
 /* Domain: type_boolean                                         */
 /*==============================================================*/
 create type type_boolean
-   from bit
+   from smallint
+go
+
+/*==============================================================*/
+/* Domain: type_cd                                              */
+/*==============================================================*/
+create type type_cd
+   from varchar(40)
 go
 
 /*==============================================================*/
@@ -300,13 +307,6 @@ create type type_hours
 go
 
 /*==============================================================*/
-/* Domain: type_id                                              */
-/*==============================================================*/
-create type type_id
-   from varchar(40)
-go
-
-/*==============================================================*/
 /* Domain: type_length                                          */
 /*==============================================================*/
 create type type_length
@@ -317,14 +317,14 @@ go
 /* Domain: type_memo                                            */
 /*==============================================================*/
 create type type_memo
-   from national char varying(Max)
+   from char(1)
 go
 
 /*==============================================================*/
 /* Domain: type_name                                            */
 /*==============================================================*/
 create type type_name
-   from national char varying(20)
+   from varchar(20)
 go
 
 /*==============================================================*/
@@ -366,10 +366,11 @@ create table mlo_copper_size (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   "id (導體尺寸索引檔PK)"     type_pk              not null,
-   copper_size_cd       type_id              not null,
-   constraint PK_MLO_COPPER_SIZE primary key ("id (導體尺寸索引檔PK)")
+   id                   type_pk              not null,
+   code                 type_cd              not null,
+   constraint PK_MLO_COPPER_SIZE primary key (id)
 )
 go
 
@@ -384,28 +385,33 @@ create table mlo_mo (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   mo_id                type_id              not null,
+   code                 type_cd              not null,
    mo_type              type_enum_val        null,
    priority             type_enum_val        null,
-   factory_id           type_id              null,
+   factory_cd           type_cd              null,
    workshop             type_name            null,
    machine_pk           type_pk              null,
-   machine_id           type_id              null,
+   machine_cd           type_cd              null,
    recipe_pk            type_pk              null,
-   process_code         type_id              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
    process_name         type_name            null,
-   next_process         type_id              null,
+   next_process_ok      type_pk              null,
+   next_process         type_cd              null,
    next_process_name    type_name            null,
-   copper_size          type_id              null,
+   copper_size_cd       type_cd              null,
    total_qty            type_decimal         null,
    total_qty_unit       type_name            null,
    total_copper_weight  type_weight          null,
    production_qty       type_decimal         null,
    semi_product_spec    type_memo            null,
-   semi_product_part_no type_id              null,
-   carrier_type         type_id              null,
+   semi_product_pk      type_pk              null,
+   semi_product_cd      type_cd              null,
+   carrier_type_pk      type_pk              null,
+   carrier_type_cd      type_cd              null,
    outer_diameter       type_length          null,
    carrier_qty          type_number          null,
    operator_qty         type_number          null,
@@ -418,7 +424,7 @@ create table mlo_mo (
    end_ts               type_datetime        null,
    working_hour         type_hours           null,
    status               type_enum_val        null,
-   constraint PK_MLO_MO primary key nonclustered (id)
+   constraint PK_MLO_MO primary key (id)
 )
 go
 
@@ -433,9 +439,10 @@ create table mlo_po_group (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    "id (工單群組PK)"        type_pk              not null,
-   po_group_cd          type_id              not null,
+   po_group_cd          type_cd              not null,
    status               type_enum_val        null,
    note                 type_memo            null,
    constraint PK_MLO_PO_GROUP primary key ("id (工單群組PK)")
@@ -453,6 +460,7 @@ create table mlo_po_group_map (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    po_group_pk          type_pk              not null,
@@ -472,20 +480,25 @@ create table mlo_process_po (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   process_po           type_id              null,
+   code                 type_cd              null,
    process_po_type      type_enum_val        null,
-   part_no              type_id              null,
+   partno               type_cd              null,
    sap_po_pk            type_pk              not null,
-   next_process_code    type_id              null,
+   next_process_pk      type_pk              null,
+   next_process_cd      type_cd              null,
    next_process_name    type_name            null,
    seq_route            type_sn              null,
-   process_code         type_id              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
    process_name         type_name            null,
+   semi_product_pk      type_pk              null,
+   semi_product_cd      type_cd              null,
    semi_product_spec    type_memo            null,
-   semi_product_part_no type_id              null,
-   def_macheine_pk      type_pk              null,
+   def_machine_pk       type_pk              null,
+   def_machine_cd       type_pk              null,
    qty                  type_number          null,
    unit                 type_name            null,
    qty_planned          type_number          null,
@@ -511,15 +524,16 @@ create table mlo_sap_po (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   po_id                type_id              not null,
-   so_id                type_id              not null,
-   customer_id          type_id              null,
+   po_cd                type_cd              not null,
+   so_cd                type_cd              not null,
+   customer_cd          type_cd              null,
    customer_name        type_name            null,
-   product_partno       type_id              null,
+   product_partno       type_cd              null,
    product_spec         type_memo            null,
-   route_id             type_id              null,
+   route_cd             type_cd              null,
    so_qty               type_decimal         null,
    unit_length          type_length          null,
    so_unit              type_name            null,
@@ -529,7 +543,7 @@ create table mlo_sap_po (
    start_date_est       type_date            null,
    end_date_est         type_date            null,
    is_closed            type_boolean         null,
-   batch_no             type_id              null,
+   batch_no             type_cd              null,
    conti_symbol         type_name            null,
    production_date      type_date            null,
    unit_weight          type_weight          null,
@@ -538,18 +552,19 @@ create table mlo_sap_po (
    not_storage_qty      type_decimal         null,
    last_storage_qty     type_decimal         null,
    lead_time            type_number          null,
-   factory_id           type_id              null,
+   factory_cd           type_cd              null,
    department           type_name            null,
-   pmc_production_code  type_id              null,
+   pmc_production_cd    type_cd              null,
    pmc_production_name  type_name            null,
    po_create_date       type_date            null,
    po_update_date       type_date            null,
    core_wire_color      type_memo            null,
-   last_process_code    type_id              null,
+   last_process_pk      type_pk              null,
+   last_process_cd      type_cd              null,
    last_process_name    type_name            null,
-   carrier_type         type_id              null,
+   carrier_type         type_cd              null,
    commit_qty           type_decimal         null,
-   copper_size_cd       type_id              null,
+   copper_size_cd       type_cd              null,
    constraint PK_MLO_SAP_PO primary key (id)
 )
 go
@@ -565,26 +580,27 @@ create table mlo_sap_po_process (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_pk              null,
-   po_id                type_id              not null,
-   so_id                type_id              not null,
-   customer_id          type_id              null,
+   batch_pk             type_pk              null,
+   po_cd                type_cd              not null,
+   so_cd                type_cd              not null,
+   customer_cd          type_cd              null,
    customer_name        type_name            null,
-   product_partno       type_id              null,
+   product_partno       type_cd              null,
    so_qty               type_decimal         null,
    shipment_date        type_date            null,
    sales_name           type_name            null,
    start_date_est       type_date            null,
    end_date_est         type_date            null,
    is_closed            type_boolean         null,
-   batch_no             type_id              null,
+   batch_no             type_cd              null,
    conti_symbol         type_name            null,
    production_date      type_date            null,
    storage_qty          type_decimal         null,
    not_storage_qty      type_decimal         null,
-   factory_id           type_id              null,
+   factory_cd           type_cd              null,
    po_create_date       type_date            null,
    po_update_date       type_date            null,
    commit_qty           type_decimal         null,
@@ -605,9 +621,10 @@ create table mlo_sap_po_process_batch (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_cd              null,
    constraint PK_MLO_SAP_PO_PROCESS_BATCH primary key (id)
 )
 go
@@ -623,12 +640,14 @@ create table mw_common_checkin (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
    machine_pk           type_pk              null,
-   machine_id           type_id              null,
-   process_code         type_id              null,
+   machine_cd           type_cd              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
    process_name         type_name            null,
    checkin_ts           type_datetime        null,
    checkin_type         type_enum_val        null,
@@ -647,23 +666,26 @@ create table mw_common_checkout (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   mo_id                type_id              null,
+   mo_pk                type_cd              null,
    machine_pk           type_pk              null,
-   machine_id           type_id              null,
-   process_code         type_id              null,
+   machine_cd           type_cd              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
    process_name         type_name            null,
-   check_ts             type_datetime        null,
+   checkin_ts           type_datetime        null,
    production_ts        type_datetime        null,
    checkout_ts          type_datetime        null,
-   batch_id             type_id              null,
+   batch_cd             type_cd              null,
    is_batch             type_boolean         null,
    working_hour_real    type_hours           null,
    working_hour_calc    type_hours           null,
    lot_pk               type_pk              null,
-   lot_id               type_id              null,
-   carrier_id           type_id              null,
+   lot_cd               type_cd              null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              null,
    weight               type_weight          null,
    quality              type_boolean         null,
    production_date      type_date            null,
@@ -682,12 +704,13 @@ create table mw_common_checkout_quality (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
-   log_pk               type_pk              null,
-   lot_id               type_id              null,
-   quality_code         type_id              null,
+   lot_pk               type_pk              null,
+   lot_cd               type_cd              null,
+   quality_cd           type_cd              null,
    constraint PK_MW_COMMON_CHECKOUT_QUALITY primary key (id)
 )
 go
@@ -703,11 +726,11 @@ create table mw_common_history (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
-   lot_id               type_id              not null,
-   event_ts             type_datetime        null,
+   lot_cd               type_cd              not null,
    type                 type_pk              null,
    action               type_enum_val        null,
    field                type_name            null,
@@ -728,13 +751,16 @@ create table mw_common_lot (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   lot_id               type_id              null,
-   vehicle_id           type_id              not null,
-   factory_id           type_id              null,
+   code                 type_cd              not null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              not null,
+   factory_cd           type_cd              null,
    workshop             type_name            null,
-   partno               type_id              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    production_date      type_date            null,
    constraint PK_MW_COMMON_LOT primary key (id)
@@ -752,10 +778,11 @@ create table mw_common_lot_piece (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   lot_id               type_id              null,
-   carrier_pos_id       type_id              null,
+   lot_id               type_cd              null,
+   carrier_pos_id       type_cd              null,
    status               type_enum_val        null,
    production_date      type_date            null,
    constraint PK_MW_COMMON_LOT_PIECE primary key (id)
@@ -773,11 +800,14 @@ create table mwc_checkin_copper (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkin_pk           type_pk              not null,
-   copper_id            type_id              null,
-   feeding_point_id     type_id              null,
+   copper_pk            type_pk              null,
+   copper_cd            type_cd              null,
+   feeding_point_pk     type_pk              null,
+   feeding_point_cd     type_cd              null,
    weight               type_weight          null,
    constraint PK_MWC_CHECKIN_COPPER primary key (id)
 )
@@ -794,12 +824,14 @@ create table mwc_checkin_lot (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkin_pk           type_pk              not null,
    checkin_lot_pk       type_pk              null,
-   checkin_lot_id       type_id              null,
-   feeding_point_id     type_id              null,
+   checkin_lot_cd       type_cd              null,
+   feeding_point_pk     type_pk              null,
+   feeding_point_cd     type_cd              null,
    length               type_length          null,
    constraint PK_MWC_CHECKIN_LOT primary key (id)
 )
@@ -816,15 +848,17 @@ create table mwc_checkin_queue (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    machine_pk           type_pk              null,
-   machine_id           type_id              null,
+   machine_cd           type_cd              null,
    lot_pk               type_pk              null,
-   lot_id               type_id              null,
+   lot_cd               type_cd              null,
    copper_pk            type_pk              null,
-   copper_id            type_id              null,
-   feeding_point_id     type_id              null,
+   copper_cd            type_cd              null,
+   feeding_point_pk     type_pk              null,
+   feeding_point_cd     type_cd              null,
    queue_ts             type_datetime        null,
    constraint PK_MWC_CHECKIN_QUEUE primary key (id)
 )
@@ -841,6 +875,7 @@ create table mwc_checkout (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
@@ -867,13 +902,16 @@ create table mwc_checkout_operator (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
-   operator_id          type_id              null,
-   team_id              type_id              null,
-   shift_id             type_id              null,
-   batch_id             type_id              null,
+   operator_cd          type_cd              null,
+   team_pk              type_pk              null,
+   team_cd              type_cd              null,
+   shift_pk             type_pk              null,
+   shift_cd             type_cd              null,
+   batch_cd             type_cd              null,
    constraint PK_MWC_CHECKOUT_OPERATOR primary key (id)
 )
 go
@@ -889,10 +927,11 @@ create table mwc_copper (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   copper_id            type_id              null,
-   factory_id           type_id              null,
+   code                 type_cd              null,
+   factory_cd           type_cd              null,
    workshop             type_name            null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
@@ -914,11 +953,12 @@ create table mwc_lot_po_map (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              null,
-   lot_id               type_id              null,
-   po_id                type_id              null,
+   lot_id               type_cd              null,
+   po_id                type_cd              null,
    constraint PK_MWC_LOT_PO_MAP primary key (id)
 )
 go
@@ -934,6 +974,7 @@ create table wm_common_source_lot (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
@@ -953,11 +994,12 @@ create table wmc_checkout_queue (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    machine_pk           type_pk              null,
-   machine_id           type_id              null,
-   vehicle_id           type_id              null,
+   machine_id           type_cd              null,
+   vehicle_id           type_cd              null,
    queue_ts             type_datetime        null,
    constraint PK_WMC_CHECKOUT_QUEUE primary key (id)
 )
@@ -974,11 +1016,11 @@ create table wmc_copper_history (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   copper_id            type_id              null,
-   event_ts             type_datetime        null,
-   factory_id           type_id              null,
+   code                 type_cd              null,
+   factory_id           type_cd              null,
    workshop             type_name            null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
@@ -1000,10 +1042,10 @@ create table wmc_lot_detail (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    lot_pk               type_pk              not null,
-   lot_id               type_id              null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
    weight_origin_copper type_weight          null,
@@ -1013,7 +1055,7 @@ create table wmc_lot_detail (
    weight_copper        type_weight          null,
    quality              type_boolean         null,
    is_melded            type_boolean         null,
-   color                type_enum_val        null,
+   color_cd             type_enum_val        null,
    constraint PK_WMC_LOT_DETAIL primary key (id)
 )
 go
@@ -1029,16 +1071,17 @@ create table wmc_lot_history (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   lot_id               type_id              null,
-   event_ts             type_datetime        null,
-   factory_id           type_id              null,
+   code                 type_cd              null,
+   factory_cd           type_cd              null,
    workshop             type_name            null,
-   partno               type_id              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    production_date      type_date            null,
-   vehicle_id           type_id              null,
+   vehicle_id           type_cd              null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
    weight_origin_copper type_weight          null,
@@ -1048,7 +1091,6 @@ create table wmc_lot_history (
    weight_copper        type_weight          null,
    quality              type_boolean         null,
    is_melded            type_boolean         null,
-   source_lot           type_pk              null,
    color                type_enum_val        null,
    constraint PK_WMC_LOT_HISTORY primary key (id)
 )

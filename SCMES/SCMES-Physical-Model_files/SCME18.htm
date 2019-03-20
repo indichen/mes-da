@@ -89,11 +89,12 @@ create table mwc_lot_po_map (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
    lot_pk               type_pk              null,<br />
-   lot_id               type_id              null,<br />
-   po_id                type_id              null,<br />
+   lot_id               type_cd              null,<br />
+   po_id                type_cd              null,<br />
    constraint PK_MWC_LOT_PO_MAP primary key (id)<br />
 )<br />
 go<br />
