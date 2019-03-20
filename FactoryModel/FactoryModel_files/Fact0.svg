@@ -36,14 +36,14 @@
       <rect x="29" y="169" fill="#60afff" width="184" height="110" stroke="#00aaaa" stroke-width="1"/>
       <text x="121" y="183" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM1_參數</text>
       <line x1="29" x2="213" y1="189" y2="189" stroke="#00aaaa" stroke-width="1"/>
-      <text x="33" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
-      <text x="33" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
-      <text x="33" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數模板id</text>
+      <text x="33" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
+      <text x="33" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
+      <text x="33" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">參數模板PK</text>
       <text x="33" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">取值</text>
-      <text x="90" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="90" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="90" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="90" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(50)</text>
+      <text x="95" y="199" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="95" y="212" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="95" y="225" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="95" y="238" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(5</text>
    </a>
    <a target="_parent" xlink:href="Fact16.htm#43">
       <rect x="289" y="51" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>

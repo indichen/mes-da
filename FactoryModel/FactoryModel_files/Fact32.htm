@@ -83,11 +83,12 @@ create table fm3_team (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   type_id              null,<br />
+   code                 type_cd              null,<br />
    name                 type_name            null,<br />
-   leader_cd            type_id              null,<br />
+   leader_cd            type_cd              null,<br />
    type                 type_enum_val        null,<br />
    is_enabled           type_boolean         null,<br />
    constraint PK_FM3_TEAM primary key (id)<br />
@@ -420,11 +421,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact32.htm#680">班組cd</a>
+<p align="left"><a href="Fact32.htm#680">班組代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact32.htm#680">cd</a>
+<p align="left"><a href="Fact32.htm#680">code</a>
 </p>
 </td>
 </tr>
@@ -877,10 +878,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="680">Column 班組cd of the table FM3_生產班組--參照組織樹倒數第一級</a> 
+<a name="680">Column 班組代碼 of the table FM3_生產班組--參照組織樹倒數第一級</a> 
 </h2>
 <h3>
-<a name="681">Card of the column 班組cd of the table FM3_生產班組--參照組織樹倒數第一級</a> 
+<a name="681">Card of the column 班組代碼 of the table FM3_生產班組--參照組織樹倒數第一級</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -889,7 +890,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact32.htm#680">班組cd</a>
+<p align="left"><a href="Fact32.htm#680">班組代碼</a>
 </p>
 </td>
 </tr>
@@ -899,7 +900,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact32.htm#680">cd</a>
+<p align="left"><a href="Fact32.htm#680">code</a>
 </p>
 </td>
 </tr>
@@ -925,15 +926,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="682">Check constraint name of the column 班組cd of the table FM3_生產班組--參照組織樹倒數第一級</a> 
+<a name="682">Check constraint name of the column 班組代碼 of the table FM3_生產班組--參照組織樹倒數第一級</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_FM3_TEAM
+<p align="left">CKC_CODE_FM3_TEAM
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="683">Check of the column 班組cd of the table FM3_生產班組--參照組織樹倒數第一級</a> 
+<a name="683">Check of the column 班組代碼 of the table FM3_生產班組--參照組織樹倒數第一級</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1008,7 +1009,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="684">Server validation rule of the column 班組cd of the table FM3_生產班組--參照組織樹倒數第一級</a> 
+<a name="684">Server validation rule of the column 班組代碼 of the table FM3_生產班組--參照組織樹倒數第一級</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1016,7 +1017,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="685">List of extended attributes of the table column 班組cd</a> 
+<a name="685">List of extended attributes of the table column 班組代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

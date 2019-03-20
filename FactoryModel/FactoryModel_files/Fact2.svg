@@ -22,9 +22,9 @@
       <text x="635" y="215" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_FM6_EQUI</text>
    </a>
    <a target="_parent" xlink:href="Fact75.htm#124">
-      <polyline fill="none" points="714,363 589,363" stroke="#800040" stroke-width="1"/>
-      <polygon fill="#800040" points="589,363 602,360 602,366" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-      <text x="652" y="358" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_FM6_EQUI</text>
+      <polyline fill="none" points="714,399 589,399" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="589,399 602,396 602,402" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="652" y="395" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_FM6_EQUI</text>
    </a>
    <a target="_parent" xlink:href="Fact76.htm#130">
       <polyline fill="none" points="714,466 589,466" stroke="#800040" stroke-width="1"/>
@@ -32,9 +32,9 @@
       <text x="651" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_CUST_OP_</text>
    </a>
    <a target="_parent" xlink:href="Fact83.htm#175">
-      <path d="M332,272 L132,272 A8,8 0 0,1 124,264 L124,112" fill="none" stroke="#800040" stroke-width="1"/>
+      <path d="M332,290 L132,290 A8,8 0 0,1 124,282 L124,112" fill="none" stroke="#800040" stroke-width="1"/>
       <polygon fill="#800040" points="124,112 127,125 121,125" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-      <text x="124" y="282" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_CUST_EQU</text>
+      <text x="124" y="300" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_EQUI_REFERENCE_CUST_EQU</text>
    </a>
    <a target="_parent" xlink:href="Fact19.htm#131">
       <rect x="260" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -60,43 +60,47 @@
       <text x="528" y="64" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="528" y="77" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact39.htm#1100">
+   <a target="_parent" xlink:href="Fact39.htm#1094">
       <rect x="332" y="173" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="332" y="173" fill="#60afff" width="257" height="198" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="332" y="173" fill="#60afff" width="257" height="234" stroke="#00aaaa" stroke-width="1"/>
       <text x="460" y="187" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_生產機臺</text>
       <line x1="332" x2="589" y1="193" y2="193" stroke="#00aaaa" stroke-width="1"/>
       <text x="336" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產機臺ID</text>
       <text x="336" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">編碼</text>
       <text x="336" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">名稱</text>
       <text x="336" y="242" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">說明</text>
-      <text x="336" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程碼</text>
-      <text x="336" y="268" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否批次生產裝備</text>
-      <text x="336" y="281" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備基本類型cd</text>
-      <text x="336" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備層級cd</text>
-      <text x="336" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備投產類型cd</text>
-      <text x="336" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所在工廠</text>
-      <text x="336" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所在部門</text>
-      <text x="336" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">父節點</text>
-      <text x="336" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">經度</text>
-      <text x="336" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">維度</text>
+      <text x="336" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程碼PK</text>
+      <text x="336" y="268" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程碼cd</text>
+      <text x="336" y="281" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否批次生產裝備</text>
+      <text x="336" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備基本類型cd</text>
+      <text x="336" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備層級cd</text>
+      <text x="336" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備投產類型cd</text>
+      <text x="336" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所在工廠</text>
+      <text x="336" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所在部門</text>
+      <text x="336" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">父節點</text>
+      <text x="336" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">經度</text>
+      <text x="336" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">維度</text>
+      <text x="336" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
       <text x="435" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="435" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="435" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
       <text x="435" y="242" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="435" y="255" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="435" y="268" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
-      <text x="435" y="281" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="435" y="268" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
+      <text x="435" y="281" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
       <text x="435" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="435" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
-      <text x="435" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="435" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="435" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="435" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
+      <text x="435" y="333" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="435" y="346" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="435" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="435" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="435" y="372" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="435" y="385" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="435" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
       <text x="568" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="568" y="281" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-      <text x="568" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
-      <text x="568" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk3&gt;</text>
+      <text x="568" y="294" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
+      <text x="568" y="307" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="568" y="320" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk3&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact22.htm#218">
       <rect x="741" y="19" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -115,13 +119,14 @@
       <rect x="680" y="176" fill="#60afff" width="258" height="88" stroke="#00aaaa" stroke-width="1"/>
       <text x="809" y="190" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_生產機臺狀態</text>
       <line x1="680" x2="938" y1="196" y2="196" stroke="#00aaaa" stroke-width="1"/>
-      <text x="685" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
-      <text x="685" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產裝備ID</text>
+      <text x="685" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (生產機臺狀態PK)</text>
+      <text x="685" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產機臺PK</text>
       <text x="685" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
-      <text x="743" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="743" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="743" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="789" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk,fk2&gt;</text>
+      <text x="785" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="785" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="785" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="854" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="854" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact15.htm#14">
       <rect x="332" y="419" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -135,28 +140,24 @@
       <text x="385" y="462" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="385" y="475" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
    </a>
-   <a target="_parent" xlink:href="Fact41.htm#1247">
+   <a target="_parent" xlink:href="Fact41.htm#1248">
       <rect x="714" y="354" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="714" y="354" fill="#60afff" width="258" height="138" stroke="#00aaaa" stroke-width="1"/>
       <text x="843" y="368" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_生產裝備作業點</text>
       <line x1="714" x2="972" y1="374" y2="374" stroke="#00aaaa" stroke-width="1"/>
-      <text x="719" y="384" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工廠</text>
-      <text x="719" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id</text>
-      <text x="719" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產機臺id</text>
-      <text x="719" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">作業點類型cd</text>
-      <text x="719" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">名稱</text>
-      <text x="719" y="448" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">投入類型</text>
-      <text x="719" y="461" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
-      <text x="788" y="384" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="788" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="788" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="788" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="788" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-      <text x="788" y="448" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="788" y="461" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-      <text x="921" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="921" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-      <text x="921" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="719" y="384" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (生產裝備作業點PK)</text>
+      <text x="719" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產機臺PK</text>
+      <text x="719" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">作業點類型cd</text>
+      <text x="719" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">名稱</text>
+      <text x="719" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="829" y="384" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="829" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="829" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
+      <text x="829" y="423" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="829" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="962" y="384" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="962" y="397" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
+      <text x="962" y="410" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact21.htm#189">
       <rect x="15" y="19" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>

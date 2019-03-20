@@ -83,9 +83,10 @@ create table fm1_unit (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   type_id              null,<br />
+   code                 type_cd              null,<br />
    name                 type_name            null,<br />
    is_fundamental_unit  type_boolean         null,<br />
    fundamental_unit_pk  type_pk              null,<br />
@@ -391,7 +392,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact31.htm#588">id (計量單位主鍵)</a>
+<p align="left"><a href="Fact31.htm#588">id (計量單位PK)</a>
 </p>
 </td>
 <td>
@@ -405,7 +406,7 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact31.htm#595">cd</a>
+<p align="left"><a href="Fact31.htm#595">code</a>
 </p>
 </td>
 </tr>
@@ -491,10 +492,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="588">Column id (計量單位主鍵) of the table FM1_計量單位-集團級</a> 
+<a name="588">Column id (計量單位PK) of the table FM1_計量單位-集團級</a> 
 </h2>
 <h3>
-<a name="589">Card of the column id (計量單位主鍵) of the table FM1_計量單位-集團級</a> 
+<a name="589">Card of the column id (計量單位PK) of the table FM1_計量單位-集團級</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -503,7 +504,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact31.htm#588">id (計量單位主鍵)</a>
+<p align="left"><a href="Fact31.htm#588">id (計量單位PK)</a>
 </p>
 </td>
 </tr>
@@ -539,7 +540,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="590">Check constraint name of the column id (計量單位主鍵) of the table FM1_計量單位-集團級</a> 
+<a name="590">Check constraint name of the column id (計量單位PK) of the table FM1_計量單位-集團級</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_ID_FM1_UNIT
@@ -547,7 +548,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="591">Check of the column id (計量單位主鍵) of the table FM1_計量單位-集團級</a> 
+<a name="591">Check of the column id (計量單位PK) of the table FM1_計量單位-集團級</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -622,7 +623,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="592">Server validation rule of the column id (計量單位主鍵) of the table FM1_計量單位-集團級</a> 
+<a name="592">Server validation rule of the column id (計量單位PK) of the table FM1_計量單位-集團級</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -630,7 +631,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="593">List of all dependencies of the table column id (計量單位主鍵)</a> 
+<a name="593">List of all dependencies of the table column id (計量單位PK)</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -649,7 +650,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left">id (計量單位主鍵)
+<p align="left">id (計量單位PK)
 </p>
 </td>
 <td>
@@ -705,7 +706,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="594">List of extended attributes of the table column id (計量單位主鍵)</a> 
+<a name="594">List of extended attributes of the table column id (計量單位PK)</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -948,7 +949,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact31.htm#595">cd</a>
+<p align="left"><a href="Fact31.htm#595">code</a>
 </p>
 </td>
 </tr>
@@ -977,7 +978,7 @@ go<br />
 <a name="597">Check constraint name of the column 計量單位編碼 of the table FM1_計量單位-集團級</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_FM1_UNIT
+<p align="left">CKC_CODE_FM1_UNIT
 </p>
 </td></tr>
 </table><br />
@@ -4425,7 +4426,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact31.htm#588">id (計量單位主鍵)</a>
+<p align="left"><a href="Fact31.htm#588">id (計量單位PK)</a>
 </p>
 </td>
 <td>
@@ -4930,7 +4931,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left">id (計量單位主鍵)
+<p align="left">id (計量單位PK)
 </p>
 </td>
 <td>

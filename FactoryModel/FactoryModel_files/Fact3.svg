@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="164mm" xmlns="http://www.w3.org/2000/svg" height="63mm" version="1.1" viewBox="0 0 622 242" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="164mm" xmlns="http://www.w3.org/2000/svg" height="68mm" version="1.1" viewBox="0 0 622 258" xmlns:xlink="http://www.w3.org/1999/xlink">
    <a target="_parent" xlink:href="Fact59.htm#27">
-      <polyline fill="none" points="398,121 224,121" stroke="#800040" stroke-width="1"/>
-      <polygon fill="#800040" points="224,121 237,118 237,124" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-      <text x="317" y="115" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_STOR_REFERENCE_FM6_WARE</text>
+      <polyline fill="none" points="398,129 224,129" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="224,129 237,126 237,132" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="317" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋體'" text-anchor="middle">FK_FM6_STOR_REFERENCE_FM6_WARE</text>
    </a>
    <a target="_parent" xlink:href="Fact37.htm#937">
       <rect x="15" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="15" y="16" fill="#60afff" width="209" height="210" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="15" y="16" fill="#60afff" width="209" height="227" stroke="#00aaaa" stroke-width="1"/>
       <text x="119" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_儲區</text>
       <line x1="15" x2="224" y1="36" y2="36" stroke="#00aaaa" stroke-width="1"/>
-      <text x="20" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲區主鍵</text>
+      <text x="20" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (儲區PK)</text>
       <text x="20" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲區編碼</text>
       <text x="20" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲區名稱</text>
       <text x="20" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否儲位管理</text>
@@ -24,8 +24,8 @@
       <text x="20" y="176" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">電話號碼</text>
       <text x="20" y="189" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">負責人</text>
       <text x="20" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">倉庫地址</text>
-      <text x="20" y="215" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">經度</text>
-      <text x="20" y="228" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">緯度</text>
+      <text x="20" y="214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">經度</text>
+      <text x="20" y="227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">緯度</text>
       <text x="88" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="88" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="88" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
@@ -39,8 +39,8 @@
       <text x="88" y="176" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(50)</text>
       <text x="88" y="189" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="88" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-      <text x="88" y="215" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="88" y="228" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="88" y="214" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="88" y="227" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="221" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact36.htm#859">
@@ -48,10 +48,10 @@
       <rect x="398" y="16" fill="#60afff" width="209" height="211" stroke="#00aaaa" stroke-width="1"/>
       <text x="502" y="30" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM6_儲位</text>
       <line x1="398" x2="607" y1="36" y2="36" stroke="#00aaaa" stroke-width="1"/>
-      <text x="403" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲位主鍵</text>
+      <text x="403" y="46" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (儲位PK)</text>
       <text x="403" y="59" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲位編碼</text>
       <text x="403" y="72" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">儲位名稱</text>
-      <text x="403" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所屬儲區</text>
+      <text x="403" y="85" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">所屬儲區PK</text>
       <text x="403" y="98" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">入庫優先級</text>
       <text x="403" y="111" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">出庫優先級</text>
       <text x="403" y="124" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">負責人</text>

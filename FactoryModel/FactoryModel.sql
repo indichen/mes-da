@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/18 上午 10:19:59                        */
+/* Created on:     2019/3/20 下午 12:14:27                        */
 /*==============================================================*/
 
 
@@ -288,6 +288,10 @@ if exists(select 1 from systypes where name='type_boolean')
    drop type type_boolean
 go
 
+if exists(select 1 from systypes where name='type_cd')
+   drop type type_cd
+go
+
 if exists(select 1 from systypes where name='type_date')
    drop type type_date
 go
@@ -310,10 +314,6 @@ go
 
 if exists(select 1 from systypes where name='type_hours')
    drop type type_hours
-go
-
-if exists(select 1 from systypes where name='type_id')
-   drop type type_id
 go
 
 if exists(select 1 from systypes where name='type_length')
@@ -372,6 +372,13 @@ create type type_boolean
 go
 
 /*==============================================================*/
+/* Domain: type_cd                                              */
+/*==============================================================*/
+create type type_cd
+   from char varying(40)
+go
+
+/*==============================================================*/
 /* Domain: type_date                                            */
 /*==============================================================*/
 create type type_date
@@ -411,13 +418,6 @@ go
 /*==============================================================*/
 create type type_hours
    from decimal(10,3)
-go
-
-/*==============================================================*/
-/* Domain: type_id                                              */
-/*==============================================================*/
-create type type_id
-   from char varying(40)
 go
 
 /*==============================================================*/
@@ -515,15 +515,16 @@ create table FM8_qc_items (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   type_cd              type_enum_val        not null,
-   cd                   type_id              not null,
+   code                 type_cd              not null,
    name                 type_name            not null,
+   type_cd              type_enum_val        not null,
    unit_pk              type_pk              not null,
    display_sn           type_number          null,
    is_formula           type_boolean         not null,
-   value_type           type_enum_val        null,
+   value_type_cd        type_enum_val        null,
    digits               type_number          null,
    decimals             type_number          null,
    group_name           type_name            null,
@@ -543,6 +544,7 @@ create table cust_biz_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -561,8 +563,9 @@ create table cust_carrier_cat (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -579,6 +582,7 @@ create table cust_carrier_status (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -597,6 +601,7 @@ create table cust_equiment_base_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -615,8 +620,9 @@ create table cust_equiment_status (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    is_enabled           type_boolean         null
 )
@@ -633,8 +639,9 @@ create table cust_equipment_base_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -651,6 +658,7 @@ create table cust_equipment_level (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -669,8 +677,9 @@ create table cust_op_point_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    is_enabled           type_boolean         null
 )
@@ -687,8 +696,9 @@ create table cust_qc_items_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   cd                   type_enum_val        null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -705,8 +715,9 @@ create table cust_qc_plan_cycle_unit (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_pk              not null,
+   code                 type_cd              not null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -723,8 +734,9 @@ create table cust_qc_plan_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_pk              not null,
+   code                 type_cd              not null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -741,8 +753,9 @@ create table cust_qc_spec (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    name_abbr            type_name            null,
    name_en              type_name            null
@@ -760,8 +773,9 @@ create table cust_qc_value_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   cd                   type_enum_val        null,
+   code                 type_enum_val        null,
    name                 type_name            null,
    note                 type_memo            null
 )
@@ -778,6 +792,7 @@ create table cust_team_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_enum_val        null,
    name                 type_name            null,
@@ -796,9 +811,10 @@ create table fm1_param_template (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    note                 type_memo            null,
    data_type            type_enum_val        null,
@@ -806,7 +822,7 @@ create table fm1_param_template (
    range                type_memo            null,
    edit_style           type_enum_val        null,
    reference_class      type_short_text      null,
-   group_code           type_id              null,
+   group_code           type_cd              null,
    group_name           type_name            null,
    module_id            type_pk              null,
    level                type_enum_val        null,
@@ -827,12 +843,13 @@ create table fm1_params (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   factory_id           type_pk              not null,
-   id                   type_pk              null,
-   param_template_id    type_pk              null,
+   id                   type_pk              not null,
+   factory_pk           type_pk              not null,
+   param_template_pk    type_pk              null,
    value                type_short_text      null,
-   constraint PK_FM1_PARAMS primary key (factory_id)
+   constraint PK_FM1_PARAMS primary key (id)
 )
 go
 
@@ -847,9 +864,10 @@ create table fm1_unit (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    is_fundamental_unit  type_boolean         null,
    fundamental_unit_pk  type_pk              null,
@@ -873,11 +891,12 @@ create table fm3_team (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
-   leader_cd            type_id              null,
+   leader_cd            type_cd              null,
    type                 type_enum_val        null,
    is_enabled           type_boolean         null,
    constraint PK_FM3_TEAM primary key (id)
@@ -895,10 +914,11 @@ create table fm4_shift (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
-   shift_system_id      type_id              null,
+   code                 type_cd              null,
+   shift_system_cd      type_cd              null,
    datetime_start       type_datetime        null,
    datetime_end         type_datetime        null,
    working_hours        type_hours           null,
@@ -917,6 +937,7 @@ create table fm4_teamcalendar (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    date                 type_date            null,
@@ -937,10 +958,11 @@ create table fm4_teamcalendar_person (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    team_calendar_pk     type_pk              null,
-   operator_cd          type_id              null,
+   operator_cd          type_cd              null,
    is_transferred       type_boolean         null,
    constraint PK_FM4_TEAMCALENDAR_PERSON primary key (id)
 )
@@ -957,10 +979,11 @@ create table fm6_carrier_model (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   carrier_cat_cd       type_id              null,
-   code                 type_id              null,
+   code                 type_cd              null,
+   carrier_cat_cd       type_cd              null,
    spec                 type_memo            null,
    carcass_diameter     type_number          null,
    disc_diameter        type_number          null,
@@ -985,11 +1008,12 @@ create table fm6_carrierbaseinfo (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   ｃｄ                   type_id              null,
-   factory_id           type_pk              null,
-   carrier_model_id     type_pk              null,
+   code                 type_cd              null,
+   factory_cd           type_cd              null,
+   carrier_model_pk     type_pk              null,
    note                 type_memo            null,
    tag1                 type_name            null,
    tag2                 type_name            null,
@@ -1010,17 +1034,19 @@ create table fm6_equipment (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_memo            null,
    spec                 type_name            null,
-   process_id           type_pk              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
    is_batch_equipment   type_boolean         null,
    base_type_cd         type_enum_val        null,
    level_cd             type_enum_val        null,
-   checkin_out_type_cd  type_id              null,
-   factory_id           type_pk              null,
+   checkin_out_type_cd  type_cd              null,
+   factory_cd           type_cd              null,
    dep_id               type_pk              null,
    parent_id            type_pk              null,
    longitude            type_lng_lat         null,
@@ -1041,11 +1067,11 @@ create table fm6_equipment_carrier (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   factory_id           type_pk              null,
    id                   type_pk              not null,
-   equipment_id         type_pk              null,
-   carrier_model_id     type_pk              null,
+   equipment_pk         type_pk              null,
+   carrier_model_pk     type_pk              null,
    check_type           type_enum_val        null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT_CARRIER primary key (id)
@@ -1063,13 +1089,12 @@ create table fm6_equipment_op_point (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   factory_id           type_pk              null,
    id                   type_pk              not null,
-   equiment_id          type_pk              null,
-   op_point_type_cd     type_enum_val        null,
+   equiment_pk          type_pk              null,
+   op_point_type_cd     type_cd              null,
    name                 type_memo            null,
-   checkin_type         type_enum_val        null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT_OP_POINT primary key (id)
 )
@@ -1086,9 +1111,10 @@ create table fm6_equipment_status (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
-   factory_id           type_pk              null,
-   id                   type_pk              not null,
+   id                   char(10)             not null,
+   equipment_pk         type_pk              not null,
    status               type_pk              null,
    constraint PK_FM6_EQUIPMENT_STATUS primary key (id)
 )
@@ -1105,11 +1131,12 @@ create table fm6_store (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
-   warehouse_id         type_pk              null,
+   warehouse_pk         type_pk              null,
    in_priority          type_number          null,
    out_priority         type_number          null,
    ppl_in_charge        type_pk              null,
@@ -1131,9 +1158,10 @@ create table fm6_warehouse (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   code                 type_id              null,
+   code                 type_cd              null,
    name                 type_name            null,
    is_store_mgt         type_boolean         null,
    is_enabled           type_boolean         null,
@@ -1162,13 +1190,14 @@ create table fm7_material (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
+   code                 type_cd              null,
+   name                 type_name            null,
    cat_pk               type_pk              null,
-   cd                   type_id              null,
-   material_name        type_name            null,
-   material_name_en     type_name            null,
-   material_name_abbr   type_id              null,
+   name_en              type_name            null,
+   name_abbr            type_cd              null,
    unit_pk              type_pk              null,
    spec                 type_memo            null,
    spec_en              type_memo            null,
@@ -1176,12 +1205,12 @@ create table fm7_material (
    image_path           type_path            null,
    brand                type_name            null,
    is_enabled           type_boolean         null,
-   custom_product_id    type_id              null,
+   custom_product_id    type_cd              null,
    custom_product_name  type_name            null,
    barcode              type_memo            null,
    mnemonic_code        type_memo            null,
    version              type_version_int     null,
-   application_form_id  type_id              null,
+   application_form_id  type_cd              null,
    constraint PK_FM7_MATERIAL primary key nonclustered (id)
 )
 go
@@ -1197,10 +1226,11 @@ create table fm7_material_cat (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              not null,
-   cat_name             type_name            not null,
+   code                 type_cd              not null,
+   name                 type_name            not null,
    parent_cat_pk        type_pk              null,
    is_enabled           type_boolean         not null,
    note                 type_memo            null,
@@ -1219,11 +1249,11 @@ create table fm7_material_unit (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    material_pk          type_pk              null,
    unit_pk              type_pk              null,
-   unit_name            type_name            null,
    exchange_rate        type_decimal         null,
    is_fixed_exchange    type_boolean         null,
    constraint PK_FM7_MATERIAL_UNIT primary key nonclustered (id)
@@ -1241,9 +1271,10 @@ create table fm8_basic_process (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              not null,
+   code                 type_cd              not null,
    name                 type_name            not null,
    name_en              type_pk              null,
    is_enabled           type_boolean         not null,
@@ -1262,6 +1293,7 @@ create table fm8_qc_enum (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    item_pk              type_pk              not null,
@@ -1283,6 +1315,7 @@ create table fm8_qc_items_formula (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    item_pk              type_pk              not null,
@@ -1305,14 +1338,15 @@ create table fm8_qc_plan (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              not null,
+   code                 type_cd              not null,
    name                 type_name            not null,
-   plan_type_cd         type_id              not null,
-   spec_cd              type_id              not null,
+   plan_type_cd         type_cd              not null,
+   spec_cd              type_cd              not null,
    material_pk          type_pk              null,
-   grade_cd             type_id              null,
+   grade_cd             type_cd              null,
    process_pk           type_pk              null,
    sample_point_pk      type_pk              null,
    is_cycle             type_boolean         not null,
@@ -1336,6 +1370,7 @@ create table fm8_qc_plan_detail (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    plan_pk              type_pk              null,
@@ -1373,15 +1408,16 @@ create table mwc_carrier_common (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   factory_id           type_pk              null,
-   carrier_id           type_pk              not null,
+   carrier_pk           type_pk              not null,
    status               type_enum_val        null,
    lot_pk               type_pk              null,
-   equipment_id         type_pk              null,
-   warehouse_id         type_pk              null,
-   store_place_id       type_pk              null,
+   lot_cd               type_cd              null,
+   equipment_pk         type_pk              null,
+   warehouse_pk         type_pk              null,
+   store_place_pk       type_pk              null,
    note                 type_memo            null,
    constraint PK_MWC_CARRIER_COMMON primary key (id)
 )
@@ -1398,15 +1434,16 @@ create table mwc_carrierlog (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   factory_id           type_pk              null,
-   carrier_id           type_pk              not null,
+   carrier_pk           type_pk              not null,
    status               type_enum_val        null,
    lot_pk               type_pk              null,
-   equipment_id         type_pk              null,
-   warehouse_id         type_pk              null,
-   store_place_id       type_pk              null,
+   lot_cd               type_cd              null,
+   equipment_pk         type_pk              null,
+   warehouse_pk         type_pk              null,
+   store_place_pk       type_pk              null,
    note                 type_memo            null,
    constraint PK_MWC_CARRIERLOG primary key (id)
 )

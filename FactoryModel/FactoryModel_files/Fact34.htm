@@ -83,10 +83,11 @@ create table fm4_teamcalendar_person (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
    team_calendar_pk     type_pk              null,<br />
-   operator_cd          type_id              null,<br />
+   operator_cd          type_cd              null,<br />
    is_transferred       type_boolean         null,<br />
    constraint PK_FM4_TEAMCALENDAR_PERSON primary key (id)<br />
 )<br />

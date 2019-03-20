@@ -83,10 +83,11 @@ create table fm4_shift (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   type_id              null,<br />
-   shift_system_id      type_id              null,<br />
+   code                 type_cd              null,<br />
+   shift_system_cd      type_cd              null,<br />
    datetime_start       type_datetime        null,<br />
    datetime_end         type_datetime        null,<br />
    working_hours        type_hours           null,<br />
@@ -373,21 +374,21 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact33.htm#735">班次cd</a>
+<p align="left"><a href="Fact33.htm#735">班次代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact33.htm#735">cd</a>
+<p align="left"><a href="Fact33.htm#735">code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact33.htm#741">輪班制度id</a>
+<p align="left"><a href="Fact33.htm#741">輪班制度代碼</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact33.htm#741">shift_system_id</a>
+<p align="left"><a href="Fact33.htm#741">shift_system_cd</a>
 </p>
 </td>
 </tr>
@@ -830,10 +831,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="735">Column 班次cd of the table FM4_班次</a> 
+<a name="735">Column 班次代碼 of the table FM4_班次</a> 
 </h2>
 <h3>
-<a name="736">Card of the column 班次cd of the table FM4_班次</a> 
+<a name="736">Card of the column 班次代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -842,7 +843,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact33.htm#735">班次cd</a>
+<p align="left"><a href="Fact33.htm#735">班次代碼</a>
 </p>
 </td>
 </tr>
@@ -852,7 +853,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact33.htm#735">cd</a>
+<p align="left"><a href="Fact33.htm#735">code</a>
 </p>
 </td>
 </tr>
@@ -878,15 +879,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="737">Check constraint name of the column 班次cd of the table FM4_班次</a> 
+<a name="737">Check constraint name of the column 班次代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_FM4_SHIF
+<p align="left">CKC_CODE_FM4_SHIF
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="738">Check of the column 班次cd of the table FM4_班次</a> 
+<a name="738">Check of the column 班次代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -961,7 +962,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="739">Server validation rule of the column 班次cd of the table FM4_班次</a> 
+<a name="739">Server validation rule of the column 班次代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -969,7 +970,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="740">List of extended attributes of the table column 班次cd</a> 
+<a name="740">List of extended attributes of the table column 班次代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1208,10 +1209,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="741">Column 輪班制度id of the table FM4_班次</a> 
+<a name="741">Column 輪班制度代碼 of the table FM4_班次</a> 
 </h2>
 <h3>
-<a name="742">Card of the column 輪班制度id of the table FM4_班次</a> 
+<a name="742">Card of the column 輪班制度代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1220,7 +1221,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact33.htm#741">輪班制度id</a>
+<p align="left"><a href="Fact33.htm#741">輪班制度代碼</a>
 </p>
 </td>
 </tr>
@@ -1230,7 +1231,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact33.htm#741">shift_system_id</a>
+<p align="left"><a href="Fact33.htm#741">shift_system_cd</a>
 </p>
 </td>
 </tr>
@@ -1256,15 +1257,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="743">Check constraint name of the column 輪班制度id of the table FM4_班次</a> 
+<a name="743">Check constraint name of the column 輪班制度代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SHIFT_SYSTEM_ID_FM4_SHIF
+<p align="left">CKC_SHIFT_SYSTEM_CD_FM4_SHIF
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="744">Check of the column 輪班制度id of the table FM4_班次</a> 
+<a name="744">Check of the column 輪班制度代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1339,7 +1340,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="745">Server validation rule of the column 輪班制度id of the table FM4_班次</a> 
+<a name="745">Server validation rule of the column 輪班制度代碼 of the table FM4_班次</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1347,7 +1348,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="746">List of extended attributes of the table column 輪班制度id</a> 
+<a name="746">List of extended attributes of the table column 輪班制度代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

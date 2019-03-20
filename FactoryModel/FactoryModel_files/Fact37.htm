@@ -83,9 +83,10 @@ create table fm6_warehouse (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   code                 type_id              null,<br />
+   code                 type_cd              null,<br />
    name                 type_name            null,<br />
    is_store_mgt         type_boolean         null,<br />
    is_enabled           type_boolean         null,<br />
@@ -372,7 +373,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact37.htm#947">儲區主鍵</a>
+<p align="left"><a href="Fact37.htm#947">id (儲區PK)</a>
 </p>
 </td>
 <td>
@@ -522,10 +523,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="947">Column 儲區主鍵 of the table FM6_儲區</a> 
+<a name="947">Column id (儲區PK) of the table FM6_儲區</a> 
 </h2>
 <h3>
-<a name="948">Card of the column 儲區主鍵 of the table FM6_儲區</a> 
+<a name="948">Card of the column id (儲區PK) of the table FM6_儲區</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -534,7 +535,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact37.htm#947">儲區主鍵</a>
+<p align="left"><a href="Fact37.htm#947">id (儲區PK)</a>
 </p>
 </td>
 </tr>
@@ -570,7 +571,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="949">Check constraint name of the column 儲區主鍵 of the table FM6_儲區</a> 
+<a name="949">Check constraint name of the column id (儲區PK) of the table FM6_儲區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_ID_FM6_WARE
@@ -578,7 +579,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="950">Check of the column 儲區主鍵 of the table FM6_儲區</a> 
+<a name="950">Check of the column id (儲區PK) of the table FM6_儲區</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -653,7 +654,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="951">Server validation rule of the column 儲區主鍵 of the table FM6_儲區</a> 
+<a name="951">Server validation rule of the column id (儲區PK) of the table FM6_儲區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -661,7 +662,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="952">List of all dependencies of the table column 儲區主鍵</a> 
+<a name="952">List of all dependencies of the table column id (儲區PK)</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -680,35 +681,35 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact37.htm#1039">Key_1</a>
+<p align="left">?
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact37.htm#1039">Key_1</a>
+<p align="left">?
 </p>
 </td>
 <td>
-<p align="left">Key
+<p align="left">Reference Join
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left">?
+<p align="left"><a href="Fact37.htm#1039">Key_1</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left">?
+<p align="left"><a href="Fact37.htm#1039">Key_1</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left">Reference Join
+<p align="left">Key
 </p>
 </td>
 </tr>
 </table><br />
 <h3>
-<a name="953">List of extended attributes of the table column 儲區主鍵</a> 
+<a name="953">List of extended attributes of the table column id (儲區PK)</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6318,7 +6319,7 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact37.htm#947">儲區主鍵</a>
+<p align="left"><a href="Fact37.htm#947">id (儲區PK)</a>
 </p>
 </td>
 <td>

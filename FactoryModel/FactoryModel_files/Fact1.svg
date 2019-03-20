@@ -15,8 +15,8 @@
       <text x="124" y="174" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM4_班次</text>
       <line x1="15" x2="234" y1="180" y2="180" stroke="#00aaaa" stroke-width="1"/>
       <text x="20" y="190" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">id (班次PK)</text>
-      <text x="20" y="202" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班次cd</text>
-      <text x="20" y="214" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">輪班制度id</text>
+      <text x="20" y="202" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班次代碼</text>
+      <text x="20" y="214" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">輪班制度代碼</text>
       <text x="20" y="226" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">開始日期時間</text>
       <text x="20" y="238" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">結束日期時間</text>
       <text x="20" y="250" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">上班時長</text>
@@ -68,7 +68,7 @@
       <text x="726" y="191" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">參照組織樹倒數第一級</text>
       <line x1="636" x2="817" y1="198" y2="198" stroke="#00aaaa" stroke-width="1"/>
       <text x="641" y="208" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">id (班組PK)</text>
-      <text x="641" y="220" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班組cd</text>
+      <text x="641" y="220" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班組代碼</text>
       <text x="641" y="232" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班組名稱</text>
       <text x="641" y="244" fill="#000000" font-size="9" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">班長</text>
       <text x="641" y="256" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">班組類型</text>

@@ -83,9 +83,10 @@ create table fm1_param_template (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   code                 type_id              null,<br />
+   code                 type_cd              null,<br />
    name                 type_name            null,<br />
    note                 type_memo            null,<br />
    data_type            type_enum_val        null,<br />
@@ -93,7 +94,7 @@ create table fm1_param_template (<br />
    range                type_memo            null,<br />
    edit_style           type_enum_val        null,<br />
    reference_class      type_short_text      null,<br />
-   group_code           type_id              null,<br />
+   group_code           type_cd              null,<br />
    group_name           type_name            null,<br />
    module_id            type_pk              null,<br />
    level                type_enum_val        null,<br />

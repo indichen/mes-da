@@ -83,8 +83,9 @@ create table cust_qc_items_type (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
-   cd                   type_enum_val        null,<br />
+   code                 type_enum_val        null,<br />
    name                 type_name            null,<br />
    note                 type_memo            null<br />
 )<br />
@@ -373,11 +374,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact26.htm#350">cd</a>
+<p align="left"><a href="Fact26.htm#350">code</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact26.htm#350">cd</a>
+<p align="left"><a href="Fact26.htm#350">code</a>
 </p>
 </td>
 </tr>
@@ -403,10 +404,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="350">Column cd of the table CUST_質檢項目類型</a> 
+<a name="350">Column code of the table CUST_質檢項目類型</a> 
 </h2>
 <h3>
-<a name="351">Card of the column cd of the table CUST_質檢項目類型</a> 
+<a name="351">Card of the column code of the table CUST_質檢項目類型</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -415,7 +416,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact26.htm#350">cd</a>
+<p align="left"><a href="Fact26.htm#350">code</a>
 </p>
 </td>
 </tr>
@@ -425,7 +426,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact26.htm#350">cd</a>
+<p align="left"><a href="Fact26.htm#350">code</a>
 </p>
 </td>
 </tr>
@@ -451,15 +452,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="352">Check constraint name of the column cd of the table CUST_質檢項目類型</a> 
+<a name="352">Check constraint name of the column code of the table CUST_質檢項目類型</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_CUST_QC_
+<p align="left">CKC_CODE_CUST_QC_
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="353">Check of the column cd of the table CUST_質檢項目類型</a> 
+<a name="353">Check of the column code of the table CUST_質檢項目類型</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -534,7 +535,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="354">Server validation rule of the column cd of the table CUST_質檢項目類型</a> 
+<a name="354">Server validation rule of the column code of the table CUST_質檢項目類型</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -542,7 +543,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="355">List of all dependencies of the table column cd</a> 
+<a name="355">List of all dependencies of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -575,7 +576,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="356">List of extended attributes of the table column cd</a> 
+<a name="356">List of extended attributes of the table column code</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
