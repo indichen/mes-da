@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/20 下午 04:40:15                        */
+/* Created on:     2019/3/21 下午 02:50:35                        */
 /*==============================================================*/
 
 
@@ -317,7 +317,7 @@ go
 /* Domain: type_memo                                            */
 /*==============================================================*/
 create type type_memo
-   from char(1)
+   from national char varying(Max)
 go
 
 /*==============================================================*/
@@ -419,6 +419,8 @@ create table mlo_mo (
    working_hour_est     type_hours           null,
    group_qty            type_number          null,
    group_count          type_number          null,
+   length_extra_est     type_length          null,
+   length_extra_real    type_length          null,
    note                 type_memo            null,
    start_ts             type_datetime        null,
    end_ts               type_datetime        null,
@@ -531,39 +533,40 @@ create table mlo_sap_po (
    so_cd                type_cd              not null,
    customer_cd          type_cd              null,
    customer_name        type_name            null,
-   product_partno       type_cd              null,
+   product_partno_pk    type_pk              null,
+   product_partno_cd    type_cd              null,
    product_spec         type_memo            null,
-   route_cd             type_cd              null,
    so_qty               type_decimal         null,
    unit_length          type_length          null,
    so_unit              type_name            null,
    shipment_date        type_date            null,
    sales_name           type_name            null,
-   production_date_est  type_date            null,
    start_date_est       type_date            null,
    end_date_est         type_date            null,
    is_closed            type_boolean         null,
    batch_no             type_cd              null,
    conti_symbol         type_name            null,
    production_date      type_date            null,
-   unit_weight          type_weight          null,
-   unit_weight_unit     type_name            null,
    storage_qty          type_decimal         null,
    not_storage_qty      type_decimal         null,
+   factory_cd           type_cd              null,
+   po_update_date       type_date            null,
+   po_create_date       type_date            null,
+   commit_qty           type_decimal         null,
+   route_cd             type_cd              null,
+   production_date_est  type_date            null,
+   unit_weight          type_weight          null,
+   unit_weight_unit     type_name            null,
    last_storage_qty     type_decimal         null,
    lead_time            type_number          null,
-   factory_cd           type_cd              null,
    department           type_name            null,
    pmc_production_cd    type_cd              null,
    pmc_production_name  type_name            null,
-   po_create_date       type_date            null,
-   po_update_date       type_date            null,
    core_wire_color      type_memo            null,
    last_process_pk      type_pk              null,
    last_process_cd      type_cd              null,
    last_process_name    type_name            null,
    carrier_type         type_cd              null,
-   commit_qty           type_decimal         null,
    copper_size_cd       type_cd              null,
    constraint PK_MLO_SAP_PO primary key (id)
 )
@@ -589,7 +592,10 @@ create table mlo_sap_po_process (
    customer_cd          type_cd              null,
    customer_name        type_name            null,
    product_partno       type_cd              null,
+   product_spec         type_memo            null,
    so_qty               type_decimal         null,
+   unit_length          type_length          null,
+   so_unit              type_name            null,
    shipment_date        type_date            null,
    sales_name           type_name            null,
    start_date_est       type_date            null,
