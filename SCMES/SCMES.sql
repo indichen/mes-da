@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/21 下午 02:50:35                        */
+/* Created on:     2019/3/22 下午 06:30:22                        */
 /*==============================================================*/
 
 
@@ -563,6 +563,7 @@ create table mlo_sap_po (
    pmc_production_cd    type_cd              null,
    pmc_production_name  type_name            null,
    core_wire_color      type_memo            null,
+   last_seq_route       type_sn              null,
    last_process_pk      type_pk              null,
    last_process_cd      type_cd              null,
    last_process_name    type_name            null,
@@ -768,7 +769,9 @@ create table mw_common_lot (
    material_pk          type_pk              null,
    material_cd          type_cd              null,
    status               type_enum_val        null,
+   source_cd            type_enum_val        null,
    production_date      type_date            null,
+   note                 type_memo            null,
    constraint PK_MW_COMMON_LOT primary key (id)
 )
 go
