@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/18 下午 12:22:56                        */
+/* Created on:     2019/3/22 上午 08:55:17                        */
 /*==============================================================*/
 
 
@@ -349,6 +349,7 @@ create table cust_product_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -370,6 +371,7 @@ create table cust_quality_code (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -391,6 +393,7 @@ create table cust_spec (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_id              null,
    abbr                 type_name            null,
@@ -413,6 +416,7 @@ create table cust_usage_code (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    code                 type_id              null,
    name                 type_name            null,
@@ -434,6 +438,7 @@ create table mtaa_application (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -458,6 +463,7 @@ create table mtaa_application_exterior (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -479,6 +485,7 @@ create table mtaa_application_mechanical (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -500,6 +507,7 @@ create table mtaa_application_others (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -520,6 +528,7 @@ create table mtaa_application_recipe (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    application_pk       type_pk              not null,
@@ -542,6 +551,7 @@ create table mtaa_material (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    cd                   type_id              not null,
@@ -568,6 +578,7 @@ create table mtad_grade_no (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    steel_grade_pk       type_pk              null,
@@ -589,6 +600,7 @@ create table mtad_grade_qc_plan (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    qc_plan_main         type_pk              not null,
@@ -615,6 +627,7 @@ create table mtad_grade_tag (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -637,6 +650,7 @@ create table mtad_scrap_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -657,9 +671,10 @@ create table mtad_scrap_type_color (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   char(10)             null,
+   cd                   type_id              null,
    type_pk              type_pk              null,
    color_pk             type_pk              null,
    constraint PK_MTAD_SCRAP_TYPE_COLOR primary key (id)
@@ -677,6 +692,7 @@ create table mtad_steel_color (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -696,6 +712,7 @@ create table mtad_steel_grade (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    steel_series_pk      type_pk              null,
@@ -719,6 +736,7 @@ create table mtad_steel_series (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    code                 type_id              null,
@@ -738,6 +756,7 @@ create table mtaf_material_mechanical (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -762,6 +781,7 @@ create table mtaf_material_mechanical_spec (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -783,6 +803,7 @@ create table mtaf_material_status (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    cd                   type_id              null,
@@ -805,6 +826,7 @@ create table mtaf_material_status_product_type (
    bpm_state decimal(11) null,
    ts varchar(64) null,
    dr decimal(11) null,
+   tenant_id varchar(64) null,
 
    id                   type_pk              not null,
    status_pk            type_pk              null,

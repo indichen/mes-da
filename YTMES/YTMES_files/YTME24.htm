@@ -89,9 +89,10 @@ create table mtad_scrap_type_color (<br />
    bpm_state decimal(11) null,<br />
    ts varchar(64) null,<br />
    dr decimal(11) null,<br />
+   tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   char(10)             null,<br />
+   cd                   type_id              null,<br />
    type_pk              type_pk              null,<br />
    color_pk             type_pk              null,<br />
    constraint PK_MTAD_SCRAP_TYPE_COLOR primary key (id)<br />
@@ -882,7 +883,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">&lt;Undefined&gt;
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>
