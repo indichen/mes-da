@@ -94,7 +94,7 @@ create table mtaf_material_status (<br />
    id                   type_pk              not null,<br />
    cd                   type_id              null,<br />
    name                 type_name            null,<br />
-   abbr                 char(10)             null,<br />
+   abbr                 type_id              null,<br />
    status_cat_cd        type_id              null,<br />
    process_cd           type_id              null,<br />
    constraint PK_MTAF_MATERIAL_STATUS primary key (id)<br />
@@ -1757,7 +1757,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">&lt;Undefined&gt;
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>

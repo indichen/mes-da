@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/22 上午 08:55:17                        */
+/* Created on:     2019/3/25 下午 07:38:01                        */
 /*==============================================================*/
 
 
@@ -808,7 +808,7 @@ create table mtaf_material_status (
    id                   type_pk              not null,
    cd                   type_id              null,
    name                 type_name            null,
-   abbr                 char(10)             null,
+   abbr                 type_id              null,
    status_cat_cd        type_id              null,
    process_cd           type_id              null,
    constraint PK_MTAF_MATERIAL_STATUS primary key (id)
