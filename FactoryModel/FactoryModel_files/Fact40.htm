@@ -85,9 +85,9 @@ create table fm6_equipment_status (<br />
    dr decimal(11) null,<br />
    tenant_id varchar(64) null,<br />
 <br />
-   id                   char(10)             not null,<br />
+   id                   type_pk              not null,<br />
    equipment_pk         type_pk              not null,<br />
-   status               type_pk              null,<br />
+   status_cd            type_cd              null,<br />
    constraint PK_FM6_EQUIPMENT_STATUS primary key (id)<br />
 )<br />
 go<br />
@@ -417,11 +417,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact40.htm#1236">狀態</a>
+<p align="left"><a href="Fact40.htm#1236">狀態cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact40.htm#1236">status</a>
+<p align="left"><a href="Fact40.htm#1236">status_cd</a>
 </p>
 </td>
 </tr>
@@ -459,7 +459,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">&lt;Undefined&gt;
+<p align="left">char(32)
 </p>
 </td>
 </tr>
@@ -1213,10 +1213,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1236">Column 狀態 of the table FM6_生產機臺狀態</a> 
+<a name="1236">Column 狀態cd of the table FM6_生產機臺狀態</a> 
 </h2>
 <h3>
-<a name="1237">Card of the column 狀態 of the table FM6_生產機臺狀態</a> 
+<a name="1237">Card of the column 狀態cd of the table FM6_生產機臺狀態</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1225,7 +1225,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact40.htm#1236">狀態</a>
+<p align="left"><a href="Fact40.htm#1236">狀態cd</a>
 </p>
 </td>
 </tr>
@@ -1235,7 +1235,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact40.htm#1236">status</a>
+<p align="left"><a href="Fact40.htm#1236">status_cd</a>
 </p>
 </td>
 </tr>
@@ -1245,7 +1245,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char(32)
+<p align="left">char varying(40)
 </p>
 </td>
 </tr>
@@ -1261,15 +1261,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1238">Check constraint name of the column 狀態 of the table FM6_生產機臺狀態</a> 
+<a name="1238">Check constraint name of the column 狀態cd of the table FM6_生產機臺狀態</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_STATUS_FM6_EQUI
+<p align="left">CKC_STATUS_CD_FM6_EQUI
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="1239">Check of the column 狀態 of the table FM6_生產機臺狀態</a> 
+<a name="1239">Check of the column 狀態cd of the table FM6_生產機臺狀態</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1344,7 +1344,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1240">Server validation rule of the column 狀態 of the table FM6_生產機臺狀態</a> 
+<a name="1240">Server validation rule of the column 狀態cd of the table FM6_生產機臺狀態</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1352,7 +1352,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1241">List of extended attributes of the table column 狀態</a> 
+<a name="1241">List of extended attributes of the table column 狀態cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

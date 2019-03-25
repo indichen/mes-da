@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/20 下午 05:46:35                        */
+/* Created on:     2019/3/25 下午 07:31:21                        */
 /*==============================================================*/
 
 
@@ -1114,9 +1114,9 @@ create table fm6_equipment_status (
    dr decimal(11) null,
    tenant_id varchar(64) null,
 
-   id                   char(10)             not null,
+   id                   type_pk              not null,
    equipment_pk         type_pk              not null,
-   status               type_pk              null,
+   status_cd            type_cd              null,
    constraint PK_FM6_EQUIPMENT_STATUS primary key (id)
 )
 go

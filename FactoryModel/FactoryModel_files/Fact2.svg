@@ -121,12 +121,12 @@
       <line x1="680" x2="938" y1="196" y2="196" stroke="#00aaaa" stroke-width="1"/>
       <text x="685" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (生產機臺狀態PK)</text>
       <text x="685" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">生產機臺PK</text>
-      <text x="685" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
-      <text x="785" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
+      <text x="685" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態cd</text>
+      <text x="785" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="785" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="785" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="854" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-      <text x="854" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="785" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
+      <text x="868" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
+      <text x="868" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact15.htm#14">
       <rect x="332" y="419" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
