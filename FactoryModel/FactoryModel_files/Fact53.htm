@@ -87,6 +87,7 @@ create table mwc_carrierlog (<br />
 <br />
    id                   type_pk              not null,<br />
    carrier_pk           type_pk              not null,<br />
+   carrier_cd           type_cd              null,<br />
    status               type_enum_val        null,<br />
    carrier_model_pk     type_pk              null,<br />
    carrier_model_cd     type_cd              null,<br />
@@ -331,91 +332,101 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2244">狀態</a>
+<p align="left"><a href="Fact53.htm#2244">載具cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2244">status</a>
+<p align="left"><a href="Fact53.htm#2244">carrier_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2250">載具型號PK</a>
+<p align="left"><a href="Fact53.htm#2250">狀態</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2250">carrier_model_pk</a>
+<p align="left"><a href="Fact53.htm#2250">status</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2256">載具型號代碼</a>
+<p align="left"><a href="Fact53.htm#2256">載具型號PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2256">carrier_model_cd</a>
+<p align="left"><a href="Fact53.htm#2256">carrier_model_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2262">lotid</a>
+<p align="left"><a href="Fact53.htm#2262">載具型號代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2262">lot_pk</a>
+<p align="left"><a href="Fact53.htm#2262">carrier_model_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2268">lot代碼</a>
+<p align="left"><a href="Fact53.htm#2268">lotid</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2268">lot_cd</a>
+<p align="left"><a href="Fact53.htm#2268">lot_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2274">當前位置-機臺</a>
+<p align="left"><a href="Fact53.htm#2274">lot代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2274">equipment_pk</a>
+<p align="left"><a href="Fact53.htm#2274">lot_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2280">當前位置-倉庫</a>
+<p align="left"><a href="Fact53.htm#2280">當前位置-機臺</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2280">warehouse_pk</a>
+<p align="left"><a href="Fact53.htm#2280">equipment_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2286">當前位置-儲位</a>
+<p align="left"><a href="Fact53.htm#2286">當前位置-倉庫</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact53.htm#2286">store_place_pk</a>
+<p align="left"><a href="Fact53.htm#2286">warehouse_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2292">備註</a>
+<p align="left"><a href="Fact53.htm#2292">當前位置-儲位</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2292">note</a>
+<p align="left"><a href="Fact53.htm#2292">store_place_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact53.htm#2298">備註</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact53.htm#2298">note</a>
 </p>
 </td>
 </tr>
@@ -579,11 +590,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 <td>
@@ -1174,10 +1185,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2244">Column 狀態 of the table MWC_載具歷史信息</a> 
+<a name="2244">Column 載具cd of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2245">Card of the column 狀態 of the table MWC_載具歷史信息</a> 
+<a name="2245">Card of the column 載具cd of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1186,7 +1197,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2244">狀態</a>
+<p align="left"><a href="Fact53.htm#2244">載具cd</a>
 </p>
 </td>
 </tr>
@@ -1196,7 +1207,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2244">status</a>
+<p align="left"><a href="Fact53.htm#2244">carrier_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char varying(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="2246">Check constraint name of the column 載具cd of the table MWC_載具歷史信息</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_CARRIER_CD_MWC_CARR
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="2247">Check of the column 載具cd of the table MWC_載具歷史信息</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="2248">Server validation rule of the column 載具cd of the table MWC_載具歷史信息</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="2249">List of extended attributes of the table column 載具cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="2250">Column 狀態 of the table MWC_載具歷史信息</a> 
+</h2>
+<h3>
+<a name="2251">Card of the column 狀態 of the table MWC_載具歷史信息</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact53.htm#2250">狀態</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact53.htm#2250">status</a>
 </p>
 </td>
 </tr>
@@ -1222,7 +1611,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2246">Check constraint name of the column 狀態 of the table MWC_載具歷史信息</a> 
+<a name="2252">Check constraint name of the column 狀態 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_STATUS_MWC_CARR
@@ -1230,7 +1619,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2247">Check of the column 狀態 of the table MWC_載具歷史信息</a> 
+<a name="2253">Check of the column 狀態 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1305,7 +1694,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2248">Server validation rule of the column 狀態 of the table MWC_載具歷史信息</a> 
+<a name="2254">Server validation rule of the column 狀態 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1313,7 +1702,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2249">List of extended attributes of the table column 狀態</a> 
+<a name="2255">List of extended attributes of the table column 狀態</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1552,10 +1941,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2250">Column 載具型號PK of the table MWC_載具歷史信息</a> 
+<a name="2256">Column 載具型號PK of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2251">Card of the column 載具型號PK of the table MWC_載具歷史信息</a> 
+<a name="2257">Card of the column 載具型號PK of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1564,7 +1953,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2250">載具型號PK</a>
+<p align="left"><a href="Fact53.htm#2256">載具型號PK</a>
 </p>
 </td>
 </tr>
@@ -1574,7 +1963,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2250">carrier_model_pk</a>
+<p align="left"><a href="Fact53.htm#2256">carrier_model_pk</a>
 </p>
 </td>
 </tr>
@@ -1600,7 +1989,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2252">Check constraint name of the column 載具型號PK of the table MWC_載具歷史信息</a> 
+<a name="2258">Check constraint name of the column 載具型號PK of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CARRIER_MODEL_PK_MWC_CARR
@@ -1608,7 +1997,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2253">Check of the column 載具型號PK of the table MWC_載具歷史信息</a> 
+<a name="2259">Check of the column 載具型號PK of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1683,7 +2072,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2254">Server validation rule of the column 載具型號PK of the table MWC_載具歷史信息</a> 
+<a name="2260">Server validation rule of the column 載具型號PK of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1691,7 +2080,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2255">List of extended attributes of the table column 載具型號PK</a> 
+<a name="2261">List of extended attributes of the table column 載具型號PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1930,10 +2319,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2256">Column 載具型號代碼 of the table MWC_載具歷史信息</a> 
+<a name="2262">Column 載具型號代碼 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2257">Card of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
+<a name="2263">Card of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1942,7 +2331,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2256">載具型號代碼</a>
+<p align="left"><a href="Fact53.htm#2262">載具型號代碼</a>
 </p>
 </td>
 </tr>
@@ -1952,7 +2341,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2256">carrier_model_cd</a>
+<p align="left"><a href="Fact53.htm#2262">carrier_model_cd</a>
 </p>
 </td>
 </tr>
@@ -1978,7 +2367,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2258">Check constraint name of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
+<a name="2264">Check constraint name of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CARRIER_MODEL_CD_MWC_CARR
@@ -1986,7 +2375,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2259">Check of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
+<a name="2265">Check of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2061,7 +2450,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2260">Server validation rule of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
+<a name="2266">Server validation rule of the column 載具型號代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2069,7 +2458,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2261">List of extended attributes of the table column 載具型號代碼</a> 
+<a name="2267">List of extended attributes of the table column 載具型號代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2308,10 +2697,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2262">Column lotid of the table MWC_載具歷史信息</a> 
+<a name="2268">Column lotid of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2263">Card of the column lotid of the table MWC_載具歷史信息</a> 
+<a name="2269">Card of the column lotid of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2320,7 +2709,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2262">lotid</a>
+<p align="left"><a href="Fact53.htm#2268">lotid</a>
 </p>
 </td>
 </tr>
@@ -2330,7 +2719,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2262">lot_pk</a>
+<p align="left"><a href="Fact53.htm#2268">lot_pk</a>
 </p>
 </td>
 </tr>
@@ -2356,7 +2745,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2264">Check constraint name of the column lotid of the table MWC_載具歷史信息</a> 
+<a name="2270">Check constraint name of the column lotid of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_LOT_PK_MWC_CARR
@@ -2364,7 +2753,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2265">Check of the column lotid of the table MWC_載具歷史信息</a> 
+<a name="2271">Check of the column lotid of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2439,7 +2828,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2266">Server validation rule of the column lotid of the table MWC_載具歷史信息</a> 
+<a name="2272">Server validation rule of the column lotid of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2447,7 +2836,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2267">List of extended attributes of the table column lotid</a> 
+<a name="2273">List of extended attributes of the table column lotid</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2686,10 +3075,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2268">Column lot代碼 of the table MWC_載具歷史信息</a> 
+<a name="2274">Column lot代碼 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2269">Card of the column lot代碼 of the table MWC_載具歷史信息</a> 
+<a name="2275">Card of the column lot代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2698,7 +3087,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2268">lot代碼</a>
+<p align="left"><a href="Fact53.htm#2274">lot代碼</a>
 </p>
 </td>
 </tr>
@@ -2708,7 +3097,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2268">lot_cd</a>
+<p align="left"><a href="Fact53.htm#2274">lot_cd</a>
 </p>
 </td>
 </tr>
@@ -2734,7 +3123,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2270">Check constraint name of the column lot代碼 of the table MWC_載具歷史信息</a> 
+<a name="2276">Check constraint name of the column lot代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_LOT_CD_MWC_CARR
@@ -2742,7 +3131,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2271">Check of the column lot代碼 of the table MWC_載具歷史信息</a> 
+<a name="2277">Check of the column lot代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2817,7 +3206,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2272">Server validation rule of the column lot代碼 of the table MWC_載具歷史信息</a> 
+<a name="2278">Server validation rule of the column lot代碼 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2825,7 +3214,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2273">List of extended attributes of the table column lot代碼</a> 
+<a name="2279">List of extended attributes of the table column lot代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3064,10 +3453,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2274">Column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
+<a name="2280">Column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2275">Card of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
+<a name="2281">Card of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3076,7 +3465,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2274">當前位置-機臺</a>
+<p align="left"><a href="Fact53.htm#2280">當前位置-機臺</a>
 </p>
 </td>
 </tr>
@@ -3086,7 +3475,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2274">equipment_pk</a>
+<p align="left"><a href="Fact53.htm#2280">equipment_pk</a>
 </p>
 </td>
 </tr>
@@ -3112,7 +3501,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2276">Check constraint name of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
+<a name="2282">Check constraint name of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_EQUIPMENT_PK_MWC_CARR
@@ -3120,7 +3509,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2277">Check of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
+<a name="2283">Check of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3195,7 +3584,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2278">Server validation rule of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
+<a name="2284">Server validation rule of the column 當前位置-機臺 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3203,7 +3592,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2279">List of extended attributes of the table column 當前位置-機臺</a> 
+<a name="2285">List of extended attributes of the table column 當前位置-機臺</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3442,10 +3831,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2280">Column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
+<a name="2286">Column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2281">Card of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
+<a name="2287">Card of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3454,7 +3843,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2280">當前位置-倉庫</a>
+<p align="left"><a href="Fact53.htm#2286">當前位置-倉庫</a>
 </p>
 </td>
 </tr>
@@ -3464,7 +3853,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2280">warehouse_pk</a>
+<p align="left"><a href="Fact53.htm#2286">warehouse_pk</a>
 </p>
 </td>
 </tr>
@@ -3490,7 +3879,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2282">Check constraint name of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
+<a name="2288">Check constraint name of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WAREHOUSE_PK_MWC_CARR
@@ -3498,7 +3887,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2283">Check of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
+<a name="2289">Check of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3573,7 +3962,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2284">Server validation rule of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
+<a name="2290">Server validation rule of the column 當前位置-倉庫 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3581,7 +3970,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2285">List of extended attributes of the table column 當前位置-倉庫</a> 
+<a name="2291">List of extended attributes of the table column 當前位置-倉庫</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3820,10 +4209,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2286">Column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
+<a name="2292">Column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2287">Card of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
+<a name="2293">Card of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3832,7 +4221,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2286">當前位置-儲位</a>
+<p align="left"><a href="Fact53.htm#2292">當前位置-儲位</a>
 </p>
 </td>
 </tr>
@@ -3842,7 +4231,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2286">store_place_pk</a>
+<p align="left"><a href="Fact53.htm#2292">store_place_pk</a>
 </p>
 </td>
 </tr>
@@ -3868,7 +4257,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2288">Check constraint name of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
+<a name="2294">Check constraint name of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_STORE_PLACE_PK_MWC_CARR
@@ -3876,7 +4265,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2289">Check of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
+<a name="2295">Check of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3951,7 +4340,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2290">Server validation rule of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
+<a name="2296">Server validation rule of the column 當前位置-儲位 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3959,7 +4348,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2291">List of extended attributes of the table column 當前位置-儲位</a> 
+<a name="2297">List of extended attributes of the table column 當前位置-儲位</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4198,10 +4587,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2292">Column 備註 of the table MWC_載具歷史信息</a> 
+<a name="2298">Column 備註 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2293">Card of the column 備註 of the table MWC_載具歷史信息</a> 
+<a name="2299">Card of the column 備註 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4210,7 +4599,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2292">備註</a>
+<p align="left"><a href="Fact53.htm#2298">備註</a>
 </p>
 </td>
 </tr>
@@ -4220,7 +4609,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2292">note</a>
+<p align="left"><a href="Fact53.htm#2298">note</a>
 </p>
 </td>
 </tr>
@@ -4246,7 +4635,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2294">Check constraint name of the column 備註 of the table MWC_載具歷史信息</a> 
+<a name="2300">Check constraint name of the column 備註 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NOTE_MWC_CARR
@@ -4254,7 +4643,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2295">Check of the column 備註 of the table MWC_載具歷史信息</a> 
+<a name="2301">Check of the column 備註 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4329,7 +4718,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2296">Server validation rule of the column 備註 of the table MWC_載具歷史信息</a> 
+<a name="2302">Server validation rule of the column 備註 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4337,7 +4726,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2297">List of extended attributes of the table column 備註</a> 
+<a name="2303">List of extended attributes of the table column 備註</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4576,7 +4965,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2298">List of keys of the table MWC_載具歷史信息</a> 
+<a name="2304">List of keys of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4595,11 +4984,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 <td>
@@ -4609,10 +4998,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2299">Key Key_1 of the table MWC_載具歷史信息</a> 
+<a name="2305">Key Key_1 of the table MWC_載具歷史信息</a> 
 </h2>
 <h3>
-<a name="2300">Card of the key Key_1 of the table MWC_載具歷史信息</a> 
+<a name="2306">Card of the key Key_1 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4621,7 +5010,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 </tr>
@@ -4631,7 +5020,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact53.htm#2299">Key_1</a>
+<p align="left"><a href="Fact53.htm#2305">Key_1</a>
 </p>
 </td>
 </tr>
@@ -4647,7 +5036,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2301">Code preview of the key Key_1 of the table MWC_載具歷史信息</a> 
+<a name="2307">Code preview of the key Key_1 of the table MWC_載具歷史信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table mwc_carrierlog<br />
@@ -4658,7 +5047,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2302">List of columns of the table key Key_1</a> 
+<a name="2308">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4683,7 +5072,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2303">List of extended attributes of the table key Key_1</a> 
+<a name="2309">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

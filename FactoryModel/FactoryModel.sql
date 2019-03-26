@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/25 下午 07:31:21                        */
+/* Created on:     2019/3/26 下午 05:02:52                        */
 /*==============================================================*/
 
 
@@ -1413,6 +1413,7 @@ create table mwc_carrier_common (
 
    id                   type_pk              not null,
    carrier_pk           type_pk              not null,
+   carrier_cd           type_cd              null,
    status               type_enum_val        null,
    carrier_model_pk     type_pk              null,
    carrier_model_cd     type_cd              null,
@@ -1441,6 +1442,7 @@ create table mwc_carrierlog (
 
    id                   type_pk              not null,
    carrier_pk           type_pk              not null,
+   carrier_cd           type_cd              null,
    status               type_enum_val        null,
    carrier_model_pk     type_pk              null,
    carrier_model_cd     type_cd              null,
