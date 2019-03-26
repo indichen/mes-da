@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/22 下午 06:30:22                        */
+/* Created on:     2019/3/26 下午 06:01:13                        */
 /*==============================================================*/
 
 
@@ -80,13 +80,6 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('mw_common_checkout_quality')
-            and   type = 'U')
-   drop table mw_common_checkout_quality
-go
-
-if exists (select 1
-            from  sysobjects
            where  id = object_id('mw_common_history')
             and   type = 'U')
    drop table mw_common_history
@@ -104,6 +97,13 @@ if exists (select 1
            where  id = object_id('mw_common_lot_piece')
             and   type = 'U')
    drop table mw_common_lot_piece
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mw_common_lot_quality')
+            and   type = 'U')
+   drop table mw_common_lot_quality
 go
 
 if exists (select 1
@@ -188,6 +188,20 @@ if exists (select 1
            where  id = object_id('wmc_lot_history')
             and   type = 'U')
    drop table wmc_lot_history
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('wmc_rework_signing')
+            and   type = 'U')
+   drop table wmc_rework_signing
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('wmc_rework_signing_process')
+            and   type = 'U')
+   drop table wmc_rework_signing_process
 go
 
 if exists(select 1 from systypes where name='type_boolean')
@@ -415,17 +429,18 @@ create table mlo_mo (
    outer_diameter       type_length          null,
    carrier_qty          type_number          null,
    operator_qty         type_number          null,
-   production_date_est  type_date            null,
    working_hour_est     type_hours           null,
    group_qty            type_number          null,
    group_count          type_number          null,
    length_extra_est     type_length          null,
    length_extra_real    type_length          null,
-   note                 type_memo            null,
+   plan_start_date      type_date            null,
+   plan_end_date        type_date            null,
    start_ts             type_datetime        null,
    end_ts               type_datetime        null,
    working_hour         type_hours           null,
    status               type_enum_val        null,
+   note                 type_memo            null,
    constraint PK_MLO_MO primary key (id)
 )
 go
@@ -507,6 +522,7 @@ create table mlo_process_po (
    copper_weight_planned type_weight          null,
    semi_product_weight  type_weight          null,
    production_qty       type_decimal         null,
+   consumed_qty         type_decimal         null,
    po_qty               type_number          null,
    outer_diameter       type_diameter        null,
    mo_pk                type_pk              null,
@@ -676,7 +692,8 @@ create table mw_common_checkout (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   mo_pk                type_cd              null,
+   mo_pk                type_pk              null,
+   mo_cd                type_cd              null,
    machine_pk           type_pk              null,
    machine_cd           type_cd              null,
    process_pk           type_pk              null,
@@ -697,28 +714,6 @@ create table mw_common_checkout (
    quality              type_boolean         null,
    production_date      type_date            null,
    constraint PK_MW_COMMON_CHECKOUT primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: mw_common_checkout_quality                            */
-/*==============================================================*/
-create table mw_common_checkout_quality (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   checkout_pk          type_pk              null,
-   lot_pk               type_pk              null,
-   lot_cd               type_cd              null,
-   quality_cd           type_cd              null,
-   constraint PK_MW_COMMON_CHECKOUT_QUALITY primary key (id)
 )
 go
 
@@ -771,6 +766,8 @@ create table mw_common_lot (
    status               type_enum_val        null,
    source_cd            type_enum_val        null,
    production_date      type_date            null,
+   working_hour         type_hours           null,
+   working_hour_accumulate type_hours           null,
    note                 type_memo            null,
    constraint PK_MW_COMMON_LOT primary key (id)
 )
@@ -795,6 +792,27 @@ create table mw_common_lot_piece (
    status               type_enum_val        null,
    production_date      type_date            null,
    constraint PK_MW_COMMON_LOT_PIECE primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mw_common_lot_quality                                 */
+/*==============================================================*/
+create table mw_common_lot_quality (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   lot_pk               type_pk              null,
+   lot_cd               type_cd              null,
+   quality_cd           type_cd              null,
+   constraint PK_MW_COMMON_LOT_QUALITY primary key (id)
 )
 go
 
@@ -1084,13 +1102,17 @@ create table wmc_lot_history (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
+   lot_pk               type_pk              not null,
    code                 type_cd              null,
    factory_cd           type_cd              null,
    workshop             type_name            null,
    material_pk          type_pk              null,
    material_cd          type_cd              null,
    status               type_enum_val        null,
+   source_cd            type_enum_val        null,
    production_date      type_date            null,
+   working_hour         type_hours           null,
+   working_hour_accumulate type_hours           null,
    vehicle_id           type_cd              null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
@@ -1104,6 +1126,57 @@ create table wmc_lot_history (
    color                type_enum_val        null,
    outer_diameter       type_length          null,
    constraint PK_WMC_LOT_HISTORY primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: wmc_rework_signing                                    */
+/*==============================================================*/
+create table wmc_rework_signing (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   bpm_pk               type_pk              null,
+   lot_pk               type_pk              null,
+   lot_cd               type_cd              null,
+   process_pk           type_pk              null,
+   process_cd           type_cd              null,
+   process_name         type_name            null,
+   reason               type_memo            null,
+   is_scrap             type_boolean         null,
+   qty                  type_decimal         null,
+   constraint PK_WMC_REWORK_SIGNING primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: wmc_rework_signing_process                            */
+/*==============================================================*/
+create table wmc_rework_signing_process (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   rework_signing_pk    type_pk              null,
+   process_ok           type_pk              null,
+   process_cd           type_cd              null,
+   process_name         type_name            null,
+   seq_route            type_sn              null,
+   qty                  type_decimal         null,
+   constraint PK_WMC_REWORK_SIGNING_PROCESS primary key (id)
 )
 go
 
