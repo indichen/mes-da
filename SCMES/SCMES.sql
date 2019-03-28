@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/26 下午 06:01:13                        */
+/* Created on:     2019/3/28 上午 10:08:54                        */
 /*==============================================================*/
 
 
@@ -769,6 +769,7 @@ create table mw_common_lot (
    working_hour         type_hours           null,
    working_hour_accumulate type_hours           null,
    note                 type_memo            null,
+   note_quality_change  type_memo            null,
    constraint PK_MW_COMMON_LOT primary key (id)
 )
 go
@@ -1125,6 +1126,8 @@ create table wmc_lot_history (
    is_melded            type_boolean         null,
    color                type_enum_val        null,
    outer_diameter       type_length          null,
+   note                 type_memo            null,
+   note_quality_change  type_memo            null,
    constraint PK_WMC_LOT_HISTORY primary key (id)
 )
 go

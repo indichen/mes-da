@@ -105,6 +105,7 @@ create table mw_common_lot (<br />
    working_hour         type_hours           null,<br />
    working_hour_accumulate type_hours           null,<br />
    note                 type_memo            null,<br />
+   note_quality_change  type_memo            null,<br />
    constraint PK_MW_COMMON_LOT primary key (id)<br />
 )<br />
 go<br />
@@ -749,6 +750,16 @@ go<br />
 </p>
 </td>
 </tr>
+<tr>
+<td>
+<p align="left"><a href="SCME21.htm#546">質檢變更備註</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME21.htm#546">note_quality_change</a>
+</p>
+</td>
+</tr>
 </table><br />
 <h2>
 <a name="459">Column id (lotPK) of the table Lot ID 現況檔</a> 
@@ -909,11 +920,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 <td>
@@ -6185,8 +6196,386 @@ go<br />
 </td>
 </tr>
 </table><br />
+<h2>
+<a name="546">Column 質檢變更備註 of the table Lot ID 現況檔</a> 
+</h2>
 <h3>
-<a name="546">List of keys of the table Lot ID 現況檔</a> 
+<a name="547">Card of the column 質檢變更備註 of the table Lot ID 現況檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME21.htm#546">質檢變更備註</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME21.htm#546">note_quality_change</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(Max)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="548">Check constraint name of the column 質檢變更備註 of the table Lot ID 現況檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_NOTE_QUALITY_CHAN_MW_COMMO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="549">Check of the column 質檢變更備註 of the table Lot ID 現況檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="550">Server validation rule of the column 質檢變更備註 of the table Lot ID 現況檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="551">List of extended attributes of the table column 質檢變更備註</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="552">List of keys of the table Lot ID 現況檔</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6205,11 +6594,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 <td>
@@ -6219,10 +6608,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="547">Key id of the table Lot ID 現況檔</a> 
+<a name="553">Key id of the table Lot ID 現況檔</a> 
 </h2>
 <h3>
-<a name="548">Card of the key id of the table Lot ID 現況檔</a> 
+<a name="554">Card of the key id of the table Lot ID 現況檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6231,7 +6620,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 </tr>
@@ -6241,7 +6630,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME21.htm#547">id</a>
+<p align="left"><a href="SCME21.htm#553">id</a>
 </p>
 </td>
 </tr>
@@ -6257,7 +6646,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="549">Code preview of the key id of the table Lot ID 現況檔</a> 
+<a name="555">Code preview of the key id of the table Lot ID 現況檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -6274,7 +6663,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="550">List of columns of the table key id</a> 
+<a name="556">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6299,7 +6688,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="551">List of all dependencies of the table key id</a> 
+<a name="557">List of all dependencies of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6416,7 +6805,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="552">List of extended attributes of the table key id</a> 
+<a name="558">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
