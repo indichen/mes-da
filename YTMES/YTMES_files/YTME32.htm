@@ -92,8 +92,8 @@ create table mtaf_material_mechanical_spec (<br />
    tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   type_id              null,<br />
-   code                 type_pk              null,<br />
+   code                 type_id              null,<br />
+   mechanical_pk        type_pk              null,<br />
    min                  type_decimal         null,<br />
    max                  type_decimal         null,<br />
    constraint PK_MTAF_MATERIAL_MECHANICAL_SP primary key (id)<br />
@@ -405,7 +405,7 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME32.htm#1148">cd</a>
+<p align="left"><a href="YTME32.htm#1148">code</a>
 </p>
 </td>
 </tr>
@@ -415,7 +415,7 @@ go<br />
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME32.htm#1154">code</a>
+<p align="left"><a href="YTME32.htm#1154">mechanical_pk</a>
 </p>
 </td>
 </tr>
@@ -856,7 +856,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME32.htm#1148">cd</a>
+<p align="left"><a href="YTME32.htm#1148">code</a>
 </p>
 </td>
 </tr>
@@ -885,7 +885,7 @@ go<br />
 <a name="1150">Check constraint name of the column 料號機械性質規範cd of the table MTAF_料號機械性質規範</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_MTAF_MAT
+<p align="left">CKC_CODE_MTAF_MAT
 </p>
 </td></tr>
 </table><br />
@@ -1234,7 +1234,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME32.htm#1154">code</a>
+<p align="left"><a href="YTME32.htm#1154">mechanical_pk</a>
 </p>
 </td>
 </tr>
@@ -1263,7 +1263,7 @@ go<br />
 <a name="1156">Check constraint name of the column 料號機械性質PK of the table MTAF_料號機械性質規範</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CODE_MTAF_MAT
+<p align="left">CKC_MECHANICAL_PK_MTAF_MAT
 </p>
 </td></tr>
 </table><br />

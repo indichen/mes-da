@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/29 上午 10:01:13                        */
+/* Created on:     2019/3/29 下午 03:17:34                        */
 /*==============================================================*/
 
 
@@ -556,7 +556,7 @@ create table mtaa_material (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              not null,
+   code                 type_id              not null,
    description          type_memo            null,
    product_type_cd      type_id              null,
    status_cd            type_id              null,
@@ -676,7 +676,7 @@ create table mtad_scrap_type_color (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_id              null,
    type_pk              type_pk              null,
    color_pk             type_pk              null,
    constraint PK_MTAD_SCRAP_TYPE_COLOR primary key (id)
@@ -761,7 +761,7 @@ create table mtaf_material_mechanical (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_id              null,
    grade_pk             type_pk              null,
    status_pk            type_pk              null,
    size_min             type_decimal         null,
@@ -786,8 +786,8 @@ create table mtaf_material_mechanical_spec (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
-   code                 type_pk              null,
+   code                 type_id              null,
+   mechanical_pk        type_pk              null,
    min                  type_decimal         null,
    max                  type_decimal         null,
    constraint PK_MTAF_MATERIAL_MECHANICAL_SP primary key (id)
@@ -808,7 +808,7 @@ create table mtaf_material_status (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              null,
+   code                 type_id              null,
    name                 type_name            null,
    abbr                 type_id              null,
    status_cat_cd        type_id              null,
