@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/26 下午 05:02:52                        */
+/* Created on:     2019/3/29 下午 12:42:24                        */
 /*==============================================================*/
 
 
@@ -1039,19 +1039,31 @@ create table fm6_equipment (
 
    id                   type_pk              not null,
    code                 type_cd              null,
-   name                 type_memo            null,
-   spec                 type_name            null,
+   name                 type_name            null,
+   spec                 type_memo            null,
    process_pk           type_pk              null,
    process_cd           type_cd              null,
    is_batch_equipment   type_boolean         null,
    base_type_cd         type_enum_val        null,
    level_cd             type_enum_val        null,
    checkin_out_type_cd  type_cd              null,
+   factory_pk           type_pk              null,
    factory_cd           type_cd              null,
-   dep_id               type_pk              null,
-   parent_id            type_pk              null,
+   factory_name         type_name            null,
+   dep_pk               type_pk              null,
+   dep_cd               type_cd              null,
+   dep_name             type_name            null,
+   warehouse_pk         type_pk              null,
+   warehouse_cd         type_cd              null,
+   warehouse_name       type_name            null,
+   parent_pk            type_pk              null,
    longitude            type_lng_lat         null,
    latitude             type_lng_lat         null,
+   capacity             type_decimal         null,
+   unit_capacity_pk     type_pk              null,
+   unit_capacity_cd     type_cd              null,
+   unit_capacity_name   type_name            null,
+   is_critical          type_boolean         null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT primary key (id)
 )
