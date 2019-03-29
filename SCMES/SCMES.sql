@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/28 上午 10:08:54                        */
+/* Created on:     2019/3/29 下午 02:41:25                        */
 /*==============================================================*/
 
 
@@ -55,13 +55,6 @@ if exists (select 1
            where  id = object_id('mlo_sap_po_process')
             and   type = 'U')
    drop table mlo_sap_po_process
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('mlo_sap_po_process_batch')
-            and   type = 'U')
-   drop table mlo_sap_po_process_batch
 go
 
 if exists (select 1
@@ -603,7 +596,7 @@ create table mlo_sap_po_process (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   batch_pk             type_pk              null,
+   code                 type_cd              null,
    po_cd                type_cd              not null,
    so_cd                type_cd              not null,
    customer_cd          type_cd              null,
@@ -630,25 +623,6 @@ create table mlo_sap_po_process (
    status               type_enum_val        null,
    note                 type_memo            null,
    constraint PK_MLO_SAP_PO_PROCESS primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: mlo_sap_po_process_batch                              */
-/*==============================================================*/
-create table mlo_sap_po_process_batch (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   code                 type_cd              null,
-   constraint PK_MLO_SAP_PO_PROCESS_BATCH primary key (id)
 )
 go
 
