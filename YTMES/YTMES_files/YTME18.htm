@@ -92,13 +92,15 @@ create table mtaa_application (<br />
    tenant_id varchar(64) null,<br />
 <br />
    id                   type_pk              not null,<br />
-   cd                   type_id              not null,<br />
+   code                 type_id              not null,<br />
+   bpm_pk               type_pk              null,<br />
    factory_cd           type_id              null,<br />
    part_no              type_id              null,<br />
    grade_pk             type_pk              null,<br />
    usage                type_memo            null,<br />
+   surface_process      type_short_text      null,<br />
    size_description     type_short_text      null,<br />
-   bpm_cd               type_id              null,<br />
+   note                 type_memo            null,<br />
    constraint PK_MTAA_APPLICATION primary key (id)<br />
 )<br />
 go<br />
@@ -472,67 +474,87 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#412">cd</a>
+<p align="left"><a href="YTME18.htm#412">code</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME18.htm#418">工廠</a>
+<p align="left"><a href="YTME18.htm#418">BPM 簽核單PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME18.htm#418">factory_cd</a>
+<p align="left"><a href="YTME18.htm#418">bpm_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#424">MES料號</a>
+<p align="left"><a href="YTME18.htm#424">工廠</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#424">part_no</a>
+<p align="left"><a href="YTME18.htm#424">factory_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME18.htm#430">客戶鋼種</a>
+<p align="left"><a href="YTME18.htm#430">MES料號</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME18.htm#430">grade_pk</a>
+<p align="left"><a href="YTME18.htm#430">part_no</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#436">用途</a>
+<p align="left"><a href="YTME18.htm#436">客戶鋼種</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#436">usage</a>
+<p align="left"><a href="YTME18.htm#436">grade_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME18.htm#442">尺寸</a>
+<p align="left"><a href="YTME18.htm#442">用途</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME18.htm#442">size_description</a>
+<p align="left"><a href="YTME18.htm#442">usage</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#448">簽核流程cd</a>
+<p align="left"><a href="YTME18.htm#448">表面加工</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="YTME18.htm#448">bpm_cd</a>
+<p align="left"><a href="YTME18.htm#448">surface_process</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="YTME18.htm#454">尺寸</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="YTME18.htm#454">size_description</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="YTME18.htm#460">備註</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="YTME18.htm#460">note</a>
 </p>
 </td>
 </tr>
@@ -696,11 +718,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 <td>
@@ -1009,7 +1031,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#412">cd</a>
+<p align="left"><a href="YTME18.htm#412">code</a>
 </p>
 </td>
 </tr>
@@ -1038,7 +1060,7 @@ go<br />
 <a name="414">Check constraint name of the column MES料號申請cd of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CD_MTAA_APP
+<p align="left">CKC_CODE_MTAA_APP
 </p>
 </td></tr>
 </table><br />
@@ -1347,10 +1369,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="418">Column 工廠 of the table MTAA_MES料號申請</a> 
+<a name="418">Column BPM 簽核單PK of the table MTAA_MES料號申請</a> 
 </h2>
 <h3>
-<a name="419">Card of the column 工廠 of the table MTAA_MES料號申請</a> 
+<a name="419">Card of the column BPM 簽核單PK of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1359,7 +1381,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#418">工廠</a>
+<p align="left"><a href="YTME18.htm#418">BPM 簽核單PK</a>
 </p>
 </td>
 </tr>
@@ -1369,763 +1391,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#418">factory_cd</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">varchar(40)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="420">Check constraint name of the column 工廠 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_FACTORY_CD_MTAA_APP
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="421">Check of the column 工廠 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="422">Server validation rule of the column 工廠 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="423">List of extended attributes of the table column 工廠</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Sparse
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Temporal
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="424">Column MES料號 of the table MTAA_MES料號申請</a> 
-</h2>
-<h3>
-<a name="425">Card of the column MES料號 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#424">MES料號</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#424">part_no</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">varchar(40)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="426">Check constraint name of the column MES料號 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PART_NO_MTAA_APP
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="427">Check of the column MES料號 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="428">Server validation rule of the column MES料號 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="429">List of extended attributes of the table column MES料號</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Sparse
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Temporal
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="430">Column 客戶鋼種 of the table MTAA_MES料號申請</a> 
-</h2>
-<h3>
-<a name="431">Card of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#430">客戶鋼種</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#430">grade_pk</a>
+<p align="left"><a href="YTME18.htm#418">bpm_pk</a>
 </p>
 </td>
 </tr>
@@ -2151,15 +1417,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="432">Check constraint name of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+<a name="420">Check constraint name of the column BPM 簽核單PK of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_GRADE_PK_MTAA_APP
+<p align="left">CKC_BPM_PK_MTAA_APP
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="433">Check of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+<a name="421">Check of the column BPM 簽核單PK of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2234,7 +1500,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="434">Server validation rule of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+<a name="422">Server validation rule of the column BPM 簽核單PK of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2242,7 +1508,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="435">List of extended attributes of the table column 客戶鋼種</a> 
+<a name="423">List of extended attributes of the table column BPM 簽核單PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2481,10 +1747,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="436">Column 用途 of the table MTAA_MES料號申請</a> 
+<a name="424">Column 工廠 of the table MTAA_MES料號申請</a> 
 </h2>
 <h3>
-<a name="437">Card of the column 用途 of the table MTAA_MES料號申請</a> 
+<a name="425">Card of the column 工廠 of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2493,7 +1759,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#436">用途</a>
+<p align="left"><a href="YTME18.htm#424">工廠</a>
 </p>
 </td>
 </tr>
@@ -2503,763 +1769,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#436">usage</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">national char varying(Max)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="438">Check constraint name of the column 用途 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_USAGE_MTAA_APP
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="439">Check of the column 用途 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="440">Server validation rule of the column 用途 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="441">List of extended attributes of the table column 用途</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Sparse
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Temporal
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="442">Column 尺寸 of the table MTAA_MES料號申請</a> 
-</h2>
-<h3>
-<a name="443">Card of the column 尺寸 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#442">尺寸</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#442">size_description</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Data Type
-</p>
-</td>
-<td width="75%">
-<p align="left">national char varying(50)
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Mandatory
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="444">Check constraint name of the column 尺寸 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SIZE_DESCRIPTION_MTAA_APP
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="445">Check of the column 尺寸 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Minimum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Maximum Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Default Value
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Unit
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Format
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Cannot Modify
-</p>
-</td>
-<td width="75%">
-<p align="left">No
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">List Of Values
-</p>
-</td>
-<td width="75%">
-<p align="left">&nbsp; 
-</p>
-</td>
-</tr>
-</table><br />
-<h3>
-<a name="446">Server validation rule of the column 尺寸 of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
-</p>
-</td></tr>
-</table><br />
-<h3>
-<a name="447">List of extended attributes of the table column 尺寸</a> 
-</h3>
-<table class="Grid" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header">
-<p align="center">Name
-</p>
-</td>
-<td class="Header">
-<p align="center">Data Type
-</p>
-</td>
-<td class="Header">
-<p align="center">Value
-</p>
-</td>
-<td class="Header">
-<p align="center">Target Name
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">DispTemporal
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtCkcNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtCollation
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtDeftConstName
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtIdentitySeedInc
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtIdtNotForReplication
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">ExtNullConstName
-</p>
-</td>
-<td>
-<p align="left">(String)
-</p>
-</td>
-<td>
-<p align="left">&nbsp; 
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">ExtRowGuidCol
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">GenAlwaysType
-</p>
-</td>
-<td>
-<p align="left">(Integer)
-</p>
-</td>
-<td>
-<p align="left">0
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Lot ID
-</p>
-</td>
-<td class="TD2">
-<p align="left">(String)
-</p>
-</td>
-<td class="TD2">
-<p align="left">&nbsp; 
-</p>
-</td>
-<td class="TD2">
-<p align="left">Local Extensions
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p align="left">Sparse
-</p>
-</td>
-<td>
-<p align="left">(Boolean)
-</p>
-</td>
-<td>
-<p align="left">false
-</p>
-</td>
-<td>
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-<tr>
-<td class="TD2">
-<p align="left">Temporal
-</p>
-</td>
-<td class="TD2">
-<p align="left">(Boolean)
-</p>
-</td>
-<td class="TD2">
-<p align="left">false
-</p>
-</td>
-<td class="TD2">
-<p align="left">Microsoft SQL Server 2017 (iuap)
-</p>
-</td>
-</tr>
-</table><br />
-<h2>
-<a name="448">Column 簽核流程cd of the table MTAA_MES料號申請</a> 
-</h2>
-<h3>
-<a name="449">Card of the column 簽核流程cd of the table MTAA_MES料號申請</a> 
-</h3>
-<table class="Form" border="1" cellspacing="1" width="100%">
-<tr>
-<td class="Header" width="25%">
-<p align="left">Name
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#448">簽核流程cd</a>
-</p>
-</td>
-</tr>
-<tr>
-<td class="Header" width="25%">
-<p align="left">Code
-</p>
-</td>
-<td width="75%">
-<p align="left"><a href="YTME18.htm#448">bpm_cd</a>
+<p align="left"><a href="YTME18.htm#424">factory_cd</a>
 </p>
 </td>
 </tr>
@@ -3285,15 +1795,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="450">Check constraint name of the column 簽核流程cd of the table MTAA_MES料號申請</a> 
+<a name="426">Check constraint name of the column 工廠 of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_BPM_CD_MTAA_APP
+<p align="left">CKC_FACTORY_CD_MTAA_APP
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="451">Check of the column 簽核流程cd of the table MTAA_MES料號申請</a> 
+<a name="427">Check of the column 工廠 of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3368,7 +1878,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="452">Server validation rule of the column 簽核流程cd of the table MTAA_MES料號申請</a> 
+<a name="428">Server validation rule of the column 工廠 of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3376,7 +1886,2275 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="453">List of extended attributes of the table column 簽核流程cd</a> 
+<a name="429">List of extended attributes of the table column 工廠</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="430">Column MES料號 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="431">Card of the column MES料號 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#430">MES料號</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#430">part_no</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="432">Check constraint name of the column MES料號 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_PART_NO_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="433">Check of the column MES料號 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="434">Server validation rule of the column MES料號 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="435">List of extended attributes of the table column MES料號</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="436">Column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="437">Card of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#436">客戶鋼種</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#436">grade_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(32)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="438">Check constraint name of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_GRADE_PK_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="439">Check of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="440">Server validation rule of the column 客戶鋼種 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="441">List of extended attributes of the table column 客戶鋼種</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="442">Column 用途 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="443">Card of the column 用途 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#442">用途</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#442">usage</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(Max)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="444">Check constraint name of the column 用途 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_USAGE_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="445">Check of the column 用途 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="446">Server validation rule of the column 用途 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="447">List of extended attributes of the table column 用途</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="448">Column 表面加工 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="449">Card of the column 表面加工 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#448">表面加工</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#448">surface_process</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(50)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="450">Check constraint name of the column 表面加工 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SURFACE_PROCESS_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="451">Check of the column 表面加工 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="452">Server validation rule of the column 表面加工 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="453">List of extended attributes of the table column 表面加工</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="454">Column 尺寸 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="455">Card of the column 尺寸 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#454">尺寸</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#454">size_description</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(50)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="456">Check constraint name of the column 尺寸 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SIZE_DESCRIPTION_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="457">Check of the column 尺寸 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="458">Server validation rule of the column 尺寸 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="459">List of extended attributes of the table column 尺寸</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="460">Column 備註 of the table MTAA_MES料號申請</a> 
+</h2>
+<h3>
+<a name="461">Card of the column 備註 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#460">備註</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="YTME18.htm#460">note</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(Max)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="462">Check constraint name of the column 備註 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_NOTE_MTAA_APP
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="463">Check of the column 備註 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="464">Server validation rule of the column 備註 of the table MTAA_MES料號申請</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="465">List of extended attributes of the table column 備註</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3615,7 +4393,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="454">List of keys of the table MTAA_MES料號申請</a> 
+<a name="466">List of keys of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3634,11 +4412,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 <td>
@@ -3648,10 +4426,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="455">Key id of the table MTAA_MES料號申請</a> 
+<a name="467">Key id of the table MTAA_MES料號申請</a> 
 </h2>
 <h3>
-<a name="456">Card of the key id of the table MTAA_MES料號申請</a> 
+<a name="468">Card of the key id of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3660,7 +4438,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 </tr>
@@ -3670,7 +4448,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="YTME18.htm#455">id</a>
+<p align="left"><a href="YTME18.htm#467">id</a>
 </p>
 </td>
 </tr>
@@ -3686,7 +4464,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="457">Code preview of the key id of the table MTAA_MES料號申請</a> 
+<a name="469">Code preview of the key id of the table MTAA_MES料號申請</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use YTMES<br />
@@ -3703,7 +4481,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="458">List of columns of the table key id</a> 
+<a name="470">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3728,7 +4506,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="459">List of all dependencies of the table key id</a> 
+<a name="471">List of all dependencies of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3803,7 +4581,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="460">List of extended attributes of the table key id</a> 
+<a name="472">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

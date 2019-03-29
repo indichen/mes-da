@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/25 下午 07:38:01                        */
+/* Created on:     2019/3/29 上午 10:01:13                        */
 /*==============================================================*/
 
 
@@ -441,13 +441,15 @@ create table mtaa_application (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   cd                   type_id              not null,
+   code                 type_id              not null,
+   bpm_pk               type_pk              null,
    factory_cd           type_id              null,
    part_no              type_id              null,
    grade_pk             type_pk              null,
    usage                type_memo            null,
+   surface_process      type_short_text      null,
    size_description     type_short_text      null,
-   bpm_cd               type_id              null,
+   note                 type_memo            null,
    constraint PK_MTAA_APPLICATION primary key (id)
 )
 go

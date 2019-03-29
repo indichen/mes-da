@@ -99,7 +99,7 @@
    <text x="397" y="644" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    <text x="530" y="579" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="530" y="605" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="YTME25.htm#735">
+   <a target="_parent" xlink:href="YTME25.htm#747">
       <rect x="316" y="366" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="316" y="366" fill="#60afff" width="243" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="437" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種代號</text>
@@ -118,7 +118,7 @@
       <text x="526" y="409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="526" y="435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME26.htm#786">
+   <a target="_parent" xlink:href="YTME26.htm#798">
       <rect x="53" y="366" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="53" y="366" fill="#60afff" width="243" height="146" stroke="#00aaaa" stroke-width="1"/>
       <text x="174" y="380" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種族群</text>
@@ -142,7 +142,7 @@
       <text x="262" y="448" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="262" y="461" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME28.htm#904">
+   <a target="_parent" xlink:href="YTME28.htm#916">
       <rect x="51" y="575" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="51" y="575" fill="#60afff" width="200" height="80" stroke="#00aaaa" stroke-width="1"/>
       <text x="151" y="589" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種系列</text>
@@ -154,7 +154,7 @@
       <text x="136" y="618" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="136" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(2</text>
    </a>
-   <a target="_parent" xlink:href="YTME27.htm#850">
+   <a target="_parent" xlink:href="YTME27.htm#862">
       <rect x="312" y="549" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="312" y="549" fill="#60afff" width="244" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="434" y="563" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_鋼種標籤</text>
@@ -251,7 +251,7 @@
    <text x="790" y="235" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="790" y="261" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    <text x="790" y="274" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-   <a target="_parent" xlink:href="YTME23.htm#650">
+   <a target="_parent" xlink:href="YTME23.htm#662">
       <rect x="625" y="329" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="625" y="329" fill="#60afff" width="244" height="91" stroke="#00aaaa" stroke-width="1"/>
       <text x="747" y="343" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_廢鋼類別</text>
@@ -266,7 +266,7 @@
       <text x="710" y="398" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="843" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="YTME24.htm#692">
+   <a target="_parent" xlink:href="YTME24.htm#704">
       <rect x="625" y="205" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="625" y="205" fill="#60afff" width="244" height="95" stroke="#00aaaa" stroke-width="1"/>
       <text x="747" y="219" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_廢鋼類別顏色</text>
@@ -367,7 +367,7 @@
       <text x="101" y="119" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(20)</text>
       <text x="101" y="132" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="YTME30.htm#1015">
+   <a target="_parent" xlink:href="YTME30.htm#1027">
       <rect x="302" y="68" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="302" y="68" fill="#60afff" width="213" height="59" stroke="#0080c0" stroke-width="1"/>
       <text x="408" y="81" fill="#000000" font-size="12" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">MTAD_顏色碼</text>
