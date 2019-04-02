@@ -95,12 +95,18 @@ create table wmc_rework_signing (<br />
    bpm_pk               type_pk              null,<br />
    lot_pk               type_pk              null,<br />
    lot_cd               type_cd              null,<br />
+   mo_pk                type_pk              null,<br />
+   mo_cd                type_cd              null,<br />
+   sap_po_pk            type_pk              null,<br />
+   sap_po_cd            type_cd              null,<br />
    process_pk           type_pk              null,<br />
    process_cd           type_cd              null,<br />
    process_name         type_name            null,<br />
    reason               type_memo            null,<br />
+   operator_cd          type_cd              null,<br />
    is_scrap             type_boolean         null,<br />
    qty                  type_decimal         null,<br />
+   production_date      type_date            null,<br />
    constraint PK_WMC_REWORK_SIGNING primary key (id)<br />
 )<br />
 go<br />
@@ -428,61 +434,121 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME50.htm#3053">目前製程PK</a>
+<p align="left"><a href="SCME50.htm#3053">製令PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME50.htm#3053">process_pk</a>
+<p align="left"><a href="SCME50.htm#3053">mo_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3059">目前製程cd</a>
+<p align="left"><a href="SCME50.htm#3059">製令cd</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3059">process_cd</a>
+<p align="left"><a href="SCME50.htm#3059">mo_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME50.htm#3065">目前製程name</a>
+<p align="left"><a href="SCME50.htm#3065">(挑選)SAP工單PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME50.htm#3065">process_name</a>
+<p align="left"><a href="SCME50.htm#3065">sap_po_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3071">重工原因</a>
+<p align="left"><a href="SCME50.htm#3071">(挑選)SAP工單cd</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3071">reason</a>
+<p align="left"><a href="SCME50.htm#3071">sap_po_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME50.htm#3077">是否轉廢線</a>
+<p align="left"><a href="SCME50.htm#3077">目前製程PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME50.htm#3077">is_scrap</a>
+<p align="left"><a href="SCME50.htm#3077">process_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3083">(實際) 重工數量</a>
+<p align="left"><a href="SCME50.htm#3083">目前製程cd</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME50.htm#3083">qty</a>
+<p align="left"><a href="SCME50.htm#3083">process_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="SCME50.htm#3089">目前製程name</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME50.htm#3089">process_name</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3095">重工原因</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3095">reason</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="SCME50.htm#3101">操作員cd</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME50.htm#3101">operator_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3107">是否轉廢線</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3107">is_scrap</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="SCME50.htm#3113">(實際) 重工數量</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME50.htm#3113">qty</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3119">預估生產日期</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="SCME50.htm#3119">production_date</a>
 </p>
 </td>
 </tr>
@@ -646,11 +712,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 <td>
@@ -2029,10 +2095,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3053">Column 目前製程PK of the table 重工簽核單</a> 
+<a name="3053">Column 製令PK of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3054">Card of the column 目前製程PK of the table 重工簽核單</a> 
+<a name="3054">Card of the column 製令PK of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2041,7 +2107,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3053">目前製程PK</a>
+<p align="left"><a href="SCME50.htm#3053">製令PK</a>
 </p>
 </td>
 </tr>
@@ -2051,7 +2117,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3053">process_pk</a>
+<p align="left"><a href="SCME50.htm#3053">mo_pk</a>
 </p>
 </td>
 </tr>
@@ -2077,15 +2143,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3055">Check constraint name of the column 目前製程PK of the table 重工簽核單</a> 
+<a name="3055">Check constraint name of the column 製令PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_PK_WMC_REWO
+<p align="left">CKC_MO_PK_WMC_REWO
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="3056">Check of the column 目前製程PK of the table 重工簽核單</a> 
+<a name="3056">Check of the column 製令PK of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2160,7 +2226,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3057">Server validation rule of the column 目前製程PK of the table 重工簽核單</a> 
+<a name="3057">Server validation rule of the column 製令PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2168,7 +2234,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3058">List of extended attributes of the table column 目前製程PK</a> 
+<a name="3058">List of extended attributes of the table column 製令PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2407,10 +2473,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3059">Column 目前製程cd of the table 重工簽核單</a> 
+<a name="3059">Column 製令cd of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3060">Card of the column 目前製程cd of the table 重工簽核單</a> 
+<a name="3060">Card of the column 製令cd of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2419,7 +2485,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3059">目前製程cd</a>
+<p align="left"><a href="SCME50.htm#3059">製令cd</a>
 </p>
 </td>
 </tr>
@@ -2429,7 +2495,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3059">process_cd</a>
+<p align="left"><a href="SCME50.htm#3059">mo_cd</a>
 </p>
 </td>
 </tr>
@@ -2455,15 +2521,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3061">Check constraint name of the column 目前製程cd of the table 重工簽核單</a> 
+<a name="3061">Check constraint name of the column 製令cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_CD_WMC_REWO
+<p align="left">CKC_MO_CD_WMC_REWO
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="3062">Check of the column 目前製程cd of the table 重工簽核單</a> 
+<a name="3062">Check of the column 製令cd of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2538,7 +2604,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3063">Server validation rule of the column 目前製程cd of the table 重工簽核單</a> 
+<a name="3063">Server validation rule of the column 製令cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2546,7 +2612,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3064">List of extended attributes of the table column 目前製程cd</a> 
+<a name="3064">List of extended attributes of the table column 製令cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2785,10 +2851,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3065">Column 目前製程name of the table 重工簽核單</a> 
+<a name="3065">Column (挑選)SAP工單PK of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3066">Card of the column 目前製程name of the table 重工簽核單</a> 
+<a name="3066">Card of the column (挑選)SAP工單PK of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2797,7 +2863,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3065">目前製程name</a>
+<p align="left"><a href="SCME50.htm#3065">(挑選)SAP工單PK</a>
 </p>
 </td>
 </tr>
@@ -2807,7 +2873,1519 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3065">process_name</a>
+<p align="left"><a href="SCME50.htm#3065">sap_po_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(32)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3067">Check constraint name of the column (挑選)SAP工單PK of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SAP_PO_PK_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3068">Check of the column (挑選)SAP工單PK of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3069">Server validation rule of the column (挑選)SAP工單PK of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3070">List of extended attributes of the table column (挑選)SAP工單PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3071">Column (挑選)SAP工單cd of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3072">Card of the column (挑選)SAP工單cd of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3071">(挑選)SAP工單cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3071">sap_po_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3073">Check constraint name of the column (挑選)SAP工單cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SAP_PO_CD_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3074">Check of the column (挑選)SAP工單cd of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3075">Server validation rule of the column (挑選)SAP工單cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3076">List of extended attributes of the table column (挑選)SAP工單cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3077">Column 目前製程PK of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3078">Card of the column 目前製程PK of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3077">目前製程PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3077">process_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(32)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3079">Check constraint name of the column 目前製程PK of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_PROCESS_PK_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3080">Check of the column 目前製程PK of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3081">Server validation rule of the column 目前製程PK of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3082">List of extended attributes of the table column 目前製程PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3083">Column 目前製程cd of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3084">Card of the column 目前製程cd of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3083">目前製程cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3083">process_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3085">Check constraint name of the column 目前製程cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_PROCESS_CD_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3086">Check of the column 目前製程cd of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3087">Server validation rule of the column 目前製程cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3088">List of extended attributes of the table column 目前製程cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3089">Column 目前製程name of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3090">Card of the column 目前製程name of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3089">目前製程name</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3089">process_name</a>
 </p>
 </td>
 </tr>
@@ -2833,7 +4411,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3067">Check constraint name of the column 目前製程name of the table 重工簽核單</a> 
+<a name="3091">Check constraint name of the column 目前製程name of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PROCESS_NAME_WMC_REWO
@@ -2841,7 +4419,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3068">Check of the column 目前製程name of the table 重工簽核單</a> 
+<a name="3092">Check of the column 目前製程name of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2916,7 +4494,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3069">Server validation rule of the column 目前製程name of the table 重工簽核單</a> 
+<a name="3093">Server validation rule of the column 目前製程name of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2924,7 +4502,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3070">List of extended attributes of the table column 目前製程name</a> 
+<a name="3094">List of extended attributes of the table column 目前製程name</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3163,10 +4741,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3071">Column 重工原因 of the table 重工簽核單</a> 
+<a name="3095">Column 重工原因 of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3072">Card of the column 重工原因 of the table 重工簽核單</a> 
+<a name="3096">Card of the column 重工原因 of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3175,7 +4753,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3071">重工原因</a>
+<p align="left"><a href="SCME50.htm#3095">重工原因</a>
 </p>
 </td>
 </tr>
@@ -3185,7 +4763,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3071">reason</a>
+<p align="left"><a href="SCME50.htm#3095">reason</a>
 </p>
 </td>
 </tr>
@@ -3211,7 +4789,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3073">Check constraint name of the column 重工原因 of the table 重工簽核單</a> 
+<a name="3097">Check constraint name of the column 重工原因 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_REASON_WMC_REWO
@@ -3219,7 +4797,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3074">Check of the column 重工原因 of the table 重工簽核單</a> 
+<a name="3098">Check of the column 重工原因 of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3294,7 +4872,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3075">Server validation rule of the column 重工原因 of the table 重工簽核單</a> 
+<a name="3099">Server validation rule of the column 重工原因 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3302,7 +4880,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3076">List of extended attributes of the table column 重工原因</a> 
+<a name="3100">List of extended attributes of the table column 重工原因</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3541,10 +5119,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3077">Column 是否轉廢線 of the table 重工簽核單</a> 
+<a name="3101">Column 操作員cd of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3078">Card of the column 是否轉廢線 of the table 重工簽核單</a> 
+<a name="3102">Card of the column 操作員cd of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3553,7 +5131,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3077">是否轉廢線</a>
+<p align="left"><a href="SCME50.htm#3101">操作員cd</a>
 </p>
 </td>
 </tr>
@@ -3563,7 +5141,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3077">is_scrap</a>
+<p align="left"><a href="SCME50.htm#3101">operator_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">varchar(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3103">Check constraint name of the column 操作員cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_OPERATOR_CD_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3104">Check of the column 操作員cd of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3105">Server validation rule of the column 操作員cd of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3106">List of extended attributes of the table column 操作員cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3107">Column 是否轉廢線 of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3108">Card of the column 是否轉廢線 of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3107">是否轉廢線</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3107">is_scrap</a>
 </p>
 </td>
 </tr>
@@ -3589,7 +5545,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3079">Check constraint name of the column 是否轉廢線 of the table 重工簽核單</a> 
+<a name="3109">Check constraint name of the column 是否轉廢線 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_IS_SCRAP_WMC_REWO
@@ -3597,7 +5553,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3080">Check of the column 是否轉廢線 of the table 重工簽核單</a> 
+<a name="3110">Check of the column 是否轉廢線 of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3672,7 +5628,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3081">Server validation rule of the column 是否轉廢線 of the table 重工簽核單</a> 
+<a name="3111">Server validation rule of the column 是否轉廢線 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3680,7 +5636,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3082">List of extended attributes of the table column 是否轉廢線</a> 
+<a name="3112">List of extended attributes of the table column 是否轉廢線</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3919,10 +5875,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3083">Column (實際) 重工數量 of the table 重工簽核單</a> 
+<a name="3113">Column (實際) 重工數量 of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3084">Card of the column (實際) 重工數量 of the table 重工簽核單</a> 
+<a name="3114">Card of the column (實際) 重工數量 of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3931,7 +5887,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3083">(實際) 重工數量</a>
+<p align="left"><a href="SCME50.htm#3113">(實際) 重工數量</a>
 </p>
 </td>
 </tr>
@@ -3941,7 +5897,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3083">qty</a>
+<p align="left"><a href="SCME50.htm#3113">qty</a>
 </p>
 </td>
 </tr>
@@ -3967,7 +5923,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3085">Check constraint name of the column (實際) 重工數量 of the table 重工簽核單</a> 
+<a name="3115">Check constraint name of the column (實際) 重工數量 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_QTY_WMC_REWO
@@ -3975,7 +5931,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3086">Check of the column (實際) 重工數量 of the table 重工簽核單</a> 
+<a name="3116">Check of the column (實際) 重工數量 of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4050,7 +6006,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3087">Server validation rule of the column (實際) 重工數量 of the table 重工簽核單</a> 
+<a name="3117">Server validation rule of the column (實際) 重工數量 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4058,7 +6014,385 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3088">List of extended attributes of the table column (實際) 重工數量</a> 
+<a name="3118">List of extended attributes of the table column (實際) 重工數量</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="3119">Column 預估生產日期 of the table 重工簽核單</a> 
+</h2>
+<h3>
+<a name="3120">Card of the column 預估生產日期 of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3119">預估生產日期</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME50.htm#3119">production_date</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(10)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3121">Check constraint name of the column 預估生產日期 of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_PRODUCTION_DATE_WMC_REWO
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3122">Check of the column 預估生產日期 of the table 重工簽核單</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="3123">Server validation rule of the column 預估生產日期 of the table 重工簽核單</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="3124">List of extended attributes of the table column 預估生產日期</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4297,7 +6631,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3089">List of keys of the table 重工簽核單</a> 
+<a name="3125">List of keys of the table 重工簽核單</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4316,11 +6650,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 <td>
@@ -4330,10 +6664,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="3090">Key id of the table 重工簽核單</a> 
+<a name="3126">Key id of the table 重工簽核單</a> 
 </h2>
 <h3>
-<a name="3091">Card of the key id of the table 重工簽核單</a> 
+<a name="3127">Card of the key id of the table 重工簽核單</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4342,7 +6676,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 </tr>
@@ -4352,7 +6686,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME50.htm#3090">id</a>
+<p align="left"><a href="SCME50.htm#3126">id</a>
 </p>
 </td>
 </tr>
@@ -4368,7 +6702,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3092">Code preview of the key id of the table 重工簽核單</a> 
+<a name="3128">Code preview of the key id of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -4385,7 +6719,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="3093">List of columns of the table key id</a> 
+<a name="3129">List of columns of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4410,7 +6744,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="3094">List of extended attributes of the table key id</a> 
+<a name="3130">List of extended attributes of the table key id</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

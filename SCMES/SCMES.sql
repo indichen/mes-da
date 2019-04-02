@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/29 下午 02:41:25                        */
+/* Created on:     2019/4/2 上午 09:08:13                         */
 /*==============================================================*/
 
 
@@ -1123,12 +1123,18 @@ create table wmc_rework_signing (
    bpm_pk               type_pk              null,
    lot_pk               type_pk              null,
    lot_cd               type_cd              null,
+   mo_pk                type_pk              null,
+   mo_cd                type_cd              null,
+   sap_po_pk            type_pk              null,
+   sap_po_cd            type_cd              null,
    process_pk           type_pk              null,
    process_cd           type_cd              null,
    process_name         type_name            null,
    reason               type_memo            null,
+   operator_cd          type_cd              null,
    is_scrap             type_boolean         null,
    qty                  type_decimal         null,
+   production_date      type_date            null,
    constraint PK_WMC_REWORK_SIGNING primary key (id)
 )
 go
