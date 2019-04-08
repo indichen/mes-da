@@ -100,6 +100,7 @@ create table fm8_qc_plan (<br />
    version              type_decimal         not null,<br />
    is_current_ver       type_boolean         not null,<br />
    report_template      type_memo            null,<br />
+   note                 type_memo            null,<br />
    constraint PK_FM8_QC_PLAN primary key (id)<br />
 )<br />
 go<br />
@@ -638,6 +639,16 @@ go<br />
 </p>
 </td>
 </tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact49.htm#1989">備註</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact49.htm#1989">note</a>
+</p>
+</td>
+</tr>
 </table><br />
 <h2>
 <a name="1889">Column id (質檢方案PK) of the table FM8_質檢方案主檔</a> 
@@ -812,11 +823,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 <td class="TD2">
@@ -6347,8 +6358,386 @@ go<br />
 </td>
 </tr>
 </table><br />
+<h2>
+<a name="1989">Column 備註 of the table FM8_質檢方案主檔</a> 
+</h2>
 <h3>
-<a name="1989">List of keys of the table FM8_質檢方案主檔</a> 
+<a name="1990">Card of the column 備註 of the table FM8_質檢方案主檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact49.htm#1989">備註</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact49.htm#1989">note</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(Max)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1991">Check constraint name of the column 備註 of the table FM8_質檢方案主檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_NOTE_FM8_QC_P
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1992">Check of the column 備註 of the table FM8_質檢方案主檔</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1993">Server validation rule of the column 備註 of the table FM8_質檢方案主檔</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1994">List of extended attributes of the table column 備註</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1995">List of keys of the table FM8_質檢方案主檔</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6367,11 +6756,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 <td>
@@ -6381,10 +6770,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1990">Key Key_1 of the table FM8_質檢方案主檔</a> 
+<a name="1996">Key Key_1 of the table FM8_質檢方案主檔</a> 
 </h2>
 <h3>
-<a name="1991">Card of the key Key_1 of the table FM8_質檢方案主檔</a> 
+<a name="1997">Card of the key Key_1 of the table FM8_質檢方案主檔</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6393,7 +6782,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 </tr>
@@ -6403,7 +6792,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact49.htm#1990">Key_1</a>
+<p align="left"><a href="Fact49.htm#1996">Key_1</a>
 </p>
 </td>
 </tr>
@@ -6419,7 +6808,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1992">Code preview of the key Key_1 of the table FM8_質檢方案主檔</a> 
+<a name="1998">Code preview of the key Key_1 of the table FM8_質檢方案主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm8_qc_plan<br />
@@ -6430,7 +6819,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1993">List of columns of the table key Key_1</a> 
+<a name="1999">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6455,7 +6844,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1994">List of all dependencies of the table key Key_1</a> 
+<a name="2000">List of all dependencies of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6488,7 +6877,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1995">List of extended attributes of the table key Key_1</a> 
+<a name="2001">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

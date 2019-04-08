@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/8 上午 09:52:07                         */
+/* Created on:     2019/4/8 下午 04:07:00                         */
 /*==============================================================*/
 
 
@@ -1397,6 +1397,7 @@ create table fm8_qc_plan (
    version              type_decimal         not null,
    is_current_ver       type_boolean         not null,
    report_template      type_memo            null,
+   note                 type_memo            null,
    constraint PK_FM8_QC_PLAN primary key (id)
 )
 go
