@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="309mm" xmlns="http://www.w3.org/2000/svg" height="185mm" version="1.1" viewBox="0 0 1168 702" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="377mm" xmlns="http://www.w3.org/2000/svg" height="185mm" version="1.1" viewBox="0 0 1426 702" xmlns:xlink="http://www.w3.org/1999/xlink">
    <polyline fill="none" points="550,172 550,108" stroke="#800040" stroke-width="1"/>
    <polygon fill="#800040" points="550,108 553,121 547,121" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="759,172 759,110" stroke="#800040" stroke-width="1"/>
@@ -19,7 +19,7 @@
    <polygon fill="#800040" points="512,250 499,253 499,247" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="140,319 140,481" stroke="#800040" stroke-width="1"/>
    <polygon fill="#800040" points="140,481 137,467 143,467" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-   <a target="_parent" xlink:href="Fact19.htm#131">
+   <a target="_parent" xlink:href="Fact82.htm#124">
       <rect x="441" y="15" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="441" y="15" fill="#ffff80" width="217" height="93" stroke="#00aaaa" stroke-width="1"/>
       <text x="549" y="26" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備基本類型自定義檔案</text>
@@ -31,7 +31,7 @@
       <text x="481" y="55" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="481" y="68" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact20.htm#160">
+   <a target="_parent" xlink:href="Fact83.htm#153">
       <rect x="669" y="20" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="669" y="20" fill="#ffff80" width="180" height="90" stroke="#00aaaa" stroke-width="1"/>
       <text x="759" y="31" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備層級自定義檔案</text>
@@ -43,7 +43,7 @@
       <text x="709" y="60" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="709" y="73" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact40.htm#1143">
+   <a target="_parent" xlink:href="Fact103.htm#1137">
       <rect x="512" y="172" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="512" y="172" fill="#60afff" width="258" height="399" stroke="#00aaaa" stroke-width="1"/>
       <text x="641" y="183" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">FM6_生產機臺</text>
@@ -109,7 +109,7 @@
       <text x="749" y="303" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="749" y="316" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk3&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact22.htm#218">
+   <a target="_parent" xlink:href="Fact85.htm#211">
       <rect x="921" y="18" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="921" y="18" fill="#ffff80" width="218" height="93" stroke="#00aaaa" stroke-width="1"/>
       <text x="1030" y="29" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備狀態自定義檔案</text>
@@ -121,7 +121,7 @@
       <text x="974" y="58" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="974" y="71" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
    </a>
-   <a target="_parent" xlink:href="Fact41.htm#1333">
+   <a target="_parent" xlink:href="Fact104.htm#1327">
       <rect x="861" y="176" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="861" y="176" fill="#60afff" width="258" height="87" stroke="#00aaaa" stroke-width="1"/>
       <text x="990" y="187" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">FM6_生產機臺狀態</text>
@@ -129,13 +129,16 @@
       <text x="866" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (生產機臺狀態PK)</text>
       <text x="866" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">生產機臺PK</text>
       <text x="866" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">狀態cd</text>
+      <text x="866" y="242" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">異動原因</text>
       <text x="966" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
       <text x="966" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
       <text x="966" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
-      <text x="1049" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
-      <text x="1049" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="966" y="242" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <text x="1099" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="1099" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+      <text x="1099" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact15.htm#14">
+   <a target="_parent" xlink:href="Fact78.htm#7">
       <rect x="511" y="592" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="511" y="592" fill="#ffff80" width="257" height="95" stroke="#00aaaa" stroke-width="1"/>
       <text x="639" y="603" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_作業點類型自定義檔案</text>
@@ -147,7 +150,7 @@
       <text x="563" y="632" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="563" y="645" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">bit</text>
    </a>
-   <a target="_parent" xlink:href="Fact42.htm#1369">
+   <a target="_parent" xlink:href="Fact106.htm#1409">
       <rect x="895" y="353" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="895" y="353" fill="#60afff" width="258" height="138" stroke="#00aaaa" stroke-width="1"/>
       <text x="1024" y="364" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">FM6_生產裝備作業點</text>
@@ -166,7 +169,7 @@
       <text x="1143" y="393" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="1143" y="406" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact21.htm#189">
+   <a target="_parent" xlink:href="Fact84.htm#182">
       <rect x="196" y="18" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="196" y="18" fill="#ffff80" width="217" height="93" stroke="#00aaaa" stroke-width="1"/>
       <text x="304" y="29" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備投產類型自定義檔案</text>
@@ -178,7 +181,7 @@
       <text x="236" y="58" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
       <text x="236" y="71" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="Fact38.htm#1045">
+   <a target="_parent" xlink:href="Fact101.htm#1039">
       <rect x="15" y="181" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="15" y="181" fill="#60afff" width="258" height="138" stroke="#00aaaa" stroke-width="1"/>
       <text x="144" y="192" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">FM6_機台製程對應</text>
@@ -197,7 +200,7 @@
       <text x="203" y="221" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="203" y="247" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact48.htm#1830">
+   <a target="_parent" xlink:href="Fact112.htm#1870">
       <rect x="19" y="481" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="19" y="481" fill="#c4e1ff" width="242" height="121" stroke="#00aaaa" stroke-width="1"/>
       <text x="140" y="495" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM8_標準工序</text>
@@ -213,5 +216,19 @@
       <text x="104" y="550" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="104" y="563" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">bit</text>
       <text x="229" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Fact105.htm#1370">
+      <rect x="1153" y="179" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1153" y="179" fill="#60afff" width="257" height="87" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1281" y="190" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">FM6_生產機臺狀態歷史</text>
+      <line x1="1153" x2="1410" y1="196" y2="196" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1158" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">id (生產機臺狀態歷史PK)</text>
+      <text x="1158" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">生產機臺PK</text>
+      <text x="1158" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">狀態cd</text>
+      <text x="1158" y="245" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">異動原因</text>
+      <text x="1278" y="206" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">char(32)</text>
+      <text x="1278" y="219" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char(32)</text>
+      <text x="1278" y="232" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
+      <text x="1278" y="245" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
    </a>
 </svg>

@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/8 下午 04:07:00                         */
+/* Created on:     2019/4/8 下午 05:50:23                         */
 /*==============================================================*/
 
 
@@ -205,6 +205,13 @@ if exists (select 1
            where  id = object_id('fm6_equipment_status')
             and   type = 'U')
    drop table fm6_equipment_status
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm6_equipment_status_history')
+            and   type = 'U')
+   drop table fm6_equipment_status_history
 go
 
 if exists (select 1
@@ -1158,7 +1165,29 @@ create table fm6_equipment_status (
    id                   type_pk              not null,
    equipment_pk         type_pk              not null,
    status_cd            type_cd              null,
+   reason               type_memo            null,
    constraint PK_FM6_EQUIPMENT_STATUS primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: fm6_equipment_status_history                          */
+/*==============================================================*/
+create table fm6_equipment_status_history (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   equipment_pk         type_pk              not null,
+   status_cd            type_cd              null,
+   reason               type_memo            null,
+   constraint PK_FM6_EQUIPMENT_STATUS_HISTOR primary key (id)
 )
 go
 
