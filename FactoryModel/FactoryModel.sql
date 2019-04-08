@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/29 下午 12:42:24                        */
+/* Created on:     2019/4/8 上午 09:52:07                         */
 /*==============================================================*/
 
 
@@ -191,6 +191,13 @@ if exists (select 1
            where  id = object_id('fm6_equipment_op_point')
             and   type = 'U')
    drop table fm6_equipment_op_point
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm6_equipment_process')
+            and   type = 'U')
+   drop table fm6_equipment_process
 go
 
 if exists (select 1
@@ -1110,6 +1117,28 @@ create table fm6_equipment_op_point (
    name                 type_memo            null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT_OP_POINT primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: fm6_equipment_process                                 */
+/*==============================================================*/
+create table fm6_equipment_process (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   equipment_pk         type_pk              not null,
+   equipment_cd         type_cd              null,
+   process_pk           type_pk              not null,
+   process_cd           type_cd              null,
+   constraint PK_FM6_EQUIPMENT_PROCESS primary key (id)
 )
 go
 
