@@ -100,7 +100,7 @@ create table mtaa_material (<br />
    spec_cd              type_id              null,<br />
    quality_code_cd      type_id              null,<br />
    mechanical_cd        type_id              null,<br />
-   produce_stage_cd     type_id              null,<br />
+   produce_stage_cd     type_enum_val        null,<br />
    constraint PK_MTAA_MATERIAL primary key (id)<br />
 )<br />
 go<br />
@@ -4213,7 +4213,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">varchar(40)
+<p align="left">int
 </p>
 </td>
 </tr>

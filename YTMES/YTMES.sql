@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  YTMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/3/29 下午 03:17:34                        */
+/* Created on:     2019/4/8 上午 08:45:02                         */
 /*==============================================================*/
 
 
@@ -564,7 +564,7 @@ create table mtaa_material (
    spec_cd              type_id              null,
    quality_code_cd      type_id              null,
    mechanical_cd        type_id              null,
-   produce_stage_cd     type_id              null,
+   produce_stage_cd     type_enum_val        null,
    constraint PK_MTAA_MATERIAL primary key (id)
 )
 go
