@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/2 上午 09:08:13                         */
+/* Created on:     2019/4/9 上午 09:24:01                         */
 /*==============================================================*/
 
 
@@ -429,6 +429,7 @@ create table mlo_mo (
    length_extra_real    type_length          null,
    plan_start_date      type_date            null,
    plan_end_date        type_date            null,
+   dispatch_ts          type_datetime        null,
    start_ts             type_datetime        null,
    end_ts               type_datetime        null,
    working_hour         type_hours           null,
