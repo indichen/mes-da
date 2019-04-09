@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/8 下午 05:50:23                         */
+/* Created on:     2019/4/9 上午 09:36:03                         */
 /*==============================================================*/
 
 
@@ -1349,6 +1349,7 @@ create table fm8_basic_process (
    name                 type_name            not null,
    name_en              type_pk              null,
    is_enabled           type_boolean         not null,
+   is_virtual_process   type_boolean         null,
    constraint PK_FM8_BASIC_PROCESS primary key (id)
 )
 go
