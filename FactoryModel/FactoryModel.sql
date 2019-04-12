@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/9 上午 09:36:03                         */
+/* Created on:     2019/4/12 下午 01:35:38                        */
 /*==============================================================*/
 
 
@@ -1098,7 +1098,9 @@ create table fm6_equipment_carrier (
 
    id                   type_pk              not null,
    equipment_pk         type_pk              null,
+   equipment_cd         type_cd              null,
    carrier_model_pk     type_pk              null,
+   carrier_model_cd     type_cd              null,
    check_type           type_enum_val        null,
    note                 type_memo            null,
    constraint PK_FM6_EQUIPMENT_CARRIER primary key (id)

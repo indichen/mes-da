@@ -87,7 +87,9 @@ create table fm6_equipment_carrier (<br />
 <br />
    id                   type_pk              not null,<br />
    equipment_pk         type_pk              null,<br />
+   equipment_cd         type_cd              null,<br />
    carrier_model_pk     type_pk              null,<br />
+   carrier_model_cd     type_cd              null,<br />
    check_type           type_enum_val        null,<br />
    note                 type_memo            null,<br />
    constraint PK_FM6_EQUIPMENT_CARRIER primary key (id)<br />
@@ -419,31 +421,51 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact39.htm#1119">載具型號PK</a>
+<p align="left"><a href="Fact39.htm#1119">生產裝備cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact39.htm#1119">carrier_model_pk</a>
+<p align="left"><a href="Fact39.htm#1119">equipment_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact39.htm#1126">投入/產出</a>
+<p align="left"><a href="Fact39.htm#1125">載具型號PK</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact39.htm#1126">check_type</a>
+<p align="left"><a href="Fact39.htm#1125">carrier_model_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact39.htm#1132">備註</a>
+<p align="left"><a href="Fact39.htm#1132">載具型號cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact39.htm#1132">note</a>
+<p align="left"><a href="Fact39.htm#1132">carrier_model_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact39.htm#1138">投/產/投產</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact39.htm#1138">check_type</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Fact39.htm#1144">備註</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Fact39.htm#1144">note</a>
 </p>
 </td>
 </tr>
@@ -607,11 +629,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 <td>
@@ -1253,10 +1275,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1119">Column 載具型號PK of the table FM6_機臺載具</a> 
+<a name="1119">Column 生產裝備cd of the table FM6_機臺載具</a> 
 </h2>
 <h3>
-<a name="1120">Card of the column 載具型號PK of the table FM6_機臺載具</a> 
+<a name="1120">Card of the column 生產裝備cd of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1265,7 +1287,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1119">載具型號PK</a>
+<p align="left"><a href="Fact39.htm#1119">生產裝備cd</a>
 </p>
 </td>
 </tr>
@@ -1275,7 +1297,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1119">carrier_model_pk</a>
+<p align="left"><a href="Fact39.htm#1119">equipment_cd</a>
 </p>
 </td>
 </tr>
@@ -1285,7 +1307,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char(32)
+<p align="left">char varying(40)
 </p>
 </td>
 </tr>
@@ -1301,15 +1323,15 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1121">Check constraint name of the column 載具型號PK of the table FM6_機臺載具</a> 
+<a name="1121">Check constraint name of the column 生產裝備cd of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CARRIER_MODEL_PK_FM6_EQUI
+<p align="left">CKC_EQUIPMENT_CD_FM6_EQUI
 </p>
 </td></tr>
 </table><br />
 <h3>
-<a name="1122">Check of the column 載具型號PK of the table FM6_機臺載具</a> 
+<a name="1122">Check of the column 生產裝備cd of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1384,7 +1406,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1123">Server validation rule of the column 載具型號PK of the table FM6_機臺載具</a> 
+<a name="1123">Server validation rule of the column 生產裝備cd of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1392,7 +1414,385 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1124">List of all dependencies of the table column 載具型號PK</a> 
+<a name="1124">List of extended attributes of the table column 生產裝備cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1125">Column 載具型號PK of the table FM6_機臺載具</a> 
+</h2>
+<h3>
+<a name="1126">Card of the column 載具型號PK of the table FM6_機臺載具</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact39.htm#1125">載具型號PK</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact39.htm#1125">carrier_model_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(32)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1127">Check constraint name of the column 載具型號PK of the table FM6_機臺載具</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_CARRIER_MODEL_PK_FM6_EQUI
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1128">Check of the column 載具型號PK of the table FM6_機臺載具</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1129">Server validation rule of the column 載具型號PK of the table FM6_機臺載具</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1130">List of all dependencies of the table column 載具型號PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1425,7 +1825,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1125">List of extended attributes of the table column 載具型號PK</a> 
+<a name="1131">List of extended attributes of the table column 載具型號PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1664,10 +2064,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1126">Column 投入/產出 of the table FM6_機臺載具</a> 
+<a name="1132">Column 載具型號cd of the table FM6_機臺載具</a> 
 </h2>
 <h3>
-<a name="1127">Card of the column 投入/產出 of the table FM6_機臺載具</a> 
+<a name="1133">Card of the column 載具型號cd of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1676,7 +2076,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1126">投入/產出</a>
+<p align="left"><a href="Fact39.htm#1132">載具型號cd</a>
 </p>
 </td>
 </tr>
@@ -1686,7 +2086,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1126">check_type</a>
+<p align="left"><a href="Fact39.htm#1132">carrier_model_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char varying(40)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1134">Check constraint name of the column 載具型號cd of the table FM6_機臺載具</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_CARRIER_MODEL_CD_FM6_EQUI
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1135">Check of the column 載具型號cd of the table FM6_機臺載具</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1136">Server validation rule of the column 載具型號cd of the table FM6_機臺載具</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1137">List of extended attributes of the table column 載具型號cd</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1138">Column 投/產/投產 of the table FM6_機臺載具</a> 
+</h2>
+<h3>
+<a name="1139">Card of the column 投/產/投產 of the table FM6_機臺載具</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact39.htm#1138">投/產/投產</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact39.htm#1138">check_type</a>
 </p>
 </td>
 </tr>
@@ -1712,7 +2490,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1128">Check constraint name of the column 投入/產出 of the table FM6_機臺載具</a> 
+<a name="1140">Check constraint name of the column 投/產/投產 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CHECK_TYPE_FM6_EQUI
@@ -1720,7 +2498,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1129">Check of the column 投入/產出 of the table FM6_機臺載具</a> 
+<a name="1141">Check of the column 投/產/投產 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1795,7 +2573,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1130">Server validation rule of the column 投入/產出 of the table FM6_機臺載具</a> 
+<a name="1142">Server validation rule of the column 投/產/投產 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1803,7 +2581,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1131">List of extended attributes of the table column 投入/產出</a> 
+<a name="1143">List of extended attributes of the table column 投/產/投產</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2042,10 +2820,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1132">Column 備註 of the table FM6_機臺載具</a> 
+<a name="1144">Column 備註 of the table FM6_機臺載具</a> 
 </h2>
 <h3>
-<a name="1133">Card of the column 備註 of the table FM6_機臺載具</a> 
+<a name="1145">Card of the column 備註 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2054,7 +2832,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1132">備註</a>
+<p align="left"><a href="Fact39.htm#1144">備註</a>
 </p>
 </td>
 </tr>
@@ -2064,7 +2842,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1132">note</a>
+<p align="left"><a href="Fact39.htm#1144">note</a>
 </p>
 </td>
 </tr>
@@ -2090,7 +2868,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1134">Check constraint name of the column 備註 of the table FM6_機臺載具</a> 
+<a name="1146">Check constraint name of the column 備註 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NOTE_FM6_EQUI
@@ -2098,7 +2876,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1135">Check of the column 備註 of the table FM6_機臺載具</a> 
+<a name="1147">Check of the column 備註 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2173,7 +2951,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1136">Server validation rule of the column 備註 of the table FM6_機臺載具</a> 
+<a name="1148">Server validation rule of the column 備註 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2181,7 +2959,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1137">List of extended attributes of the table column 備註</a> 
+<a name="1149">List of extended attributes of the table column 備註</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2420,7 +3198,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1138">List of keys of the table FM6_機臺載具</a> 
+<a name="1150">List of keys of the table FM6_機臺載具</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2439,11 +3217,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 <td>
@@ -2453,10 +3231,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1139">Key Key_1 of the table FM6_機臺載具</a> 
+<a name="1151">Key Key_1 of the table FM6_機臺載具</a> 
 </h2>
 <h3>
-<a name="1140">Card of the key Key_1 of the table FM6_機臺載具</a> 
+<a name="1152">Card of the key Key_1 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2465,7 +3243,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 </tr>
@@ -2475,7 +3253,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact39.htm#1139">Key_1</a>
+<p align="left"><a href="Fact39.htm#1151">Key_1</a>
 </p>
 </td>
 </tr>
@@ -2491,7 +3269,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1141">Code preview of the key Key_1 of the table FM6_機臺載具</a> 
+<a name="1153">Code preview of the key Key_1 of the table FM6_機臺載具</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm6_equipment_carrier<br />
@@ -2502,7 +3280,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1142">List of columns of the table key Key_1</a> 
+<a name="1154">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2527,7 +3305,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1143">List of extended attributes of the table key Key_1</a> 
+<a name="1155">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
