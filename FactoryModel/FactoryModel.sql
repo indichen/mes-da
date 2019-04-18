@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/12 下午 01:35:38                        */
+/* Created on:     2019/4/18 上午 09:17:37                        */
 /*==============================================================*/
 
 
@@ -1284,7 +1284,7 @@ create table fm7_material (
    mnemonic_code        type_memo            null,
    version              type_version_int     null,
    application_form_id  type_cd              null,
-   constraint PK_FM7_MATERIAL primary key nonclustered (id)
+   constraint PK_FM7_MATERIAL primary key (id)
 )
 go
 
@@ -1329,7 +1329,7 @@ create table fm7_material_unit (
    unit_pk              type_pk              null,
    exchange_rate        type_decimal         null,
    is_fixed_exchange    type_boolean         null,
-   constraint PK_FM7_MATERIAL_UNIT primary key nonclustered (id)
+   constraint PK_FM7_MATERIAL_UNIT primary key (id)
 )
 go
 
@@ -1352,6 +1352,9 @@ create table fm8_basic_process (
    name_en              type_pk              null,
    is_enabled           type_boolean         not null,
    is_virtual_process   type_boolean         null,
+   station_pk           type_pk              null,
+   station_cd           type_cd              null,
+   station_name         type_name            null,
    constraint PK_FM8_BASIC_PROCESS primary key (id)
 )
 go
