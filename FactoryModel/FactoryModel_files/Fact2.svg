@@ -13,8 +13,8 @@
    <polygon fill="#800040" points="770,422 783,419 783,425" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
    <path d="M1024,491 L1024,631 A8,8 0 0,1 1016,639 L768,639" fill="none" stroke="#800040" stroke-width="1"/>
    <polygon fill="#800040" points="768,639 781,636 781,642" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
-   <path d="M512,372 L313,372 A8,8 0 0,1 305,364 L305,111" fill="none" stroke="#800040" stroke-width="1"/>
-   <polygon fill="#800040" points="305,111 308,124 302,124" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+   <path d="M512,372 L313,372 A8,8 0 0,1 305,364 L305,110" fill="none" stroke="#800040" stroke-width="1"/>
+   <polygon fill="#800040" points="305,110 308,123 302,123" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="273,250 512,250" stroke="#800040" stroke-width="1"/>
    <polygon fill="#800040" points="512,250 499,253 499,247" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="140,319 140,481" stroke="#800040" stroke-width="1"/>
@@ -170,16 +170,16 @@
       <text x="1143" y="406" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="Fact21.htm#189">
-      <rect x="196" y="18" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="196" y="18" fill="#ffff80" width="217" height="93" stroke="#00aaaa" stroke-width="1"/>
-      <text x="304" y="29" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備投產類型自定義檔案</text>
-      <line x1="196" x2="413" y1="35" y2="35" stroke="#00aaaa" stroke-width="1"/>
-      <text x="201" y="45" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">code</text>
-      <text x="201" y="58" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">name</text>
-      <text x="201" y="71" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">備註</text>
-      <text x="236" y="45" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
-      <text x="236" y="58" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
-      <text x="236" y="71" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
+      <rect x="196" y="17" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="196" y="17" fill="#ffff80" width="217" height="93" stroke="#00aaaa" stroke-width="1"/>
+      <text x="304" y="28" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">CUST_生產裝備投產類型自定義檔案</text>
+      <line x1="196" x2="413" y1="34" y2="34" stroke="#00aaaa" stroke-width="1"/>
+      <text x="201" y="44" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">code</text>
+      <text x="201" y="57" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">name</text>
+      <text x="201" y="70" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">備註</text>
+      <text x="236" y="44" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">char varying(40)</text>
+      <text x="236" y="57" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(20)</text>
+      <text x="236" y="70" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">national char varying(Max)</text>
    </a>
    <a target="_parent" xlink:href="Fact38.htm#1046">
       <rect x="15" y="181" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
