@@ -16,6 +16,7 @@ scmes_deploy:
     changes:
       - SCMES/*.html
       - SCMES/**/*.html
+      - SCMES/**/*.htm
       - SCMES/*.sql
   environment:
     name: da-service-scmes
@@ -29,6 +30,7 @@ ytmes_deploy:
     changes:
       - YTMES/*.html
       - YTMES/**/*.html
+      - YTMES/**/*.htm
       - YTMES/*.sql
   environment:
     name: da-service-ytmes
@@ -42,6 +44,7 @@ fm_deploy:
     changes:
       - FactoryModel/*.html
       - FactoryModel/**/*.html
+      - FactoryModel/**/*.htm
       - FactoryModel/*.sql
   environment:
     name: da-service-factorymodel
