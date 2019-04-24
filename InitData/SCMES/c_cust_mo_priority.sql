@@ -1,0 +1,5 @@
+truncate table pap.walsindba.c_cust_mo_priority;
+insert into pap.walsindba.c_cust_mo_priority (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (90, '緊急', '', '54e83890-d8f8-459c-b2a5-69c98cff9fd1', '0000000001', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_priority (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (30, '高', '', '99c30c08-5bc2-4b90-9210-bc66640d97e2', '0000000002', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_priority (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (20, '中', '', 'db8f1a94-1a1e-49f1-ab61-90a1f1ce597e', '0000000003', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_priority (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (10, '低', '', '9469358f-535d-45d0-bc34-24f46b3be8aa', '0000000004', 0, 0, 1, convert(varchar, getdate(), 121), 0);

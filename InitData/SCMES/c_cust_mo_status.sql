@@ -1,0 +1,7 @@
+truncate table pap.walsindba.c_cust_mo_status;
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (10, '新建', '', 'fea05c78-8c54-44c5-8b2a-4768bad7310c', '0000000001', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (20, '待產', '', 'b6d2ad91-8eed-4277-8488-8123b7d97ffb', '0000000002', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (30, '生產中', '', 'a1e6cdb7-e2ff-485a-b7cd-478a31f5a31f', '0000000003', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (40, '結案', '', '76744840-f8f0-4d18-b2fe-23bb7c6a4956', '0000000004', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (80, '暫停', '', 'e1b8c165-37a4-46d7-84bc-dd95fb2fc346', '0000000005', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_mo_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (90, '終止', '', 'afb07f68-acb1-4704-b25f-fd128219a1c8', '0000000006', 0, 0, 1, convert(varchar, getdate(), 121), 0);

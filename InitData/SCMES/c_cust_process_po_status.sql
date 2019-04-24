@@ -1,0 +1,5 @@
+truncate table pap.walsindba.c_cust_process_po_status;
+insert into pap.walsindba.c_cust_process_po_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (10, '新建', '', 'a0003f66-c305-4b23-a9b0-7ffc63b52a38', '0000000001', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (11, '待手工開立製令', '', '16955379-adc2-415b-baff-cfad0781718f', '0000000002', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (20, '已開立製令', '', '16ad07ad-d98b-4a6a-ae23-c7bc33423c17', '0000000003', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_status (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (30, '結案', '', '2d29db66-9974-436d-a5e0-4e9837001eec', '0000000004', 0, 0, 1, convert(varchar, getdate(), 121), 0);
