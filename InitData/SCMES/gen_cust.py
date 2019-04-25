@@ -72,13 +72,13 @@ class c_cust_carrier_status(CustTableGenerator):
         biz_columns = ['code', 'name', 'note']
         biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
         biz_init_tuples = [
-            biz_tuple(10, 'I空載', ''),
-            biz_tuple(20, 'U負載', ''),
-            biz_tuple(30, 'A驗收', ''),
-            biz_tuple(50, 'R維修', ''),
-            biz_tuple(55, 'W待修', ''),
-            biz_tuple(80, 'S備品', ''),
-            biz_tuple(90, 'C除賬', ''),
+            biz_tuple(10, 'I空載', '閒置中'),
+            biz_tuple(20, 'U負載', '使用中'),
+            biz_tuple(30, 'A驗收', '等待驗收'),
+            biz_tuple(50, 'R維修', '維修中'),
+            biz_tuple(55, 'W待修', '等待維修'),
+            biz_tuple(80, 'S備品', '備用'),
+            biz_tuple(90, 'C除賬', '無法使用'),
         ]
         return biz_init_tuples
 
