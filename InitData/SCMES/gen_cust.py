@@ -173,7 +173,7 @@ class c_cust_mo_priority(CustTableGenerator):
         ]
         return biz_init_tuples
 
-## c_品質碼 (c_cust_po_group_status)
+## c_品質碼 (c_cust_quality_code)
 class c_cust_quality_code(CustTableGenerator):
     def get_biz_init_tuples(self):
         biz_columns = ['categories', 'code', 'note']
@@ -305,6 +305,17 @@ class c_cust_sappo_proc_status(CustTableGenerator):
             biz_tuple(15, '處理中', ''),
             biz_tuple(20, '完成', ''),
             biz_tuple(30, '失敗', ''),
+        ]
+        return biz_init_tuples        
+
+## c_製令產生類別 (c_cust_mo_type)
+class c_cust_mo_type(CustTableGenerator):
+    def get_biz_init_tuples(self):
+        biz_columns = ['code', 'name', 'note']
+        biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
+        biz_init_tuples = [
+            biz_tuple(10, '系統', ''),
+            biz_tuple(20, '手動', ''),
         ]
         return biz_init_tuples        
 
