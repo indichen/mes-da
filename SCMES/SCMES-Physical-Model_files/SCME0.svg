@@ -52,8 +52,8 @@
    <polygon fill="#0080c0" points="484,447 497,444 497,450" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="641,498 641,569" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="641,569 638,555 644,555" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1297,834 1361,834 1361,292 1303,292" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1303,292 1317,289 1317,295" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1097,767 1079,767 1079,304 1090,304" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1090,304 1076,307 1076,301" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1019,767 1063,767 1063,288 1039,288" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1039,288 1053,285 1053,291" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2292,1366 2292,1365 2652,1365 2652,247 2245,247" stroke="#0080c0" stroke-width="1"/>
@@ -62,7 +62,17 @@
    <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1781,1304 1750,1304" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1750,1304 1764,1301 1764,1307" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <a target="_parent" xlink:href="SCME28.htm#1156">
+   <polyline fill="none" points="1091,201 1047,201 1047,282" stroke="#0080c0" stroke-width="1"/>
+   <polyline fill="none" points="1047,293 1047,761" stroke="#0080c0" stroke-width="1"/>
+   <path d="M1047,293 A5,5 0 0,0 1053,288" fill="none" stroke="#0080c0" stroke-width="1"/>
+   <line x1="1053" x2="1053" y1="288" y2="288" stroke="#0080c0" stroke-width="1"/>
+   <path d="M1053,288 A5,5 0 0,0 1047,282" fill="none" stroke="#0080c0" stroke-width="1"/>
+   <polyline fill="none" points="1047,772 1047,818 1097,818" stroke="#0080c0" stroke-width="1"/>
+   <path d="M1047,772 A5,5 0 0,0 1053,767" fill="none" stroke="#0080c0" stroke-width="1"/>
+   <line x1="1053" x2="1053" y1="767" y2="767" stroke="#0080c0" stroke-width="1"/>
+   <path d="M1053,767 A5,5 0 0,0 1047,761" fill="none" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1091,201 1078,204 1078,198" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <a target="_parent" xlink:href="SCME29.htm#1185">
       <rect x="1097" y="555" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1097" y="555" fill="#b2d6fc" width="200" height="557" stroke="#00aaaa" stroke-width="1"/>
       <text x="1197" y="569" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">制令主檔</text>
@@ -150,7 +160,7 @@
       <text x="1190" y="1092" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1190" y="1105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
    </a>
-   <a target="_parent" xlink:href="SCME37.htm#1850">
+   <a target="_parent" xlink:href="SCME38.htm#1880">
       <rect x="1635" y="424" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -180,7 +190,7 @@
       <text x="1780" y="454" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1780" y="467" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME46.htm#2616">
+   <a target="_parent" xlink:href="SCME47.htm#2646">
       <rect x="1098" y="1193" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1098" y="1193" fill="#e2e2e2" width="200" height="145" stroke="#00aaaa" stroke-width="1" stroke-dasharray="16,8"/>
       <text x="1198" y="1207" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">裝料記錄現況檔</text>
@@ -198,7 +208,7 @@
       <text x="1220" y="1223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1220" y="1236" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME47.htm#2673">
+   <a target="_parent" xlink:href="SCME48.htm#2703">
       <rect x="1321" y="1194" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1321" y="1194" fill="#e2e2e2" width="200" height="161" stroke="#00aaaa" stroke-width="1" stroke-dasharray="16,8"/>
       <text x="1421" y="1208" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">裝料記錄現況檔明細</text>
@@ -222,7 +232,7 @@
       <text x="1453" y="1224" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1453" y="1237" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME24.htm#649">
+   <a target="_parent" xlink:href="SCME25.htm#678">
       <rect x="541" y="569" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="541" y="569" fill="#ffcaff" width="200" height="569" stroke="#00aaaa" stroke-width="1"/>
       <text x="641" y="583" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">SAP工單</text>
@@ -310,7 +320,7 @@
       <text x="634" y="1105" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="634" y="1118" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
    </a>
-   <a target="_parent" xlink:href="SCME49.htm#2835">
+   <a target="_parent" xlink:href="SCME50.htm#2865">
       <rect x="819" y="565" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="819" y="565" fill="#ffcaff" width="200" height="403" stroke="#00aaaa" stroke-width="1"/>
       <text x="919" y="579" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">製程工單</text>
@@ -372,7 +382,7 @@
       <text x="904" y="933" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="904" y="946" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    </a>
-   <a target="_parent" xlink:href="SCME67.htm#74">
+   <a target="_parent" xlink:href="SCME68.htm#74">
       <defs>
          <linearGradient id="Gradient2" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -529,7 +539,7 @@
    <text x="2406" y="459" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="2479" y="381" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="2479" y="394" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="SCME34.htm#1622">
+   <a target="_parent" xlink:href="SCME35.htm#1652">
       <rect x="2297" y="723" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient8" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -563,7 +573,7 @@
       <text x="2474" y="753" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2474" y="766" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME38.htm#1916">
+   <a target="_parent" xlink:href="SCME39.htm#1946">
       <rect x="2298" y="601" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient9" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -587,7 +597,7 @@
       <text x="2470" y="631" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2470" y="643" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME33.htm#1562">
+   <a target="_parent" xlink:href="SCME34.htm#1592">
       <rect x="2299" y="468" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient10" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -615,7 +625,7 @@
       <text x="2469" y="498" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2469" y="511" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME35.htm#1700">
+   <a target="_parent" xlink:href="SCME36.htm#1730">
       <rect x="2025" y="568" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient11" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -647,7 +657,7 @@
       <text x="2149" y="598" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2149" y="611" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME42.htm#2240">
+   <a target="_parent" xlink:href="SCME43.htm#2270">
       <rect x="2301" y="351" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient12" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -894,7 +904,7 @@
    <text x="1744" y="1024" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
    <text x="1804" y="972" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="1804" y="985" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="SCME39.htm#1964">
+   <a target="_parent" xlink:href="SCME40.htm#1994">
       <rect x="1532" y="598" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1532" y="598" fill="#60afff" width="200" height="318" stroke="#00aaaa" stroke-width="1"/>
       <text x="1632" y="612" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-產出履歷</text>
@@ -947,7 +957,7 @@
       <text x="1678" y="641" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="1678" y="823" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME41.htm#2162">
+   <a target="_parent" xlink:href="SCME42.htm#2192">
       <rect x="1390" y="942" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1390" y="942" fill="#60afff" width="200" height="164" stroke="#00aaaa" stroke-width="1"/>
       <text x="1490" y="956" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-線纜產出明細</text>
@@ -975,7 +985,7 @@
       <text x="1568" y="972" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1568" y="985" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME43.htm#2300">
+   <a target="_parent" xlink:href="SCME44.htm#2330">
       <rect x="1640" y="942" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="1640" y="942" fill="#60afff" width="200" height="164" stroke="#00aaaa" stroke-width="1" stroke-dasharray="16,8"/>
       <text x="1740" y="956" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-鍊鋼產出明細</text>
@@ -993,7 +1003,7 @@
       <text x="1804" y="972" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1804" y="985" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME68.htm#81">
+   <a target="_parent" xlink:href="SCME69.htm#81">
       <defs>
          <linearGradient id="Gradient14" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -1349,7 +1359,7 @@
    <text x="2302" y="1396" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="2302" y="1409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    <text x="2302" y="1435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
-   <a target="_parent" xlink:href="SCME44.htm#2348">
+   <a target="_parent" xlink:href="SCME45.htm#2378">
       <rect x="1702" y="1652" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient25" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1413,7 +1423,7 @@
       <text x="1787" y="1993" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char va</text>
       <text x="1787" y="2006" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char va</text>
    </a>
-   <a target="_parent" xlink:href="SCME21.htm#448">
+   <a target="_parent" xlink:href="SCME22.htm#477">
       <rect x="1781" y="1164" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient26" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1455,7 +1465,7 @@
       <text x="1865" y="1363" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
       <text x="1865" y="1376" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
    </a>
-   <a target="_parent" xlink:href="SCME20.htm#384">
+   <a target="_parent" xlink:href="SCME21.htm#413">
       <rect x="2060" y="1652" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient27" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1483,7 +1493,7 @@
       <text x="2145" y="1760" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
       <text x="2145" y="1773" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
    </a>
-   <a target="_parent" xlink:href="SCME45.htm#2520">
+   <a target="_parent" xlink:href="SCME46.htm#2550">
       <rect x="1699" y="1414" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient28" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1523,7 +1533,7 @@
       <text x="1869" y="1444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1869" y="1457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME55.htm#3419">
+   <a target="_parent" xlink:href="SCME56.htm#3449">
       <rect x="1880" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient29" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1549,7 +1559,7 @@
       <text x="2046" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2046" y="1458" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME54.htm#3337">
+   <a target="_parent" xlink:href="SCME55.htm#3367">
       <rect x="1882" y="1654" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient30" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1584,7 +1594,7 @@
       <text x="1959" y="1814" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;Undefined&gt;</text>
       <text x="2028" y="1684" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME19.htm#342">
+   <a target="_parent" xlink:href="SCME20.htm#371">
       <rect x="2151" y="1160" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient31" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1606,7 +1616,7 @@
       <text x="2277" y="1190" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2277" y="1203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME27.htm#1120">
+   <a target="_parent" xlink:href="SCME28.htm#1149">
       <rect x="2155" y="1263" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient32" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1626,7 +1636,7 @@
       <text x="2290" y="1293" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2290" y="1306" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME22.htm#559">
+   <a target="_parent" xlink:href="SCME23.htm#588">
       <rect x="2151" y="1498" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient33" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1662,7 +1672,7 @@
       <text x="1615" y="1226" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="1615" y="1239" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME23.htm#606">
+   <a target="_parent" xlink:href="SCME24.htm#635">
       <rect x="2157" y="1366" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient34" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1685,7 +1695,7 @@
       <text x="2302" y="1409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="2302" y="1435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME52.htm#3203">
+   <a target="_parent" xlink:href="SCME53.htm#3233">
       <defs>
          <linearGradient id="Gradient35" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -1754,7 +1764,7 @@
    <text x="1148" y="1536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1148" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="1221" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <a target="_parent" xlink:href="SCME52.htm#3197">
+   <a target="_parent" xlink:href="SCME53.htm#3227">
       <rect x="1319" y="1416" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient38" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1785,7 +1795,7 @@
       <text x="1404" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1477" y="1446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME53.htm#3267">
+   <a target="_parent" xlink:href="SCME54.htm#3297">
       <rect x="1084" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient39" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1816,7 +1826,7 @@
       <text x="1148" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1221" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME36.htm#1780">
+   <a target="_parent" xlink:href="SCME37.htm#1810">
       <defs>
          <linearGradient id="Gradient40" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -1858,7 +1868,7 @@
    <text x="1502" y="368" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
    <text x="1502" y="381" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
    <text x="1562" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <a target="_parent" xlink:href="SCME36.htm#1774">
+   <a target="_parent" xlink:href="SCME37.htm#1804">
       <rect x="1400" y="235" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient42" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1891,7 +1901,7 @@
       <text x="1502" y="381" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="1562" y="265" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME40.htm#2117">
+   <a target="_parent" xlink:href="SCME41.htm#2147">
       <rect x="1649" y="232" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient43" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1914,7 +1924,7 @@
       <text x="1752" y="314" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">datetime</text>
       <text x="1812" y="262" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME48.htm#2739">
+   <a target="_parent" xlink:href="SCME49.htm#2769">
       <rect x="806" y="1040" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="806" y="1040" fill="#b2d6fc" width="200" height="223" stroke="#00aaaa" stroke-width="1" stroke-dasharray="16,8"/>
       <text x="906" y="1054" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">製令輔助明細</text>
@@ -1944,7 +1954,7 @@
       <text x="911" y="1200" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="911" y="1213" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    </a>
-   <a target="_parent" xlink:href="SCME31.htm#1481">
+   <a target="_parent" xlink:href="SCME32.htm#1511">
       <rect x="287" y="396" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="287" y="396" fill="#ffcaff" width="197" height="101" stroke="#00aaaa" stroke-width="1"/>
       <text x="385" y="410" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">工單群組</text>
@@ -1970,7 +1980,7 @@
       <text x="1132" y="403" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="1132" y="416" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME17.htm#284">
+   <a target="_parent" xlink:href="SCME18.htm#313">
       <rect x="813" y="363" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="813" y="363" fill="#ffff80" width="225" height="107" stroke="#00aaaa" stroke-width="1"/>
       <text x="925" y="379" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
@@ -2009,7 +2019,7 @@
       <text x="60" y="453" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="60" y="466" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME25.htm#915">
+   <a target="_parent" xlink:href="SCME26.htm#944">
       <rect x="285" y="686" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="285" y="686" fill="#ffcaff" width="213" height="404" stroke="#00aaaa" stroke-width="1"/>
       <text x="391" y="700" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">SAP工單下載處理明細</text>
@@ -2083,7 +2093,7 @@
       <text x="55" y="778" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="55" y="791" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME32.htm#1525">
+   <a target="_parent" xlink:href="SCME33.htm#1555">
       <rect x="551" y="397" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="551" y="397" fill="#ffcaff" width="197" height="101" stroke="#00aaaa" stroke-width="1"/>
       <text x="649" y="411" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">工單群組工單關聯</text>
@@ -2099,18 +2109,18 @@
       <text x="702" y="453" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
    <a target="_parent" xlink:href="SCME15.htm#226">
-      <rect x="1078" y="239" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="1078" y="239" fill="#ffff80" width="225" height="107" stroke="#00aaaa" stroke-width="1"/>
-      <text x="1190" y="253" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_製令優先序自定義檔案</text>
-      <line x1="1078" x2="1303" y1="259" y2="259" stroke="#00aaaa" stroke-width="1"/>
-      <text x="1083" y="269" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
-      <text x="1083" y="282" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
-      <text x="1083" y="295" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
-      <text x="1118" y="269" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="1118" y="282" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
-      <text x="1118" y="295" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+      <rect x="1090" y="267" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1090" y="267" fill="#ffff80" width="225" height="70" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1202" y="281" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_製令優先序自定義檔案</text>
+      <line x1="1090" x2="1315" y1="287" y2="287" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1094" y="297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="1094" y="310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="1094" y="323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="1129" y="297" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="1129" y="310" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="1129" y="323" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME18.htm#313">
+   <a target="_parent" xlink:href="SCME19.htm#342">
       <rect x="814" y="234" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="814" y="234" fill="#ffff80" width="225" height="107" stroke="#00aaaa" stroke-width="1"/>
       <text x="926" y="250" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
@@ -2140,7 +2150,7 @@
       <text x="987" y="101" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="987" y="114" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
-   <a target="_parent" xlink:href="SCME29.htm#1423">
+   <a target="_parent" xlink:href="SCME30.htm#1453">
       <rect x="545" y="249" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="545" y="249" fill="#ffcaff" width="196" height="59" stroke="#00aaaa" stroke-width="1"/>
       <text x="643" y="263" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">導體尺寸索引檔</text>
@@ -2327,7 +2337,7 @@
    <text x="1374" y="2064" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1447" y="1986" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="1447" y="1999" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="SCME50.htm#3024">
+   <a target="_parent" xlink:href="SCME51.htm#3054">
       <rect x="1240" y="1663" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient49" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -2372,7 +2382,7 @@
       <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="1468" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME51.htm#3137">
+   <a target="_parent" xlink:href="SCME52.htm#3167">
       <rect x="1239" y="1956" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient50" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -2399,5 +2409,18 @@
       <text x="1374" y="2064" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="1447" y="1986" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1447" y="1999" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="SCME17.htm#284">
+      <rect x="1091" y="157" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <rect x="1091" y="157" fill="#ffff80" width="225" height="88" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1203" y="173" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">CUST_</text>
+      <text x="1203" y="186" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">製令產生類別自定義檔案</text>
+      <line x1="1091" x2="1316" y1="193" y2="193" stroke="#00aaaa" stroke-width="1"/>
+      <text x="1096" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">code</text>
+      <text x="1096" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">name</text>
+      <text x="1096" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">備註</text>
+      <text x="1131" y="203" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="1131" y="216" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="1131" y="229" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
    </a>
 </svg>
