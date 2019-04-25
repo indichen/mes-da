@@ -1,0 +1,4 @@
+truncate table pap.walsindba.c_cust_lot_source_code;
+insert into pap.walsindba.c_cust_lot_source_code (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (10, '產出', '', '15df42f4-001f-487f-9c65-44260ba57413', '0000000001', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_lot_source_code (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (20, '載具交換', '', '5f4adb88-dd86-4d69-85a7-d3de7ba410f0', '0000000002', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_lot_source_code (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (30, '委外接收', '', '4801ca7d-e68e-4c83-a7aa-375a67310671', '0000000003', 0, 0, 1, convert(varchar, getdate(), 121), 0);

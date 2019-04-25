@@ -1,0 +1,6 @@
+truncate table pap.walsindba.c_cust_process_po_type;
+insert into pap.walsindba.c_cust_process_po_type (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (10, '一般', '', '43f2237d-0274-46b1-9e9b-1b49b2da76ea', '0000000001', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_type (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (50, '重工', '', 'badd3b02-dcce-4506-8738-158eb9b4d0c4', '0000000002', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_type (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (20, '計劃無主', '', 'cee93886-8a2c-42e7-a55e-ef911c1ae720', '0000000003', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_type (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (30, '生產無主', '', 'e5f95b42-7f82-4558-bb83-db860cfe7b9c', '0000000004', 0, 0, 1, convert(varchar, getdate(), 121), 0);
+insert into pap.walsindba.c_cust_process_po_type (code, name, note, pk_mdm, mdm_code, mdm_duplicate, mdm_seal, mdm_version, ts, dr) values (40, '計劃餘尺', '', 'c659c5fe-00b3-464b-8b80-d69c3f07f86b', '0000000005', 0, 0, 1, convert(varchar, getdate(), 121), 0);
