@@ -1,15 +1,8 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/22 上午 08:50:38                        */
+/* Created on:     2019/4/29 下午 04:38:46                        */
 /*==============================================================*/
 
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('FM8_qc_items')
-            and   type = 'U')
-   drop table FM8_qc_items
-go
 
 if exists (select 1
             from  sysobjects
@@ -163,6 +156,13 @@ if exists (select 1
            where  id = object_id('fm8_qc_enum')
             and   type = 'U')
    drop table fm8_qc_enum
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm8_qc_items')
+            and   type = 'U')
+   drop table fm8_qc_items
 go
 
 if exists (select 1
@@ -418,35 +418,6 @@ go
 /*==============================================================*/
 create type type_weight
    from decimal(10,3)
-go
-
-/*==============================================================*/
-/* Table: FM8_qc_items                                          */
-/*==============================================================*/
-create table FM8_qc_items (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   code                 type_cd              not null,
-   name                 type_name            not null,
-   type_cd              type_enum_val        not null,
-   unit_pk              type_pk              not null,
-   display_sn           type_number          null,
-   is_formula           type_boolean         not null,
-   value_type_cd        type_enum_val        null,
-   digits               type_number          null,
-   decimals             type_number          null,
-   group_name           type_name            null,
-   note                 type_memo            null,
-   constraint PK_FM8_QC_ITEMS primary key (id)
-)
 go
 
 /*==============================================================*/
@@ -1013,6 +984,35 @@ create table fm8_qc_enum (
    description          type_name            not null,
    is_enabled           type_boolean         not null,
    constraint PK_FM8_QC_ENUM primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: fm8_qc_items                                          */
+/*==============================================================*/
+create table fm8_qc_items (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   code                 type_cd              not null,
+   name                 type_name            not null,
+   type_cd              type_enum_val        not null,
+   unit_pk              type_pk              not null,
+   display_sn           type_number          null,
+   is_formula           type_boolean         not null,
+   value_type_cd        type_enum_val        null,
+   digits               type_number          null,
+   decimals             type_number          null,
+   group_name           type_name            null,
+   note                 type_memo            null,
+   constraint PK_FM8_QC_ITEMS primary key (id)
 )
 go
 

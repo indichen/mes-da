@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact52.htm#2239">FM8_qc_items</a>
+<p align="left"><a href="Fact52.htm#2239">fm8_qc_items</a>
 </p>
 </td>
 </tr>
@@ -67,15 +67,15 @@
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('FM8_qc_items')<br />
+           where  id = object_id('fm8_qc_items')<br />
             and   type = 'U')<br />
-   drop table FM8_qc_items<br />
+   drop table fm8_qc_items<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: FM8_qc_items                                          */<br />
+/* Table: fm8_qc_items                                          */<br />
 /*==============================================================*/<br />
-create table FM8_qc_items (<br />
+create table fm8_qc_items (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -5282,7 +5282,7 @@ go<br />
 <a name="2330">Code preview of the key Key_1 of the table FM8_質檢項目</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">alter table FM8_qc_items<br />
+<p align="left">alter table fm8_qc_items<br />
    drop constraint PK_FM8_QC_ITEMS<br />
 go<br />
 
