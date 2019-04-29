@@ -99,6 +99,18 @@ class c_cust_equip_status(CustTableGenerator):
         ]
         return biz_init_tuples
 
+## c_生產裝備投產類型 (c_name)
+class c_cust_equip_prod_type(CustTableGenerator):
+    def get_biz_init_tuples(self):
+        biz_columns = ['code', 'name', 'note']
+        biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
+        biz_init_tuples = [
+            biz_tuple('M', 'M手動', '手動機台'),
+            biz_tuple('S', 'S半自動', '半自動機台'),
+            biz_tuple('A', 'A半自動', '全自動機台'),
+        ]
+        return biz_init_tuples    
+
 ## c_LOT狀態 (c_cust_lot_status)
 class c_cust_lot_status(CustTableGenerator):
     def get_biz_init_tuples(self):
