@@ -72,13 +72,13 @@ class c_cust_carrier_status(CustTableGenerator):
         biz_columns = ['code', 'name', 'note']
         biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
         biz_init_tuples = [
-            biz_tuple(10, 'I空載', ''),
-            biz_tuple(20, 'U負載', ''),
-            biz_tuple(30, 'A驗收', ''),
-            biz_tuple(50, 'R維修', ''),
-            biz_tuple(55, 'W待修', ''),
-            biz_tuple(80, 'S備品', ''),
-            biz_tuple(90, 'C除賬', ''),
+            biz_tuple(10, 'I空載', '閒置中'),
+            biz_tuple(20, 'U負載', '使用中'),
+            biz_tuple(30, 'A驗收', '等待驗收'),
+            biz_tuple(50, 'R維修', '維修中'),
+            biz_tuple(55, 'W待修', '等待維修'),
+            biz_tuple(80, 'S備品', '備用'),
+            biz_tuple(90, 'C除賬', '無法使用'),
         ]
         return biz_init_tuples
 
@@ -98,6 +98,18 @@ class c_cust_equip_status(CustTableGenerator):
             biz_tuple('Q', 'Q不良品處理', 1),
         ]
         return biz_init_tuples
+
+## c_生產裝備投產類型 (c_name)
+class c_cust_equip_prod_type(CustTableGenerator):
+    def get_biz_init_tuples(self):
+        biz_columns = ['code', 'name', 'note']
+        biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
+        biz_init_tuples = [
+            biz_tuple('M', 'M手動', '手動機台'),
+            biz_tuple('S', 'S半自動', '半自動機台'),
+            biz_tuple('A', 'A半自動', '全自動機台'),
+        ]
+        return biz_init_tuples    
 
 ## c_LOT狀態 (c_cust_lot_status)
 class c_cust_lot_status(CustTableGenerator):
@@ -126,6 +138,7 @@ class c_cust_lot_source_code(CustTableGenerator):
             biz_tuple(10, '產出', ''),
             biz_tuple(20, '載具交換', ''),
             biz_tuple(30, '委外接收', ''),
+            biz_tuple(40, '例外處理', ''),
         ]
         return biz_init_tuples
 
@@ -173,7 +186,7 @@ class c_cust_mo_priority(CustTableGenerator):
         ]
         return biz_init_tuples
 
-## c_品質碼 (c_cust_po_group_status)
+## c_品質碼 (c_cust_quality_code)
 class c_cust_quality_code(CustTableGenerator):
     def get_biz_init_tuples(self):
         biz_columns = ['categories', 'code', 'note']
@@ -305,6 +318,17 @@ class c_cust_sappo_proc_status(CustTableGenerator):
             biz_tuple(15, '處理中', ''),
             biz_tuple(20, '完成', ''),
             biz_tuple(30, '失敗', ''),
+        ]
+        return biz_init_tuples        
+
+## c_製令產生類別 (c_cust_mo_type)
+class c_cust_mo_type(CustTableGenerator):
+    def get_biz_init_tuples(self):
+        biz_columns = ['code', 'name', 'note']
+        biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
+        biz_init_tuples = [
+            biz_tuple(10, '系統', ''),
+            biz_tuple(20, '手動', ''),
         ]
         return biz_init_tuples        
 
