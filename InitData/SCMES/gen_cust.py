@@ -138,6 +138,7 @@ class c_cust_lot_source_code(CustTableGenerator):
             biz_tuple(10, '產出', ''),
             biz_tuple(20, '載具交換', ''),
             biz_tuple(30, '委外接收', ''),
+            biz_tuple(40, '例外處理', ''),
         ]
         return biz_init_tuples
 
