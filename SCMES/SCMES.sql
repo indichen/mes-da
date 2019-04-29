@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/25 上午 08:28:26                        */
+/* Created on:     2019/4/29 下午 04:18:35                        */
 /*==============================================================*/
 
 
@@ -101,6 +101,13 @@ go
 
 if exists (select 1
             from  sysobjects
+           where  id = object_id('mw_common_source_lot')
+            and   type = 'U')
+   drop table mw_common_source_lot
+go
+
+if exists (select 1
+            from  sysobjects
            where  id = object_id('mwc_checkin_copper')
             and   type = 'U')
    drop table mwc_checkin_copper
@@ -136,9 +143,37 @@ go
 
 if exists (select 1
             from  sysobjects
+           where  id = object_id('mwc_checkout_queue')
+            and   type = 'U')
+   drop table mwc_checkout_queue
+go
+
+if exists (select 1
+            from  sysobjects
            where  id = object_id('mwc_copper')
             and   type = 'U')
    drop table mwc_copper
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mwc_copper_history')
+            and   type = 'U')
+   drop table mwc_copper_history
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mwc_lot_detail')
+            and   type = 'U')
+   drop table mwc_lot_detail
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('mwc_lot_history')
+            and   type = 'U')
+   drop table mwc_lot_history
 go
 
 if exists (select 1
@@ -150,51 +185,16 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('wm_common_source_lot')
+           where  id = object_id('mwc_rework_signing')
             and   type = 'U')
-   drop table wm_common_source_lot
+   drop table mwc_rework_signing
 go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('wmc_checkout_queue')
+           where  id = object_id('mwc_rework_signing_process')
             and   type = 'U')
-   drop table wmc_checkout_queue
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('wmc_copper_history')
-            and   type = 'U')
-   drop table wmc_copper_history
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('wmc_lot_detail')
-            and   type = 'U')
-   drop table wmc_lot_detail
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('wmc_lot_history')
-            and   type = 'U')
-   drop table wmc_lot_history
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('wmc_rework_signing')
-            and   type = 'U')
-   drop table wmc_rework_signing
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('wmc_rework_signing_process')
-            and   type = 'U')
-   drop table wmc_rework_signing_process
+   drop table mwc_rework_signing_process
 go
 
 if exists(select 1 from systypes where name='type_boolean')
@@ -793,6 +793,26 @@ create table mw_common_lot_quality (
 go
 
 /*==============================================================*/
+/* Table: mw_common_source_lot                                  */
+/*==============================================================*/
+create table mw_common_source_lot (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   lot_pk               type_pk              not null,
+   source_lotPK         type_pk              not null,
+   constraint PK_MW_COMMON_SOURCE_LOT primary key (id)
+)
+go
+
+/*==============================================================*/
 /* Table: mwc_checkin_copper                                    */
 /*==============================================================*/
 create table mwc_checkin_copper (
@@ -920,6 +940,28 @@ create table mwc_checkout_operator (
 go
 
 /*==============================================================*/
+/* Table: mwc_checkout_queue                                    */
+/*==============================================================*/
+create table mwc_checkout_queue (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   machine_pk           type_pk              null,
+   machine_id           type_cd              null,
+   vehicle_id           type_cd              null,
+   queue_ts             type_datetime        null,
+   constraint PK_MWC_CHECKOUT_QUEUE primary key (id)
+)
+go
+
+/*==============================================================*/
 /* Table: mwc_copper                                            */
 /*==============================================================*/
 create table mwc_copper (
@@ -946,72 +988,9 @@ create table mwc_copper (
 go
 
 /*==============================================================*/
-/* Table: mwc_lot_po_map                                        */
+/* Table: mwc_copper_history                                    */
 /*==============================================================*/
-create table mwc_lot_po_map (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   lot_pk               type_pk              null,
-   lot_id               type_cd              null,
-   po_id                type_cd              null,
-   constraint PK_MWC_LOT_PO_MAP primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: wm_common_source_lot                                  */
-/*==============================================================*/
-create table wm_common_source_lot (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   lot_pk               type_pk              not null,
-   source_lotPK         type_pk              not null,
-   constraint PK_WM_COMMON_SOURCE_LOT primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: wmc_checkout_queue                                    */
-/*==============================================================*/
-create table wmc_checkout_queue (
-   create_time varchar(64) null,
-   create_user varchar(64) null,
-   last_modified varchar(64) null,
-   last_modify_user varchar(64) null,
-   bpm_state decimal(11) null,
-   ts varchar(64) null,
-   dr decimal(11) null,
-   tenant_id varchar(64) null,
-
-   id                   type_pk              not null,
-   machine_pk           type_pk              null,
-   machine_id           type_cd              null,
-   vehicle_id           type_cd              null,
-   queue_ts             type_datetime        null,
-   constraint PK_WMC_CHECKOUT_QUEUE primary key (id)
-)
-go
-
-/*==============================================================*/
-/* Table: wmc_copper_history                                    */
-/*==============================================================*/
-create table wmc_copper_history (
+create table mwc_copper_history (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -1030,14 +1009,14 @@ create table wmc_copper_history (
    length               type_length          null,
    weight               type_weight          null,
    status               type_enum_val        null,
-   constraint PK_WMC_COPPER_HISTORY primary key (id)
+   constraint PK_MWC_COPPER_HISTORY primary key (id)
 )
 go
 
 /*==============================================================*/
-/* Table: wmc_lot_detail                                        */
+/* Table: mwc_lot_detail                                        */
 /*==============================================================*/
-create table wmc_lot_detail (
+create table mwc_lot_detail (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -1060,14 +1039,14 @@ create table wmc_lot_detail (
    is_melded            type_boolean         null,
    color_cd             type_enum_val        null,
    outer_diameter       type_length          null,
-   constraint PK_WMC_LOT_DETAIL primary key (id)
+   constraint PK_MWC_LOT_DETAIL primary key (id)
 )
 go
 
 /*==============================================================*/
-/* Table: wmc_lot_history                                       */
+/* Table: mwc_lot_history                                       */
 /*==============================================================*/
-create table wmc_lot_history (
+create table mwc_lot_history (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -1103,14 +1082,35 @@ create table wmc_lot_history (
    outer_diameter       type_length          null,
    note                 type_memo            null,
    note_quality_change  type_memo            null,
-   constraint PK_WMC_LOT_HISTORY primary key (id)
+   constraint PK_MWC_LOT_HISTORY primary key (id)
 )
 go
 
 /*==============================================================*/
-/* Table: wmc_rework_signing                                    */
+/* Table: mwc_lot_po_map                                        */
 /*==============================================================*/
-create table wmc_rework_signing (
+create table mwc_lot_po_map (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   lot_pk               type_pk              null,
+   lot_id               type_cd              null,
+   po_id                type_cd              null,
+   constraint PK_MWC_LOT_PO_MAP primary key (id)
+)
+go
+
+/*==============================================================*/
+/* Table: mwc_rework_signing                                    */
+/*==============================================================*/
+create table mwc_rework_signing (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -1136,14 +1136,14 @@ create table wmc_rework_signing (
    is_scrap             type_boolean         null,
    qty                  type_decimal         null,
    production_date      type_date            null,
-   constraint PK_WMC_REWORK_SIGNING primary key (id)
+   constraint PK_MWC_REWORK_SIGNING primary key (id)
 )
 go
 
 /*==============================================================*/
-/* Table: wmc_rework_signing_process                            */
+/* Table: mwc_rework_signing_process                            */
 /*==============================================================*/
-create table wmc_rework_signing_process (
+create table mwc_rework_signing_process (
    create_time varchar(64) null,
    create_user varchar(64) null,
    last_modified varchar(64) null,
@@ -1160,7 +1160,7 @@ create table wmc_rework_signing_process (
    process_name         type_name            null,
    seq_route            type_sn              null,
    qty                  type_decimal         null,
-   constraint PK_WMC_REWORK_SIGNING_PROCESS primary key (id)
+   constraint PK_MWC_REWORK_SIGNING_PROCESS primary key (id)
 )
 go
 

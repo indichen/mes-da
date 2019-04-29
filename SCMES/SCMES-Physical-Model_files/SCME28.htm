@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME28.htm#1149">wm_common_source_lot</a>
+<p align="left"><a href="SCME28.htm#1149">mw_common_source_lot</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="1151">Check constraint name of the table 來源 lot 對應表</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WM_COMMON_SOURCE_LOT
+<p align="left">CKT_MW_COMMON_SOURCE_LOT
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wm_common_source_lot')<br />
+           where  id = object_id('mw_common_source_lot')<br />
             and   type = 'U')<br />
-   drop table wm_common_source_lot<br />
+   drop table mw_common_source_lot<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wm_common_source_lot                                  */<br />
+/* Table: mw_common_source_lot                                  */<br />
 /*==============================================================*/<br />
-create table wm_common_source_lot (<br />
+create table mw_common_source_lot (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -94,7 +94,7 @@ create table wm_common_source_lot (<br />
    id                   type_pk              not null,<br />
    lot_pk               type_pk              not null,<br />
    source_lotPK         type_pk              not null,<br />
-   constraint PK_WM_COMMON_SOURCE_LOT primary key (id)<br />
+   constraint PK_MW_COMMON_SOURCE_LOT primary key (id)<br />
 )<br />
 go<br />
 
@@ -470,7 +470,7 @@ go<br />
 <a name="1161">Check constraint name of the column id (來源 lot 對應) of the table 來源 lot 對應表</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WM_COMMO
+<p align="left">CKC_ID_MW_COMMO
 </p>
 </td></tr>
 </table><br />
@@ -863,7 +863,7 @@ go<br />
 <a name="1168">Check constraint name of the column lotPK of the table 來源 lot 對應表</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_PK_WM_COMMO
+<p align="left">CKC_LOT_PK_MW_COMMO
 </p>
 </td></tr>
 </table><br />
@@ -1256,7 +1256,7 @@ go<br />
 <a name="1175">Check constraint name of the column source_lotPK of the table 來源 lot 對應表</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SOURCE_LOTPK_WM_COMMO
+<p align="left">CKC_SOURCE_LOTPK_MW_COMMO
 </p>
 </td></tr>
 </table><br />
@@ -1642,8 +1642,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wm_common_source_lot<br />
-   drop constraint PK_WM_COMMON_SOURCE_LOT<br />
+alter table mw_common_source_lot<br />
+   drop constraint PK_MW_COMMON_SOURCE_LOT<br />
 go<br />
 <br />
 use SCMES<br />

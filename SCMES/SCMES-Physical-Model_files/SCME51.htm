@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME51.htm#3054">wmc_rework_signing</a>
+<p align="left"><a href="SCME51.htm#3054">mwc_rework_signing</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="3056">Check constraint name of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_REWORK_SIGNING
+<p align="left">CKT_MWC_REWORK_SIGNING
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_rework_signing')<br />
+           where  id = object_id('mwc_rework_signing')<br />
             and   type = 'U')<br />
-   drop table wmc_rework_signing<br />
+   drop table mwc_rework_signing<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_rework_signing                                    */<br />
+/* Table: mwc_rework_signing                                    */<br />
 /*==============================================================*/<br />
-create table wmc_rework_signing (<br />
+create table mwc_rework_signing (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -107,7 +107,7 @@ create table wmc_rework_signing (<br />
    is_scrap             type_boolean         null,<br />
    qty                  type_decimal         null,<br />
    production_date      type_date            null,<br />
-   constraint PK_WMC_REWORK_SIGNING primary key (id)<br />
+   constraint PK_MWC_REWORK_SIGNING primary key (id)<br />
 )<br />
 go<br />
 
@@ -605,7 +605,7 @@ go<br />
 <a name="3066">Check constraint name of the column id (重工簽核單PK) of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_REWO
+<p align="left">CKC_ID_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -1012,7 +1012,7 @@ go<br />
 <a name="3073">Check constraint name of the column BPM 簽核單PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_BPM_PK_WMC_REWO
+<p align="left">CKC_BPM_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -1390,7 +1390,7 @@ go<br />
 <a name="3079">Check constraint name of the column lot PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_PK_WMC_REWO
+<p align="left">CKC_LOT_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -1768,7 +1768,7 @@ go<br />
 <a name="3085">Check constraint name of the column lot 代碼 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_CD_WMC_REWO
+<p align="left">CKC_LOT_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2146,7 +2146,7 @@ go<br />
 <a name="3091">Check constraint name of the column 製令PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MO_PK_WMC_REWO
+<p align="left">CKC_MO_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2524,7 +2524,7 @@ go<br />
 <a name="3097">Check constraint name of the column 製令cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MO_CD_WMC_REWO
+<p align="left">CKC_MO_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2902,7 +2902,7 @@ go<br />
 <a name="3103">Check constraint name of the column (挑選)SAP工單PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SAP_PO_PK_WMC_REWO
+<p align="left">CKC_SAP_PO_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -3280,7 +3280,7 @@ go<br />
 <a name="3109">Check constraint name of the column (挑選)SAP工單cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SAP_PO_CD_WMC_REWO
+<p align="left">CKC_SAP_PO_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -3658,7 +3658,7 @@ go<br />
 <a name="3115">Check constraint name of the column 目前製程PK of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_PK_WMC_REWO
+<p align="left">CKC_PROCESS_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -4036,7 +4036,7 @@ go<br />
 <a name="3121">Check constraint name of the column 目前製程cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_CD_WMC_REWO
+<p align="left">CKC_PROCESS_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -4414,7 +4414,7 @@ go<br />
 <a name="3127">Check constraint name of the column 目前製程name of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_NAME_WMC_REWO
+<p align="left">CKC_PROCESS_NAME_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -4792,7 +4792,7 @@ go<br />
 <a name="3133">Check constraint name of the column 重工原因 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_REASON_WMC_REWO
+<p align="left">CKC_REASON_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -5170,7 +5170,7 @@ go<br />
 <a name="3139">Check constraint name of the column 操作員cd of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_OPERATOR_CD_WMC_REWO
+<p align="left">CKC_OPERATOR_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -5548,7 +5548,7 @@ go<br />
 <a name="3145">Check constraint name of the column 是否轉廢線 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_IS_SCRAP_WMC_REWO
+<p align="left">CKC_IS_SCRAP_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -5926,7 +5926,7 @@ go<br />
 <a name="3151">Check constraint name of the column (實際) 重工數量 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_QTY_WMC_REWO
+<p align="left">CKC_QTY_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -6304,7 +6304,7 @@ go<br />
 <a name="3157">Check constraint name of the column 預估生產日期 of the table 重工簽核單</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PRODUCTION_DATE_WMC_REWO
+<p align="left">CKC_PRODUCTION_DATE_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -6708,8 +6708,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_rework_signing<br />
-   drop constraint PK_WMC_REWORK_SIGNING<br />
+alter table mwc_rework_signing<br />
+   drop constraint PK_MWC_REWORK_SIGNING<br />
 go<br />
 <br />
 use SCMES<br />

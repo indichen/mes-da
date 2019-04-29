@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME53.htm#3227">wmc_copper_history</a>
+<p align="left"><a href="SCME53.htm#3227">mwc_copper_history</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="3229">Check constraint name of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_COPPER_HISTORY
+<p align="left">CKT_MWC_COPPER_HISTORY
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_copper_history')<br />
+           where  id = object_id('mwc_copper_history')<br />
             and   type = 'U')<br />
-   drop table wmc_copper_history<br />
+   drop table mwc_copper_history<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_copper_history                                    */<br />
+/* Table: mwc_copper_history                                    */<br />
 /*==============================================================*/<br />
-create table wmc_copper_history (<br />
+create table mwc_copper_history (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -100,7 +100,7 @@ create table wmc_copper_history (<br />
    length               type_length          null,<br />
    weight               type_weight          null,<br />
    status               type_enum_val        null,<br />
-   constraint PK_WMC_COPPER_HISTORY primary key (id)<br />
+   constraint PK_MWC_COPPER_HISTORY primary key (id)<br />
 )<br />
 go<br />
 
@@ -489,7 +489,7 @@ go<br />
 <a name="3238">Check constraint name of the column id (銅線流水PK) of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_COPP
+<p align="left">CKC_ID_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -882,7 +882,7 @@ go<br />
 <a name="3245">Check constraint name of the column 銅線代碼 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CODE_WMC_COPP
+<p align="left">CKC_CODE_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -1260,7 +1260,7 @@ go<br />
 <a name="3251">Check constraint name of the column 工廠 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_FACTORY_ID_WMC_COPP
+<p align="left">CKC_FACTORY_ID_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -1638,7 +1638,7 @@ go<br />
 <a name="3257">Check constraint name of the column 車間 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WORKSHOP_WMC_COPP
+<p align="left">CKC_WORKSHOP_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -2016,7 +2016,7 @@ go<br />
 <a name="3263">Check constraint name of the column 原始長度 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_ORIGIN_WMC_COPP
+<p align="left">CKC_LENGTH_ORIGIN_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -2394,7 +2394,7 @@ go<br />
 <a name="3269">Check constraint name of the column 原始重量 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_ORIGIN_WMC_COPP
+<p align="left">CKC_WEIGHT_ORIGIN_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -2772,7 +2772,7 @@ go<br />
 <a name="3275">Check constraint name of the column 實際長度 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_WMC_COPP
+<p align="left">CKC_LENGTH_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -3150,7 +3150,7 @@ go<br />
 <a name="3281">Check constraint name of the column 實際重量 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_WMC_COPP
+<p align="left">CKC_WEIGHT_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -3528,7 +3528,7 @@ go<br />
 <a name="3287">Check constraint name of the column 狀態 of the table 銅線 ID 流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_STATUS_WMC_COPP
+<p align="left">CKC_STATUS_MWC_COPP
 </p>
 </td></tr>
 </table><br />
@@ -3932,8 +3932,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_copper_history<br />
-   drop constraint PK_WMC_COPPER_HISTORY<br />
+alter table mwc_copper_history<br />
+   drop constraint PK_MWC_COPPER_HISTORY<br />
 go<br />
 <br />
 use SCMES<br />

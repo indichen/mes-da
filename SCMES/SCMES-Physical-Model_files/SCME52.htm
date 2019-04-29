@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME52.htm#3167">wmc_rework_signing_process</a>
+<p align="left"><a href="SCME52.htm#3167">mwc_rework_signing_process</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="3169">Check constraint name of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_REWORK_SIGNING_PROCESS
+<p align="left">CKT_MWC_REWORK_SIGNING_PROCESS
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_rework_signing_process')<br />
+           where  id = object_id('mwc_rework_signing_process')<br />
             and   type = 'U')<br />
-   drop table wmc_rework_signing_process<br />
+   drop table mwc_rework_signing_process<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_rework_signing_process                            */<br />
+/* Table: mwc_rework_signing_process                            */<br />
 /*==============================================================*/<br />
-create table wmc_rework_signing_process (<br />
+create table mwc_rework_signing_process (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -98,7 +98,7 @@ create table wmc_rework_signing_process (<br />
    process_name         type_name            null,<br />
    seq_route            type_sn              null,<br />
    qty                  type_decimal         null,<br />
-   constraint PK_WMC_REWORK_SIGNING_PROCESS primary key (id)<br />
+   constraint PK_MWC_REWORK_SIGNING_PROCESS primary key (id)<br />
 )<br />
 go<br />
 
@@ -514,7 +514,7 @@ go<br />
 <a name="3179">Check constraint name of the column id (重工簽核單製程明細PK) of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_REWO
+<p align="left">CKC_ID_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -907,7 +907,7 @@ go<br />
 <a name="3186">Check constraint name of the column 重工簽核單PK of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_REWORK_SIGNING_PK_WMC_REWO
+<p align="left">CKC_REWORK_SIGNING_PK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -1318,7 +1318,7 @@ go<br />
 <a name="3193">Check constraint name of the column 製程PK of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_OK_WMC_REWO
+<p align="left">CKC_PROCESS_OK_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -1696,7 +1696,7 @@ go<br />
 <a name="3199">Check constraint name of the column 製程代碼 of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_CD_WMC_REWO
+<p align="left">CKC_PROCESS_CD_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2074,7 +2074,7 @@ go<br />
 <a name="3205">Check constraint name of the column 製程名稱 of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PROCESS_NAME_WMC_REWO
+<p align="left">CKC_PROCESS_NAME_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2452,7 +2452,7 @@ go<br />
 <a name="3211">Check constraint name of the column 製序 of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SEQ_ROUTE_WMC_REWO
+<p align="left">CKC_SEQ_ROUTE_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -2830,7 +2830,7 @@ go<br />
 <a name="3217">Check constraint name of the column 數量 of the table 重工簽核單製程明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_QTY_WMC_REWO
+<p align="left">CKC_QTY_MWC_REWO
 </p>
 </td></tr>
 </table><br />
@@ -3234,8 +3234,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_rework_signing_process<br />
-   drop constraint PK_WMC_REWORK_SIGNING_PROCESS<br />
+alter table mwc_rework_signing_process<br />
+   drop constraint PK_MWC_REWORK_SIGNING_PROCESS<br />
 go<br />
 <br />
 use SCMES<br />

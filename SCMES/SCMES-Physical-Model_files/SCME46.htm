@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME46.htm#2550">wmc_lot_detail</a>
+<p align="left"><a href="SCME46.htm#2550">mwc_lot_detail</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="2552">Check constraint name of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_LOT_DETAIL
+<p align="left">CKT_MWC_LOT_DETAIL
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_lot_detail')<br />
+           where  id = object_id('mwc_lot_detail')<br />
             and   type = 'U')<br />
-   drop table wmc_lot_detail<br />
+   drop table mwc_lot_detail<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_lot_detail                                        */<br />
+/* Table: mwc_lot_detail                                        */<br />
 /*==============================================================*/<br />
-create table wmc_lot_detail (<br />
+create table mwc_lot_detail (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -104,7 +104,7 @@ create table wmc_lot_detail (<br />
    is_melded            type_boolean         null,<br />
    color_cd             type_enum_val        null,<br />
    outer_diameter       type_length          null,<br />
-   constraint PK_WMC_LOT_DETAIL primary key (id)<br />
+   constraint PK_MWC_LOT_DETAIL primary key (id)<br />
 )<br />
 go<br />
 
@@ -580,7 +580,7 @@ go<br />
 <a name="2562">Check constraint name of the column id (lot現況明細PK) of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_LOT_
+<p align="left">CKC_ID_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -973,7 +973,7 @@ go<br />
 <a name="2569">Check constraint name of the column lotPK of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_PK_WMC_LOT_
+<p align="left">CKC_LOT_PK_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -1366,7 +1366,7 @@ go<br />
 <a name="2576">Check constraint name of the column 原始長度 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_ORIGIN_WMC_LOT_
+<p align="left">CKC_LENGTH_ORIGIN_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -1744,7 +1744,7 @@ go<br />
 <a name="2582">Check constraint name of the column 原始重量 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_ORIGIN_WMC_LOT_
+<p align="left">CKC_WEIGHT_ORIGIN_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2122,7 +2122,7 @@ go<br />
 <a name="2588">Check constraint name of the column 原始導體重量 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_ORIGIN_COP_WMC_LOT_
+<p align="left">CKC_WEIGHT_ORIGIN_COP_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2500,7 +2500,7 @@ go<br />
 <a name="2594">Check constraint name of the column 實際長度 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_WMC_LOT_
+<p align="left">CKC_LENGTH_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2878,7 +2878,7 @@ go<br />
 <a name="2600">Check constraint name of the column Intouch長度 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_INTOUCH_WMC_LOT_
+<p align="left">CKC_LENGTH_INTOUCH_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -3256,7 +3256,7 @@ go<br />
 <a name="2606">Check constraint name of the column 實際重量 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_WMC_LOT_
+<p align="left">CKC_WEIGHT_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -3634,7 +3634,7 @@ go<br />
 <a name="2612">Check constraint name of the column 實際導體重量 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_COPPER_WMC_LOT_
+<p align="left">CKC_WEIGHT_COPPER_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4012,7 +4012,7 @@ go<br />
 <a name="2618">Check constraint name of the column 產出判定品質 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_QUALITY_WMC_LOT_
+<p align="left">CKC_QUALITY_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4390,7 +4390,7 @@ go<br />
 <a name="2624">Check constraint name of the column 接線過 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_IS_MELDED_WMC_LOT_
+<p align="left">CKC_IS_MELDED_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4768,7 +4768,7 @@ go<br />
 <a name="2630">Check constraint name of the column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_COLOR_CD_WMC_LOT_
+<p align="left">CKC_COLOR_CD_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -5146,7 +5146,7 @@ go<br />
 <a name="2636">Check constraint name of the column 外徑 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_OUTER_DIAMETER_WMC_LOT_
+<p align="left">CKC_OUTER_DIAMETER_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -5550,8 +5550,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_lot_detail<br />
-   drop constraint PK_WMC_LOT_DETAIL<br />
+alter table mwc_lot_detail<br />
+   drop constraint PK_MWC_LOT_DETAIL<br />
 go<br />
 <br />
 use SCMES<br />

@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME41.htm#2147">wmc_checkout_queue</a>
+<p align="left"><a href="SCME41.htm#2147">mwc_checkout_queue</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="2149">Check constraint name of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_CHECKOUT_QUEUE
+<p align="left">CKT_MWC_CHECKOUT_QUEUE
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_checkout_queue')<br />
+           where  id = object_id('mwc_checkout_queue')<br />
             and   type = 'U')<br />
-   drop table wmc_checkout_queue<br />
+   drop table mwc_checkout_queue<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_checkout_queue                                    */<br />
+/* Table: mwc_checkout_queue                                    */<br />
 /*==============================================================*/<br />
-create table wmc_checkout_queue (<br />
+create table mwc_checkout_queue (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -96,7 +96,7 @@ create table wmc_checkout_queue (<br />
    machine_id           type_cd              null,<br />
    vehicle_id           type_cd              null,<br />
    queue_ts             type_datetime        null,<br />
-   constraint PK_WMC_CHECKOUT_QUEUE primary key (id)<br />
+   constraint PK_MWC_CHECKOUT_QUEUE primary key (id)<br />
 )<br />
 go<br />
 
@@ -412,7 +412,7 @@ go<br />
 <a name="2157">Check constraint name of the column id (產出等待區PK) of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_CHEC
+<p align="left">CKC_ID_MWC_CHEC
 </p>
 </td></tr>
 </table><br />
@@ -805,7 +805,7 @@ go<br />
 <a name="2164">Check constraint name of the column 機臺PK of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MACHINE_PK_WMC_CHEC
+<p align="left">CKC_MACHINE_PK_MWC_CHEC
 </p>
 </td></tr>
 </table><br />
@@ -1183,7 +1183,7 @@ go<br />
 <a name="2170">Check constraint name of the column 機臺ID of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MACHINE_ID_WMC_CHEC
+<p align="left">CKC_MACHINE_ID_MWC_CHEC
 </p>
 </td></tr>
 </table><br />
@@ -1561,7 +1561,7 @@ go<br />
 <a name="2176">Check constraint name of the column 載具ID of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_VEHICLE_ID_WMC_CHEC
+<p align="left">CKC_VEHICLE_ID_MWC_CHEC
 </p>
 </td></tr>
 </table><br />
@@ -1939,7 +1939,7 @@ go<br />
 <a name="2182">Check constraint name of the column 進入產出等待區時間 of the table 投產執行-產出等待區</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_QUEUE_TS_WMC_CHEC
+<p align="left">CKC_QUEUE_TS_MWC_CHEC
 </p>
 </td></tr>
 </table><br />
@@ -2343,8 +2343,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_checkout_queue<br />
-   drop constraint PK_WMC_CHECKOUT_QUEUE<br />
+alter table mwc_checkout_queue<br />
+   drop constraint PK_MWC_CHECKOUT_QUEUE<br />
 go<br />
 <br />
 use SCMES<br />

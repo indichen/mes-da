@@ -30,7 +30,7 @@
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME45.htm#2378">wmc_lot_history</a>
+<p align="left"><a href="SCME45.htm#2378">mwc_lot_history</a>
 </p>
 </td>
 </tr>
@@ -49,7 +49,7 @@
 <a name="2380">Check constraint name of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKT_WMC_LOT_HISTORY
+<p align="left">CKT_MWC_LOT_HISTORY
 </p>
 </td></tr>
 </table><br />
@@ -70,18 +70,18 @@ go<br />
 <br />
 if exists (select 1<br />
             from  sysobjects<br />
-           where  id = object_id('wmc_lot_history')<br />
+           where  id = object_id('mwc_lot_history')<br />
             and   type = 'U')<br />
-   drop table wmc_lot_history<br />
+   drop table mwc_lot_history<br />
 go<br />
 <br />
 use SCMES<br />
 go<br />
 <br />
 /*==============================================================*/<br />
-/* Table: wmc_lot_history                                       */<br />
+/* Table: mwc_lot_history                                       */<br />
 /*==============================================================*/<br />
-create table wmc_lot_history (<br />
+create table mwc_lot_history (<br />
    create_time varchar(64) null,<br />
    create_user varchar(64) null,<br />
    last_modified varchar(64) null,<br />
@@ -117,7 +117,7 @@ create table wmc_lot_history (<br />
    outer_diameter       type_length          null,<br />
    note                 type_memo            null,<br />
    note_quality_change  type_memo            null,<br />
-   constraint PK_WMC_LOT_HISTORY primary key (id)<br />
+   constraint PK_MWC_LOT_HISTORY primary key (id)<br />
 )<br />
 go<br />
 
@@ -676,7 +676,7 @@ go<br />
 <a name="2389">Check constraint name of the column id (lot流水PK) of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_ID_WMC_LOT_
+<p align="left">CKC_ID_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -1069,7 +1069,7 @@ go<br />
 <a name="2396">Check constraint name of the column lotPK of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LOT_PK_WMC_LOT_
+<p align="left">CKC_LOT_PK_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -1429,7 +1429,7 @@ go<br />
 <a name="2402">Check constraint name of the column lot代碼 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_CODE_WMC_LOT_
+<p align="left">CKC_CODE_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -1807,7 +1807,7 @@ go<br />
 <a name="2408">Check constraint name of the column 工廠 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_FACTORY_CD_WMC_LOT_
+<p align="left">CKC_FACTORY_CD_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2185,7 +2185,7 @@ go<br />
 <a name="2414">Check constraint name of the column 車間 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WORKSHOP_WMC_LOT_
+<p align="left">CKC_WORKSHOP_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2563,7 +2563,7 @@ go<br />
 <a name="2420">Check constraint name of the column 料號PK of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MATERIAL_PK_WMC_LOT_
+<p align="left">CKC_MATERIAL_PK_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -2941,7 +2941,7 @@ go<br />
 <a name="2426">Check constraint name of the column 料號代碼 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_MATERIAL_CD_WMC_LOT_
+<p align="left">CKC_MATERIAL_CD_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -3319,7 +3319,7 @@ go<br />
 <a name="2432">Check constraint name of the column 狀態 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_STATUS_WMC_LOT_
+<p align="left">CKC_STATUS_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -3697,7 +3697,7 @@ go<br />
 <a name="2438">Check constraint name of the column lot產生原因代碼 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_SOURCE_CD_WMC_LOT_
+<p align="left">CKC_SOURCE_CD_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4075,7 +4075,7 @@ go<br />
 <a name="2444">Check constraint name of the column 生產日期 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_PRODUCTION_DATE_WMC_LOT_
+<p align="left">CKC_PRODUCTION_DATE_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4453,7 +4453,7 @@ go<br />
 <a name="2450">Check constraint name of the column 製程生產工時 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WORKING_HOUR_WMC_LOT_
+<p align="left">CKC_WORKING_HOUR_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -4831,7 +4831,7 @@ go<br />
 <a name="2456">Check constraint name of the column 累積生產工時 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WORKING_HOUR_ACCU_WMC_LOT_
+<p align="left">CKC_WORKING_HOUR_ACCU_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -5209,7 +5209,7 @@ go<br />
 <a name="2462">Check constraint name of the column 載具ID of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_VEHICLE_ID_WMC_LOT_
+<p align="left">CKC_VEHICLE_ID_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -5587,7 +5587,7 @@ go<br />
 <a name="2468">Check constraint name of the column 原始長度 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_ORIGIN_WMC_LOT_
+<p align="left">CKC_LENGTH_ORIGIN_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -5965,7 +5965,7 @@ go<br />
 <a name="2474">Check constraint name of the column 原始重量 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_ORIGIN_WMC_LOT_
+<p align="left">CKC_WEIGHT_ORIGIN_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -6343,7 +6343,7 @@ go<br />
 <a name="2480">Check constraint name of the column 原始導體重量 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_ORIGIN_COP_WMC_LOT_
+<p align="left">CKC_WEIGHT_ORIGIN_COP_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -6721,7 +6721,7 @@ go<br />
 <a name="2486">Check constraint name of the column 實際長度 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_WMC_LOT_
+<p align="left">CKC_LENGTH_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -7099,7 +7099,7 @@ go<br />
 <a name="2492">Check constraint name of the column Intouch長度 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_LENGTH_INTOUCH_WMC_LOT_
+<p align="left">CKC_LENGTH_INTOUCH_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -7477,7 +7477,7 @@ go<br />
 <a name="2498">Check constraint name of the column 實際重量 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_WMC_LOT_
+<p align="left">CKC_WEIGHT_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -7855,7 +7855,7 @@ go<br />
 <a name="2504">Check constraint name of the column 實際導體重量 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_WEIGHT_COPPER_WMC_LOT_
+<p align="left">CKC_WEIGHT_COPPER_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -8233,7 +8233,7 @@ go<br />
 <a name="2510">Check constraint name of the column 產出判定品質 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_QUALITY_WMC_LOT_
+<p align="left">CKC_QUALITY_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -8611,7 +8611,7 @@ go<br />
 <a name="2516">Check constraint name of the column 接線過 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_IS_MELDED_WMC_LOT_
+<p align="left">CKC_IS_MELDED_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -8989,7 +8989,7 @@ go<br />
 <a name="2522">Check constraint name of the column 顏色代碼 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_COLOR_WMC_LOT_
+<p align="left">CKC_COLOR_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -9367,7 +9367,7 @@ go<br />
 <a name="2528">Check constraint name of the column 外徑 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_OUTER_DIAMETER_WMC_LOT_
+<p align="left">CKC_OUTER_DIAMETER_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -9745,7 +9745,7 @@ go<br />
 <a name="2534">Check constraint name of the column 備註 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_NOTE_WMC_LOT_
+<p align="left">CKC_NOTE_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -10123,7 +10123,7 @@ go<br />
 <a name="2540">Check constraint name of the column 質檢變更備註 of the table 線纜 Lot ID 快照流水</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_NOTE_QUALITY_CHAN_WMC_LOT_
+<p align="left">CKC_NOTE_QUALITY_CHAN_MWC_LOT_
 </p>
 </td></tr>
 </table><br />
@@ -10527,8 +10527,8 @@ go<br />
 <p align="left">use SCMES<br />
 go<br />
 <br />
-alter table wmc_lot_history<br />
-   drop constraint PK_WMC_LOT_HISTORY<br />
+alter table mwc_lot_history<br />
+   drop constraint PK_MWC_LOT_HISTORY<br />
 go<br />
 <br />
 use SCMES<br />
