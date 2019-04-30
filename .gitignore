@@ -2,3 +2,5 @@
 *.cdb
 *.rtb
 *.pyc
+InitData/SCMES/instantclient_11_2
+InitData/SCMES/venv
