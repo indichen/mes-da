@@ -8,6 +8,9 @@ from collections import namedtuple
 from uuid import uuid4
 from decimal import Decimal
 
+from read_old_mes import PMC902M
+
+
 class MESTableGenerator(ABC):
 
     COLUMNS = ['create_time', 'create_user', 'last_modified', 'last_modify_user', 'ts', 'dr', 'tenant_id', 'id']
@@ -829,13 +832,8 @@ class fm7_material_cat(MESTableGenerator):
         return self._tuple
 
     def _gen_init_tuples(self):
-        return [
-            self._tuple('matcat1', '物料分類1', ['NULL'], 1, ''),
-            self._tuple('matcat1', '物料分類2', ['NULL'], 1, ''),
-            self._tuple('matcat1', '物料分類3', ['NULL'], 1, ''),
-            self._tuple('matcat1', '物料分類4', ['NULL'], 1, ''),
-            self._tuple('matcat1', '物料分類5', ['NULL'], 1, ''),
-        ] # TODO: Add init data here
+        old_tuples = PMC902M().load_db_data().data_tuples
+        return [self._tuple(o.NO_KIND, o.NAME_KIND, ['NULL'], 1, '') for o in old_tuples]
 
 ## fm7_物料基本信息 (fm7_material)
 class fm7_material(MESTableGenerator):
