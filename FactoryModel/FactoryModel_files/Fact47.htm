@@ -87,7 +87,7 @@ create table fm7_material_cat (<br />
 <br />
    id                   type_pk              not null,<br />
    code                 type_cd              not null,<br />
-   name                 type_name            not null,<br />
+   name                 type_long_name       not null,<br />
    parent_cat_pk        type_pk              null,<br />
    is_enabled           type_boolean         not null,<br />
    note                 type_memo            null,<br />
@@ -1294,7 +1294,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(20)
+<p align="left">national char varying(40)
 </p>
 </td>
 </tr>

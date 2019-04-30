@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/29 下午 04:38:46                        */
+/* Created on:     4/30/2019 3:58:09 PM                         */
 /*==============================================================*/
 
 
@@ -240,6 +240,10 @@ if exists(select 1 from systypes where name='type_lng_lat')
    drop type type_lng_lat
 go
 
+if exists(select 1 from systypes where name='type_long_name')
+   drop type type_long_name
+go
+
 if exists(select 1 from systypes where name='type_memo')
    drop type type_memo
 go
@@ -348,6 +352,13 @@ go
 /*==============================================================*/
 create type type_lng_lat
    from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_long_name                                       */
+/*==============================================================*/
+create type type_long_name
+   from national char varying(40)
 go
 
 /*==============================================================*/
@@ -909,7 +920,7 @@ create table fm7_material_cat (
 
    id                   type_pk              not null,
    code                 type_cd              not null,
-   name                 type_name            not null,
+   name                 type_long_name       not null,
    parent_cat_pk        type_pk              null,
    is_enabled           type_boolean         not null,
    note                 type_memo            null,
