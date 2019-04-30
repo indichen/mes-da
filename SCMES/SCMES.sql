@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     2019/4/29 下午 04:18:35                        */
+/* Created on:     4/30/2019 9:05:34 AM                         */
 /*==============================================================*/
 
 
@@ -520,6 +520,7 @@ create table mlo_process_po (
    po_qty               type_number          null,
    outer_diameter       type_diameter        null,
    mo_pk                type_pk              null,
+   reason               type_memo            null,
    status               type_enum_val        null,
    constraint PK_MLO_PROCESS_PO primary key (id)
 )
