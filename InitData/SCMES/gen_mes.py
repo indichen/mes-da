@@ -8,7 +8,7 @@ from collections import namedtuple
 from uuid import uuid4
 from decimal import Decimal
 
-from read_old_mes import PMC902M
+from read_old_mes import PMC902M, SFCWF30
 
 
 class MESTableGenerator(ABC):
@@ -17,8 +17,8 @@ class MESTableGenerator(ABC):
 
     _make_def_data = lambda self, given_id=None: \
         self._def_tuple( \
-            ['convert(varchar, getdate(), 121)'], 'admin', \
-            ['convert(varchar, getdate(), 121)'], 'admin', \
+            ['convert(varchar, getdate(), 121)'], 'U001', \
+            ['convert(varchar, getdate(), 121)'], 'U001', \
             ['convert(varchar, getdate(), 121)'], 0, 'tenant', \
             given_id or str(uuid4()).replace('-', '')
         )
@@ -833,13 +833,13 @@ class fm7_material_cat(MESTableGenerator):
 
     def _gen_init_tuples(self):
         old_tuples = PMC902M().load_db_data().data_tuples
-        return [self._tuple(o.NO_KIND, o.NAME_KIND, ['NULL'], 1, '') for o in old_tuples]
+        return [ self._tuple(o.NO_KIND, o.NAME_KIND, ['NULL'], 1, '') for o in old_tuples ]
 
 ## fm7_物料基本信息 (fm7_material)
 class fm7_material(MESTableGenerator):
     def __init__(self):
         super().__init__()
-        self._columns = ['code', 'name', 'cat_pk', 'name_en', 'is_enabled', 'version']
+        self._columns = ['code', 'name', 'cat_pk', 'name_en', 'spec', 'is_enabled', 'version']
         self._key_columns = ['code']
         self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
 
@@ -856,11 +856,13 @@ class fm7_material(MESTableGenerator):
         return self._tuple
 
     def _gen_init_tuples(self):
-        return [  ] # TODO: Add init data here
+        material_cats = fm7_material_cat().load_db_data()
+        old_tuples = SFCWF30().load_db_data().data_tuples
+        return [ self._tuple(o.PRODUCT_NO, o.PRODUCT_DES, ['null'], '', o.PRODUCT_SPEC, 1, 1) for o in old_tuples ]
 
 
 def test():
-    fm7_material_cat().create_data().gen_new_sql()
+    fm7_material().create_data().gen_new_sql()
 
 def main():
     if len(sys.argv) < 2:

@@ -48,7 +48,7 @@ class OracleTableReader(ABC):
 
     ### Implementation
     def _transform_hex_data(self, db_tuple):
-        return tuple(map(lambda c: None if not c[1] else c[1] if not c[0].hex_encoding else binascii.unhexlify(c[1]).decode(c[0].hex_encoding), zip(self._biz_columns, db_tuple)))
+        return tuple(map(lambda c: None if not c[1] else c[1] if not c[0].hex_encoding else binascii.unhexlify(c[1]).decode(c[0].hex_encoding, 'ignore'), zip(self._biz_columns, db_tuple)))
 
     ### Public methods
     def load_db_data(self):
