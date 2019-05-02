@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     4/30/2019 9:05:34 AM                         */
+/* Created on:     5/2/2019 3:04:06 PM                          */
 /*==============================================================*/
 
 
@@ -1003,7 +1003,7 @@ create table mwc_copper_history (
 
    id                   type_pk              not null,
    code                 type_cd              null,
-   factory_id           type_cd              null,
+   factory_cd           type_cd              null,
    workshop             type_name            null,
    length_origin        type_length          null,
    weight_origin        type_weight          null,
