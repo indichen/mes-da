@@ -11,7 +11,7 @@
    <polygon fill="#0080c0" points="604,244 607,257 601,257" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="195,77 195,21 380,21 380,160 257,160" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="257,160 271,157 271,163" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <a target="_parent" xlink:href="Fact46.htm#1649">
+   <a target="_parent" xlink:href="Fact46.htm#1655">
       <rect x="18" y="283" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="18" y="283" fill="#60afff" width="239" height="320" stroke="#00aaaa" stroke-width="1"/>
       <text x="137" y="297" fill="#ff0000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM7_物料基本信息</text>
@@ -55,7 +55,7 @@
       <text x="123" y="534" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="123" y="547" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
    </a>
-   <a target="_parent" xlink:href="Fact48.htm#1840">
+   <a target="_parent" xlink:href="Fact48.htm#1846">
       <rect x="495" y="387" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="495" y="387" fill="#60afff" width="193" height="112" stroke="#00aaaa" stroke-width="1"/>
       <text x="591" y="401" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM7_物料計量信息</text>
@@ -74,7 +74,7 @@
       <text x="673" y="430" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk1&gt;</text>
       <text x="673" y="443" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
    </a>
-   <a target="_parent" xlink:href="Fact47.htm#1784">
+   <a target="_parent" xlink:href="Fact47.htm#1790">
       <rect x="15" y="77" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <rect x="15" y="77" fill="#60afff" width="242" height="122" stroke="#00aaaa" stroke-width="1"/>
       <text x="136" y="91" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">FM7_物料基本分類</text>

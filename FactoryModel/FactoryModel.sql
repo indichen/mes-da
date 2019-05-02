@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     4/30/2019 3:58:09 PM                         */
+/* Created on:     5/2/2019 2:28:46 PM                          */
 /*==============================================================*/
 
 
@@ -621,6 +621,7 @@ create table fm6_carrier_model (
    gap_length           type_number          null,
    inside_width         type_number          null,
    material_id          type_pk              null,
+   material_cd          type_cd              null,
    capacity             type_weight          null,
    piece_count          type_number          null,
    note                 type_memo            null,
