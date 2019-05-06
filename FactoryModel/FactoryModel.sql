@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/2/2019 2:28:46 PM                          */
+/* Created on:     5/6/2019 7:00:37 PM                          */
 /*==============================================================*/
 
 
@@ -885,9 +885,9 @@ create table fm7_material (
 
    id                   type_pk              not null,
    code                 type_cd              null,
-   name                 type_name            null,
+   name                 type_long_name       null,
    cat_pk               type_pk              null,
-   name_en              type_name            null,
+   name_en              type_long_name       null,
    name_abbr            type_cd              null,
    unit_pk              type_pk              null,
    spec                 type_memo            null,

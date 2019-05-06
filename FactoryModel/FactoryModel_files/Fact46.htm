@@ -87,9 +87,9 @@ create table fm7_material (<br />
 <br />
    id                   type_pk              not null,<br />
    code                 type_cd              null,<br />
-   name                 type_name            null,<br />
+   name                 type_long_name       null,<br />
    cat_pk               type_pk              null,<br />
-   name_en              type_name            null,<br />
+   name_en              type_long_name       null,<br />
    name_abbr            type_cd              null,<br />
    unit_pk              type_pk              null,<br />
    spec                 type_memo            null,<br />
@@ -1459,7 +1459,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(20)
+<p align="left">national char varying(40)
 </p>
 </td>
 </tr>
@@ -2248,7 +2248,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">national char varying(20)
+<p align="left">national char varying(40)
 </p>
 </td>
 </tr>
