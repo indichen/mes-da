@@ -107,7 +107,7 @@ class c_cust_equip_prod_type(CustTableGenerator):
         biz_init_tuples = [
             biz_tuple('M', 'M手動', '手動機台'),
             biz_tuple('S', 'S半自動', '半自動機台'),
-            biz_tuple('A', 'A半自動', '全自動機台'),
+            biz_tuple('A', 'A自動', '全自動機台'),
         ]
         return biz_init_tuples    
 
