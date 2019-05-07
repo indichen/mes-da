@@ -112,6 +112,54 @@ class SFCWF30(OracleTableReader):
         return self._tuple
 
 
+class HRM010M(OracleTableReader):
+    def __init__(self):
+        super().__init__()
+        self._columns = [
+            ColumnsWithRaw('LOCACOD', ''),
+            ColumnsWithRaw('CLASCOD', ''),
+            ColumnsWithRaw('CLASNAME', 'big5'),
+            ColumnsWithRaw('WORK_HOURS', ''),
+            ColumnsWithRaw('PREWKPLU', ''),
+            ColumnsWithRaw('ON_DUTY_TIME', ''),
+            ColumnsWithRaw('OFF_DUTY_HALF_DAY', ''),
+            ColumnsWithRaw('REST_TIME', ''),
+            ColumnsWithRaw('REST_TIME_FLAG', ''),
+            ColumnsWithRaw('ON_DUTY_HALF_DAY', ''),
+            ColumnsWithRaw('OFF_DUTY_TIME', ''),
+            ColumnsWithRaw('OVER_TIME', ''),
+            ColumnsWithRaw('START_FLEXTIME', ''),
+            ColumnsWithRaw('END_FLEXTIME', ''),
+            ColumnsWithRaw('START_FLEXTIME_OVTIME', ''),
+            ColumnsWithRaw('END_FLEXTIME_OVTIME', ''),
+            ColumnsWithRaw('START_FLEXTIME_NO_OVTIME', ''),
+            ColumnsWithRaw('END_FLEXTIME_NO_OVTIME', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_START', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_END', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_START_1', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_END_1', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_START_2', ''),
+            ColumnsWithRaw('WK_LATE_FLEXTIME_END_2', ''),
+            ColumnsWithRaw('LVAVE_EARLY_FLXTIME_START_HF', ''),
+            ColumnsWithRaw('LVAVE_EARLY_FLXTIME_END_HF', ''),
+            ColumnsWithRaw('LVAVE_EARLY_FLXTIME_START', ''),
+            ColumnsWithRaw('LVAVE_EARLY_FLXTIME_END', ''),
+            ColumnsWithRaw('START_FLEXTIME_2', ''),
+            ColumnsWithRaw('END_FLEXTIME_2', ''),
+            ColumnsWithRaw('BY_CALENDAR', ''),
+            ColumnsWithRaw('BY_SHIFT', ''),
+            ColumnsWithRaw('DELFLAG', ''),
+        ]
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', [c.column for c in  self._columns])
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
+
 def main():
     if len(sys.argv) < 2:
         pass
