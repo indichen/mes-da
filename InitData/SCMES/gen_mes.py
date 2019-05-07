@@ -242,12 +242,6 @@ class fm6_equipment(MESTableGenerator):
             self._tuple('WE10', '62#押出機(JR65φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
             self._tuple('WE12', '91#押出機(JR90φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
             self._tuple('WE15', 'G93', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('ccd', '測試機台B', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ccd1', '測試機台', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ccd3', '測試機台C', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ccd4', '測試機台1', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ccd5', '測試機台2', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ccd6', '測試機台3', '', 0, 'M', 'SCP1', '電力一課', ''),
         ]
 # End of fm6_equipment
 
