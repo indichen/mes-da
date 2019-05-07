@@ -279,7 +279,11 @@ class c_cust_process_po_status(CustTableGenerator):
             biz_tuple(10, '新建', ''),
             biz_tuple(11, '待手工開立製令', ''),
             biz_tuple(20, '已開立製令', ''),
-            biz_tuple(30, '結案', ''),
+            biz_tuple(30, '待產', ''),
+            biz_tuple(40, '生產中', ''),
+            biz_tuple(50, '結案', ''),
+            biz_tuple(80, '暫停', ''),
+            biz_tuple(90, '中止', ''),
         ]
         return biz_init_tuples
 
