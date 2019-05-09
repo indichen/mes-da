@@ -336,6 +336,257 @@ class c_cust_mo_type(CustTableGenerator):
         ]
         return biz_init_tuples        
 
+## c_參數配置 (c_cust_config)
+class c_cust_config(CustTableGenerator):
+    def get_biz_init_tuples(self):
+        biz_columns = ['code', 'value_int', 'value_str', 'note']
+        biz_tuple = namedtuple(self.__class__.__name__ + '_tuple', biz_columns)
+        biz_init_tuples = [
+            biz_tuple('WG_checkin_check_level', 1, ['null'], '第二雲母 刷投入檢核開關'),
+            biz_tuple('WG_checkout_check_level', 1, ['null'], '第二雲母 刷產出檢核開關'),
+            biz_tuple('WG_production_check_level', 1, ['null'], '第二雲母 開始生產檢核開關'),
+
+            biz_tuple('DR_checkin_check_level', 1, ['null'], '伸線 刷投入檢核開關'),
+            biz_tuple('DR_checkout_check_level', 1, ['null'], '伸線 刷產出檢核開關'),
+            biz_tuple('DR_production_check_level', 1, ['null'], '伸線 開始生產檢核開關'),
+
+            biz_tuple('L2_checkin_check_level', 1, ['null'], '第二束管 刷投入檢核開關'),
+            biz_tuple('L2_checkout_check_level', 1, ['null'], '第二束管 刷產出檢核開關'),
+            biz_tuple('L2_production_check_level', 1, ['null'], '第二束管 開始生產檢核開關'),
+
+            biz_tuple('TS_checkin_check_level', 1, ['null'], '束管集合 刷投入檢核開關'),
+            biz_tuple('TS_checkout_check_level', 1, ['null'], '束管集合 刷產出檢核開關'),
+            biz_tuple('TS_production_check_level', 1, ['null'], '束管集合 開始生產檢核開關'),
+
+            biz_tuple('CG_checkin_check_level', 1, ['null'], '波管成型 刷投入檢核開關'),
+            biz_tuple('CG_checkout_check_level', 1, ['null'], '波管成型 刷產出檢核開關'),
+            biz_tuple('CG_production_check_level', 1, ['null'], '波管成型 開始生產檢核開關'),
+
+            biz_tuple('WR_checkin_check_level', 1, ['null'], '包帶 刷投入檢核開關'),
+            biz_tuple('WR_checkout_check_level', 1, ['null'], '包帶 刷產出檢核開關'),
+            biz_tuple('WR_production_check_level', 1, ['null'], '包帶 開始生產檢核開關'),
+
+            biz_tuple('GX_checkin_check_level', 1, ['null'], '第二絞合 刷投入檢核開關'),
+            biz_tuple('GX_checkout_check_level', 1, ['null'], '第二絞合 刷產出檢核開關'),
+            biz_tuple('GX_production_check_level', 1, ['null'], '第二絞合 開始生產檢核開關'),
+
+            biz_tuple('RN_checkin_check_level', 1, ['null'], '印字 刷投入檢核開關'),
+            biz_tuple('RN_checkout_check_level', 1, ['null'], '印字 刷產出檢核開關'),
+            biz_tuple('RN_production_check_level', 1, ['null'], '印字 開始生產檢核開關'),
+
+            biz_tuple('WI_checkin_check_level', 1, ['null'], '內被 刷投入檢核開關'),
+            biz_tuple('WI_checkout_check_level', 1, ['null'], '內被 刷產出檢核開關'),
+            biz_tuple('WI_production_check_level', 1, ['null'], '內被 開始生產檢核開關'),
+
+            biz_tuple('E1_checkin_check_level', 1, ['null'], '第一絕緣 刷投入檢核開關'),
+            biz_tuple('E1_checkout_check_level', 1, ['null'], '第一絕緣 刷產出檢核開關'),
+            biz_tuple('E1_production_check_level', 1, ['null'], '第一絕緣 開始生產檢核開關'),
+
+            biz_tuple('RW_checkin_check_level', 1, ['null'], '倒軸 刷投入檢核開關'),
+            biz_tuple('RW_checkout_check_level', 1, ['null'], '倒軸 刷產出檢核開關'),
+            biz_tuple('RW_production_check_level', 1, ['null'], '倒軸 開始生產檢核開關'),
+
+            biz_tuple('B3_checkin_check_level', 1, ['null'], '第三編織(委外) 刷投入檢核開關'),
+            biz_tuple('B3_checkout_check_level', 1, ['null'], '第三編織(委外) 刷產出檢核開關'),
+            biz_tuple('B3_production_check_level', 1, ['null'], '第三編織(委外) 開始生產檢核開關'),
+
+            biz_tuple('W2_checkin_check_level', 1, ['null'], '第二外被 刷投入檢核開關'),
+            biz_tuple('W2_checkout_check_level', 1, ['null'], '第二外被 刷產出檢核開關'),
+            biz_tuple('W2_production_check_level', 1, ['null'], '第二外被 開始生產檢核開關'),
+
+            biz_tuple('W4_checkin_check_level', 1, ['null'], '第四帶類 刷投入檢核開關'),
+            biz_tuple('W4_checkout_check_level', 1, ['null'], '第四帶類 刷產出檢核開關'),
+            biz_tuple('W4_production_check_level', 1, ['null'], '第四帶類 開始生產檢核開關'),
+
+            biz_tuple('G3_checkin_check_level', 1, ['null'], '第三絞合 刷投入檢核開關'),
+            biz_tuple('G3_checkout_check_level', 1, ['null'], '第三絞合 刷產出檢核開關'),
+            biz_tuple('G3_production_check_level', 1, ['null'], '第三絞合 開始生產檢核開關'),
+
+            biz_tuple('CS_checkin_check_level', 1, ['null'], '銅絞 刷投入檢核開關'),
+            biz_tuple('CS_checkout_check_level', 1, ['null'], '銅絞 刷產出檢核開關'),
+            biz_tuple('CS_production_check_level', 1, ['null'], '銅絞 開始生產檢核開關'),
+
+            biz_tuple('PT_checkin_check_level', 1, ['null'], '塗油漆 刷投入檢核開關'),
+            biz_tuple('PT_checkout_check_level', 1, ['null'], '塗油漆 刷產出檢核開關'),
+            biz_tuple('PT_production_check_level', 1, ['null'], '塗油漆 開始生產檢核開關'),
+
+            biz_tuple('X2_checkin_check_level', 1, ['null'], '交連第二絕緣 刷投入檢核開關'),
+            biz_tuple('X2_checkout_check_level', 1, ['null'], '交連第二絕緣 刷產出檢核開關'),
+            biz_tuple('X2_production_check_level', 1, ['null'], '交連第二絕緣 開始生產檢核開關'),
+
+            biz_tuple('PK_checkin_check_level', 1, ['null'], '包裝 刷投入檢核開關'),
+            biz_tuple('PK_checkout_check_level', 1, ['null'], '包裝 刷產出檢核開關'),
+            biz_tuple('PK_production_check_level', 1, ['null'], '包裝 開始生產檢核開關'),
+
+            biz_tuple('XX_checkin_check_level', 1, ['null'], '交連複合絕緣 刷投入檢核開關'),
+            biz_tuple('XX_checkout_check_level', 1, ['null'], '交連複合絕緣 刷產出檢核開關'),
+            biz_tuple('XX_production_check_level', 1, ['null'], '交連複合絕緣 開始生產檢核開關'),
+
+            biz_tuple('P2_checkin_check_level', 1, ['null'], '第二對絞 刷投入檢核開關'),
+            biz_tuple('P2_checkout_check_level', 1, ['null'], '第二對絞 刷產出檢核開關'),
+            biz_tuple('P2_production_check_level', 1, ['null'], '第二對絞 開始生產檢核開關'),
+
+            biz_tuple('IR_checkin_check_level', 1, ['null'], '照射(委外) 刷投入檢核開關'),
+            biz_tuple('IR_checkout_check_level', 1, ['null'], '照射(委外) 刷產出檢核開關'),
+            biz_tuple('IR_production_check_level', 1, ['null'], '照射(委外) 開始生產檢核開關'),
+
+            biz_tuple('WS_checkin_check_level', 1, ['null'], '第二帶類 刷投入檢核開關'),
+            biz_tuple('WS_checkout_check_level', 1, ['null'], '第二帶類 刷產出檢核開關'),
+            biz_tuple('WS_production_check_level', 1, ['null'], '第二帶類 開始生產檢核開關'),
+
+            biz_tuple('I2_checkin_check_level', 1, ['null'], '第二照射 刷投入檢核開關'),
+            biz_tuple('I2_checkout_check_level', 1, ['null'], '第二照射 刷產出檢核開關'),
+            biz_tuple('I2_production_check_level', 1, ['null'], '第二照射 開始生產檢核開關'),
+
+            biz_tuple('X4_checkin_check_level', 1, ['null'], '交連第四絕緣 刷投入檢核開關'),
+            biz_tuple('X4_checkout_check_level', 1, ['null'], '交連第四絕緣 刷產出檢核開關'),
+            biz_tuple('X4_production_check_level', 1, ['null'], '交連第四絕緣 開始生產檢核開關'),
+
+            biz_tuple('WU_checkin_check_level', 1, ['null'], '波紋銅被 刷投入檢核開關'),
+            biz_tuple('WU_checkout_check_level', 1, ['null'], '波紋銅被 刷產出檢核開關'),
+            biz_tuple('WU_production_check_level', 1, ['null'], '波紋銅被 開始生產檢核開關'),
+
+            biz_tuple('B2_checkin_check_level', 1, ['null'], '第二編織(委外) 刷投入檢核開關'),
+            biz_tuple('B2_checkout_check_level', 1, ['null'], '第二編織(委外) 刷產出檢核開關'),
+            biz_tuple('B2_production_check_level', 1, ['null'], '第二編織(委外) 開始生產檢核開關'),
+
+            biz_tuple('E2_checkin_check_level', 1, ['null'], '第二絕緣 刷投入檢核開關'),
+            biz_tuple('E2_checkout_check_level', 1, ['null'], '第二絕緣 刷產出檢核開關'),
+            biz_tuple('E2_production_check_level', 1, ['null'], '第二絕緣 開始生產檢核開關'),
+
+            biz_tuple('GB_checkin_check_level', 1, ['null'], '鐵線編織 刷投入檢核開關'),
+            biz_tuple('GB_checkout_check_level', 1, ['null'], '鐵線編織 刷產出檢核開關'),
+            biz_tuple('GB_production_check_level', 1, ['null'], '鐵線編織 開始生產檢核開關'),
+
+            biz_tuple('GR_checkin_check_level', 1, ['null'], '絞合 刷投入檢核開關'),
+            biz_tuple('GR_checkout_check_level', 1, ['null'], '絞合 刷產出檢核開關'),
+            biz_tuple('GR_production_check_level', 1, ['null'], '絞合 開始生產檢核開關'),
+
+            biz_tuple('X3_checkin_check_level', 1, ['null'], '交連第三絕緣 刷投入檢核開關'),
+            biz_tuple('X3_checkout_check_level', 1, ['null'], '交連第三絕緣 刷產出檢核開關'),
+            biz_tuple('X3_production_check_level', 1, ['null'], '交連第三絕緣 開始生產檢核開關'),
+
+            biz_tuple('WP_checkin_check_level', 1, ['null'], '銅線纏繞 刷投入檢核開關'),
+            biz_tuple('WP_checkout_check_level', 1, ['null'], '銅線纏繞 刷產出檢核開關'),
+            biz_tuple('WP_production_check_level', 1, ['null'], '銅線纏繞 開始生產檢核開關'),
+
+            biz_tuple('WM_checkin_check_level', 1, ['null'], '包雲母帶 刷投入檢核開關'),
+            biz_tuple('WM_checkout_check_level', 1, ['null'], '包雲母帶 刷產出檢核開關'),
+            biz_tuple('WM_production_check_level', 1, ['null'], '包雲母帶 開始生產檢核開關'),
+
+            biz_tuple('LP_checkin_check_level', 1, ['null'], '積層被覆 刷投入檢核開關'),
+            biz_tuple('LP_checkout_check_level', 1, ['null'], '積層被覆 刷產出檢核開關'),
+            biz_tuple('LP_production_check_level', 1, ['null'], '積層被覆 開始生產檢核開關'),
+
+            biz_tuple('G4_checkin_check_level', 1, ['null'], '第四絞合 刷投入檢核開關'),
+            biz_tuple('G4_checkout_check_level', 1, ['null'], '第四絞合 刷產出檢核開關'),
+            biz_tuple('G4_production_check_level', 1, ['null'], '第四絞合 開始生產檢核開關'),
+
+            biz_tuple('XE_checkin_check_level', 1, ['null'], '交連押出 刷投入檢核開關'),
+            biz_tuple('XE_checkout_check_level', 1, ['null'], '交連押出 刷產出檢核開關'),
+            biz_tuple('XE_production_check_level', 1, ['null'], '交連押出 開始生產檢核開關'),
+
+            biz_tuple('WN_checkin_check_level', 1, ['null'], '包數字帶 刷投入檢核開關'),
+            biz_tuple('WN_checkout_check_level', 1, ['null'], '包數字帶 刷產出檢核開關'),
+            biz_tuple('WN_production_check_level', 1, ['null'], '包數字帶 開始生產檢核開關'),
+
+            biz_tuple('SE_checkin_check_level', 1, ['null'], '溝槽押出 刷投入檢核開關'),
+            biz_tuple('SE_checkout_check_level', 1, ['null'], '溝槽押出 刷產出檢核開關'),
+            biz_tuple('SE_production_check_level', 1, ['null'], '溝槽押出 開始生產檢核開關'),
+
+            biz_tuple('GA_checkin_check_level', 1, ['null'], '鎧裝 刷投入檢核開關'),
+            biz_tuple('GA_checkout_check_level', 1, ['null'], '鎧裝 刷產出檢核開關'),
+            biz_tuple('GA_production_check_level', 1, ['null'], '鎧裝 開始生產檢核開關'),
+
+            biz_tuple('E3_checkin_check_level', 1, ['null'], '第三絕緣 刷投入檢核開關'),
+            biz_tuple('E3_checkout_check_level', 1, ['null'], '第三絕緣 刷產出檢核開關'),
+            biz_tuple('E3_production_check_level', 1, ['null'], '第三絕緣 開始生產檢核開關'),
+
+            biz_tuple('TN_checkin_check_level', 1, ['null'], '熱鍍 刷投入檢核開關'),
+            biz_tuple('TN_checkout_check_level', 1, ['null'], '熱鍍 刷產出檢核開關'),
+            biz_tuple('TN_production_check_level', 1, ['null'], '熱鍍 開始生產檢核開關'),
+
+            biz_tuple('W3_checkin_check_level', 1, ['null'], '第三帶類 刷投入檢核開關'),
+            biz_tuple('W3_checkout_check_level', 1, ['null'], '第三帶類 刷產出檢核開關'),
+            biz_tuple('W3_production_check_level', 1, ['null'], '第三帶類 開始生產檢核開關'),
+
+            biz_tuple('GP_checkin_check_level', 1, ['null'], '對絞 刷投入檢核開關'),
+            biz_tuple('GP_checkout_check_level', 1, ['null'], '對絞 刷產出檢核開關'),
+            biz_tuple('GP_production_check_level', 1, ['null'], '對絞 開始生產檢核開關'),
+
+            biz_tuple('CL_checkin_check_level', 1, ['null'], '著色 刷投入檢核開關'),
+            biz_tuple('CL_checkout_check_level', 1, ['null'], '著色 刷產出檢核開關'),
+            biz_tuple('CL_production_check_level', 1, ['null'], '著色 開始生產檢核開關'),
+
+            biz_tuple('XF_checkin_check_level', 1, ['null'], '橡膠充實押出 刷投入檢核開關'),
+            biz_tuple('XF_checkout_check_level', 1, ['null'], '橡膠充實押出 刷產出檢核開關'),
+            biz_tuple('XF_production_check_level', 1, ['null'], '橡膠充實押出 開始生產檢核開關'),
+
+            biz_tuple('TE_checkin_check_level', 1, ['null'], '電鍍 刷投入檢核開關'),
+            biz_tuple('TE_checkout_check_level', 1, ['null'], '電鍍 刷產出檢核開關'),
+            biz_tuple('TE_production_check_level', 1, ['null'], '電鍍 開始生產檢核開關'),
+
+            biz_tuple('XT_checkin_check_level', 1, ['null'], '橡膠複合內被 刷投入檢核開關'),
+            biz_tuple('XT_checkout_check_level', 1, ['null'], '橡膠複合內被 刷產出檢核開關'),
+            biz_tuple('XT_production_check_level', 1, ['null'], '橡膠複合內被 開始生產檢核開關'),
+
+            biz_tuple('GT_checkin_check_level', 1, ['null'], '三芯絞 刷投入檢核開關'),
+            biz_tuple('GT_checkout_check_level', 1, ['null'], '三芯絞 刷產出檢核開關'),
+            biz_tuple('GT_production_check_level', 1, ['null'], '三芯絞 開始生產檢核開關'),
+
+            biz_tuple('IN_checkin_check_level', 1, ['null'], '檢驗 刷投入檢核開關'),
+            biz_tuple('IN_checkout_check_level', 1, ['null'], '檢驗 刷產出檢核開關'),
+            biz_tuple('IN_production_check_level', 1, ['null'], '檢驗 開始生產檢核開關'),
+
+            biz_tuple('WT_checkin_check_level', 1, ['null'], '包銅帶 刷投入檢核開關'),
+            biz_tuple('WT_checkout_check_level', 1, ['null'], '包銅帶 刷產出檢核開關'),
+            biz_tuple('WT_production_check_level', 1, ['null'], '包銅帶 開始生產檢核開關'),
+
+            biz_tuple('XO_checkin_check_level', 1, ['null'], '橡膠外被 刷投入檢核開關'),
+            biz_tuple('XO_checkout_check_level', 1, ['null'], '橡膠外被 刷產出檢核開關'),
+            biz_tuple('XO_production_check_level', 1, ['null'], '橡膠外被 開始生產檢核開關'),
+
+            biz_tuple('RX_checkin_check_level', 1, ['null'], '第二倒軸 刷投入檢核開關'),
+            biz_tuple('RX_checkout_check_level', 1, ['null'], '第二倒軸 刷產出檢核開關'),
+            biz_tuple('RX_production_check_level', 1, ['null'], '第二倒軸 開始生產檢核開關'),
+
+            biz_tuple('WL_checkin_check_level', 1, ['null'], '波紋鋁被 刷投入檢核開關'),
+            biz_tuple('WL_checkout_check_level', 1, ['null'], '波紋鋁被 刷產出檢核開關'),
+            biz_tuple('WL_production_check_level', 1, ['null'], '波紋鋁被 開始生產檢核開關'),
+
+            biz_tuple('BR_checkin_check_level', 1, ['null'], '編織(委外) 刷投入檢核開關'),
+            biz_tuple('BR_checkout_check_level', 1, ['null'], '編織(委外) 刷產出檢核開關'),
+            biz_tuple('BR_production_check_level', 1, ['null'], '編織(委外) 開始生產檢核開關'),
+
+            biz_tuple('XI_checkin_check_level', 1, ['null'], '橡膠內被 刷投入檢核開關'),
+            biz_tuple('XI_checkout_check_level', 1, ['null'], '橡膠內被 刷產出檢核開關'),
+            biz_tuple('XI_production_check_level', 1, ['null'], '橡膠內被 開始生產檢核開關'),
+
+            biz_tuple('LE_checkin_check_level', 1, ['null'], '束管押出 刷投入檢核開關'),
+            biz_tuple('LE_checkout_check_level', 1, ['null'], '束管押出 刷產出檢核開關'),
+            biz_tuple('LE_production_check_level', 1, ['null'], '束管押出 開始生產檢核開關'),
+
+            biz_tuple('CA_checkin_check_level', 1, ['null'], '組裝(委外) 刷投入檢核開關'),
+            biz_tuple('CA_checkout_check_level', 1, ['null'], '組裝(委外) 刷產出檢核開關'),
+            biz_tuple('CA_production_check_level', 1, ['null'], '組裝(委外) 開始生產檢核開關'),
+
+            biz_tuple('WO_checkin_check_level', 1, ['null'], '外被 刷投入檢核開關'),
+            biz_tuple('WO_checkout_check_level', 1, ['null'], '外被 刷產出檢核開關'),
+            biz_tuple('WO_production_check_level', 1, ['null'], '外被 開始生產檢核開關'),
+
+            biz_tuple('WX_checkin_check_level', 1, ['null'], '塑膠複合絕緣 刷投入檢核開關'),
+            biz_tuple('WX_checkout_check_level', 1, ['null'], '塑膠複合絕緣 刷產出檢核開關'),
+            biz_tuple('WX_production_check_level', 1, ['null'], '塑膠複合絕緣 開始生產檢核開關'),
+
+            biz_tuple('XC_checkin_check_level', 1, ['null'], '異形押出 刷投入檢核開關'),
+            biz_tuple('XC_checkout_check_level', 1, ['null'], '異形押出 刷產出檢核開關'),
+            biz_tuple('XC_production_check_level', 1, ['null'], '異形押出 開始生產檢核開關'),
+
+            biz_tuple('WE_checkin_check_level', 1, ['null'], '絕緣 刷投入檢核開關'),
+            biz_tuple('WE_checkout_check_level', 1, ['null'], '絕緣 刷產出檢核開關'),
+            biz_tuple('WE_production_check_level', 1, ['null'], '絕緣 開始生產檢核開關'),
+        ]
+        return biz_init_tuples        
 
 def main():
     if len(sys.argv) < 2:
