@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/9/2019 11:29:35 AM                         */
+/* Created on:     5/9/2019 2:53:36 PM                          */
 /*==============================================================*/
 
 
@@ -501,7 +501,9 @@ create table mlo_process_po (
    next_process_pk      type_pk              null,
    next_process_cd      type_cd              null,
    next_process_name    type_name            null,
+   prev_seq_route       type_sn              null,
    seq_route            type_sn              null,
+   next_seq_route       type_sn              null,
    process_pk           type_pk              null,
    process_cd           type_cd              null,
    process_name         type_name            null,

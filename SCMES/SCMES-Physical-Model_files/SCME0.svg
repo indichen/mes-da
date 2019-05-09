@@ -88,23 +88,15 @@
    <polygon fill="#0080c0" points="641,569 638,555 644,555" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1097,767 1079,767 1079,304 1090,304" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1090,304 1076,307 1076,301" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1019,767 1063,767 1063,288 1039,288" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1039,288 1053,285 1053,291" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="819,782 772,782 772,288 814,288" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="814,288 801,291 801,285" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2292,1366 2292,1365 2652,1365 2652,247 2245,247" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="2245,247 2259,244 2259,250" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1781,1304 1750,1304" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1750,1304 1764,1301 1764,1307" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1091,201 1047,201 1047,282" stroke="#0080c0" stroke-width="1"/>
-   <polyline fill="none" points="1047,293 1047,761" stroke="#0080c0" stroke-width="1"/>
-   <path d="M1047,293 A5,5 0 0,0 1053,288" fill="none" stroke="#0080c0" stroke-width="1"/>
-   <line x1="1053" x2="1053" y1="288" y2="288" stroke="#0080c0" stroke-width="1"/>
-   <path d="M1053,288 A5,5 0 0,0 1047,282" fill="none" stroke="#0080c0" stroke-width="1"/>
-   <polyline fill="none" points="1047,772 1047,818 1097,818" stroke="#0080c0" stroke-width="1"/>
-   <path d="M1047,772 A5,5 0 0,0 1053,767" fill="none" stroke="#0080c0" stroke-width="1"/>
-   <line x1="1053" x2="1053" y1="767" y2="767" stroke="#0080c0" stroke-width="1"/>
-   <path d="M1053,767 A5,5 0 0,0 1047,761" fill="none" stroke="#0080c0" stroke-width="1"/>
+   <polyline fill="none" points="1097,787 1047,787 1047,201 1091,201" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1091,201 1078,204 1078,198" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <a target="_parent" xlink:href="SCME30.htm#1217">
       <rect x="1097" y="555" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
@@ -356,7 +348,7 @@
    </a>
    <a target="_parent" xlink:href="SCME51.htm#2897">
       <rect x="819" y="565" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
-      <rect x="819" y="565" fill="#ffcaff" width="200" height="403" stroke="#00aaaa" stroke-width="1"/>
+      <rect x="819" y="565" fill="#ffcaff" width="200" height="434" stroke="#00aaaa" stroke-width="1"/>
       <text x="919" y="579" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">製程工單</text>
       <line x1="819" x2="1019" y1="585" y2="585" stroke="#00aaaa" stroke-width="1"/>
       <text x="824" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (製程工單PK)</text>
@@ -367,27 +359,29 @@
       <text x="824" y="660" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">下製程PK</text>
       <text x="824" y="673" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">下製程代碼</text>
       <text x="824" y="686" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">下製程名稱</text>
-      <text x="824" y="699" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">制序</text>
-      <text x="824" y="712" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程PK</text>
-      <text x="824" y="725" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程代碼</text>
-      <text x="824" y="738" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程名稱</text>
-      <text x="824" y="751" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品料號PK</text>
-      <text x="824" y="764" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品料號</text>
-      <text x="824" y="777" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品品名規格</text>
-      <text x="824" y="790" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預設機臺PK</text>
-      <text x="824" y="803" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預設機臺代碼</text>
-      <text x="824" y="816" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程數量</text>
-      <text x="824" y="829" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程單位</text>
-      <text x="824" y="842" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程排程數量</text>
-      <text x="824" y="855" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">排程導體重量</text>
-      <text x="824" y="868" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">排程半成品重量</text>
-      <text x="824" y="881" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">已生產數量</text>
-      <text x="824" y="894" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">已使用數量</text>
-      <text x="824" y="907" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工單數量</text>
-      <text x="824" y="920" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">外徑</text>
-      <text x="824" y="933" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
-      <text x="824" y="946" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">原因</text>
-      <text x="824" y="959" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
+      <text x="824" y="699" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">上制序</text>
+      <text x="824" y="712" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">制序</text>
+      <text x="824" y="725" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">下制序</text>
+      <text x="824" y="738" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程PK</text>
+      <text x="824" y="751" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程代碼</text>
+      <text x="824" y="764" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程名稱</text>
+      <text x="824" y="777" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品料號PK</text>
+      <text x="824" y="790" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品料號</text>
+      <text x="824" y="803" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">半成品品名規格</text>
+      <text x="824" y="816" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預設機臺PK</text>
+      <text x="824" y="829" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預設機臺代碼</text>
+      <text x="824" y="842" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程數量</text>
+      <text x="824" y="855" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程單位</text>
+      <text x="824" y="868" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製程排程數量</text>
+      <text x="824" y="881" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">排程導體重量</text>
+      <text x="824" y="894" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">排程半成品重量</text>
+      <text x="824" y="907" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">已生產數量</text>
+      <text x="824" y="920" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">已使用數量</text>
+      <text x="824" y="933" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">工單數量</text>
+      <text x="824" y="946" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">外徑</text>
+      <text x="824" y="959" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
+      <text x="824" y="972" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">原因</text>
+      <text x="824" y="985" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">狀態</text>
       <text x="904" y="595" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="904" y="608" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="904" y="621" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
@@ -397,26 +391,28 @@
       <text x="904" y="673" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="904" y="686" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
       <text x="904" y="699" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="904" y="712" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="904" y="725" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="904" y="738" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
-      <text x="904" y="751" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="904" y="764" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="904" y="777" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="904" y="790" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="904" y="803" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="904" y="816" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="904" y="829" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="904" y="712" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="904" y="725" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="904" y="738" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="904" y="751" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="904" y="764" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="904" y="777" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="904" y="790" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="904" y="803" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
+      <text x="904" y="816" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="904" y="829" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="904" y="842" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
-      <text x="904" y="855" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="904" y="868" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="904" y="855" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="904" y="868" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="904" y="881" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="904" y="894" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="904" y="907" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="904" y="907" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
       <text x="904" y="920" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="904" y="933" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="904" y="946" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
-      <text x="904" y="959" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="904" y="933" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
+      <text x="904" y="946" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="904" y="959" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="904" y="972" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
+      <text x="904" y="985" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    </a>
    <a target="_parent" xlink:href="SCME69.htm#74">
       <defs>
@@ -734,14 +730,14 @@
    <polygon fill="#0080c0" points="1648,916 1651,929 1645,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1582,942 1582,916" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1582,916 1585,929 1579,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1532,850 1297,850" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1297,850 1310,847 1310,853" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2025,646 1732,646" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1732,646 1746,643 1746,649" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1724,554 1724,598" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1724,598 1721,585 1727,585" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="1532" y="598" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="1532" y="598" fill="#60afff" width="200" height="318" stroke="#00aaaa" stroke-width="1"/>
    <text x="1632" y="612" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-產出履歷</text>
@@ -839,14 +835,14 @@
    <polygon fill="#0080c0" points="1648,916 1651,929 1645,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1582,942 1582,916" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1582,916 1585,929 1579,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1532,850 1297,850" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1297,850 1310,847 1310,853" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2025,646 1732,646" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1732,646 1746,643 1746,649" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1724,554 1724,598" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1724,598 1721,585 1727,585" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="1532" y="598" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="1532" y="598" fill="#60afff" width="200" height="318" stroke="#00aaaa" stroke-width="1"/>
    <text x="1632" y="612" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-產出履歷</text>
@@ -1569,7 +1565,7 @@
       <text x="1869" y="1444" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="1869" y="1457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME57.htm#3487">
+   <a target="_parent" xlink:href="SCME57.htm#3499">
       <rect x="1880" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient29" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1595,7 +1591,7 @@
       <text x="2046" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2046" y="1458" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME56.htm#3405">
+   <a target="_parent" xlink:href="SCME56.htm#3417">
       <rect x="1882" y="1654" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient30" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1731,7 +1727,7 @@
       <text x="2302" y="1409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="2302" y="1435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME54.htm#3271">
+   <a target="_parent" xlink:href="SCME54.htm#3283">
       <defs>
          <linearGradient id="Gradient35" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -1800,7 +1796,7 @@
    <text x="1148" y="1536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1148" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="1221" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <a target="_parent" xlink:href="SCME54.htm#3265">
+   <a target="_parent" xlink:href="SCME54.htm#3277">
       <rect x="1319" y="1416" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient38" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1831,7 +1827,7 @@
       <text x="1404" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1477" y="1446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME55.htm#3335">
+   <a target="_parent" xlink:href="SCME55.htm#3347">
       <rect x="1084" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient39" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -2373,7 +2369,7 @@
    <text x="1374" y="2064" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1447" y="1986" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <text x="1447" y="1999" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
-   <a target="_parent" xlink:href="SCME52.htm#3092">
+   <a target="_parent" xlink:href="SCME52.htm#3104">
       <rect x="1240" y="1663" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient49" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -2418,7 +2414,7 @@
       <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="1468" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME53.htm#3205">
+   <a target="_parent" xlink:href="SCME53.htm#3217">
       <rect x="1239" y="1956" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient50" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
