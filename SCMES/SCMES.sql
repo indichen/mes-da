@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/2/2019 3:04:06 PM                          */
+/* Created on:     5/9/2019 11:29:35 AM                         */
 /*==============================================================*/
 
 
@@ -406,8 +406,8 @@ create table mlo_mo (
    process_pk           type_pk              null,
    process_cd           type_cd              null,
    process_name         type_name            null,
-   next_process_ok      type_pk              null,
-   next_process         type_cd              null,
+   next_process_pk      type_pk              null,
+   next_process_cd      type_cd              null,
    next_process_name    type_name            null,
    copper_size_cd       type_cd              null,
    total_qty            type_decimal         null,

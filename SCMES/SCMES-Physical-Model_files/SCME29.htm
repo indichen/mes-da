@@ -103,8 +103,8 @@ create table mlo_mo (<br />
    process_pk           type_pk              null,<br />
    process_cd           type_cd              null,<br />
    process_name         type_name            null,<br />
-   next_process_ok      type_pk              null,<br />
-   next_process         type_cd              null,<br />
+   next_process_pk      type_pk              null,<br />
+   next_process_cd      type_cd              null,<br />
    next_process_name    type_name            null,<br />
    copper_size_cd       type_cd              null,<br />
    total_qty            type_decimal         null,<br />
@@ -704,7 +704,7 @@ go<br />
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME29.htm#1271">next_process_ok</a>
+<p align="left"><a href="SCME29.htm#1271">next_process_pk</a>
 </p>
 </td>
 </tr>
@@ -714,7 +714,7 @@ go<br />
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME29.htm#1277">next_process</a>
+<p align="left"><a href="SCME29.htm#1277">next_process_cd</a>
 </p>
 </td>
 </tr>
@@ -5667,7 +5667,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME29.htm#1271">next_process_ok</a>
+<p align="left"><a href="SCME29.htm#1271">next_process_pk</a>
 </p>
 </td>
 </tr>
@@ -5696,7 +5696,7 @@ go<br />
 <a name="1273">Check constraint name of the column 下製程PK of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_NEXT_PROCESS_OK_MLO_MO
+<p align="left">CKC_NEXT_PROCESS_PK_MLO_MO
 </p>
 </td></tr>
 </table><br />
@@ -6045,7 +6045,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME29.htm#1277">next_process</a>
+<p align="left"><a href="SCME29.htm#1277">next_process_cd</a>
 </p>
 </td>
 </tr>
@@ -6074,7 +6074,7 @@ go<br />
 <a name="1279">Check constraint name of the column 下製程代碼 of the table 制令主檔</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
-<p align="left">CKC_NEXT_PROCESS_MLO_MO
+<p align="left">CKC_NEXT_PROCESS_CD_MLO_MO
 </p>
 </td></tr>
 </table><br />
