@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/6/2019 7:00:37 PM                          */
+/* Created on:     5/10/2019 4:24:34 PM                         */
 /*==============================================================*/
 
 
@@ -902,6 +902,8 @@ create table fm7_material (
    mnemonic_code        type_memo            null,
    version              type_version_int     null,
    application_form_id  type_cd              null,
+   attr1                type_decimal         null,
+   attr2                type_short_text      null,
    constraint PK_FM7_MATERIAL primary key (id)
 )
 go
