@@ -102,7 +102,7 @@ create table mwc_lot_detail (<br />
    weight_copper        type_weight          null,<br />
    quality              type_boolean         null,<br />
    is_melded            type_boolean         null,<br />
-   color_cd             type_enum_val        null,<br />
+   color_cd             type_memo            null,<br />
    outer_diameter       type_length          null,<br />
    constraint PK_MWC_LOT_DETAIL primary key (id)<br />
 )<br />
@@ -509,7 +509,7 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME47.htm#2660">顏色代碼</a>
+<p align="left"><a href="SCME47.htm#2660">顏色</a>
 </p>
 </td>
 <td class="TD2">
@@ -4717,10 +4717,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="2660">Column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
+<a name="2660">Column 顏色 of the table 線纜 Lot ID 現況明細</a> 
 </h2>
 <h3>
-<a name="2661">Card of the column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
+<a name="2661">Card of the column 顏色 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4729,7 +4729,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME47.htm#2660">顏色代碼</a>
+<p align="left"><a href="SCME47.htm#2660">顏色</a>
 </p>
 </td>
 </tr>
@@ -4749,7 +4749,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">int
+<p align="left">national char varying(Max)
 </p>
 </td>
 </tr>
@@ -4765,7 +4765,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2662">Check constraint name of the column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
+<a name="2662">Check constraint name of the column 顏色 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_COLOR_CD_MWC_LOT_
@@ -4773,7 +4773,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2663">Check of the column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
+<a name="2663">Check of the column 顏色 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4848,7 +4848,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="2664">Server validation rule of the column 顏色代碼 of the table 線纜 Lot ID 現況明細</a> 
+<a name="2664">Server validation rule of the column 顏色 of the table 線纜 Lot ID 現況明細</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4856,7 +4856,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="2665">List of extended attributes of the table column 顏色代碼</a> 
+<a name="2665">List of extended attributes of the table column 顏色</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

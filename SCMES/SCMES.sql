@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/13/2019 12:08:48 PM                        */
+/* Created on:     5/13/2019 1:55:50 PM                         */
 /*==============================================================*/
 
 
@@ -1051,7 +1051,7 @@ create table mwc_lot_detail (
    weight_copper        type_weight          null,
    quality              type_boolean         null,
    is_melded            type_boolean         null,
-   color_cd             type_enum_val        null,
+   color_cd             type_memo            null,
    outer_diameter       type_length          null,
    constraint PK_MWC_LOT_DETAIL primary key (id)
 )
@@ -1092,7 +1092,7 @@ create table mwc_lot_history (
    weight_copper        type_weight          null,
    quality              type_boolean         null,
    is_melded            type_boolean         null,
-   color                type_enum_val        null,
+   color                type_memo            null,
    outer_diameter       type_length          null,
    note                 type_memo            null,
    note_quality_change  type_memo            null,

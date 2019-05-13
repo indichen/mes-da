@@ -113,7 +113,7 @@ create table mwc_lot_history (<br />
    weight_copper        type_weight          null,<br />
    quality              type_boolean         null,<br />
    is_melded            type_boolean         null,<br />
-   color                type_enum_val        null,<br />
+   color                type_memo            null,<br />
    outer_diameter       type_length          null,<br />
    note                 type_memo            null,<br />
    note_quality_change  type_memo            null,<br />
@@ -8970,7 +8970,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">int
+<p align="left">national char varying(Max)
 </p>
 </td>
 </tr>
