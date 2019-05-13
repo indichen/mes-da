@@ -308,7 +308,7 @@
       <text x="634" y="611" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="634" y="624" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="634" y="637" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="634" y="650" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="634" y="650" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying</text>
       <text x="634" y="663" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="634" y="676" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="634" y="689" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
@@ -730,14 +730,14 @@
    <polygon fill="#0080c0" points="1648,916 1651,929 1645,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1582,942 1582,916" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1582,916 1585,929 1579,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1532,850 1297,850" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1297,850 1310,847 1310,853" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2025,646 1732,646" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1732,646 1746,643 1746,649" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1724,554 1724,598" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1724,598 1721,585 1727,585" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="1532" y="598" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="1532" y="598" fill="#60afff" width="200" height="318" stroke="#00aaaa" stroke-width="1"/>
    <text x="1632" y="612" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-產出履歷</text>
@@ -835,14 +835,14 @@
    <polygon fill="#0080c0" points="1648,916 1651,929 1645,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1582,942 1582,916" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1582,916 1585,929 1579,929" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
-   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
-   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1532,850 1297,850" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1297,850 1310,847 1310,853" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="2025,646 1732,646" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1732,646 1746,643 1746,649" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <polyline fill="none" points="1724,554 1724,598" stroke="#0080c0" stroke-width="1"/>
    <polygon fill="#0080c0" points="1724,598 1721,585 1727,585" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="1732,774 1881,774 1881,1164" stroke="#0080c0" stroke-width="1"/>
+   <polygon fill="#0080c0" points="1881,1164 1878,1151 1884,1151" stroke="#0080c0" stroke-width="1" stroke-linejoin="miter"/>
    <rect x="1532" y="598" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <rect x="1532" y="598" fill="#60afff" width="200" height="318" stroke="#00aaaa" stroke-width="1"/>
    <text x="1632" y="612" fill="#000000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">投產執行-產出履歷</text>
@@ -2088,7 +2088,7 @@
       <text x="430" y="741" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="430" y="754" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="430" y="767" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="430" y="780" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="430" y="780" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char</text>
       <text x="430" y="793" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
       <text x="430" y="806" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char </text>
       <text x="430" y="819" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>

@@ -95,7 +95,7 @@ create table mlo_sap_po (<br />
    po_cd                type_cd              not null,<br />
    so_cd                type_cd              not null,<br />
    customer_cd          type_cd              null,<br />
-   customer_name        type_name            null,<br />
+   customer_name        type_customer_name   null,<br />
    product_partno_pk    type_pk              null,<br />
    product_partno_cd    type_cd              null,<br />
    product_spec         type_memo            null,<br />
@@ -2437,7 +2437,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">varchar(20)
+<p align="left">national char varying(30)
 </p>
 </td>
 </tr>

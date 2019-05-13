@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/9/2019 2:53:36 PM                          */
+/* Created on:     5/13/2019 12:08:48 PM                        */
 /*==============================================================*/
 
 
@@ -205,6 +205,10 @@ if exists(select 1 from systypes where name='type_cd')
    drop type type_cd
 go
 
+if exists(select 1 from systypes where name='type_customer_name')
+   drop type type_customer_name
+go
+
 if exists(select 1 from systypes where name='type_date')
    drop type type_date
 go
@@ -269,6 +273,13 @@ go
 /*==============================================================*/
 create type type_cd
    from varchar(40)
+go
+
+/*==============================================================*/
+/* Domain: type_customer_name                                   */
+/*==============================================================*/
+create type type_customer_name
+   from national char varying(30)
 go
 
 /*==============================================================*/
@@ -545,7 +556,7 @@ create table mlo_sap_po (
    po_cd                type_cd              not null,
    so_cd                type_cd              not null,
    customer_cd          type_cd              null,
-   customer_name        type_name            null,
+   customer_name        type_customer_name   null,
    product_partno_pk    type_pk              null,
    product_partno_cd    type_cd              null,
    product_spec         type_memo            null,
@@ -604,7 +615,7 @@ create table mlo_sap_po_process (
    po_cd                type_cd              not null,
    so_cd                type_cd              not null,
    customer_cd          type_cd              null,
-   customer_name        type_name            null,
+   customer_name        type_customer_name   null,
    product_partno       type_cd              null,
    product_spec         type_memo            null,
    so_qty               type_decimal         null,
