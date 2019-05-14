@@ -1,8 +1,15 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/10/2019 4:24:34 PM                         */
+/* Created on:     5/14/2019 10:03:22 AM                        */
 /*==============================================================*/
 
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('fm1_func_template')
+            and   type = 'U')
+   drop table fm1_func_template
+go
 
 if exists (select 1
             from  sysobjects
@@ -429,6 +436,30 @@ go
 /*==============================================================*/
 create type type_weight
    from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Table: fm1_func_template                                     */
+/*==============================================================*/
+create table fm1_func_template (
+   create_time varchar(64) null,
+   create_user varchar(64) null,
+   last_modified varchar(64) null,
+   last_modify_user varchar(64) null,
+   bpm_state decimal(11) null,
+   ts varchar(64) null,
+   dr decimal(11) null,
+   tenant_id varchar(64) null,
+
+   id                   type_pk              not null,
+   template_user        type_cd              null,
+   code                 type_cd              null,
+   name                 type_name            null,
+   module_cd            type_cd              null,
+   function_cd          type_cd              null,
+   content              type_memo            null,
+   constraint PK_FM1_FUNC_TEMPLATE primary key (id)
+)
 go
 
 /*==============================================================*/
