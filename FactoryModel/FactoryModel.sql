@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/14/2019 10:03:22 AM                        */
+/* Created on:     5/14/2019 10:17:21 AM                        */
 /*==============================================================*/
 
 
@@ -458,6 +458,7 @@ create table fm1_func_template (
    module_cd            type_cd              null,
    function_cd          type_cd              null,
    content              type_memo            null,
+   sort_order           type_sn              null,
    constraint PK_FM1_FUNC_TEMPLATE primary key (id)
 )
 go

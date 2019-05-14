@@ -69,6 +69,7 @@
       <text x="20" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">模組/模塊編碼</text>
       <text x="20" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">功能節點編碼</text>
       <text x="20" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">內容</text>
+      <text x="20" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">排序</text>
       <text x="91" y="52" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
       <text x="91" y="65" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="91" y="78" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
@@ -76,5 +77,6 @@
       <text x="91" y="103" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="91" y="116" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char varying(40)</text>
       <text x="91" y="129" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(</text>
+      <text x="91" y="142" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    </a>
 </svg>

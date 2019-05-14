@@ -92,6 +92,7 @@ create table fm1_func_template (<br />
    module_cd            type_cd              null,<br />
    function_cd          type_cd              null,<br />
    content              type_memo            null,<br />
+   sort_order           type_sn              null,<br />
    constraint PK_FM1_FUNC_TEMPLATE primary key (id)<br />
 )<br />
 go<br />
@@ -375,6 +376,16 @@ go<br />
 </p>
 </td>
 </tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact31.htm#630">排序</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact31.htm#630">sort_order</a>
+</p>
+</td>
+</tr>
 </table><br />
 <h2>
 <a name="587">Column id of the table FM1_業務功能儲存樣板</a> 
@@ -535,11 +546,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 <td>
@@ -3037,8 +3048,386 @@ go<br />
 </td>
 </tr>
 </table><br />
+<h2>
+<a name="630">Column 排序 of the table FM1_業務功能儲存樣板</a> 
+</h2>
 <h3>
-<a name="630">List of keys of the table FM1_業務功能儲存樣板</a> 
+<a name="631">Card of the column 排序 of the table FM1_業務功能儲存樣板</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact31.htm#630">排序</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact31.htm#630">sort_order</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">int
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="632">Check constraint name of the column 排序 of the table FM1_業務功能儲存樣板</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SORT_ORDER_FM1_FUNC
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="633">Check of the column 排序 of the table FM1_業務功能儲存樣板</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="634">Server validation rule of the column 排序 of the table FM1_業務功能儲存樣板</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="635">List of extended attributes of the table column 排序</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="636">List of keys of the table FM1_業務功能儲存樣板</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3057,11 +3446,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 <td>
@@ -3071,10 +3460,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="631">Key Key_1 of the table FM1_業務功能儲存樣板</a> 
+<a name="637">Key Key_1 of the table FM1_業務功能儲存樣板</a> 
 </h2>
 <h3>
-<a name="632">Card of the key Key_1 of the table FM1_業務功能儲存樣板</a> 
+<a name="638">Card of the key Key_1 of the table FM1_業務功能儲存樣板</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3083,7 +3472,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 </tr>
@@ -3093,7 +3482,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact31.htm#631">Key_1</a>
+<p align="left"><a href="Fact31.htm#637">Key_1</a>
 </p>
 </td>
 </tr>
@@ -3109,7 +3498,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="633">Code preview of the key Key_1 of the table FM1_業務功能儲存樣板</a> 
+<a name="639">Code preview of the key Key_1 of the table FM1_業務功能儲存樣板</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm1_func_template<br />
@@ -3120,7 +3509,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="634">List of columns of the table key Key_1</a> 
+<a name="640">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3145,7 +3534,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="635">List of extended attributes of the table key Key_1</a> 
+<a name="641">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
