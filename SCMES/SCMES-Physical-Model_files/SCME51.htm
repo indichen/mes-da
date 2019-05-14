@@ -109,7 +109,7 @@ create table mlo_process_po (<br />
    semi_product_cd      type_cd              null,<br />
    semi_product_spec    type_memo            null,<br />
    def_machine_pk       type_pk              null,<br />
-   def_machine_cd       type_pk              null,<br />
+   def_machine_cd       type_cd              null,<br />
    qty                  type_number          null,<br />
    unit                 type_name            null,<br />
    qty_planned          type_number          null,<br />
@@ -7696,7 +7696,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">char(32)
+<p align="left">varchar(40)
 </p>
 </td>
 </tr>

@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/13/2019 1:55:50 PM                         */
+/* Created on:     5/14/2019 3:30:52 PM                         */
 /*==============================================================*/
 
 
@@ -522,7 +522,7 @@ create table mlo_process_po (
    semi_product_cd      type_cd              null,
    semi_product_spec    type_memo            null,
    def_machine_pk       type_pk              null,
-   def_machine_cd       type_pk              null,
+   def_machine_cd       type_cd              null,
    qty                  type_number          null,
    unit                 type_name            null,
    qty_planned          type_number          null,
