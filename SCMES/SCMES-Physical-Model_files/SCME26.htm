@@ -124,7 +124,7 @@ create table mlo_sap_po (<br />
    lead_time            type_number          null,<br />
    department           type_name            null,<br />
    pmc_production_cd    type_cd              null,<br />
-   pmc_production_name  type_name            null,<br />
+   pmc_production_name  type_long_name       null,<br />
    core_wire_color      type_memo            null,<br />
    last_seq_route       type_sn              null,<br />
    last_process_pk      type_pk              null,<br />
@@ -13432,7 +13432,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left">varchar(20)
+<p align="left">national char varying(40)
 </p>
 </td>
 </tr>
