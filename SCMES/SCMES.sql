@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/14/2019 3:30:52 PM                         */
+/* Created on:     5/15/2019 12:55:03 PM                        */
 /*==============================================================*/
 
 
@@ -237,6 +237,10 @@ if exists(select 1 from systypes where name='type_length')
    drop type type_length
 go
 
+if exists(select 1 from systypes where name='type_long_name')
+   drop type type_long_name
+go
+
 if exists(select 1 from systypes where name='type_memo')
    drop type type_memo
 go
@@ -329,6 +333,13 @@ go
 /*==============================================================*/
 create type type_length
    from decimal(10,3)
+go
+
+/*==============================================================*/
+/* Domain: type_long_name                                       */
+/*==============================================================*/
+create type type_long_name
+   from national char varying(40)
 go
 
 /*==============================================================*/
@@ -585,7 +596,7 @@ create table mlo_sap_po (
    lead_time            type_number          null,
    department           type_name            null,
    pmc_production_cd    type_cd              null,
-   pmc_production_name  type_name            null,
+   pmc_production_name  type_long_name       null,
    core_wire_color      type_memo            null,
    last_seq_route       type_sn              null,
    last_process_pk      type_pk              null,
