@@ -2,13 +2,14 @@
 
 import sys
 import pymssql
+import csv
 from os import getenv
 from abc import ABC, abstractmethod
 from collections import namedtuple
 from uuid import uuid4
 from decimal import Decimal
 
-from read_old_mes import PMC902M, SFCWF30
+from read_old_mes import PMC902M, SFCWF30, SFCWF30JOINM5M4
 
 
 class MESTableGenerator(ABC):
@@ -149,6 +150,8 @@ class MESTableGenerator(ABC):
             merged_value = ', '.join([self._make_sql_value(getattr(t, f)) for f in t._fields])
             final_sql = 'insert into {} ({}) values ({});'.format(self._table, merged_columns, merged_value)
             print(final_sql)
+
+
 
 ## fm6_機台 (fm6_equipment)
 class fm6_equipment(MESTableGenerator):
@@ -833,7 +836,8 @@ class fm7_material_cat(MESTableGenerator):
 class fm7_material(MESTableGenerator):
     def __init__(self):
         super().__init__()
-        self._columns = ['code', 'name', 'cat_pk', 'name_en', 'spec', 'is_enabled', 'version']
+        # self._columns = ['code', 'name', 'cat_pk', 'name_en', 'name_abbr', 'unit_pk', 'spec', 'spec_en', 'model', 'image_path', 'brand', 'is_enabled', 'custom_product_id', 'custom_product_name', 'barcode', 'mnemonic_code', 'version', 'application_form_id', 'attr1', 'attr2']
+        self._columns = ['code', 'name', 'cat_pk', 'model', 'is_enabled', 'version', 'attr1']
         self._key_columns = ['code']
         self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
 
@@ -850,13 +854,63 @@ class fm7_material(MESTableGenerator):
         return self._tuple
 
     def _gen_init_tuples(self):
-        material_cats = fm7_material_cat().load_db_data()
-        old_tuples = SFCWF30().load_db_data().data_tuples
-        return [ self._tuple(o.PRODUCT_NO, o.PRODUCT_DES, ['null'], '', o.PRODUCT_SPEC, 1, 1) for o in old_tuples ]
+        sfcwf30joinm5m4 = SFCWF30JOINM5M4()
+        old_tuples = []
+        with open('SFCWF30JOINM5M4.tsv', 'r') as fd:
+            reader = csv.reader(fd, csv.excel_tab)
+            next(reader, None) # Skip header
+            for row in reader:
+                unhex_tuple = sfcwf30joinm5m4._transform_hex_data(row)
+                old_tuples.append(sfcwf30joinm5m4._biz_tuple._make(unhex_tuple))
 
+        material_cats = fm7_material_cat().load_db_data()
+        ret_tuples = []
+        for o in old_tuples:
+            ret_tuples.append(self._tuple(
+                code=o.PRODUCT_NO,
+                name=o.PRODUCT_DES,
+                cat_pk=None if not material_cats.lookup_key(o.NO_KIND) else material_cats.lookup_key(o.NO_KIND).id,
+                model=o.NO_MANU,
+                is_enabled=1,
+                version=1,
+                attr1=o.SINGLE_LINE_CIR_STD,
+                )
+            )
+        return ret_tuples
 
 def test():
-    fm7_material().create_data().gen_new_sql()
+    material = fm7_material().create_data()
+    material.truncate_db = False
+    data_tuples = material.data_tuples
+    material.gen_new_sql()
+
+def insert_material():
+    sqldb_db = getenv('SQLDB_DB')
+    sqldb_schema = getenv('SQLDB_SCHEMA')
+    sqldb_host = getenv('SQLDB_HOST')
+    sqldb_port = getenv('SQLDB_PORT', '1433')
+    sqldb_user = getenv('SQLDB_USER')
+    sqldb_password = getenv('SQLDB_PASSWORD')
+
+    for ext in ['c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']:
+        filename = 'fm7_material_piecea{}'.format(ext)
+        with open(filename, 'r') as fd:
+            sqls = fd.readlines()
+
+        conn = pymssql.connect(server=sqldb_host, port=sqldb_port, user=sqldb_user, password=sqldb_password)
+        try:
+            cursor = conn.cursor()
+            idx = 0
+            for sql_statement in sqls:
+                cursor.execute(sql_statement)
+                idx = idx + 1
+                if idx % 100 == 0:
+                    print('Statement {} processed'.format(idx))
+        except:
+            conn.rollback()
+        finally:
+            conn.commit()
+
 
 def main():
     if len(sys.argv) < 2:

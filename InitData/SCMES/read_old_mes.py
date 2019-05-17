@@ -46,6 +46,10 @@ class OracleTableReader(ABC):
     def _biz_tuple(self):
         pass
 
+    def _get_sql(self):
+        columns = ', '.join([c.column if not c.hex_encoding else 'rawtohex(utl_raw.cast_to_raw({}))'.format(c.column) for c in self._biz_columns])
+        return 'select {} from {}'.format(columns, self._table)
+
     ### Implementation
     def _transform_hex_data(self, db_tuple):
         return tuple(map(lambda c: None if not c[1] else c[1] if not c[0].hex_encoding else binascii.unhexlify(c[1]).decode(c[0].hex_encoding, 'ignore'), zip(self._biz_columns, db_tuple)))
@@ -58,8 +62,8 @@ class OracleTableReader(ABC):
         conn = cx_Oracle.connect(user=self._oracledb_user, password=self._oracledb_password, dsn=dsn_str)
         cursor = conn.cursor()
         # For non-default encoding columns , cast to raw
-        columns = ', '.join([c.column if not c.hex_encoding else 'rawtohex(utl_raw.cast_to_raw({}))'.format(c.column) for c in self._biz_columns])
-        sql_statement = 'select {} from {}'.format(columns, self._table)
+        sql_statement = self._get_sql()
+        print(sql_statement)
         cursor.execute(sql_statement)
         # Unhex the returned string (into b'' format), and then decode with correct native encoding
         data_tuples = []
@@ -100,6 +104,7 @@ class SFCWF30(OracleTableReader):
             ColumnsWithRaw('PRODUCT_SPEC', 'big5'),
             ColumnsWithRaw('PRODUCT_SPEC1', 'big5'),            
             ColumnsWithRaw('PRODUCT_SIZE', 'big5'),
+            ColumnsWithRaw('SINGLE_LINE_CIR_STD', '')
         ]
         self._tuple = namedtuple(self.__class__.__name__ + '_tuple', [c.column for c in  self._columns])
 
@@ -110,6 +115,38 @@ class SFCWF30(OracleTableReader):
     @property
     def _biz_tuple(self):
         return self._tuple
+
+class SFCWF30JOINM5M4(OracleTableReader):
+    def __init__(self):
+        super().__init__()
+        self._columns = [
+            ColumnsWithRaw('PRODUCT_NO', 'big5'),
+            ColumnsWithRaw('PRODUCT_DES', 'big5'),
+            ColumnsWithRaw('NO_MANU', 'big5'),
+            ColumnsWithRaw('SINGLE_LINE_CIR_STD', 'big5'),
+            ColumnsWithRaw('NO_KIND', 'big5'),
+        ]
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', [c.column for c in  self._columns])
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
+
+    def _get_sql(self):
+        cols = [
+            'sfc.SFCWF30.PRODUCT_NO',
+            'sfc.SFCWF30.PRODUCT_DES',
+            'm4.no_manu',
+            'sfc.SFCWF30.SINGLE_LINE_CIR_STD',
+            'm5.no_kind',
+        ]
+        columns = ', '.join(['rawtohex(utl_raw.cast_to_raw({}))'.format(c) for c in cols])
+
+        return "select {} from sfc.SFCWF30, sfc.pmc904m m4 left join (select m5.no_code, case when no_type = 'P' then '5' else 'G' end no_type, m5.name_mtrl, m5.name_kind, m5.no_kind from sfc.pmc905m m5 where m5.code_status = 'C' and m5.no_kind is not null) m5 on m4.no_kind = m5.no_kind and substr(m4.no_manu, 1, 1) = m5.no_type and substr(m4.no_manu, 2, 3) = m5.no_code where sfc.SFCWF30.DESIGN_NO = m4.no_manu;".format(columns)
 
 
 class HRM010M(OracleTableReader):
@@ -159,6 +196,15 @@ class HRM010M(OracleTableReader):
     @property
     def _biz_tuple(self):
         return self._tuple
+
+def test():
+    data_tuples = SFCWF30JOINM5M4().load_db_data().data_tuples
+    print(len(data_tuples))
+    with open('SFCWF30JOINM5M4.csv', 'w') as fd:
+        writer = csv.DictWriter(fd, fieldnames=SFCWF30JOINM5M4._biz_tuple._fields)
+        writer.writeheader()
+        for t in data_tuples:
+            writer.writerow(t._asdict())
 
 def main():
     if len(sys.argv) < 2:
