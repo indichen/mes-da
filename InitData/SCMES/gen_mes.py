@@ -9,7 +9,7 @@ from collections import namedtuple
 from uuid import uuid4
 from decimal import Decimal
 
-from read_old_mes import PMC902M, SFCWF30, SFCWF30JOINM5M4
+from read_old_mes import PMC902M, SFCWF30, SFCWF30JOINM5M4, PMC180M, SFCMF22
 
 
 class MESTableGenerator(ABC):
@@ -878,39 +878,92 @@ class fm7_material(MESTableGenerator):
             )
         return ret_tuples
 
+class fm6_carrier_model(MESTableGenerator):
+    def __init__(self):
+        super().__init__()
+        self._columns = ['code', 'carrier_cat_cd', 'spec', 'carcass_diameter', 'disc_diameter', 'gap_length', 'inside_width', 'material_id', 'material_cd', 'capacity', 'note']
+        self._key_columns = ['code']
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+    
+    @property
+    def _biz_key_columns(self):
+        return self._key_columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
+
+    def _gen_init_tuples(self):
+        old_tuples = PMC180M().load_db_data().data_tuples
+        return [ self._tuple(
+            o.DRUM_TYPENO, o.DRUM_KIND, o.DRUM_NAME,
+            o.CIR_INSIDE, o.CIR_OUTSIDE,
+            o.SPACE_WIDTH, o.INNER_WIDTH,
+            ['NULL'], o.DRUM_MTRLNO, ['NULL'], '初始建立'
+        ) for o in old_tuples]
+
+class fm6_equipment_carrier(MESTableGenerator):
+    def __init__(self):
+        super().__init__()
+        self._columns = ['equipment_pk', 'equipment_cd', 'carrier_model_pk', 'carrier_model_cd', 'check_type', 'note']
+        self._key_columns = ['equipment_cd', 'carrier_model_cd']
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+    
+    @property
+    def _biz_key_columns(self):
+        return self._key_columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
+
+    def _gen_init_tuples(self):
+        carrier_models = fm6_carrier_model().load_db_data()
+        equipments = fm6_equipment().load_db_data()
+        old_tuples = SFCMF22().load_db_data().data_tuples
+        ret_tuples = []
+        miss_equipment = set()
+        miss_carrier_model = set()
+        for o in old_tuples:
+            equipment = equipments.lookup_key(o.MACHINE_NO)
+            carrier_model = carrier_models.lookup_key(o.AXLE_NO)
+            if equipment and carrier_model:
+                ret_tuples.append(self._tuple(
+                    equipment.id, equipment.code,
+                    carrier_model.id, carrier_model.code,
+                    2, '初始建立'))
+            else:
+                if not equipment:
+                    miss_equipment.add(o.MACHINE_NO)
+                if not carrier_model:
+                    miss_carrier_model.add(o.AXLE_NO)
+
+        if len(miss_equipment):
+            print('Not found equipments {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_equipment)))))
+        if len(miss_carrier_model):
+            print('Not found carrier model {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_carrier_model)))))
+
+        return ret_tuples
+
 def test():
     material = fm7_material().create_data()
     material.truncate_db = False
     data_tuples = material.data_tuples
     material.gen_new_sql()
 
-def insert_material():
-    sqldb_db = getenv('SQLDB_DB')
-    sqldb_schema = getenv('SQLDB_SCHEMA')
-    sqldb_host = getenv('SQLDB_HOST')
-    sqldb_port = getenv('SQLDB_PORT', '1433')
-    sqldb_user = getenv('SQLDB_USER')
-    sqldb_password = getenv('SQLDB_PASSWORD')
+def test1():
+    fm6_carrier_model().create_data().gen_new_sql()
 
-    for ext in ['c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']:
-        filename = 'fm7_material_piecea{}'.format(ext)
-        with open(filename, 'r') as fd:
-            sqls = fd.readlines()
-
-        conn = pymssql.connect(server=sqldb_host, port=sqldb_port, user=sqldb_user, password=sqldb_password)
-        try:
-            cursor = conn.cursor()
-            idx = 0
-            for sql_statement in sqls:
-                cursor.execute(sql_statement)
-                idx = idx + 1
-                if idx % 100 == 0:
-                    print('Statement {} processed'.format(idx))
-        except:
-            conn.rollback()
-        finally:
-            conn.commit()
-
+def test2():
+    fm6_equipment_carrier().create_data().gen_new_sql()
 
 def main():
     if len(sys.argv) < 2:

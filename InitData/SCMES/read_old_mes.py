@@ -46,9 +46,13 @@ class OracleTableReader(ABC):
     def _biz_tuple(self):
         pass
 
+    def _db_filter(self):
+        return ""
+
     def _get_sql(self):
         columns = ', '.join([c.column if not c.hex_encoding else 'rawtohex(utl_raw.cast_to_raw({}))'.format(c.column) for c in self._biz_columns])
-        return 'select {} from {}'.format(columns, self._table)
+        where_condition = ' where {}'.format(self._db_filter()) if self._db_filter() else ''
+        return 'select {} from {}{}'.format(columns, self._table, where_condition)
 
     ### Implementation
     def _transform_hex_data(self, db_tuple):
@@ -63,7 +67,6 @@ class OracleTableReader(ABC):
         cursor = conn.cursor()
         # For non-default encoding columns , cast to raw
         sql_statement = self._get_sql()
-        print(sql_statement)
         cursor.execute(sql_statement)
         # Unhex the returned string (into b'' format), and then decode with correct native encoding
         data_tuples = []
@@ -205,6 +208,53 @@ def test():
         writer.writeheader()
         for t in data_tuples:
             writer.writerow(t._asdict())
+
+class PMC180M(OracleTableReader):
+    def __init__(self):
+        super().__init__()
+        self._oracledb_schema = 'pmc'
+        self._columns = [
+            ColumnsWithRaw('DRUM_MTRLNO', ''),
+            ColumnsWithRaw('DRUM_TYPENO', ''),
+            ColumnsWithRaw('DRUM_NAME', 'big5'),
+            ColumnsWithRaw('CIR_OUTSIDE', ''),
+            ColumnsWithRaw('CIR_INSIDE', ''),
+            ColumnsWithRaw('INNER_WIDTH', ''),
+            ColumnsWithRaw('SPACE_WIDTH', ''),
+            ColumnsWithRaw('DRUM_MATERIAL', ''),
+            ColumnsWithRaw('DRUM_KIND', ''),
+            ColumnsWithRaw('DRUM_WEIGHT', ''),
+        ]
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', [c.column for c in  self._columns])
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
+
+    def _db_filter(self):
+        return 'DRUM_KIND=\'S\''
+
+class SFCMF22(OracleTableReader):
+    def __init__(self):
+        super().__init__()
+        self._oracledb_schema = 'sfc'
+        self._columns = [
+            ColumnsWithRaw('AXLE_NO', ''),
+            ColumnsWithRaw('MACHINE_NO', ''),
+        ]
+        self._tuple = namedtuple(self.__class__.__name__ + '_tuple', [c.column for c in  self._columns])
+
+    @property
+    def _biz_columns(self):
+        return self._columns
+
+    @property
+    def _biz_tuple(self):
+        return self._tuple
 
 def main():
     if len(sys.argv) < 2:
