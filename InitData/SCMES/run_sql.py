@@ -30,9 +30,12 @@ def run_sql():
 
             conn.commit()
             print('Run file {} done'.format(filename))
+
+            return 0
         except Exception as e:
             conn.rollback()
             print('Run file {} failed: {}'.format(filename, e))
+            return 1
         finally:
             if cursor:
                 cursor.close()
