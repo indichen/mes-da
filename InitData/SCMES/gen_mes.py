@@ -26,7 +26,7 @@ class MESTableGenerator(ABC):
 
     _make_sql_value = staticmethod(lambda x: \
         'null' if x is None else \
-        "'{}'".format(x) if isinstance(x, str) else \
+        "N'{}'".format(x) if isinstance(x, str) else \
         x[0] if isinstance(x, list) else \
         str(x) \
     )
