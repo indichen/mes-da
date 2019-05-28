@@ -88,6 +88,7 @@ create table fm6_equipment (<br />
    id                   type_pk              not null,<br />
    code                 type_cd              null,<br />
    name                 type_name            null,<br />
+   short_name           type_name            null,<br />
    spec                 type_memo            null,<br />
    process_pk           type_pk              null,<br />
    process_cd           type_cd              null,<br />
@@ -601,251 +602,261 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1249">說明</a>
+<p align="left"><a href="Fact41.htm#1249">縮寫</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1249">spec</a>
+<p align="left"><a href="Fact41.htm#1249">short_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1255">製程碼PK</a>
+<p align="left"><a href="Fact41.htm#1255">說明</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1255">process_pk</a>
+<p align="left"><a href="Fact41.htm#1255">spec</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1261">製程碼cd</a>
+<p align="left"><a href="Fact41.htm#1261">製程碼PK</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1261">process_cd</a>
+<p align="left"><a href="Fact41.htm#1261">process_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1267">是否批次生產裝備</a>
+<p align="left"><a href="Fact41.htm#1267">製程碼cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1267">is_batch_equipment</a>
+<p align="left"><a href="Fact41.htm#1267">process_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1273">生產裝備基本類型cd</a>
+<p align="left"><a href="Fact41.htm#1273">是否批次生產裝備</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1273">base_type_cd</a>
+<p align="left"><a href="Fact41.htm#1273">is_batch_equipment</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1280">生產裝備層級cd</a>
+<p align="left"><a href="Fact41.htm#1279">生產裝備基本類型cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1280">level_cd</a>
+<p align="left"><a href="Fact41.htm#1279">base_type_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1287">生產裝備投產類型cd</a>
+<p align="left"><a href="Fact41.htm#1286">生產裝備層級cd</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1287">checkin_out_type_cd</a>
+<p align="left"><a href="Fact41.htm#1286">level_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1294">所在工廠PK</a>
+<p align="left"><a href="Fact41.htm#1293">生產裝備投產類型cd</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1294">factory_pk</a>
+<p align="left"><a href="Fact41.htm#1293">checkin_out_type_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1300">所在工廠代碼</a>
+<p align="left"><a href="Fact41.htm#1300">所在工廠PK</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1300">factory_cd</a>
+<p align="left"><a href="Fact41.htm#1300">factory_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1306">所在工廠名稱</a>
+<p align="left"><a href="Fact41.htm#1306">所在工廠代碼</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1306">factory_name</a>
+<p align="left"><a href="Fact41.htm#1306">factory_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1312">所在部門PK</a>
+<p align="left"><a href="Fact41.htm#1312">所在工廠名稱</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1312">dep_pk</a>
+<p align="left"><a href="Fact41.htm#1312">factory_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1318">所在部門代碼</a>
+<p align="left"><a href="Fact41.htm#1318">所在部門PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1318">dep_cd</a>
+<p align="left"><a href="Fact41.htm#1318">dep_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1324">所在部門名稱</a>
+<p align="left"><a href="Fact41.htm#1324">所在部門代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1324">dep_name</a>
+<p align="left"><a href="Fact41.htm#1324">dep_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1330">儲區PK</a>
+<p align="left"><a href="Fact41.htm#1330">所在部門名稱</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1330">warehouse_pk</a>
+<p align="left"><a href="Fact41.htm#1330">dep_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1336">儲區代碼</a>
+<p align="left"><a href="Fact41.htm#1336">儲區PK</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1336">warehouse_cd</a>
+<p align="left"><a href="Fact41.htm#1336">warehouse_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1342">儲區名稱</a>
+<p align="left"><a href="Fact41.htm#1342">儲區代碼</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1342">warehouse_name</a>
+<p align="left"><a href="Fact41.htm#1342">warehouse_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1348">父節點</a>
+<p align="left"><a href="Fact41.htm#1348">儲區名稱</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1348">parent_pk</a>
+<p align="left"><a href="Fact41.htm#1348">warehouse_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1354">經度</a>
+<p align="left"><a href="Fact41.htm#1354">父節點</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1354">longitude</a>
+<p align="left"><a href="Fact41.htm#1354">parent_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1360">維度</a>
+<p align="left"><a href="Fact41.htm#1360">經度</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1360">latitude</a>
+<p align="left"><a href="Fact41.htm#1360">longitude</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1366">生產能力</a>
+<p align="left"><a href="Fact41.htm#1366">維度</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1366">capacity</a>
+<p align="left"><a href="Fact41.htm#1366">latitude</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1372">生產能力單位PK</a>
+<p align="left"><a href="Fact41.htm#1372">生產能力</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1372">unit_capacity_pk</a>
+<p align="left"><a href="Fact41.htm#1372">capacity</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1378">生產能力單位代碼</a>
+<p align="left"><a href="Fact41.htm#1378">生產能力單位PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1378">unit_capacity_cd</a>
+<p align="left"><a href="Fact41.htm#1378">unit_capacity_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1384">生產能力單位名稱</a>
+<p align="left"><a href="Fact41.htm#1384">生產能力單位代碼</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1384">unit_capacity_name</a>
+<p align="left"><a href="Fact41.htm#1384">unit_capacity_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1390">是否關鍵機台</a>
+<p align="left"><a href="Fact41.htm#1390">生產能力單位名稱</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1390">is_critical</a>
+<p align="left"><a href="Fact41.htm#1390">unit_capacity_name</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1396">備註</a>
+<p align="left"><a href="Fact41.htm#1396">是否關鍵機台</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact41.htm#1396">note</a>
+<p align="left"><a href="Fact41.htm#1396">is_critical</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="Fact41.htm#1402">備註</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="Fact41.htm#1402">note</a>
 </p>
 </td>
 </tr>
@@ -1065,11 +1076,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 <td>
@@ -2056,10 +2067,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1249">Column 說明 of the table FM6_生產機臺</a> 
+<a name="1249">Column 縮寫 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1250">Card of the column 說明 of the table FM6_生產機臺</a> 
+<a name="1250">Card of the column 縮寫 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2068,7 +2079,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1249">說明</a>
+<p align="left"><a href="Fact41.htm#1249">縮寫</a>
 </p>
 </td>
 </tr>
@@ -2078,7 +2089,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1249">spec</a>
+<p align="left"><a href="Fact41.htm#1249">short_name</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">national char varying(20)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1251">Check constraint name of the column 縮寫 of the table FM6_生產機臺</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_SHORT_NAME_FM6_EQUI
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1252">Check of the column 縮寫 of the table FM6_生產機臺</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1253">Server validation rule of the column 縮寫 of the table FM6_生產機臺</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1254">List of extended attributes of the table column 縮寫</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1255">Column 說明 of the table FM6_生產機臺</a> 
+</h2>
+<h3>
+<a name="1256">Card of the column 說明 of the table FM6_生產機臺</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact41.htm#1255">說明</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact41.htm#1255">spec</a>
 </p>
 </td>
 </tr>
@@ -2104,7 +2493,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1251">Check constraint name of the column 說明 of the table FM6_生產機臺</a> 
+<a name="1257">Check constraint name of the column 說明 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_SPEC_FM6_EQUI
@@ -2112,7 +2501,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1252">Check of the column 說明 of the table FM6_生產機臺</a> 
+<a name="1258">Check of the column 說明 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2187,7 +2576,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1253">Server validation rule of the column 說明 of the table FM6_生產機臺</a> 
+<a name="1259">Server validation rule of the column 說明 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2195,7 +2584,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1254">List of extended attributes of the table column 說明</a> 
+<a name="1260">List of extended attributes of the table column 說明</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2434,10 +2823,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1255">Column 製程碼PK of the table FM6_生產機臺</a> 
+<a name="1261">Column 製程碼PK of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1256">Card of the column 製程碼PK of the table FM6_生產機臺</a> 
+<a name="1262">Card of the column 製程碼PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2446,7 +2835,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1255">製程碼PK</a>
+<p align="left"><a href="Fact41.htm#1261">製程碼PK</a>
 </p>
 </td>
 </tr>
@@ -2456,7 +2845,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1255">process_pk</a>
+<p align="left"><a href="Fact41.htm#1261">process_pk</a>
 </p>
 </td>
 </tr>
@@ -2482,7 +2871,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1257">Check constraint name of the column 製程碼PK of the table FM6_生產機臺</a> 
+<a name="1263">Check constraint name of the column 製程碼PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PROCESS_PK_FM6_EQUI
@@ -2490,7 +2879,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1258">Check of the column 製程碼PK of the table FM6_生產機臺</a> 
+<a name="1264">Check of the column 製程碼PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2565,7 +2954,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1259">Server validation rule of the column 製程碼PK of the table FM6_生產機臺</a> 
+<a name="1265">Server validation rule of the column 製程碼PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2573,7 +2962,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1260">List of extended attributes of the table column 製程碼PK</a> 
+<a name="1266">List of extended attributes of the table column 製程碼PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2812,10 +3201,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1261">Column 製程碼cd of the table FM6_生產機臺</a> 
+<a name="1267">Column 製程碼cd of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1262">Card of the column 製程碼cd of the table FM6_生產機臺</a> 
+<a name="1268">Card of the column 製程碼cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2824,7 +3213,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1261">製程碼cd</a>
+<p align="left"><a href="Fact41.htm#1267">製程碼cd</a>
 </p>
 </td>
 </tr>
@@ -2834,7 +3223,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1261">process_cd</a>
+<p align="left"><a href="Fact41.htm#1267">process_cd</a>
 </p>
 </td>
 </tr>
@@ -2860,7 +3249,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1263">Check constraint name of the column 製程碼cd of the table FM6_生產機臺</a> 
+<a name="1269">Check constraint name of the column 製程碼cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PROCESS_CD_FM6_EQUI
@@ -2868,7 +3257,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1264">Check of the column 製程碼cd of the table FM6_生產機臺</a> 
+<a name="1270">Check of the column 製程碼cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2943,7 +3332,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1265">Server validation rule of the column 製程碼cd of the table FM6_生產機臺</a> 
+<a name="1271">Server validation rule of the column 製程碼cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2951,7 +3340,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1266">List of extended attributes of the table column 製程碼cd</a> 
+<a name="1272">List of extended attributes of the table column 製程碼cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3190,10 +3579,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1267">Column 是否批次生產裝備 of the table FM6_生產機臺</a> 
+<a name="1273">Column 是否批次生產裝備 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1268">Card of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
+<a name="1274">Card of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3202,7 +3591,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1267">是否批次生產裝備</a>
+<p align="left"><a href="Fact41.htm#1273">是否批次生產裝備</a>
 </p>
 </td>
 </tr>
@@ -3212,7 +3601,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1267">is_batch_equipment</a>
+<p align="left"><a href="Fact41.htm#1273">is_batch_equipment</a>
 </p>
 </td>
 </tr>
@@ -3238,7 +3627,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1269">Check constraint name of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
+<a name="1275">Check constraint name of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_IS_BATCH_EQUIPMEN_FM6_EQUI
@@ -3246,7 +3635,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1270">Check of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
+<a name="1276">Check of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3321,7 +3710,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1271">Server validation rule of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
+<a name="1277">Server validation rule of the column 是否批次生產裝備 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3329,7 +3718,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1272">List of extended attributes of the table column 是否批次生產裝備</a> 
+<a name="1278">List of extended attributes of the table column 是否批次生產裝備</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3568,10 +3957,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1273">Column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
+<a name="1279">Column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1274">Card of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
+<a name="1280">Card of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3580,7 +3969,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1273">生產裝備基本類型cd</a>
+<p align="left"><a href="Fact41.htm#1279">生產裝備基本類型cd</a>
 </p>
 </td>
 </tr>
@@ -3590,7 +3979,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1273">base_type_cd</a>
+<p align="left"><a href="Fact41.htm#1279">base_type_cd</a>
 </p>
 </td>
 </tr>
@@ -3616,7 +4005,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1275">Check constraint name of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
+<a name="1281">Check constraint name of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_BASE_TYPE_CD_FM6_EQUI
@@ -3624,7 +4013,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1276">Check of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
+<a name="1282">Check of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3699,7 +4088,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1277">Server validation rule of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
+<a name="1283">Server validation rule of the column 生產裝備基本類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3707,7 +4096,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1278">List of all dependencies of the table column 生產裝備基本類型cd</a> 
+<a name="1284">List of all dependencies of the table column 生產裝備基本類型cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3740,7 +4129,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1279">List of extended attributes of the table column 生產裝備基本類型cd</a> 
+<a name="1285">List of extended attributes of the table column 生產裝備基本類型cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3979,10 +4368,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1280">Column 生產裝備層級cd of the table FM6_生產機臺</a> 
+<a name="1286">Column 生產裝備層級cd of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1281">Card of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
+<a name="1287">Card of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3991,7 +4380,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1280">生產裝備層級cd</a>
+<p align="left"><a href="Fact41.htm#1286">生產裝備層級cd</a>
 </p>
 </td>
 </tr>
@@ -4001,7 +4390,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1280">level_cd</a>
+<p align="left"><a href="Fact41.htm#1286">level_cd</a>
 </p>
 </td>
 </tr>
@@ -4027,7 +4416,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1282">Check constraint name of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
+<a name="1288">Check constraint name of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_LEVEL_CD_FM6_EQUI
@@ -4035,7 +4424,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1283">Check of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
+<a name="1289">Check of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4110,7 +4499,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1284">Server validation rule of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
+<a name="1290">Server validation rule of the column 生產裝備層級cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4118,7 +4507,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1285">List of all dependencies of the table column 生產裝備層級cd</a> 
+<a name="1291">List of all dependencies of the table column 生產裝備層級cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4151,7 +4540,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1286">List of extended attributes of the table column 生產裝備層級cd</a> 
+<a name="1292">List of extended attributes of the table column 生產裝備層級cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4390,10 +4779,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1287">Column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
+<a name="1293">Column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1288">Card of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
+<a name="1294">Card of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4402,7 +4791,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1287">生產裝備投產類型cd</a>
+<p align="left"><a href="Fact41.htm#1293">生產裝備投產類型cd</a>
 </p>
 </td>
 </tr>
@@ -4412,7 +4801,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1287">checkin_out_type_cd</a>
+<p align="left"><a href="Fact41.htm#1293">checkin_out_type_cd</a>
 </p>
 </td>
 </tr>
@@ -4438,7 +4827,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1289">Check constraint name of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
+<a name="1295">Check constraint name of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CHECKIN_OUT_TYPE__FM6_EQUI
@@ -4446,7 +4835,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1290">Check of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
+<a name="1296">Check of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4521,7 +4910,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1291">Server validation rule of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
+<a name="1297">Server validation rule of the column 生產裝備投產類型cd of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4529,7 +4918,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1292">List of all dependencies of the table column 生產裝備投產類型cd</a> 
+<a name="1298">List of all dependencies of the table column 生產裝備投產類型cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4562,7 +4951,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1293">List of extended attributes of the table column 生產裝備投產類型cd</a> 
+<a name="1299">List of extended attributes of the table column 生產裝備投產類型cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4801,10 +5190,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1294">Column 所在工廠PK of the table FM6_生產機臺</a> 
+<a name="1300">Column 所在工廠PK of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1295">Card of the column 所在工廠PK of the table FM6_生產機臺</a> 
+<a name="1301">Card of the column 所在工廠PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4813,7 +5202,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1294">所在工廠PK</a>
+<p align="left"><a href="Fact41.htm#1300">所在工廠PK</a>
 </p>
 </td>
 </tr>
@@ -4823,7 +5212,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1294">factory_pk</a>
+<p align="left"><a href="Fact41.htm#1300">factory_pk</a>
 </p>
 </td>
 </tr>
@@ -4849,7 +5238,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1296">Check constraint name of the column 所在工廠PK of the table FM6_生產機臺</a> 
+<a name="1302">Check constraint name of the column 所在工廠PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_FACTORY_PK_FM6_EQUI
@@ -4857,7 +5246,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1297">Check of the column 所在工廠PK of the table FM6_生產機臺</a> 
+<a name="1303">Check of the column 所在工廠PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -4932,7 +5321,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1298">Server validation rule of the column 所在工廠PK of the table FM6_生產機臺</a> 
+<a name="1304">Server validation rule of the column 所在工廠PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -4940,7 +5329,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1299">List of extended attributes of the table column 所在工廠PK</a> 
+<a name="1305">List of extended attributes of the table column 所在工廠PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5179,10 +5568,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1300">Column 所在工廠代碼 of the table FM6_生產機臺</a> 
+<a name="1306">Column 所在工廠代碼 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1301">Card of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
+<a name="1307">Card of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5191,7 +5580,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1300">所在工廠代碼</a>
+<p align="left"><a href="Fact41.htm#1306">所在工廠代碼</a>
 </p>
 </td>
 </tr>
@@ -5201,7 +5590,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1300">factory_cd</a>
+<p align="left"><a href="Fact41.htm#1306">factory_cd</a>
 </p>
 </td>
 </tr>
@@ -5227,7 +5616,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1302">Check constraint name of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
+<a name="1308">Check constraint name of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_FACTORY_CD_FM6_EQUI
@@ -5235,7 +5624,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1303">Check of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
+<a name="1309">Check of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5310,7 +5699,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1304">Server validation rule of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
+<a name="1310">Server validation rule of the column 所在工廠代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -5318,7 +5707,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1305">List of extended attributes of the table column 所在工廠代碼</a> 
+<a name="1311">List of extended attributes of the table column 所在工廠代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5557,10 +5946,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1306">Column 所在工廠名稱 of the table FM6_生產機臺</a> 
+<a name="1312">Column 所在工廠名稱 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1307">Card of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
+<a name="1313">Card of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5569,7 +5958,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1306">所在工廠名稱</a>
+<p align="left"><a href="Fact41.htm#1312">所在工廠名稱</a>
 </p>
 </td>
 </tr>
@@ -5579,7 +5968,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1306">factory_name</a>
+<p align="left"><a href="Fact41.htm#1312">factory_name</a>
 </p>
 </td>
 </tr>
@@ -5605,7 +5994,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1308">Check constraint name of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
+<a name="1314">Check constraint name of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_FACTORY_NAME_FM6_EQUI
@@ -5613,7 +6002,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1309">Check of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
+<a name="1315">Check of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5688,7 +6077,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1310">Server validation rule of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
+<a name="1316">Server validation rule of the column 所在工廠名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -5696,7 +6085,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1311">List of extended attributes of the table column 所在工廠名稱</a> 
+<a name="1317">List of extended attributes of the table column 所在工廠名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5935,10 +6324,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1312">Column 所在部門PK of the table FM6_生產機臺</a> 
+<a name="1318">Column 所在部門PK of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1313">Card of the column 所在部門PK of the table FM6_生產機臺</a> 
+<a name="1319">Card of the column 所在部門PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -5947,7 +6336,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1312">所在部門PK</a>
+<p align="left"><a href="Fact41.htm#1318">所在部門PK</a>
 </p>
 </td>
 </tr>
@@ -5957,7 +6346,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1312">dep_pk</a>
+<p align="left"><a href="Fact41.htm#1318">dep_pk</a>
 </p>
 </td>
 </tr>
@@ -5983,7 +6372,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1314">Check constraint name of the column 所在部門PK of the table FM6_生產機臺</a> 
+<a name="1320">Check constraint name of the column 所在部門PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_DEP_PK_FM6_EQUI
@@ -5991,7 +6380,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1315">Check of the column 所在部門PK of the table FM6_生產機臺</a> 
+<a name="1321">Check of the column 所在部門PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6066,7 +6455,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1316">Server validation rule of the column 所在部門PK of the table FM6_生產機臺</a> 
+<a name="1322">Server validation rule of the column 所在部門PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6074,7 +6463,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1317">List of extended attributes of the table column 所在部門PK</a> 
+<a name="1323">List of extended attributes of the table column 所在部門PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6313,10 +6702,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1318">Column 所在部門代碼 of the table FM6_生產機臺</a> 
+<a name="1324">Column 所在部門代碼 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1319">Card of the column 所在部門代碼 of the table FM6_生產機臺</a> 
+<a name="1325">Card of the column 所在部門代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6325,7 +6714,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1318">所在部門代碼</a>
+<p align="left"><a href="Fact41.htm#1324">所在部門代碼</a>
 </p>
 </td>
 </tr>
@@ -6335,7 +6724,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1318">dep_cd</a>
+<p align="left"><a href="Fact41.htm#1324">dep_cd</a>
 </p>
 </td>
 </tr>
@@ -6361,7 +6750,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1320">Check constraint name of the column 所在部門代碼 of the table FM6_生產機臺</a> 
+<a name="1326">Check constraint name of the column 所在部門代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_DEP_CD_FM6_EQUI
@@ -6369,7 +6758,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1321">Check of the column 所在部門代碼 of the table FM6_生產機臺</a> 
+<a name="1327">Check of the column 所在部門代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6444,7 +6833,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1322">Server validation rule of the column 所在部門代碼 of the table FM6_生產機臺</a> 
+<a name="1328">Server validation rule of the column 所在部門代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6452,7 +6841,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1323">List of extended attributes of the table column 所在部門代碼</a> 
+<a name="1329">List of extended attributes of the table column 所在部門代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6691,10 +7080,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1324">Column 所在部門名稱 of the table FM6_生產機臺</a> 
+<a name="1330">Column 所在部門名稱 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1325">Card of the column 所在部門名稱 of the table FM6_生產機臺</a> 
+<a name="1331">Card of the column 所在部門名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6703,7 +7092,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1324">所在部門名稱</a>
+<p align="left"><a href="Fact41.htm#1330">所在部門名稱</a>
 </p>
 </td>
 </tr>
@@ -6713,7 +7102,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1324">dep_name</a>
+<p align="left"><a href="Fact41.htm#1330">dep_name</a>
 </p>
 </td>
 </tr>
@@ -6739,7 +7128,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1326">Check constraint name of the column 所在部門名稱 of the table FM6_生產機臺</a> 
+<a name="1332">Check constraint name of the column 所在部門名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_DEP_NAME_FM6_EQUI
@@ -6747,7 +7136,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1327">Check of the column 所在部門名稱 of the table FM6_生產機臺</a> 
+<a name="1333">Check of the column 所在部門名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -6822,7 +7211,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1328">Server validation rule of the column 所在部門名稱 of the table FM6_生產機臺</a> 
+<a name="1334">Server validation rule of the column 所在部門名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -6830,7 +7219,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1329">List of extended attributes of the table column 所在部門名稱</a> 
+<a name="1335">List of extended attributes of the table column 所在部門名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7069,10 +7458,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1330">Column 儲區PK of the table FM6_生產機臺</a> 
+<a name="1336">Column 儲區PK of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1331">Card of the column 儲區PK of the table FM6_生產機臺</a> 
+<a name="1337">Card of the column 儲區PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7081,7 +7470,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1330">儲區PK</a>
+<p align="left"><a href="Fact41.htm#1336">儲區PK</a>
 </p>
 </td>
 </tr>
@@ -7091,7 +7480,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1330">warehouse_pk</a>
+<p align="left"><a href="Fact41.htm#1336">warehouse_pk</a>
 </p>
 </td>
 </tr>
@@ -7117,7 +7506,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1332">Check constraint name of the column 儲區PK of the table FM6_生產機臺</a> 
+<a name="1338">Check constraint name of the column 儲區PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WAREHOUSE_PK_FM6_EQUI
@@ -7125,7 +7514,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1333">Check of the column 儲區PK of the table FM6_生產機臺</a> 
+<a name="1339">Check of the column 儲區PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7200,7 +7589,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1334">Server validation rule of the column 儲區PK of the table FM6_生產機臺</a> 
+<a name="1340">Server validation rule of the column 儲區PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7208,7 +7597,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1335">List of extended attributes of the table column 儲區PK</a> 
+<a name="1341">List of extended attributes of the table column 儲區PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7447,10 +7836,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1336">Column 儲區代碼 of the table FM6_生產機臺</a> 
+<a name="1342">Column 儲區代碼 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1337">Card of the column 儲區代碼 of the table FM6_生產機臺</a> 
+<a name="1343">Card of the column 儲區代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7459,7 +7848,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1336">儲區代碼</a>
+<p align="left"><a href="Fact41.htm#1342">儲區代碼</a>
 </p>
 </td>
 </tr>
@@ -7469,7 +7858,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1336">warehouse_cd</a>
+<p align="left"><a href="Fact41.htm#1342">warehouse_cd</a>
 </p>
 </td>
 </tr>
@@ -7495,7 +7884,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1338">Check constraint name of the column 儲區代碼 of the table FM6_生產機臺</a> 
+<a name="1344">Check constraint name of the column 儲區代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WAREHOUSE_CD_FM6_EQUI
@@ -7503,7 +7892,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1339">Check of the column 儲區代碼 of the table FM6_生產機臺</a> 
+<a name="1345">Check of the column 儲區代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7578,7 +7967,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1340">Server validation rule of the column 儲區代碼 of the table FM6_生產機臺</a> 
+<a name="1346">Server validation rule of the column 儲區代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7586,7 +7975,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1341">List of extended attributes of the table column 儲區代碼</a> 
+<a name="1347">List of extended attributes of the table column 儲區代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7825,10 +8214,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1342">Column 儲區名稱 of the table FM6_生產機臺</a> 
+<a name="1348">Column 儲區名稱 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1343">Card of the column 儲區名稱 of the table FM6_生產機臺</a> 
+<a name="1349">Card of the column 儲區名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7837,7 +8226,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1342">儲區名稱</a>
+<p align="left"><a href="Fact41.htm#1348">儲區名稱</a>
 </p>
 </td>
 </tr>
@@ -7847,7 +8236,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1342">warehouse_name</a>
+<p align="left"><a href="Fact41.htm#1348">warehouse_name</a>
 </p>
 </td>
 </tr>
@@ -7873,7 +8262,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1344">Check constraint name of the column 儲區名稱 of the table FM6_生產機臺</a> 
+<a name="1350">Check constraint name of the column 儲區名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_WAREHOUSE_NAME_FM6_EQUI
@@ -7881,7 +8270,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1345">Check of the column 儲區名稱 of the table FM6_生產機臺</a> 
+<a name="1351">Check of the column 儲區名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7956,7 +8345,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1346">Server validation rule of the column 儲區名稱 of the table FM6_生產機臺</a> 
+<a name="1352">Server validation rule of the column 儲區名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -7964,7 +8353,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1347">List of extended attributes of the table column 儲區名稱</a> 
+<a name="1353">List of extended attributes of the table column 儲區名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8203,10 +8592,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1348">Column 父節點 of the table FM6_生產機臺</a> 
+<a name="1354">Column 父節點 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1349">Card of the column 父節點 of the table FM6_生產機臺</a> 
+<a name="1355">Card of the column 父節點 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8215,7 +8604,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1348">父節點</a>
+<p align="left"><a href="Fact41.htm#1354">父節點</a>
 </p>
 </td>
 </tr>
@@ -8225,7 +8614,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1348">parent_pk</a>
+<p align="left"><a href="Fact41.htm#1354">parent_pk</a>
 </p>
 </td>
 </tr>
@@ -8251,7 +8640,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1350">Check constraint name of the column 父節點 of the table FM6_生產機臺</a> 
+<a name="1356">Check constraint name of the column 父節點 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_PARENT_PK_FM6_EQUI
@@ -8259,7 +8648,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1351">Check of the column 父節點 of the table FM6_生產機臺</a> 
+<a name="1357">Check of the column 父節點 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8334,7 +8723,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1352">Server validation rule of the column 父節點 of the table FM6_生產機臺</a> 
+<a name="1358">Server validation rule of the column 父節點 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8342,7 +8731,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1353">List of extended attributes of the table column 父節點</a> 
+<a name="1359">List of extended attributes of the table column 父節點</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8581,10 +8970,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1354">Column 經度 of the table FM6_生產機臺</a> 
+<a name="1360">Column 經度 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1355">Card of the column 經度 of the table FM6_生產機臺</a> 
+<a name="1361">Card of the column 經度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8593,7 +8982,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1354">經度</a>
+<p align="left"><a href="Fact41.htm#1360">經度</a>
 </p>
 </td>
 </tr>
@@ -8603,7 +8992,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1354">longitude</a>
+<p align="left"><a href="Fact41.htm#1360">longitude</a>
 </p>
 </td>
 </tr>
@@ -8629,7 +9018,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1356">Check constraint name of the column 經度 of the table FM6_生產機臺</a> 
+<a name="1362">Check constraint name of the column 經度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_LONGITUDE_FM6_EQUI
@@ -8637,7 +9026,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1357">Check of the column 經度 of the table FM6_生產機臺</a> 
+<a name="1363">Check of the column 經度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8712,7 +9101,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1358">Server validation rule of the column 經度 of the table FM6_生產機臺</a> 
+<a name="1364">Server validation rule of the column 經度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8720,7 +9109,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1359">List of extended attributes of the table column 經度</a> 
+<a name="1365">List of extended attributes of the table column 經度</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8959,10 +9348,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1360">Column 維度 of the table FM6_生產機臺</a> 
+<a name="1366">Column 維度 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1361">Card of the column 維度 of the table FM6_生產機臺</a> 
+<a name="1367">Card of the column 維度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8971,7 +9360,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1360">維度</a>
+<p align="left"><a href="Fact41.htm#1366">維度</a>
 </p>
 </td>
 </tr>
@@ -8981,7 +9370,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1360">latitude</a>
+<p align="left"><a href="Fact41.htm#1366">latitude</a>
 </p>
 </td>
 </tr>
@@ -9007,7 +9396,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1362">Check constraint name of the column 維度 of the table FM6_生產機臺</a> 
+<a name="1368">Check constraint name of the column 維度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_LATITUDE_FM6_EQUI
@@ -9015,7 +9404,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1363">Check of the column 維度 of the table FM6_生產機臺</a> 
+<a name="1369">Check of the column 維度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9090,7 +9479,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1364">Server validation rule of the column 維度 of the table FM6_生產機臺</a> 
+<a name="1370">Server validation rule of the column 維度 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9098,7 +9487,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1365">List of extended attributes of the table column 維度</a> 
+<a name="1371">List of extended attributes of the table column 維度</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9337,10 +9726,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1366">Column 生產能力 of the table FM6_生產機臺</a> 
+<a name="1372">Column 生產能力 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1367">Card of the column 生產能力 of the table FM6_生產機臺</a> 
+<a name="1373">Card of the column 生產能力 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9349,7 +9738,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1366">生產能力</a>
+<p align="left"><a href="Fact41.htm#1372">生產能力</a>
 </p>
 </td>
 </tr>
@@ -9359,7 +9748,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1366">capacity</a>
+<p align="left"><a href="Fact41.htm#1372">capacity</a>
 </p>
 </td>
 </tr>
@@ -9385,7 +9774,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1368">Check constraint name of the column 生產能力 of the table FM6_生產機臺</a> 
+<a name="1374">Check constraint name of the column 生產能力 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_CAPACITY_FM6_EQUI
@@ -9393,7 +9782,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1369">Check of the column 生產能力 of the table FM6_生產機臺</a> 
+<a name="1375">Check of the column 生產能力 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9468,7 +9857,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1370">Server validation rule of the column 生產能力 of the table FM6_生產機臺</a> 
+<a name="1376">Server validation rule of the column 生產能力 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9476,7 +9865,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1371">List of extended attributes of the table column 生產能力</a> 
+<a name="1377">List of extended attributes of the table column 生產能力</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9715,10 +10104,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1372">Column 生產能力單位PK of the table FM6_生產機臺</a> 
+<a name="1378">Column 生產能力單位PK of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1373">Card of the column 生產能力單位PK of the table FM6_生產機臺</a> 
+<a name="1379">Card of the column 生產能力單位PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9727,7 +10116,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1372">生產能力單位PK</a>
+<p align="left"><a href="Fact41.htm#1378">生產能力單位PK</a>
 </p>
 </td>
 </tr>
@@ -9737,7 +10126,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1372">unit_capacity_pk</a>
+<p align="left"><a href="Fact41.htm#1378">unit_capacity_pk</a>
 </p>
 </td>
 </tr>
@@ -9763,7 +10152,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1374">Check constraint name of the column 生產能力單位PK of the table FM6_生產機臺</a> 
+<a name="1380">Check constraint name of the column 生產能力單位PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_UNIT_CAPACITY_PK_FM6_EQUI
@@ -9771,7 +10160,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1375">Check of the column 生產能力單位PK of the table FM6_生產機臺</a> 
+<a name="1381">Check of the column 生產能力單位PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -9846,7 +10235,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1376">Server validation rule of the column 生產能力單位PK of the table FM6_生產機臺</a> 
+<a name="1382">Server validation rule of the column 生產能力單位PK of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -9854,7 +10243,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1377">List of extended attributes of the table column 生產能力單位PK</a> 
+<a name="1383">List of extended attributes of the table column 生產能力單位PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10093,10 +10482,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1378">Column 生產能力單位代碼 of the table FM6_生產機臺</a> 
+<a name="1384">Column 生產能力單位代碼 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1379">Card of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
+<a name="1385">Card of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10105,7 +10494,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1378">生產能力單位代碼</a>
+<p align="left"><a href="Fact41.htm#1384">生產能力單位代碼</a>
 </p>
 </td>
 </tr>
@@ -10115,7 +10504,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1378">unit_capacity_cd</a>
+<p align="left"><a href="Fact41.htm#1384">unit_capacity_cd</a>
 </p>
 </td>
 </tr>
@@ -10141,7 +10530,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1380">Check constraint name of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
+<a name="1386">Check constraint name of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_UNIT_CAPACITY_CD_FM6_EQUI
@@ -10149,7 +10538,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1381">Check of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
+<a name="1387">Check of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10224,7 +10613,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1382">Server validation rule of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
+<a name="1388">Server validation rule of the column 生產能力單位代碼 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10232,7 +10621,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1383">List of extended attributes of the table column 生產能力單位代碼</a> 
+<a name="1389">List of extended attributes of the table column 生產能力單位代碼</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10471,10 +10860,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1384">Column 生產能力單位名稱 of the table FM6_生產機臺</a> 
+<a name="1390">Column 生產能力單位名稱 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1385">Card of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
+<a name="1391">Card of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10483,7 +10872,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1384">生產能力單位名稱</a>
+<p align="left"><a href="Fact41.htm#1390">生產能力單位名稱</a>
 </p>
 </td>
 </tr>
@@ -10493,7 +10882,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1384">unit_capacity_name</a>
+<p align="left"><a href="Fact41.htm#1390">unit_capacity_name</a>
 </p>
 </td>
 </tr>
@@ -10519,7 +10908,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1386">Check constraint name of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
+<a name="1392">Check constraint name of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_UNIT_CAPACITY_NAM_FM6_EQUI
@@ -10527,7 +10916,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1387">Check of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
+<a name="1393">Check of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10602,7 +10991,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1388">Server validation rule of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
+<a name="1394">Server validation rule of the column 生產能力單位名稱 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10610,7 +10999,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1389">List of extended attributes of the table column 生產能力單位名稱</a> 
+<a name="1395">List of extended attributes of the table column 生產能力單位名稱</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10849,10 +11238,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1390">Column 是否關鍵機台 of the table FM6_生產機臺</a> 
+<a name="1396">Column 是否關鍵機台 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1391">Card of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
+<a name="1397">Card of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10861,7 +11250,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1390">是否關鍵機台</a>
+<p align="left"><a href="Fact41.htm#1396">是否關鍵機台</a>
 </p>
 </td>
 </tr>
@@ -10871,7 +11260,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1390">is_critical</a>
+<p align="left"><a href="Fact41.htm#1396">is_critical</a>
 </p>
 </td>
 </tr>
@@ -10897,7 +11286,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1392">Check constraint name of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
+<a name="1398">Check constraint name of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_IS_CRITICAL_FM6_EQUI
@@ -10905,7 +11294,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1393">Check of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
+<a name="1399">Check of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -10980,7 +11369,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1394">Server validation rule of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
+<a name="1400">Server validation rule of the column 是否關鍵機台 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -10988,7 +11377,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1395">List of extended attributes of the table column 是否關鍵機台</a> 
+<a name="1401">List of extended attributes of the table column 是否關鍵機台</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11227,10 +11616,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1396">Column 備註 of the table FM6_生產機臺</a> 
+<a name="1402">Column 備註 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1397">Card of the column 備註 of the table FM6_生產機臺</a> 
+<a name="1403">Card of the column 備註 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11239,7 +11628,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1396">備註</a>
+<p align="left"><a href="Fact41.htm#1402">備註</a>
 </p>
 </td>
 </tr>
@@ -11249,7 +11638,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1396">note</a>
+<p align="left"><a href="Fact41.htm#1402">note</a>
 </p>
 </td>
 </tr>
@@ -11275,7 +11664,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1398">Check constraint name of the column 備註 of the table FM6_生產機臺</a> 
+<a name="1404">Check constraint name of the column 備註 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_NOTE_FM6_EQUI
@@ -11283,7 +11672,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1399">Check of the column 備註 of the table FM6_生產機臺</a> 
+<a name="1405">Check of the column 備註 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11358,7 +11747,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1400">Server validation rule of the column 備註 of the table FM6_生產機臺</a> 
+<a name="1406">Server validation rule of the column 備註 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -11366,7 +11755,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1401">List of extended attributes of the table column 備註</a> 
+<a name="1407">List of extended attributes of the table column 備註</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11605,7 +11994,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1402">List of keys of the table FM6_生產機臺</a> 
+<a name="1408">List of keys of the table FM6_生產機臺</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11624,11 +12013,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 <td>
@@ -11638,10 +12027,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1403">Key Key_1 of the table FM6_生產機臺</a> 
+<a name="1409">Key Key_1 of the table FM6_生產機臺</a> 
 </h2>
 <h3>
-<a name="1404">Card of the key Key_1 of the table FM6_生產機臺</a> 
+<a name="1410">Card of the key Key_1 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11650,7 +12039,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 </tr>
@@ -11660,7 +12049,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact41.htm#1403">Key_1</a>
+<p align="left"><a href="Fact41.htm#1409">Key_1</a>
 </p>
 </td>
 </tr>
@@ -11676,7 +12065,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1405">Code preview of the key Key_1 of the table FM6_生產機臺</a> 
+<a name="1411">Code preview of the key Key_1 of the table FM6_生產機臺</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm6_equipment<br />
@@ -11687,7 +12076,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1406">List of columns of the table key Key_1</a> 
+<a name="1412">List of columns of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11712,7 +12101,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1407">List of all dependencies of the table key Key_1</a> 
+<a name="1413">List of all dependencies of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -11787,7 +12176,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1408">List of extended attributes of the table key Key_1</a> 
+<a name="1414">List of extended attributes of the table key Key_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
