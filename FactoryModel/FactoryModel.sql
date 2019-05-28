@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     5/28/2019 4:38:06 PM                         */
+/* Created on:     5/28/2019 5:33:27 PM                         */
 /*==============================================================*/
 
 
@@ -703,7 +703,7 @@ create table fm6_equipment (
 
    id                   type_pk              not null,
    code                 type_cd              null,
-   name                 type_name            null,
+   name                 type_long_name       null,
    short_name           type_name            null,
    spec                 type_memo            null,
    process_pk           type_pk              null,
