@@ -643,7 +643,8 @@ create table walsindba.fm6_equipment (
 
    id                   type_pk              not null,
    code                 type_cd              null,
-   name                 type_name            null,
+   name                 type_long_name       null,
+   short_name           type_name            null,
    spec                 type_memo            null,
    process_pk           type_pk              null,
    process_cd           type_cd              null,

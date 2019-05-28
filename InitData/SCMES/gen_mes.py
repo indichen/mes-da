@@ -158,7 +158,7 @@ class fm6_equipment(MESTableGenerator):
 
     def __init__(self):
         super().__init__()
-        self._columns = ['code', 'name', 'spec', 'is_batch_equipment', 'checkin_out_type_cd', 'factory_cd', 'factory_name', 'note']
+        self._columns = ['code', 'name', 'short_name', 'spec', 'is_batch_equipment', 'checkin_out_type_cd', 'factory_cd', 'factory_name', 'note']
         self._key_columns = ['code']
         self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
 
@@ -176,75 +176,103 @@ class fm6_equipment(MESTableGenerator):
 
     def _gen_init_tuples(self):
         return [
-            self._tuple('CS04', '37B銅絞機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('CS09', '7B銅絞機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('TN03', '3#630 PCT拋光機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('XE01', 'CDCC', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('GR09', '1+8集合機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('A130', 'A-13伸線機', '', 0, 'S', 'SCP1', '電力一課', ''),
-            self._tuple('WE02', '150押出機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('CS03', '19B銅絞機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('TP02', '中心包帶機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('XE06', 'RCP', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('ZZ50', '電二押出倒軸機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('XE05', 'HCV90 交連機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('WR01', '密捲機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('M850', 'M-85伸線機', '', 0, 'S', 'SCP1', '電力一課', ''),
-            self._tuple('XE02', 'CCV', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('XE03', 'HCV65 交連機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('TN02', '2#630 PCT鍍錫機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('TP01', '綜合包帶機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('TN01', '1#630 PCT鍍錫機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('CS08', '7B-1銅絞機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('CS05', '61B銅絞機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('GR03', '2.8M集合機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('WE01', '115押出機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('FS13', 'FS-13伸線機', '', 0, 'S', 'SCP1', '電力一課', ''),
-            self._tuple('XE07', 'HCV100 交連機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('GR04', '84B鎧裝機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('WE08', '120押出機', '', 0, 'M', 'SCP1', '電力一課', ''),
-            self._tuple('DR72', 'C 17-2中伸機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE17', '64#押出機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS20', '9#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('ST02', '電鍍錫機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('DR71', 'C 17-1中伸機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE22', 'G97', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GR01', '1.2M', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS25', '12#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS06', '1#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GP01', 'GP01', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS24', '11#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE11', '65#押出機(65φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE05', 'G94', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE07', '92#押出機(60+30+NOKIA)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GR08', '1+3弓絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS02', '13#吉田束絞機(800Φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS11', '5#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE06', '95#押出機(MF90)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE21', 'G96', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE19', '67#押出機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE20', '68#押出機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GR05', '915MM', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE18', '66#押出機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('DR02', '8頭伸線機', '', 0, 'S', 'SCG1', '電力二課', ''),
-            self._tuple('DR01', '12頭伸線機', '', 0, 'S', 'SCG1', '電力二課', ''),
-            self._tuple('WE23', 'G98', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE09', '61#押出機(JR65φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GP03', '高速小包機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE16', '90#押出機(G63)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS27', '3#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GP02', 'GP02', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS99', '1250(昇祥束絞機)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('DR73', 'C 17-3中伸機', '', 0, 'M', 'SCG1', '電力二課', ''),    
-            self._tuple('BS10', '4#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS21', '8#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS19', '10#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS12', '6#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('GR06', '1.6M', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('BS26', '7#束絞機', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE10', '62#押出機(JR65φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE12', '91#押出機(JR90φ)', '', 0, 'M', 'SCG1', '電力二課', ''),
-            self._tuple('WE15', 'G93', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('HI01', 'HIPA-1伸押機', 'HIPA-1', '', 0, 'M', '', '', ''),
+            self._tuple('FR10', 'FR-100製粒機', 'FR-100製粒', '', 0, 'M', '', '', ''),
+            self._tuple('PVC1', '200φ', '200φ', '', 0, 'M', '', '', ''),
+            self._tuple('PVC2', '180φ', '180φ', '', 0, 'M', '', '', ''),
+            self._tuple('RU22', '22"滾筒', '22"滾筒', '', 0, 'M', '', '', ''),
+            self._tuple('ZZ30', '電一伸線倒軸機', '電一伸線倒軸機', '', 0, 'S', '', '', ''),
+            self._tuple('A130', 'A-13伸線機', 'A-13', '', 0, 'S', 'SCP1', '電力一課', ''),
+            self._tuple('FS13', 'FS-13伸線機', 'FS13', '', 0, 'S', 'SCP1', '電力一課', ''),
+            self._tuple('M850', 'M-85伸線機', 'M85', '', 0, 'S', 'SCP1', '電力一課', ''),
+            self._tuple('CS03', '19B銅絞機', '19B', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('CS04', '37B銅絞機', '37B', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('CS05', '61B銅絞機', '61B', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('CS08', '7B-1銅絞機', '7B-1', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('CS09', '7B銅絞機', '7B', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('TN01', '1#630 PCT鍍錫機', '1#鍍錫機', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('TN02', '2#630 PCT鍍錫機', '2#鍍錫機', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE01', 'CDCC', 'CDCC', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE02', 'CCV', 'CCV', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE03', 'HCV65 交連機', 'HCV65', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE05', 'HCV90 交連機', 'HCV90', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE06', 'RCP', 'RCP', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('XE07', 'HCV100 交連機', 'HCV100', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('GR03', '2.8M集合機', '2.8M', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('GR04', '84B鎧裝機', '84B', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('GR09', '1+8集合機', '1+8集合', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('TN03', '3#630 拋光倒軸機', '3#拋光機', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('TP01', '綜合包帶機', '綜合包帶', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('TP02', '中心包帶機', '中心包帶', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('WR01', '密捲機', '密捲機', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('WE01', '115押出機', 'ψ115', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('WE02', '150押出機', 'ψ150', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('WE08', '120押出機', 'ψ120', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('ZZ50', '電二押出倒軸機', '門型倒軸', '', 0, 'M', 'SCP1', '電力一課', ''),
+            self._tuple('PK01', '搖盤機(電力)', '搖盤機(電力)', '', 0, 'M', '', '', ''),
+            self._tuple('PK02', '軸裝包裝(電力)', '軸裝包裝(電力)', '', 0, 'M', '', '', ''),
+            self._tuple('DR01', '12頭伸線機', '12R', '', 0, 'S', 'SCG1', '電力二課', ''),
+            self._tuple('DR02', '8頭伸線機', '8R', '', 0, 'S', 'SCG1', '電力二課', ''),
+            self._tuple('DR71', 'C 17-1中伸機', 'C 17-1', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('DR72', 'C 17-2中伸機', 'C 17-2', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('DR73', 'C 17-3中伸機', 'C 17-3', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('ST02', '電鍍錫機', '電鍍錫機', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('ZZ10', '電三伸線倒軸機', '電三伸線倒軸機', '', 0, 'S', '', '', ''),
+            self._tuple('BS02', '13#吉田束絞機(800Φ)', 'GBS#13', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS06', '1#束絞機', 'GBS#1', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS10', '4#束絞機', 'GBS#4', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS11', '5#束絞機', 'GBS#5', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS12', '6#束絞機', 'GBS#6', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS19', '10#束絞機', 'GBS#10', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS20', '9#束絞機', 'GBS#9', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS21', '8#束絞機', 'GBS#8', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS24', '11#束絞機', 'GBS#11', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS25', '12#束絞機', 'GBS#12', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS26', '7#束絞機', 'GBS#7', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('BS27', '3#束絞機', 'GBS#3', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('ZZ11', '電三束絞倒軸機', '電三束絞倒軸機', '', 0, 'M', '', '', ''),
+            self._tuple('WE07', '92#押出機(60+30+NOKIA)', 'G92', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE09', '61#押出機(JR65φ)', 'G61', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE10', '62#押出機(JR65φ)', 'G62', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE11', '65#押出機(65φ)', 'G65', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE12', '91#押出機(JR90φ)', 'G91', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE15', 'G93', 'G93', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE16', '90#押出機(G63)', 'G63', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE17', '64#押出機', 'G64', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE18', '66#押出機', 'G66', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE19', '67#押出機', 'G67', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE20', '68#押出機', 'G68', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('ZZ40', '電三集合倒軸機', '電三集合倒軸機', '', 0, 'M', '', '', ''),
+            self._tuple('BS99', '1250(昇祥束絞機)', '1250集合機', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GP01', 'GP01', '小包機#1', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GP02', 'GP02', '小包機#2', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GP03', '高速小包機', '高速小包機', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GR01', '1.2M', '1.2M', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GR05', '915MM', '915集合機', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GR06', '1.6M', '1.6M', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('GR08', '1+3弓絞機', '1+3', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('CW01', '溝槽押出機', '溝槽押出機', '', 0, 'M', '', '', ''),
+            self._tuple('WE05', 'G94', 'G94', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE06', '95#押出機(MF90)', 'G95', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE21', 'G96', 'G96', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE22', 'G97', 'G97', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('WE23', 'G98', 'G98', '', 0, 'M', 'SCG1', '電力二課', ''),
+            self._tuple('PK03', '搖盤機加包膜(配線)', '搖盤機', '', 0, 'M', '', '', ''),
+            self._tuple('PK04', '軸裝包裝(配線)', '軸裝包裝', '', 0, 'M', '', '', ''),
+            self._tuple('QS03', 'QS-3星絞機', 'QS-3', '', 0, 'M', '', '', ''),
+            self._tuple('QS02', 'QS-2星絞機', 'QS-2', '', 0, 'M', '', '', ''),
+            self._tuple('QS04', 'QS-4星絞機', 'QS-4', '', 0, 'M', '', '', ''),
+            self._tuple('QS01', 'QS-1星絞機', 'QS-1', '', 0, 'M', '', '', ''),
+            self._tuple('QS12', 'QS-12星絞機', 'QS-12', '', 0, 'M', '', '', ''),
+            self._tuple('QS11', 'QS-11星絞機', 'QS-11', '', 0, 'M', '', '', ''),
+            self._tuple('QS07', 'QS-7星絞機', 'QS-7', '', 0, 'M', '', '', ''),
+            self._tuple('GR20', '20B集合機', '20B', '', 0, 'M', '', '', ''),
+            self._tuple('SZ01', 'SZ-1集合機', 'SZ-1', '', 0, 'M', '', '', ''),
+            self._tuple('GR12', '12B集合機', '12B', '', 0, 'M', '', '', ''),
+            self._tuple('SZ02', 'SZ-2集合機', 'SZ-2', '', 0, 'M', '', '', ''),
+            self._tuple('GR07', '48B', '48B', '', 0, 'M', '', '', ''),
+            self._tuple('SZ03', 'SZ-3集合機', 'SZ-3', '', 0, 'M', '', '', ''),
+            self._tuple('LE01', '束管押出機', '束管押出機', '', 0, 'M', '', '', ''),
         ]
 # End of fm6_equipment
 
@@ -946,10 +974,10 @@ class fm6_equipment_carrier(MESTableGenerator):
                 if not carrier_model:
                     miss_carrier_model.add(o.AXLE_NO)
 
-        if len(miss_equipment):
-            print('Not found equipments {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_equipment)))))
-        if len(miss_carrier_model):
-            print('Not found carrier model {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_carrier_model)))))
+        #if len(miss_equipment):
+        #    print('Not found equipments {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_equipment)))))
+        #if len(miss_carrier_model):
+        #    print('Not found carrier model {}'.format(','.join(map(lambda s: "'"+s+"'", list(miss_carrier_model)))))
 
         return ret_tuples
 
@@ -1004,6 +1032,16 @@ def test1():
 
 def test2():
     fm6_equipment_carrier().create_data().gen_new_sql()
+
+def test3():
+    with open('new_machines.txt', 'r') as fd:
+        file_cds = fd.read().splitlines()
+
+    db_tuples = fm6_equipment().load_db_data().data_tuples
+    db_cds = [t.code for t in db_tuples]
+
+    print(set(file_cds) - set(db_cds))
+    print(set(db_cds) - set(file_cds))
 
 def main():
     if len(sys.argv) < 2:
