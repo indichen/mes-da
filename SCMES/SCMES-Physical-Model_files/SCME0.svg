@@ -1561,7 +1561,7 @@
       <text x="1796" y="1587" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char </text>
       <text x="1796" y="1600" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    </a>
-   <a target="_parent" xlink:href="SCME57.htm#3499">
+   <a target="_parent" xlink:href="SCME57.htm#3505">
       <rect x="1880" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient29" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1587,7 +1587,7 @@
       <text x="2046" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
       <text x="2046" y="1458" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME56.htm#3417">
+   <a target="_parent" xlink:href="SCME56.htm#3423">
       <rect x="1882" y="1654" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient30" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1723,7 +1723,7 @@
       <text x="2302" y="1409" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk2&gt;</text>
       <text x="2302" y="1435" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;fk1&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME54.htm#3283">
+   <a target="_parent" xlink:href="SCME54.htm#3289">
       <defs>
          <linearGradient id="Gradient35" x1="0%" x2="0%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="5%" stop-color="#fdf9ea"/>
@@ -1792,7 +1792,7 @@
    <text x="1148" y="1536" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
    <text x="1148" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
    <text x="1221" y="1445" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
-   <a target="_parent" xlink:href="SCME54.htm#3277">
+   <a target="_parent" xlink:href="SCME54.htm#3283">
       <rect x="1319" y="1416" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient38" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -1823,7 +1823,7 @@
       <text x="1404" y="1549" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">int</text>
       <text x="1477" y="1446" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME55.htm#3347">
+   <a target="_parent" xlink:href="SCME55.htm#3353">
       <rect x="1084" y="1415" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient39" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
@@ -2236,37 +2236,39 @@
    <text x="1373" y="1677" fill="#ff0000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">重工簽核單</text>
    <line x1="1240" x2="1506" y1="1683" y2="1683" stroke="#0080c0" stroke-width="1"/>
    <text x="1245" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (重工簽核單PK)</text>
-   <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
-   <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
-   <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
-   <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
-   <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
-   <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
-   <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
-   <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
-   <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
-   <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
-   <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
-   <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
-   <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
-   <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
-   <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
+   <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工單號</text>
+   <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
+   <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
+   <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
+   <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
+   <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
+   <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
+   <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
+   <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
+   <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
+   <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
+   <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
+   <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
+   <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
+   <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
+   <text x="1245" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
    <text x="1335" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
-   <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-   <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
-   <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-   <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
+   <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(36)</text>
+   <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+   <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
+   <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="1335" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
    <text x="1468" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <rect x="1239" y="1956" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <defs>
@@ -2307,37 +2309,39 @@
    <text x="1373" y="1677" fill="#ff0000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">重工簽核單</text>
    <line x1="1240" x2="1506" y1="1683" y2="1683" stroke="#0080c0" stroke-width="1"/>
    <text x="1245" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (重工簽核單PK)</text>
-   <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
-   <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
-   <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
-   <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
-   <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
-   <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
-   <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
-   <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
-   <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
-   <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
-   <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
-   <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
-   <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
-   <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
-   <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
+   <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工單號</text>
+   <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
+   <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
+   <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
+   <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
+   <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
+   <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
+   <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
+   <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
+   <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
+   <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
+   <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
+   <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
+   <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
+   <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
+   <text x="1245" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
    <text x="1335" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-   <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
-   <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-   <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-   <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
-   <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-   <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
+   <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(36)</text>
+   <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+   <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+   <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+   <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+   <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
+   <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+   <text x="1335" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
    <text x="1468" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    <rect x="1239" y="1956" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
    <defs>
@@ -2377,40 +2381,42 @@
       <text x="1373" y="1677" fill="#ff0000" font-size="13" font-family="'Arial Unicode MS','微軟雅黑'" font-weight="bold" text-anchor="middle">重工簽核單</text>
       <line x1="1240" x2="1506" y1="1683" y2="1683" stroke="#0080c0" stroke-width="1"/>
       <text x="1245" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">id (重工簽核單PK)</text>
-      <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
-      <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
-      <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
-      <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
-      <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
-      <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
-      <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
-      <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
-      <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
-      <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
-      <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
-      <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
-      <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
-      <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
-      <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
+      <text x="1245" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工單號</text>
+      <text x="1245" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">BPM 簽核單PK</text>
+      <text x="1245" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot PK</text>
+      <text x="1245" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">lot 代碼</text>
+      <text x="1245" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令PK</text>
+      <text x="1245" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">製令cd</text>
+      <text x="1245" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單PK</text>
+      <text x="1245" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(挑選)SAP工單cd</text>
+      <text x="1245" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程PK</text>
+      <text x="1245" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程cd</text>
+      <text x="1245" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">目前製程name</text>
+      <text x="1245" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">重工原因</text>
+      <text x="1245" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">操作員cd</text>
+      <text x="1245" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">是否轉廢線</text>
+      <text x="1245" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">(實際) 重工數量</text>
+      <text x="1245" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">預估生產日期</text>
       <text x="1335" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
-      <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
-      <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
-      <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
-      <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
-      <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
-      <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
+      <text x="1335" y="1706" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1719" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(36)</text>
+      <text x="1335" y="1732" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1335" y="1745" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1757" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1335" y="1770" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1783" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1335" y="1796" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1809" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(32)</text>
+      <text x="1335" y="1822" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1835" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(20)</text>
+      <text x="1335" y="1848" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">national char varying(Max)</text>
+      <text x="1335" y="1861" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">varchar(40)</text>
+      <text x="1335" y="1874" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">smallint</text>
+      <text x="1335" y="1887" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">decimal(10,3)</text>
+      <text x="1335" y="1900" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">char(10)</text>
       <text x="1468" y="1693" fill="#000000" font-size="10" font-family="'Arial Unicode MS','微軟雅黑'" text-anchor="start">&lt;pk&gt;</text>
    </a>
-   <a target="_parent" xlink:href="SCME53.htm#3217">
+   <a target="_parent" xlink:href="SCME53.htm#3223">
       <rect x="1239" y="1956" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
       <defs>
          <linearGradient id="Gradient50" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
