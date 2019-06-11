@@ -104,6 +104,7 @@ create table fm7_material (<br />
    mnemonic_code        type_memo            null,<br />
    version              type_version_int     null,<br />
    application_form_id  type_cd              null,<br />
+   is_semiproduct       type_boolean         null,<br />
    attr1                type_decimal         null,<br />
    attr2                type_short_text      null,<br />
    constraint PK_FM7_MATERIAL primary key (id)<br />
@@ -644,21 +645,31 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact47.htm#1852">物料屬性1</a>
+<p align="left"><a href="Fact47.htm#1852">是否半成品</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact47.htm#1852">attr1</a>
+<p align="left"><a href="Fact47.htm#1852">is_semiproduct</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact47.htm#1858">物料屬性2</a>
+<p align="left"><a href="Fact47.htm#1858">物料屬性1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact47.htm#1858">attr2</a>
+<p align="left"><a href="Fact47.htm#1858">attr1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left"><a href="Fact47.htm#1864">物料屬性2</a>
+</p>
+</td>
+<td class="TD2">
+<p align="left"><a href="Fact47.htm#1864">attr2</a>
 </p>
 </td>
 </tr>
@@ -836,11 +847,11 @@ go<br />
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 <td class="TD2">
@@ -7941,10 +7952,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1852">Column 物料屬性1 of the table FM7_物料基本信息</a> 
+<a name="1852">Column 是否半成品 of the table FM7_物料基本信息</a> 
 </h2>
 <h3>
-<a name="1853">Card of the column 物料屬性1 of the table FM7_物料基本信息</a> 
+<a name="1853">Card of the column 是否半成品 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -7953,7 +7964,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1852">物料屬性1</a>
+<p align="left"><a href="Fact47.htm#1852">是否半成品</a>
 </p>
 </td>
 </tr>
@@ -7963,7 +7974,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1852">attr1</a>
+<p align="left"><a href="Fact47.htm#1852">is_semiproduct</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">bit
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1854">Check constraint name of the column 是否半成品 of the table FM7_物料基本信息</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_IS_SEMIPRODUCT_FM7_MATE
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1855">Check of the column 是否半成品 of the table FM7_物料基本信息</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1856">Server validation rule of the column 是否半成品 of the table FM7_物料基本信息</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1857">List of extended attributes of the table column 是否半成品</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1858">Column 物料屬性1 of the table FM7_物料基本信息</a> 
+</h2>
+<h3>
+<a name="1859">Card of the column 物料屬性1 of the table FM7_物料基本信息</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact47.htm#1858">物料屬性1</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="Fact47.htm#1858">attr1</a>
 </p>
 </td>
 </tr>
@@ -7989,7 +8378,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1854">Check constraint name of the column 物料屬性1 of the table FM7_物料基本信息</a> 
+<a name="1860">Check constraint name of the column 物料屬性1 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_ATTR1_FM7_MATE
@@ -7997,7 +8386,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1855">Check of the column 物料屬性1 of the table FM7_物料基本信息</a> 
+<a name="1861">Check of the column 物料屬性1 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8072,7 +8461,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1856">Server validation rule of the column 物料屬性1 of the table FM7_物料基本信息</a> 
+<a name="1862">Server validation rule of the column 物料屬性1 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8080,7 +8469,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1857">List of extended attributes of the table column 物料屬性1</a> 
+<a name="1863">List of extended attributes of the table column 物料屬性1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8319,10 +8708,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1858">Column 物料屬性2 of the table FM7_物料基本信息</a> 
+<a name="1864">Column 物料屬性2 of the table FM7_物料基本信息</a> 
 </h2>
 <h3>
-<a name="1859">Card of the column 物料屬性2 of the table FM7_物料基本信息</a> 
+<a name="1865">Card of the column 物料屬性2 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8331,7 +8720,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1858">物料屬性2</a>
+<p align="left"><a href="Fact47.htm#1864">物料屬性2</a>
 </p>
 </td>
 </tr>
@@ -8341,7 +8730,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1858">attr2</a>
+<p align="left"><a href="Fact47.htm#1864">attr2</a>
 </p>
 </td>
 </tr>
@@ -8367,7 +8756,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1860">Check constraint name of the column 物料屬性2 of the table FM7_物料基本信息</a> 
+<a name="1866">Check constraint name of the column 物料屬性2 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_ATTR2_FM7_MATE
@@ -8375,7 +8764,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1861">Check of the column 物料屬性2 of the table FM7_物料基本信息</a> 
+<a name="1867">Check of the column 物料屬性2 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8450,7 +8839,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1862">Server validation rule of the column 物料屬性2 of the table FM7_物料基本信息</a> 
+<a name="1868">Server validation rule of the column 物料屬性2 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -8458,7 +8847,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1863">List of extended attributes of the table column 物料屬性2</a> 
+<a name="1869">List of extended attributes of the table column 物料屬性2</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8697,7 +9086,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1864">List of keys of the table FM7_物料基本信息</a> 
+<a name="1870">List of keys of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8716,11 +9105,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 <td>
@@ -8730,10 +9119,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1865">Key Identifier_1 of the table FM7_物料基本信息</a> 
+<a name="1871">Key Identifier_1 of the table FM7_物料基本信息</a> 
 </h2>
 <h3>
-<a name="1866">Card of the key Identifier_1 of the table FM7_物料基本信息</a> 
+<a name="1872">Card of the key Identifier_1 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8742,7 +9131,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 </tr>
@@ -8752,7 +9141,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="Fact47.htm#1865">Identifier_1</a>
+<p align="left"><a href="Fact47.htm#1871">Identifier_1</a>
 </p>
 </td>
 </tr>
@@ -8768,7 +9157,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1867">Code preview of the key Identifier_1 of the table FM7_物料基本信息</a> 
+<a name="1873">Code preview of the key Identifier_1 of the table FM7_物料基本信息</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">alter table fm7_material<br />
@@ -8779,7 +9168,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1868">List of columns of the table key Identifier_1</a> 
+<a name="1874">List of columns of the table key Identifier_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8804,7 +9193,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1869">List of all dependencies of the table key Identifier_1</a> 
+<a name="1875">List of all dependencies of the table key Identifier_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -8837,7 +9226,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1870">List of extended attributes of the table key Identifier_1</a> 
+<a name="1876">List of extended attributes of the table key Identifier_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
