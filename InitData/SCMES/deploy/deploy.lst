@@ -31,6 +31,7 @@ fm6_equipment_carrier.sql
 
 [料]
 fm7_material.sql
+fm7_material-more.sql
 fm7_material_cat.sql
 
 [銅線]

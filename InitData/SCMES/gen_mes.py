@@ -865,7 +865,7 @@ class fm7_material(MESTableGenerator):
     def __init__(self):
         super().__init__()
         # self._columns = ['code', 'name', 'cat_pk', 'name_en', 'name_abbr', 'unit_pk', 'spec', 'spec_en', 'model', 'image_path', 'brand', 'is_enabled', 'custom_product_id', 'custom_product_name', 'barcode', 'mnemonic_code', 'version', 'application_form_id', 'attr1', 'attr2']
-        self._columns = ['code', 'name', 'cat_pk', 'model', 'is_enabled', 'version', 'attr1']
+        self._columns = ['code', 'name', 'cat_pk', 'model', 'is_enabled', 'version', 'attr1', 'is_semiproduct']
         self._key_columns = ['code']
         self._tuple = namedtuple(self.__class__.__name__ + '_tuple', self._columns)
 
@@ -902,6 +902,7 @@ class fm7_material(MESTableGenerator):
                 is_enabled=1,
                 version=1,
                 attr1=o.SINGLE_LINE_CIR_STD,
+                is_semiproduct=1 if len(o.PRODUCT_NO)!=16 else 0
                 )
             )
         return ret_tuples

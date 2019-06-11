@@ -30,6 +30,7 @@ sql_list+=" fm6_equipment_process.sql"
 sql_list+=" fm6_carrier_model.sql"
 sql_list+=" fm6_equipment_carrier.sql"
 sql_list+=" fm7_material.sql"
+sql_list+=" fm7_material-more.sql"
 sql_list+=" fm7_material_cat.sql"
 sql_list+=" mwc_copper.sql"
 
