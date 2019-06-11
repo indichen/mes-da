@@ -4,6 +4,7 @@
 import sys
 import cx_Oracle
 import binascii
+import csv
 from os import getenv, environ
 from abc import ABC, abstractmethod
 from collections import namedtuple
@@ -149,7 +150,8 @@ class SFCWF30JOINM5M4(OracleTableReader):
         ]
         columns = ', '.join(['rawtohex(utl_raw.cast_to_raw({}))'.format(c) for c in cols])
 
-        return "select {} from sfc.SFCWF30, sfc.pmc904m m4 left join (select m5.no_code, case when no_type = 'P' then '5' else 'G' end no_type, m5.name_mtrl, m5.name_kind, m5.no_kind from sfc.pmc905m m5 where m5.code_status = 'C' and m5.no_kind is not null) m5 on m4.no_kind = m5.no_kind and substr(m4.no_manu, 1, 1) = m5.no_type and substr(m4.no_manu, 2, 3) = m5.no_code where sfc.SFCWF30.DESIGN_NO = m4.no_manu;".format(columns)
+        sql = "select {} from sfc.SFCWF30, sfc.pmc904m m4 left join (select m5.no_code, case when no_type = 'P' then '5' else 'G' end no_type, m5.name_mtrl, m5.name_kind, m5.no_kind from sfc.pmc905m m5 where m5.code_status = 'C' and m5.no_kind is not null) m5 on m4.no_kind = m5.no_kind and substr(m4.no_manu, 1, 1) = m5.no_type and substr(m4.no_manu, 2, 3) = m5.no_code where sfc.SFCWF30.DESIGN_NO = m4.no_manu".format(columns)
+        return sql
 
 
 class HRM010M(OracleTableReader):
@@ -200,14 +202,6 @@ class HRM010M(OracleTableReader):
     def _biz_tuple(self):
         return self._tuple
 
-def test():
-    data_tuples = SFCWF30JOINM5M4().load_db_data().data_tuples
-    print(len(data_tuples))
-    with open('SFCWF30JOINM5M4.csv', 'w') as fd:
-        writer = csv.DictWriter(fd, fieldnames=SFCWF30JOINM5M4._biz_tuple._fields)
-        writer.writeheader()
-        for t in data_tuples:
-            writer.writerow(t._asdict())
 
 class PMC180M(OracleTableReader):
     def __init__(self):
@@ -255,6 +249,25 @@ class SFCMF22(OracleTableReader):
     @property
     def _biz_tuple(self):
         return self._tuple
+
+def dump_SFCWF30JOINM5M4():
+    data_tuples = SFCWF30JOINM5M4().load_db_data().data_tuples
+    print(len(data_tuples))
+    with open('SFCWF30JOINM5M4.csv', 'w') as fd:
+        writer = csv.DictWriter(fd, fieldnames=SFCWF30JOINM5M4()._biz_tuple._fields, dialect=csv.excel_tab)
+        writer.writeheader()
+        for t in data_tuples:
+            writer.writerow(t._asdict())
+
+def dump_SFCWF30():
+    data_tuples = SFCWF30().load_db_data().data_tuples
+    print(len(data_tuples))
+    with open('SFCWF30.csv', 'w') as fd:
+        writer = csv.DictWriter(fd, fieldnames=SFCWF30()._biz_tuple._fields, dialect=csv.excel_tab)
+        writer.writeheader()
+        for t in data_tuples:
+            writer.writerow(t._asdict())
+
 
 def main():
     if len(sys.argv) < 2:

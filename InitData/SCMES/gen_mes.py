@@ -8,6 +8,7 @@ from abc import ABC, abstractmethod
 from collections import namedtuple
 from uuid import uuid4
 from decimal import Decimal
+from datetime import datetime, date
 
 from read_old_mes import PMC902M, SFCWF30, SFCWF30JOINM5M4, PMC180M, SFCMF22
 
@@ -24,10 +25,15 @@ class MESTableGenerator(ABC):
             given_id or str(uuid4()).replace('-', '')
         )
 
+    _escape_sql = staticmethod(lambda  x: \
+        x.replace("'", "''").replace('\n', '').strip() \
+    )
+
     _make_sql_value = staticmethod(lambda x: \
         'null' if x is None else \
-        "N'{}'".format(x) if isinstance(x, str) else \
+        "N'{}'".format(MESTableGenerator._escape_sql(x)) if isinstance(x, str) else \
         x[0] if isinstance(x, list) else \
+        x.strftime('%Y-%m-%d %H:%M:%S') if isinstance(x, datetime) or isinstance(x, date) else \
         str(x) \
     )
 
@@ -883,16 +889,13 @@ class fm7_material(MESTableGenerator):
 
     def _gen_init_tuples(self):
         sfcwf30joinm5m4 = SFCWF30JOINM5M4()
-        old_tuples = []
-        with open('SFCWF30JOINM5M4.tsv', 'r') as fd:
-            reader = csv.reader(fd, csv.excel_tab)
-            next(reader, None) # Skip header
-            for row in reader:
-                unhex_tuple = sfcwf30joinm5m4._transform_hex_data(row)
-                old_tuples.append(sfcwf30joinm5m4._biz_tuple._make(unhex_tuple))
+        with open('SFCWF30JOINM5M4.csv', 'r') as fd:
+            reader = csv.DictReader(fd, dialect=csv.excel_tab)
+            old_tuples = [sfcwf30joinm5m4._biz_tuple._make(tuple(row.values())) for row in reader]
 
         material_cats = fm7_material_cat().load_db_data()
         ret_tuples = []
+        existing_no = set()
         for o in old_tuples:
             ret_tuples.append(self._tuple(
                 code=o.PRODUCT_NO,
@@ -901,8 +904,28 @@ class fm7_material(MESTableGenerator):
                 model=o.NO_MANU,
                 is_enabled=1,
                 version=1,
-                attr1=o.SINGLE_LINE_CIR_STD,
+                attr1=float(o.SINGLE_LINE_CIR_STD) if o.SINGLE_LINE_CIR_STD else None,
                 is_semiproduct=1 if len(o.PRODUCT_NO)!=16 else 0
+                )
+            )
+            existing_no.add(o.PRODUCT_NO)
+
+        # Add extra tuples from SFCWF30
+        sfcwf30 = SFCWF30()
+        with open('SFCWF30.csv', 'r') as fd:
+            reader = csv.DictReader(fd, dialect=csv.excel_tab)
+            sfcwf30_tuples = [sfcwf30._biz_tuple._make(tuple(row.values())) for row in reader]
+
+        for o in filter(lambda m: m.PRODUCT_NO not in existing_no, sfcwf30_tuples):
+            ret_tuples.append(self._tuple(
+                code=o.PRODUCT_NO,
+                name=o.PRODUCT_DES,
+                cat_pk=None,
+                model=None,
+                is_enabled=1,
+                version=1,
+                attr1=float(o.SINGLE_LINE_CIR_STD) if o.SINGLE_LINE_CIR_STD else None,
+                is_semiproduct=1
                 )
             )
         return ret_tuples
@@ -1023,9 +1046,8 @@ class mwc_copper(MESTableGenerator):
         ]
 
 def test():
-    material = fm7_material().create_data()
-    material.truncate_db = False
-    data_tuples = material.data_tuples
+    material = fm7_material().load_db_data().create_data(True)
+    material.truncate_db = True
     material.gen_new_sql()
 
 def test1():
