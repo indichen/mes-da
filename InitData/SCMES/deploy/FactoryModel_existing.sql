@@ -875,6 +875,7 @@ create table walsindba.fm7_material (
    mnemonic_code        type_memo            null,
    version              type_version_int     null,
    application_form_id  type_cd              null,
+   is_semiproduct       type_boolean         null,
    attr1                type_decimal         null,
    attr2                type_short_text      null,
    constraint PK_FM7_MATERIAL primary key (id)

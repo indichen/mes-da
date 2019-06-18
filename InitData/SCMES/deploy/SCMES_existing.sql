@@ -1095,7 +1095,8 @@ create table walsindba.mwc_rework_signing (
    tenant_id varchar(64) null,
 
    id                   type_pk              not null,
-   bpm_pk               type_pk              null,
+   code                 type_cd              null,
+   bpm_pk               char(36)             null,
    lot_pk               type_pk              null,
    lot_cd               type_cd              null,
    mo_pk                type_pk              null,
