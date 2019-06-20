@@ -202,7 +202,7 @@ go
 /*==============================================================*/
 if not exists(select 1 from systypes where name='type_boolean')
     create type type_boolean
-       from smallint
+       from bit
 go
 
 /*==============================================================*/
@@ -956,6 +956,10 @@ create table walsindba.mwc_copper (
    weight_origin        type_weight          null,
    length               type_length          null,
    weight               type_weight          null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    constraint PK_MWC_COPPER primary key (id)
 )
@@ -982,6 +986,10 @@ create table walsindba.mwc_copper_history (
    weight_origin        type_weight          null,
    length               type_length          null,
    weight               type_weight          null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    constraint PK_MWC_COPPER_HISTORY primary key (id)
 )
