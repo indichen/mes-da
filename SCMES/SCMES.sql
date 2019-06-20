@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     6/18/2019 3:17:01 PM                         */
+/* Created on:     6/20/2019 1:54:08 PM                         */
 /*==============================================================*/
 
 
@@ -1007,6 +1007,10 @@ create table mwc_copper (
    weight_origin        type_weight          null,
    length               type_length          null,
    weight               type_weight          null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    constraint PK_MWC_COPPER primary key (id)
 )
@@ -1033,6 +1037,10 @@ create table mwc_copper_history (
    weight_origin        type_weight          null,
    length               type_length          null,
    weight               type_weight          null,
+   carrier_pk           type_pk              null,
+   carrier_cd           type_cd              null,
+   material_pk          type_pk              null,
+   material_cd          type_cd              null,
    status               type_enum_val        null,
    constraint PK_MWC_COPPER_HISTORY primary key (id)
 )
