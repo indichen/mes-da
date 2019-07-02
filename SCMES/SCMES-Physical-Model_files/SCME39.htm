@@ -93,6 +93,7 @@ create table mwc_checkout_operator (<br />
 <br />
    id                   type_pk              not null,<br />
    checkout_pk          type_pk              null,<br />
+   operator_pk          type_pk              null,<br />
    operator_cd          type_cd              null,<br />
    team_pk              type_pk              null,<br />
    team_cd              type_cd              null,<br />
@@ -400,61 +401,71 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME39.htm#1936">操作人員</a>
+<p align="left"><a href="SCME39.htm#1936">操作人員PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME39.htm#1936">operator_cd</a>
+<p align="left"><a href="SCME39.htm#1936">operator_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1942">班組PK</a>
+<p align="left"><a href="SCME39.htm#1942">操作人員cd</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1942">team_pk</a>
+<p align="left"><a href="SCME39.htm#1942">operator_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME39.htm#1948">班組</a>
+<p align="left"><a href="SCME39.htm#1948">班組PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME39.htm#1948">team_cd</a>
+<p align="left"><a href="SCME39.htm#1948">team_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1954">班次PK</a>
+<p align="left"><a href="SCME39.htm#1954">班組</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1954">shift_pk</a>
+<p align="left"><a href="SCME39.htm#1954">team_cd</a>
 </p>
 </td>
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME39.htm#1960">班次</a>
+<p align="left"><a href="SCME39.htm#1960">班次PK</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME39.htm#1960">shift_cd</a>
+<p align="left"><a href="SCME39.htm#1960">shift_pk</a>
 </p>
 </td>
 </tr>
 <tr>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1966">連續生產批</a>
+<p align="left"><a href="SCME39.htm#1966">班次</a>
 </p>
 </td>
 <td class="TD2">
-<p align="left"><a href="SCME39.htm#1966">batch_cd</a>
+<p align="left"><a href="SCME39.htm#1966">shift_cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left"><a href="SCME39.htm#1972">連續生產批</a>
+</p>
+</td>
+<td>
+<p align="left"><a href="SCME39.htm#1972">batch_cd</a>
 </p>
 </td>
 </tr>
@@ -618,11 +629,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 <td>
@@ -1264,10 +1275,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1936">Column 操作人員 of the table 投產執行-投產人員</a> 
+<a name="1936">Column 操作人員PK of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1937">Card of the column 操作人員 of the table 投產執行-投產人員</a> 
+<a name="1937">Card of the column 操作人員PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1276,7 +1287,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1936">操作人員</a>
+<p align="left"><a href="SCME39.htm#1936">操作人員PK</a>
 </p>
 </td>
 </tr>
@@ -1286,7 +1297,385 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1936">operator_cd</a>
+<p align="left"><a href="SCME39.htm#1936">operator_pk</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Data Type
+</p>
+</td>
+<td width="75%">
+<p align="left">char(32)
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Mandatory
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1938">Check constraint name of the column 操作人員PK of the table 投產執行-投產人員</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">CKC_OPERATOR_PK_MWC_CHEC
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1939">Check of the column 操作人員PK of the table 投產執行-投產人員</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Minimum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Maximum Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Default Value
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Unit
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Format
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Cannot Modify
+</p>
+</td>
+<td width="75%">
+<p align="left">No
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">List Of Values
+</p>
+</td>
+<td width="75%">
+<p align="left">&nbsp; 
+</p>
+</td>
+</tr>
+</table><br />
+<h3>
+<a name="1940">Server validation rule of the column 操作人員PK of the table 投產執行-投產人員</a> 
+</h3>
+<table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
+<p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
+</p>
+</td></tr>
+</table><br />
+<h3>
+<a name="1941">List of extended attributes of the table column 操作人員PK</a> 
+</h3>
+<table class="Grid" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header">
+<p align="center">Name
+</p>
+</td>
+<td class="Header">
+<p align="center">Data Type
+</p>
+</td>
+<td class="Header">
+<p align="center">Value
+</p>
+</td>
+<td class="Header">
+<p align="center">Target Name
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">DispTemporal
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtCkcNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtCollation
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtDeftConstName
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtIdentitySeedInc
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtIdtNotForReplication
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">ExtNullConstName
+</p>
+</td>
+<td>
+<p align="left">(String)
+</p>
+</td>
+<td>
+<p align="left">&nbsp; 
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">ExtRowGuidCol
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">GenAlwaysType
+</p>
+</td>
+<td>
+<p align="left">(Integer)
+</p>
+</td>
+<td>
+<p align="left">0
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Lot ID
+</p>
+</td>
+<td class="TD2">
+<p align="left">(String)
+</p>
+</td>
+<td class="TD2">
+<p align="left">&nbsp; 
+</p>
+</td>
+<td class="TD2">
+<p align="left">Local Extensions
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">Sparse
+</p>
+</td>
+<td>
+<p align="left">(Boolean)
+</p>
+</td>
+<td>
+<p align="left">false
+</p>
+</td>
+<td>
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+<tr>
+<td class="TD2">
+<p align="left">Temporal
+</p>
+</td>
+<td class="TD2">
+<p align="left">(Boolean)
+</p>
+</td>
+<td class="TD2">
+<p align="left">false
+</p>
+</td>
+<td class="TD2">
+<p align="left">Microsoft SQL Server 2017 (iuap)
+</p>
+</td>
+</tr>
+</table><br />
+<h2>
+<a name="1942">Column 操作人員cd of the table 投產執行-投產人員</a> 
+</h2>
+<h3>
+<a name="1943">Card of the column 操作人員cd of the table 投產執行-投產人員</a> 
+</h3>
+<table class="Form" border="1" cellspacing="1" width="100%">
+<tr>
+<td class="Header" width="25%">
+<p align="left">Name
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME39.htm#1942">操作人員cd</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="Header" width="25%">
+<p align="left">Code
+</p>
+</td>
+<td width="75%">
+<p align="left"><a href="SCME39.htm#1942">operator_cd</a>
 </p>
 </td>
 </tr>
@@ -1312,7 +1701,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1938">Check constraint name of the column 操作人員 of the table 投產執行-投產人員</a> 
+<a name="1944">Check constraint name of the column 操作人員cd of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_OPERATOR_CD_MWC_CHEC
@@ -1320,7 +1709,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1939">Check of the column 操作人員 of the table 投產執行-投產人員</a> 
+<a name="1945">Check of the column 操作人員cd of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1395,7 +1784,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1940">Server validation rule of the column 操作人員 of the table 投產執行-投產人員</a> 
+<a name="1946">Server validation rule of the column 操作人員cd of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1403,7 +1792,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1941">List of extended attributes of the table column 操作人員</a> 
+<a name="1947">List of extended attributes of the table column 操作人員cd</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1642,10 +2031,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1942">Column 班組PK of the table 投產執行-投產人員</a> 
+<a name="1948">Column 班組PK of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1943">Card of the column 班組PK of the table 投產執行-投產人員</a> 
+<a name="1949">Card of the column 班組PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1654,7 +2043,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1942">班組PK</a>
+<p align="left"><a href="SCME39.htm#1948">班組PK</a>
 </p>
 </td>
 </tr>
@@ -1664,7 +2053,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1942">team_pk</a>
+<p align="left"><a href="SCME39.htm#1948">team_pk</a>
 </p>
 </td>
 </tr>
@@ -1690,7 +2079,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1944">Check constraint name of the column 班組PK of the table 投產執行-投產人員</a> 
+<a name="1950">Check constraint name of the column 班組PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TEAM_PK_MWC_CHEC
@@ -1698,7 +2087,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1945">Check of the column 班組PK of the table 投產執行-投產人員</a> 
+<a name="1951">Check of the column 班組PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -1773,7 +2162,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1946">Server validation rule of the column 班組PK of the table 投產執行-投產人員</a> 
+<a name="1952">Server validation rule of the column 班組PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -1781,7 +2170,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1947">List of extended attributes of the table column 班組PK</a> 
+<a name="1953">List of extended attributes of the table column 班組PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2020,10 +2409,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1948">Column 班組 of the table 投產執行-投產人員</a> 
+<a name="1954">Column 班組 of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1949">Card of the column 班組 of the table 投產執行-投產人員</a> 
+<a name="1955">Card of the column 班組 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2032,7 +2421,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1948">班組</a>
+<p align="left"><a href="SCME39.htm#1954">班組</a>
 </p>
 </td>
 </tr>
@@ -2042,7 +2431,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1948">team_cd</a>
+<p align="left"><a href="SCME39.htm#1954">team_cd</a>
 </p>
 </td>
 </tr>
@@ -2068,7 +2457,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1950">Check constraint name of the column 班組 of the table 投產執行-投產人員</a> 
+<a name="1956">Check constraint name of the column 班組 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_TEAM_CD_MWC_CHEC
@@ -2076,7 +2465,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1951">Check of the column 班組 of the table 投產執行-投產人員</a> 
+<a name="1957">Check of the column 班組 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2151,7 +2540,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1952">Server validation rule of the column 班組 of the table 投產執行-投產人員</a> 
+<a name="1958">Server validation rule of the column 班組 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2159,7 +2548,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1953">List of extended attributes of the table column 班組</a> 
+<a name="1959">List of extended attributes of the table column 班組</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2398,10 +2787,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1954">Column 班次PK of the table 投產執行-投產人員</a> 
+<a name="1960">Column 班次PK of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1955">Card of the column 班次PK of the table 投產執行-投產人員</a> 
+<a name="1961">Card of the column 班次PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2410,7 +2799,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1954">班次PK</a>
+<p align="left"><a href="SCME39.htm#1960">班次PK</a>
 </p>
 </td>
 </tr>
@@ -2420,7 +2809,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1954">shift_pk</a>
+<p align="left"><a href="SCME39.htm#1960">shift_pk</a>
 </p>
 </td>
 </tr>
@@ -2446,7 +2835,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1956">Check constraint name of the column 班次PK of the table 投產執行-投產人員</a> 
+<a name="1962">Check constraint name of the column 班次PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_SHIFT_PK_MWC_CHEC
@@ -2454,7 +2843,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1957">Check of the column 班次PK of the table 投產執行-投產人員</a> 
+<a name="1963">Check of the column 班次PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2529,7 +2918,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1958">Server validation rule of the column 班次PK of the table 投產執行-投產人員</a> 
+<a name="1964">Server validation rule of the column 班次PK of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2537,7 +2926,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1959">List of extended attributes of the table column 班次PK</a> 
+<a name="1965">List of extended attributes of the table column 班次PK</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2776,10 +3165,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1960">Column 班次 of the table 投產執行-投產人員</a> 
+<a name="1966">Column 班次 of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1961">Card of the column 班次 of the table 投產執行-投產人員</a> 
+<a name="1967">Card of the column 班次 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2788,7 +3177,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1960">班次</a>
+<p align="left"><a href="SCME39.htm#1966">班次</a>
 </p>
 </td>
 </tr>
@@ -2798,7 +3187,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1960">shift_cd</a>
+<p align="left"><a href="SCME39.htm#1966">shift_cd</a>
 </p>
 </td>
 </tr>
@@ -2824,7 +3213,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1962">Check constraint name of the column 班次 of the table 投產執行-投產人員</a> 
+<a name="1968">Check constraint name of the column 班次 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_SHIFT_CD_MWC_CHEC
@@ -2832,7 +3221,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1963">Check of the column 班次 of the table 投產執行-投產人員</a> 
+<a name="1969">Check of the column 班次 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -2907,7 +3296,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1964">Server validation rule of the column 班次 of the table 投產執行-投產人員</a> 
+<a name="1970">Server validation rule of the column 班次 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -2915,7 +3304,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1965">List of extended attributes of the table column 班次</a> 
+<a name="1971">List of extended attributes of the table column 班次</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3154,10 +3543,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1966">Column 連續生產批 of the table 投產執行-投產人員</a> 
+<a name="1972">Column 連續生產批 of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1967">Card of the column 連續生產批 of the table 投產執行-投產人員</a> 
+<a name="1973">Card of the column 連續生產批 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3166,7 +3555,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1966">連續生產批</a>
+<p align="left"><a href="SCME39.htm#1972">連續生產批</a>
 </p>
 </td>
 </tr>
@@ -3176,7 +3565,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1966">batch_cd</a>
+<p align="left"><a href="SCME39.htm#1972">batch_cd</a>
 </p>
 </td>
 </tr>
@@ -3202,7 +3591,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1968">Check constraint name of the column 連續生產批 of the table 投產執行-投產人員</a> 
+<a name="1974">Check constraint name of the column 連續生產批 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">CKC_BATCH_CD_MWC_CHEC
@@ -3210,7 +3599,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1969">Check of the column 連續生產批 of the table 投產執行-投產人員</a> 
+<a name="1975">Check of the column 連續生產批 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3285,7 +3674,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1970">Server validation rule of the column 連續生產批 of the table 投產執行-投產人員</a> 
+<a name="1976">Server validation rule of the column 連續生產批 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">%MINMAX% and %LISTVAL% and %CASE% and %RULES%
@@ -3293,7 +3682,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1971">List of extended attributes of the table column 連續生產批</a> 
+<a name="1977">List of extended attributes of the table column 連續生產批</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3532,7 +3921,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1972">List of keys of the table 投產執行-投產人員</a> 
+<a name="1978">List of keys of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3551,11 +3940,11 @@ go<br />
 </tr>
 <tr>
 <td>
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 <td>
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 <td>
@@ -3565,10 +3954,10 @@ go<br />
 </tr>
 </table><br />
 <h2>
-<a name="1973">Key Identifier_1 of the table 投產執行-投產人員</a> 
+<a name="1979">Key Identifier_1 of the table 投產執行-投產人員</a> 
 </h2>
 <h3>
-<a name="1974">Card of the key Identifier_1 of the table 投產執行-投產人員</a> 
+<a name="1980">Card of the key Identifier_1 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Form" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3577,7 +3966,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 </tr>
@@ -3587,7 +3976,7 @@ go<br />
 </p>
 </td>
 <td width="75%">
-<p align="left"><a href="SCME39.htm#1973">Identifier_1</a>
+<p align="left"><a href="SCME39.htm#1979">Identifier_1</a>
 </p>
 </td>
 </tr>
@@ -3603,7 +3992,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1975">Code preview of the key Identifier_1 of the table 投產執行-投產人員</a> 
+<a name="1981">Code preview of the key Identifier_1 of the table 投產執行-投產人員</a> 
 </h3>
 <table class="Text" border="1" cellpadding="3" cellspacing="1" width="100%"><tr><td>
 <p align="left">use SCMES<br />
@@ -3620,7 +4009,7 @@ go<br />
 </td></tr>
 </table><br />
 <h3>
-<a name="1976">List of columns of the table key Identifier_1</a> 
+<a name="1982">List of columns of the table key Identifier_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>
@@ -3645,7 +4034,7 @@ go<br />
 </tr>
 </table><br />
 <h3>
-<a name="1977">List of extended attributes of the table key Identifier_1</a> 
+<a name="1983">List of extended attributes of the table key Identifier_1</a> 
 </h3>
 <table class="Grid" border="1" cellspacing="1" width="100%">
 <tr>

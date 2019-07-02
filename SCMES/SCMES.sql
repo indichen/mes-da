@@ -1,7 +1,7 @@
 /*==============================================================*/
 /* Database name:  SCMES                                        */
 /* DBMS name:      Microsoft SQL Server 2017 (iuap)             */
-/* Created on:     6/20/2019 1:54:08 PM                         */
+/* Created on:     7/2/2019 5:12:27 PM                          */
 /*==============================================================*/
 
 
@@ -954,6 +954,7 @@ create table mwc_checkout_operator (
 
    id                   type_pk              not null,
    checkout_pk          type_pk              null,
+   operator_pk          type_pk              null,
    operator_cd          type_cd              null,
    team_pk              type_pk              null,
    team_cd              type_cd              null,
